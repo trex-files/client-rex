@@ -1,0 +1,68 @@
+#version 330 core
+
+in vec2 TexCoord;
+out vec4 FragColor;
+
+uniform sampler2D screenTexture;
+uniform vec2 screenSize;
+
+// FXAA Constants
+const float FXAA_REDUCE_MIN = 1.0 / 128.0;
+const float FXAA_REDUCE_MUL = 1.0 / 8;
+const float FXAA_SPAN_MAX = 8;
+
+// Helper function to calculate FXAA
+vec4 fxaa(vec2 texCoord, vec2 texOffset) {
+    vec4 color = texture(screenTexture, texCoord);
+    vec4 colorNW = texture(screenTexture, texCoord + vec2(-texOffset.x, -texOffset.y));
+    vec4 colorNE = texture(screenTexture, texCoord + vec2(texOffset.x, -texOffset.y));
+    vec4 colorSW = texture(screenTexture, texCoord + vec2(-texOffset.x, texOffset.y));
+    vec4 colorSE = texture(screenTexture, texCoord + vec2(texOffset.x, texOffset.y));
+
+    vec4 colorCenter = color;
+
+    // Calculate luminance of each color
+    float lumaNW = dot(colorNW.rgb, vec3(0.299, 0.587, 0.114));
+    float lumaNE = dot(colorNE.rgb, vec3(0.299, 0.587, 0.114));
+    float lumaSW = dot(colorSW.rgb, vec3(0.299, 0.587, 0.114));
+    float lumaSE = dot(colorSE.rgb, vec3(0.299, 0.587, 0.114));
+    float lumaCenter = dot(colorCenter.rgb, vec3(0.299, 0.587, 0.114));
+
+    // Calculate luminance differences
+    float lumaMin = min(min(lumaNW, lumaNE), min(lumaSW, lumaSE));
+    float lumaMax = max(max(lumaNW, lumaNE), max(lumaSW, lumaSE));
+    float lumaRange = lumaMax - lumaMin;
+
+    // Calculate edge detection
+    float edgeFactor = smoothstep(0.0, 1.0, (lumaRange - FXAA_REDUCE_MIN) * FXAA_REDUCE_MUL);
+
+    // Apply FXAA
+    vec3 fxaaColor = colorCenter.rgb;
+    fxaaColor = mix(fxaaColor, (colorNW.rgb + colorNE.rgb + colorSW.rgb + colorSE.rgb) * 0.25, edgeFactor);
+
+    return vec4(fxaaColor, colorCenter.a);
+}
+
+void main() {
+    vec2 texOffset = 1.0 / screenSize; // Calculate offset for sampling neighbors
+
+    // Apply FXAA algorithm
+    //vec4 fxaaColor = fxaa(TexCoord, texOffset);
+	FragColor = fxaa(TexCoord, texOffset);
+
+    // Apply Bloom effect (highlight bright areas)
+    //float brightness = max(fxaaColor.r, max(fxaaColor.g, fxaaColor.b));
+    //vec4 bloomColor = fxaaColor;
+
+    //if (brightness > 1.5) {
+    //    bloomColor = vec4(fxaaColor.rgb, 1.0);
+    //} else {
+    //    bloomColor = vec4(0.0);
+    //}
+
+    // Tonemapping
+    // Adjust exposure to map HDR values to LDR
+    //vec3 tonemapped = bloomColor.rgb / (bloomColor.rgb + vec3(1.0));
+
+    //FragColor = vec4(tonemapped, 1.0);
+}
