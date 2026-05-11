@@ -1,3 +1,4 @@
+169	Vitalidade
 0	"Gulim"
 1	"Atenção!!! Tentativas continuadas de hacking resultarão em banimento permanente da conta(%s)!!"
 2	"Arquivo FindHack danificado. Reinstale o cliente MU."
@@ -167,7 +168,7 @@
 166	"Força"
 167	"AGI"
 168	"Energia"
-169	Vitalidade
+169	"Stamina"
 170	"Dano Magia:%d~%d"
 171	"Cura: %d"
 172	"Aumento na habilidade defensiva: %d"
@@ -363,9 +364,9 @@
 362	"Personagem (C)"
 363	"Inventário (I,V)"
 364	"Guilda (G)"
-365	"Aviso! Verifique"
-366	"o nível do jogador "
-367	"e os itens antes de fazer a troca."
+365	"Verifique os itens antes de negociar."
+366	""
+367	""
 368	"Nível"
 369	"Sobre %d"
 370	"Atenção!"
@@ -2382,7 +2383,7 @@
 2545	"Produção de galhos de cerejeira"
 2549	"Incremento de mana máxima 700"
 2550	"Incremento de vida máxima 700"
-2551	Permitir criar um personagem Invocadora
+2551	"Allows creating a Summoner character"
 2552	"Você pode obter itens aleatórios"
 2553	"Você pode obter itens premium"
 2554	"Não foi possível criar o personagem Invocadora. Tente novamente."
@@ -3245,7 +3246,7 @@
 3476	"Aprimorar arma 'Nível 2'"
 3477	"Aprimorar arma 'Nível 3'"
 3478	"Refine 'Blood' Item"
-3479	Aprimorar item 'Lorde das Trevas'
+3479	"Refine 'Dark Lord' Item"
 3480	"Refine 'Divine' Item"
 3481	"Refine 'Awakening' Item"
 3482	"Refine 'Blue Eye' Item"
@@ -3363,7 +3364,7 @@
 3594	"Use Elite Mana Poção"
 3595	"Unable to use if you have not spent points on your master skill tree. "
 3596	"O ponto de habilidade mestre será redefinido. "
-3597	Deseja redefinir?
+3597	"Do you want to reset?"
 3598	"A primeira árvore"
 3599	"<Proteção, Tranquilidade, Bênção, Divino, Resiliência, Convicção, Resolução>"
 3600	"O jogo será reiniciado após o reset!"
@@ -3625,7 +3626,7 @@
 5037	"Missão:"
 5038	"Nível:"
 5039	"Kill monster [%s] (%d/%d)"
-5040	Progresso: 
+5040	"Progress: "
 5041	"Required: "
 5042	"Nível: %d"
 5043	"Bênção: %d"
@@ -3635,15 +3636,15 @@
 5047	"Cre: %d"
 5048	"Recompensa"
 5049	"Accept Missão"
-5050	Em andamento
-5051	Reivindicar recompensa
+5050	"In Progress"
+5051	"Claim Reward"
 5052	"Zen"
 5053	"WCoin"
 5054	"WCoinP"
 5055	"Ponto Goblin"
 5056	"Fórmula de mix do comerciante"
-5057	Carregando dados%.%ds
-5058	Lista de itens necessários
+5057	"Loading data%.%ds"
+5058	"Required Item List"
 5059	"Lv "
 5060	", Opt "
 5061	", +Luck"
@@ -3782,7 +3783,7 @@
 5194	"Mestre:"
 5195	"Classe:"
 5196	"Classificações"
-5197	Personagem
+5197	"Character"
 5198	"Informações"
 5199	" Classificação %s"
 5200	"Top:"
@@ -3790,12 +3791,12 @@
 5202	"Store"
 5203	"Inv. expandido"
 5204	"Market"
-5205	Abrir
-5206	Desistir
-5207	Depositar
+5205	"Open"
+5206	"Give Up"
+5207	"Deposit"
 5208	"Sacar"
-5209	Desbloquear
-5210	Bloquear
+5209	"Unlock"
+5210	"Lock"
 5211	"Expandir"
 5212	"Zen no cofre"
 5213	"Maior dano"
@@ -3826,294 +3827,294 @@
 5238	"CTC Mini"
 5239	"Change Game Password"
 5240	"Confirm Password Change"
-5241	Classificação do Evento
-5242	Fechar Loja
-5243	Loja Offline
+5241	"Event Ranking"
+5242	"Close Store"
+5243	"Offline Store"
 5244	"Menu"
 5245	"x1 %s"
 5246	"x%d"
 5247	"x%02d"
-5248	Agenda do Evento
-5249	Evento
-5250	Hora
-5251	Mago das Trevas
-5252	Cavaleiro das Trevas
-5253	Elfa Fada
-5254	Gladiador Mágico
-5255	Lorde das Trevas
-5256	Invocadora
-5257	Lutadora Furiosa
-5258	PERSONAGEM: %s
-5259	CUSTO: %s WCoinC
-5260	Remover todos os itens equipados
-5261	Manter pontos de atributo e nível mestre
-5262	CONFIRMAR
+5248	"Event Schedule"
+5249	"Event"
+5250	"Time"
+5251	"Dark Wizard"
+5252	"Dark Knight"
+5253	"Fairy Elf"
+5254	"Magic Gladiator"
+5255	"Dark Lord"
+5256	"Summoner"
+5257	"Rage Fighter"
+5258	"CHARACTER : %s"
+5259	"COST : %s WcoinC"
+5260	"Remove All Equipped Items"
+5261	"Keep Stat Points and Master Level"
+5262	"CONFIRM"
 5263	"Classificação"
 5264	"(N)"
 5265	"Character"
-5266	Classe
-5267	Nível
+5266	"Class"
+5267	"Level"
 5268	"Redefinição/Relife"
 5269	"Page: %d/%d"
 5270	"Guild Boss Event"
-5271	Requisitos para entrar no Chefe da Guilda
-5272	A guilda deve ter mais de 10 membros para entrar
+5271	"Requirements to Join the Guild Boss"
+5272	"Guild must have over 10 members to join"
 5273	"Each participating guild member receives 30k Wcoin at the end of the boss"
-5274	Uma classe chefe aleatória aparecerá em cada rodada do evento
-5275	Esta é uma área PK, tenha cuidado!
-5276	Entrar
-5277	Título
+5274	"A random Boss Class will spawn each event round"
+5275	"This is a PK area, please be careful!"
+5276	"Enter"
+5277	"Title"
 5278	"*Guide*"
-5279	*Informações do título*
-5280	*Cada nível concede:
+5279	"*Title Information*"
+5280	"*Each Level Grants:"
 5281	"Aprimorar título"
-5282	Página : %d
+5282	"Page : %d"
 5283	"Aprimorar"
-5284	Requer
+5284	"Requires"
 5285	"Dano: + %d%%"
 5286	"x2 Dano Chance: + %d%%"
-5287	Aumenta a defesa: + %d
-5288	Aumenta a vitalidade: + %d
+5287	"Increase Defense: + %d"
+5288	"Increase Vitality: + %d"
 5289	"Increase SD: + %d"
 5290	"Dano Reduction: + %d%%"
 5291	"1 tentativa de aprimoramento"
-5292	Desbloqueado
-5293	Repulsão automática
-5294	FIM: desativar auto
+5292	"Unlocked"
+5293	"Auto Knockback"
+5294	"END: Disable Auto"
 5295	"QR Payment Scan"
-5296	Ler QR ou transferir pelas informações abaixo
-5297	Conta: %s
-5298	Observação: %s
-5299	*Observação: digite exatamente o memo para que o sistema## credite suas moedas automaticamente!
-5300	Recarga automática
-5301	*Passo 1: Digite o valor da recarga e pressione OK para gerar a ordem de pagamento
+5296	"Scan QR or transfer by the info below"
+5297	"Account: %s"
+5298	"Memo: %s"
+5299	"*Note: Enter the exact memo so the system## can credit your coins automatically!"
+5300	"Automatic Top-Up"
+5301	"*Step 1: Enter the amount to top up and press OK to generate the payment order"
 5302	"*Step 2: Scan the QR code in the window that appears to pay"
-5303	Se você fechá-lo acidentalmente, pressione 'Ler QR' para abrir novamente
+5303	"If you accidentally closed it, press 'Scan QR' to reopen"
 5304	"O pagamento será processado em 5 a 15 minutos e o WCoin será creditado"
-5305	Criar pedido de recarga
+5305	"Create Top-Up Order"
 5306	"%s VND = %s Coin"
-5307	Valor:
-5308	Código CAPTCHA
-5309	Confirmar
-5310	CAPTCHA incorreto
-5311	Recargas recentes
+5307	"Amount:"
+5308	"Captcha Code"
+5309	"Confirm"
+5310	"Wrong CAPTCHA"
+5311	"Recent Top-Ups"
 5312	"[%s VND]"
-5313	Marcos de recarga
-5314	Listar item para venda
+5313	"Top-Up Milestones"
+5314	"List Item for Sale"
 5315	"WC"
 5316	"WP"
 5317	"GP"
-5318	Preço:
-5319	Confirmar
-5320	Clique com o botão direito em um item para listá-lo para venda
-5321	Os itens listados aparecerão em "Seus Itens"
-5322	Observação: revise antes de listar!!
+5318	"Price:"
+5319	"Confirm"
+5320	"*Right-click an item to list it for sale"
+5321	"Items you list will appear under 'Your Items'"
+5322	"Note: double-check before listing!!"
 5323	"Null"
-5324	Mercado de autoatendimento
-5325	Vendedor: %s
-5326	Preço: %s (%s)
-5327	Categoria: %s
+5324	"Self-Service Marketplace"
+5325	"Seller : %s "
+5326	"Price : %s (%s)"
+5327	"Category: %s"
 5328	"Sacar"
-5329	Testar
-5330	Comprar
-5331	Observação
-5332	Tem certeza de que deseja comprar##Item %s Preço: %s (%s)
+5329	"Try"
+5330	"Buy"
+5331	"Note"
+5332	"Are you sure you want to buy##Item %s Price : %s (%s)"
 5333	"Category: %s"
-5334	Pesquisar palavra-chave...
-5335	Filtrar lista de itens
-5336	Filtrar itens com habilidade
-5337	Filtrar itens com sorte
-5338	Filtrar itens com opção
-5339	Filtrar itens excelentes
-5340	Geral
+5334	"Search keyword..."
+5335	"Filter Item List"
+5336	"Filter Items with Skill"
+5337	"Filter Items with Luck"
+5338	"Filter Items with Option"
+5339	"Filter Items with Excellent"
+5340	"General"
 5341	"Arma"
-5342	Elmo
-5343	Armadura
-5344	Calças
-5345	Luvas
-5346	Botas
-5347	Asas
+5342	"Helm"
+5343	"Armor"
+5344	"Pants"
+5345	"Gloves"
+5346	"Boots"
+5347	"Wings"
 5348	"Mascote"
-5349	Pendente
-5350	Anel
-5351	Outros
-5352	Seus Itens
-5353	Ver item
+5349	"Pendant"
+5350	"Ring"
+5351	"Other"
+5352	"Your Items"
+5353	"View Item"
 5354	"Item de reset"
-5355	Oculto em: %d dias
-5356	Oculto em: %d horas
-5357	Dias:
+5355	"Hidden in: %d Days"
+5356	"Hidden in: %d Hours"
+5357	"Days: "
 5358	"List Item for Sale"
-5359	TESTAR E FILTRAR
-5360	LISTAR PARA VENDA
+5359	"TRY & FILTER"
+5360	"LIST FOR SALE"
 5361	"Remover Excellent Option"
-5362	Funcionalidade usada para remover uma opção excelente
-5363	Observação: leia as condições abaixo com atenção!!
-5364	Selecione a opção excelente que deseja remover
-5365	Clique com o botão direito em um item para prosseguir!
-5366	Taxa:
-5367	Indeterminado
-5368	Verifique o custo e as opções excelentes antes de remover
+5362	"Feature used to remove an Excellent option"
+5363	"Note: read the conditions below carefully!!"
+5364	"Select the Excellent option you want to remove"
+5365	"Right-click an item to proceed!"
+5366	"Rate: "
+5367	"Undetermined"
+5368	"Check Cost and Exc Options before removing"
 5369	"Remover Option"
 5370	"Você não tem moedas suficientes para continuar!!"
-5371	Ressonância do equipamento
-5372	(Use o botão direito do mouse)
-5373	Item principal
-5374	Item de sacrifício
-5375	Pré-visualização
-5376	Taxa de sucesso:
+5371	"Equipment Resonance"
+5372	"(Use the right mouse button)"
+5373	"Main Item"
+5374	"Sacrifice Item"
+5375	"Preview"
+5376	"Success Rate:"
 5377	"Redefinição necessária:"
-5378	Tipo de ressonância:
-5379	Custo:
+5378	"Resonance Type:"
+5379	"Cost:"
 5380	"- WCoin:"
 5381	"- WCoinP:"
-5382	- Ponto Goblin:
-5383	Lista de sacrifício:
-5384	Indeterminado
-5385	Sem limite de nível
-5386	Nível do sacrifício >= principal
-5387	Sacrifício <> principal
-5388	Eventos
-5389	Comprar VIP
+5382	"- GoblinP:"
+5383	"Sacrifice List:"
+5384	"Undetermined"
+5385	"No Level Limit"
+5386	"Sacrifice Level >= Main"
+5387	"Sacrifice <> Main"
+5388	"Events"
+5389	"Buy VIP"
 5390	"Classificações"
-5391	Mudar gênero
-5392	Mercado
-5393	Títulos
-5394	Recarregar moedas
-5395	Banco de joias
-5396	Personagem VIP
+5391	"Change Gender"
+5392	"Marketplace"
+5393	"Titles"
+5394	"Top Up Coin"
+5395	"Jewel Bank"
+5396	"VIP Char"
 5397	"Remover Exc Option"
-5398	Alterar senha
-5399	Marcos de recarga
-5400	Bloquear item
-5401	Girar roda
-5402	Cerco ao castelo
+5398	"Change Password"
+5399	"Top-Up Milestones"
+5400	"Lock Item"
+5401	"Spin Wheel"
+5402	"Castle Siege"
 5403	"- Guilda inteira: +5000 WCoin por derrubar o portão"
 5404	"- Guilda inteira: +1000 WCoin por capturar um pilar"
 5405	"- Guilda inteira: +10000 WCoin por vencer o evento"
-5406	Observação: guildas que tomarem 2 ou mais pilares vencem.
+5406	"Note: Guilds that take 2 or more pillars win."
 5407	"A primeira guilda vencedora ganha acesso ao 'Território'"
-5408	Portão 1
-5409	Portão 2
-5410	Portão 3
-5411	Portão 4
-5412	Território
-5413	Sobre o Mago das Trevas
-5414	Alguns humanos buscam grande força física,
-5415	enquanto outros dobram as leis da natureza a seu favor.
+5408	"Gate 1"
+5409	"Gate 2"
+5410	"Gate 3"
+5411	"Gate 4"
+5412	"Territory"
+5413	"About the Dark Wizard"
+5414	"Some humans strive for great physical strength,"
+5415	"while others bend the laws of nature to their advantage."
 5416	"O Mago das Trevas usa feitiços arcanos para atacar seus inimigos."
-5417	Além disso, ele pode invocar espíritos misteriosos
-5418	para ajudá-lo. Todos temem seu poder mágico,
-5419	por isso o Mago das Trevas costuma viver sozinho. Porém,
-5420	sua aparência frágil pode enganar quem o subestime.
-5421	Não se engane. Muitos guerreiros
-5422	foram consumidos pelas chamas antes de sequer alcançarem o mago.
+5417	"In addition, he can call upon mysterious spirits"
+5418	"for aid. Everyone fears his magical power,"
+5419	"so the Dark Wizard often lives alone. However,"
+5420	"his frail appearance can mislead those who underestimate him."
+5421	"Do not be fooled. Many warriors have been"
+5422	"engulfed in flame before they ever reached the Wizard."
 5423	"O Mago das Trevas tem sua própria lista de feitiços ofensivos."
-5424	Embora poderoso, muitos feitiços exigem um longo tempo de conjuração
-5425	e consomem grandes quantidades de mana para serem executados.
-5426	Sobre o Cavaleiro das Trevas
+5424	"Though powerful, many require a long cast time"
+5425	"and consume vast amounts of mana to execute."
+5426	"About the Dark Knight"
 5427	"O Cavaleiro das Trevas incorpora força e poder."
-5428	Em batalhas ferozes, ele pode derrotar personagens
-5429	de outras classes mesmo gravemente ferido.
-5430	Graças à sua sobrevivência excepcional, o Cavaleiro das Trevas
-5431	pode se aventurar sozinho sem grandes dificuldades.
-5432	Ele pode usar muitos tipos de armadura
-5433	e empunhar armas como espadas, maças ou lanças.
+5428	"In fierce battles, they can slay characters"
+5429	"of other classes even while gravely wounded."
+5430	"Thanks to outstanding survivability, the Dark Knight"
+5431	"can adventure alone without much trouble."
+5432	"He can wear many kinds of armor"
+5433	"and wield weapons such as swords, maces or spears."
 5434	"As habilidades do Cavaleiro das Trevas custam muito pouca mana,"
-5435	por isso ele costuma ser escolhido por jogadores iniciantes.
-5436	Além disso, o Cavaleiro das Trevas ganha habilidades únicas
-5437	quando montado em um Cavalo Negro.
-5438	Sobre a Fada Elfa
+5435	"which is why he is often chosen by new players."
+5436	"In addition, the Dark Knight gains unique skills"
+5437	"when mounted on a Dark Horse."
+5438	"About the Fairy Elf"
 5439	"Os Fairy Elves de Noria pertencem às linhagens mais antigas."
-5440	Eles afirmam ser a primeira raça de MU, existindo até antes dos humanos.
-5441	Uma Elfa de Noria disse que sua espécie possui uma beleza etérea.
-5442	Embora pareçam evitar o combate, não suponha
-5443	que sejam tímidas. As Elfas ensinaram os humanos
-5444	a arte do arco. Ninguém consegue derrotar uma Elfa
-5445	em um duelo de arco e flecha. As Fadas Elfas de Noria
-5446	também mantêm pactos com outras raças,
-5447	e esses pactos as arrastaram para muitas guerras.
-5448	Sobre o Gladiador Mágico
-5449	O Gladiador Mágico pode usar muitas das habilidades tanto do Cavaleiro das Trevas quanto do Mago das Trevas.
-5450	Embora suas habilidades de combate e magia não sejam tão aperfeiçoadas quanto as de um Cavaleiro das Trevas ou de um Mago das Trevas puros,
-5451	essa combinação o torna
-5452	o mais versátil de todas as classes de personagem.
+5440	"They claim to be the first race of MU, predating even humans."
+5441	"A Noria Elf has said their kind possesses an ethereal beauty."
+5442	"Though they appear to avoid battle, do not assume"
+5443	"they are timid. The Elves taught humans"
+5444	"the art of the bow. No one can defeat an Elf"
+5445	"in an archery duel. The Fairy Elves of Noria"
+5446	"also hold pacts with other races,"
+5447	"and those pacts have drawn them into many wars."
+5448	"About the Magic Gladiator"
+5449	"The Magic Gladiator can use many of the skills of both the Dark Knight and the Dark Wizard."
+5450	"Though his combat and magic skills are not as perfected as"
+5451	"those of a pure Dark Knight or Dark Wizard, this combination makes him"
+5452	"the most versatile of all character classes."
 5453	"O Gladiador Mágico pode desferir golpes decisivos,"
-5454	empunhar equipamentos poderosos e entrar em áreas
-5455	com requisitos de nível mais baixos do que as demais classes.
-5456	Ele também mantém pactos com outras raças.
-5457	Para criar um Gladiador Mágico, você deve atingir o nível 220.
-5458	Sobre o Lorde das Trevas
+5454	"wield powerful equipment and enter areas"
+5455	"with lower level requirements than the other classes."
+5456	"He also holds pacts with other races."
+5457	"To create a Magic Gladiator you must reach level 220."
+5458	"About the Dark Lord"
 5459	"O Lorde das Trevas empunha sua espada com a autoridade de um verdadeiro líder"
-5460	em batalha. Ele pode invocar o Corvo e o Cavalo Negro
-5461	para esmagar seus inimigos. Assim como o Gladiador Mágico, ele pode entrar
-5462	em muitas regiões e usar equipamentos excelentes com
-5463	requisitos de nível mais baixos do que a maioria das classes.
-5464	Ele também domina novos feitiços e técnicas nunca antes
-5465	vistos no continente de MU. Por fim, para criar um Lorde das Trevas
-5466	você deve atingir o nível 250.
-5467	Sobre a Invocadora
+5460	"in battle. He can summon the Raven and the Dark Horse"
+5461	"to crush his foes. Like the Magic Gladiator, he can enter"
+5462	"many regions and wear fine equipment with"
+5463	"lower level requirements than most classes."
+5464	"He also commands new spells and techniques never before"
+5465	"seen on the continent of MU. Finally, to create a Dark Lord"
+5466	"you must reach level 250."
+5467	"About the Summoner"
 5468	"A Invocadora nasceu em Elbeland, a vila dos reclusos"
-5469	na parte sudoeste do continente de MU.
-5470	Segundo a lenda antiga, este é o lar de pessoas com
-5471	dons sobrenaturais, almas extremamente sensíveis que se comunicam
-5472	com espíritos dos mortos. Por causa de sua origem,
-5473	a Invocadora herda todos os feitiços de seus ancestrais.
-5474	Ela também tem o poder de drenar vida e invocar espíritos
-5475	para ajudá-la na batalha. Inimigos atingidos por esses espíritos
-5476	ficam amaldiçoados e perdem uma grande parte de seu PV.
-5477	Sobre o Lutador Furioso
+5469	"in the southwestern part of the MU continent."
+5470	"According to ancient legend, this is home to people with"
+5471	"supernatural gifts, highly sensitive souls who communicate"
+5472	"with spirits of the dead. Because of their origin,"
+5473	"the Summoner inherits all the spells of her ancestors."
+5474	"She also has the power to drain life and call upon spirits"
+5475	"to aid her in battle. Enemies struck by these spirits"
+5476	"become cursed and lose a large portion of their HP."
+5477	"About the Rage Fighter"
 5478	"O Lutador Furioso é descendente da legião dos Cavaleiros Reais"
 5479	"do Reino de Kalrutan. O Lutador Furioso dominou"
-5480	a arte de usar o próprio corpo como sua maior arma.
-5481	Com movimentos rápidos e golpes surpresa,
-5482	o Lutador Furioso força seu oponente a assumir uma postura defensiva
-5483	e o derruba rapidamente
-5484	com sua estrutura robusta. Ele também pode
-5485	eliminar inimigos à distância com dano devastador
-5486	extraído de sua própria força vital.
+5480	"the art of using his body itself as his greatest weapon."
+5481	"With swift movement and surprise strikes,"
+5482	"the Rage Fighter forces his opponent into a defensive stance"
+5483	"and takes them down swiftly"
+5484	"with his massive frame. He can also"
+5485	"eliminate enemies from afar with devastating damage"
+5486	"drawn from his own life force."
 5487	"[EVENT] Dungeon PVP"
-5488	Participar do evento
-5489	* Dungeon PvP é um evento PvP entre jogadores!
-5490	* Quando o tempo acabar, as recompensas são distribuídas por classificação
-5491	* Horário do evento: 21:45 diariamente.
-5492	* Duração: 20 minutos
-5493	* Ao entrar, todos ficam no mesmo ponto; pegue equipamento para PK
-5494	* Requisitos:
+5488	"Join Event"
+5489	"* Dungeon PvP is a PvP event among players!"
+5490	"* When time runs out, rewards are distributed by rank"
+5491	"* Event time: 21:45 daily."
+5492	"* Duration: 20 minutes"
+5493	"* Everyone is set to the same Point on entry; loot gear to PK"
+5494	"* Requirements:"
 5495	"* ...."
-5496	* Nível 200~400
+5496	"* Level 200~400"
 5497	"* Redefinir: >= 35"
-5498	* Participantes máximos: 100 
+5498	"* Max participants: 100 "
 5499	"* Custo de entrada: 50M Zen, 10.000 WC."
-5500	* Recompensas: 
-5501	* 500 WC por morte.
-5502	* 100.000 WC divididos igualmente entre os jogadores sobreviventes
+5500	"* Rewards: "
+5501	"* 500 WC per kill."
+5502	"* 100,000 WC split evenly among the surviving players"
 5503	"-= Pontos de rank %d =-"
-5504	Mortes [%d] / Mortes [%d]
+5504	"Kills [%d] / Deaths [%d]"
 5505	"Top Killer Classificação"
 5506	"VIP Char"
 5507	"Você atingiu o nível máximo VIP e não pode promover mais!!"
-5508	>> Requisitos para promover ao VIP %d <<
-5509	Pontos VIP (pontos convertidos de itens)
+5508	">> Requirements to Promote to VIP %d <<"
+5509	"VIP Points (Points converted from items)"
 5510	"Observação: clique com o botão direito em um item para convertê-lo em pontos#Quando tiver pontos suficientes, pressione 'Aprimorar'"
-5511	Lista de conversão de itens
-5512	Promover
+5511	"Item Conversion List"
+5512	"Promote"
 5513	"Os itens abaixo serão convertidos # na quantidade correspondente de pontos!!"
 5514	"- Critical Dano: +%s"
-5515	- Defesa: +%s
+5515	"- Defense: +%s"
 5516	"- HP  +%s%%"
-5517	- Ignorar defesa: +%s%%
+5517	"- Ignore Defense: +%s%%"
 5518	"- Bonus Experience: %s"
 5519	"- Perfect Dano: +%s%%"
 5520	"Os itens abaixo serão convertidos # na quantidade correspondente de pontos!!"
-5521	Mudança de classe do item
-5522	Função de mudança de classe do item
-5523	Item recebido
-5524	Mude a classe de um item de acordo com sua seleção
-5525	Clique com o botão esquerdo em um item para selecioná-lo
-5526	Alterar item
+5521	" Item Class Change"
+5522	"Item Class Change feature"
+5523	"Item Received"
+5524	"Change an item's class according to your selection"
+5525	"Left-click an item to select it"
+5526	"Change Item"
 5527	"Informações"
-5528	Estatísticas
+5528	"Stats"
 5529	"Reflexo de dano:"
 5530	"Full Reflexo de dano:"
 5531	"Critical Dano:"
@@ -4128,16 +4129,16 @@
 5540	"Aumento da taxa de bloqueio:"
 5541	"SD Defense:"
 5542	"SD Reduction:"
-5543	Taxa de ignorar defesa:
+5543	"Ignore Defense Rate:"
 5544	"SD Ignore Rate:"
 5545	"PvP Dano Boost:"
 5546	"PvP Defense Boost:"
-5547	Resistência x2 Dano:
-5548	Resistência a ignorar defesa:
-5549	Resistência a ignorar SD:
-5550	Resistência a dano crítico:
-5551	Resistência a dano perfeito:
-5552	Resistência a atordoamento:
+5547	"Resist x2 Damage:"
+5548	"Resist Ignore Defense:"
+5549	"Resist Ignore SD:"
+5550	"Resist Critical Damage:"
+5551	"Resist Perfect Damage:"
+5552	"Resist Stun:"
 5553	"Increase Ice Dano:"
 5554	"Increase Poison Dano:"
 5555	"Increase Lightning Dano:"
@@ -4146,93 +4147,93 @@
 5558	"Increase Wind Dano:"
 5559	"Increase Water Dano:"
 5560	"Full HP Recovery:"
-5561	Recuperação total de MP:
+5561	"Full MP Recovery:"
 5562	"Full SD Recovery:"
-5563	Fechar
+5563	"Close"
 5564	"OK"
-5565	Ataque automático ativado
-5566	FIM: desativar auto
-5567	Plano
+5565	"Auto attack enabled"
+5566	"END: Turn off Auto"
+5567	"Plan"
 5568	"Exp"
-5569	Soltar
-5570	Tempo
-5571	%d dia(s)
+5569	"Drop"
+5570	"Time"
+5571	"%d day(s)"
 5572	"WCoin"
-5573	ALTERAR GÊNERO DO PERSONAGEM
-5574	Nova roda da sorte
-5575	Girar
-5576	Necessário
+5573	"CHANGE CHARACTER GENDER"
+5574	"New Spin Wheel"
+5575	"Spin"
+5576	"Required"
 5577	"+WCoin : %s"
 5578	"+WCoinP : %s"
-5579	+Ponto Goblin : %s
-5580	+Necessário : %s
-5581	Insira a quantidade de giros
-5582	Passar
-5583	Configuração corrompida! rex.main
-5584	Formato inválido no arquivo Wave!
-5585	CarregamentoWave
+5579	"+GoblinP : %s"
+5580	"+Required : %s"
+5581	"Enter Spin Count"
+5582	"Pass"
+5583	"Config corrupt! rex.main"
+5584	"Bad Format in Wave file!"
+5585	"WaveLoad"
 5586	"InitBuilder Erro"
-5587	Construtor
-5588	Falha ao consultar a interface 3D no buffer Direct Sound
-5589	Falha ao definir a posição do buffer 3D
-5590	Falha ao obter a interface Property Set
-5591	Falha ao liberar o contexto de renderização.
-5592	Erro ao liberar OpenGL.
-5593	Erro ao obter DC do OpenGL.
-5594	Erro ao escolher o formato de pixel do OpenGL.
-5595	Erro ao definir o formato de pixel do OpenGL.
-5596	Erro ao criar o contexto do OpenGL.
-5597	Erro ao tornar o contexto atual do OpenGL.
-5598	Não foi possível encontrar nvapi.dll
-5599	Não foi possível obter funções em nvapi.dll
+5587	"Builder"
+5588	"Failed to query for 3D Interface on Direct Sound buffer"
+5589	"Failed to set position of 3D buffer"
+5590	"Failed to get Property Set Interface"
+5591	"Release Rendering Context Failed."
+5592	"OpenGL Release Error."
+5593	"OpenGL Get DC Error."
+5594	"OpenGL Choose Pixel Format Error."
+5595	"OpenGL Set Pixel Format Error."
+5596	"OpenGL Create Context Error."
+5597	"OpenGL Make Current Error."
+5598	"Couldn't find nvapi.dll"
+5599	"Couldn't get functions in nvapi.dll"
 5600	"R"
 5601	"%s Point"
 5602	"WINSOCK DLL"
 5603	"WINSOCK"
 5604	"Connect Erro"
-5605	Ler arquivo de texto 1
-5606	Ler arquivo de texto 2
-5607	Erro no arquivo Player.bmd!!!
+5605	"ReadTextFile 1"
+5606	"ReadTextFile 2"
+5607	"Player.bmd file error!!!"
 5608	"ErroCheckBox"
-5609	ReceberMigraçãoServidor
-5610	Não foi possível abrir ou criar o arquivo REX.txt para gravação.
-5611	Força
-5612	Agilidade
-5613	Vitalidade
-5614	Energia
-5615	Comando
+5609	"ReceiveServerImmigration"
+5610	"Could not open or create the file REX.txt for writing."
+5611	"Strength"
+5612	"Agility"
+5613	"Vitality"
+5614	"Energy"
+5615	"Command"
 5616	"Isso irá REDEFINIR todos os pontos de %s e devolvê-los para serem redistribuídos.\n\nAtenção: atualmente o servidor desconecta você após este comando (problema conhecido, será corrigido do lado do servidor).\n\nProsseguir?"
 5617	"Redefinir atributos"
 5618	"Falha ao carregar bitmap: %s"
-5619	Informações de atributos
-5620	Pontos: %d
+5619	"Stats Info"
+5620	"Points: %d"
 5621	"[Erro] Wrong Captcha code !!"
-5622	Câmera 3D ligada
-5623	Câmera 3D desligada
+5622	"On Camera 3D"
+5623	"Off Camera 3D"
 5624	"Redefinir câmera 3D"
-5625	Contadores de mobs da invasão
-5626	Menu do jogo
-5627	Salvar senha
-5628	Ler QR
-5629	Concluído
-5630	Nv %d
+5625	"Invasion Mob Counters"
+5626	"Game Menu"
+5627	"Save password"
+5628	"Scan QR"
+5629	"Completed"
+5630	"Lv %d"
 5631	"Rs %d"
 5632	"HP : %d0%%"
-5633	Seg.: %s x %lu/%lu
+5633	"Mon.: %s x %lu/%lu"
 5634	"Item: %s x %lu/%lu"
 5635	"Nível: %lu %s"
-5636	Zen: %lu
-5637	Habilidade: %s
-5638	Bônus: %s
+5636	"Zen : %lu"
+5637	"Skill: %s"
+5638	"Bonus: %s"
 5639	"Exp.: %lu"
-5640	Zen: %lu
-5641	Item: %s x %lu
-5642	Bônus: %s x %lu%s
-5643	Personagem: (%s)\nResets: (%d)\nNível: (%d)
+5640	"Zen: %lu"
+5641	"Item: %s x %lu"
+5642	"Bonus: %s x %lu%s"
+5643	"Char: (%s)\nResets: (%d)\nLevel: (%d)"
 5644	"MU Online"
 5645	"Tempo : %02d:%02d:%02d"
 5646	"Desativado"
-5647	Online
+5647	"Online"
 5648	"Só é possível negociar usando Bless"
 5649	"Só é possível negociar usando Soul"
 5650	"Só é possível negociar usando Chaos"
@@ -4254,9 +4255,9 @@
 5666	"*Leia o código QR abaixo para recarregar mais rápido!!"
 5667	"[Você recarregou : %s]"
 5668	"Marco(%d) %s"
-5669	Benção
-5670	Alma
-5671	Caos
+5669	"Bless"
+5670	"Soul"
+5671	"Chaos"
 5672	"%d dia(s)+"
 5673	" %02d:%02d:%02d"
 5674	"Você não tem Bless suficiente"
@@ -4323,20 +4324,3 @@
 5737	"O cliente precisa reiniciar"
 5738	"para aplicar o novo idioma."
 5739	"Reiniciar agora?"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
