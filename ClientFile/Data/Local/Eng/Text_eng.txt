@@ -4318,3 +4318,10 @@
 5730	"%s x %d/%d"
 5731	"%s %d/%d | %s %d/%d"
 5732	"User Titles"
+5733	"*Titles*"
+5734	"No items to show"
+
+
+5737	"The client must restart"
+5738	"to apply the new language."
+5739	"Restart now?"
