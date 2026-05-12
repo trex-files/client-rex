@@ -28,6 +28,15 @@ ClientFile/Data/Local/**/*.bmd.pre-*.bak
 # Local screenshots dropped by the player
 ClientFile/Screenshots/
 
+# Runtime crash dumps written by the client's __try/__except handler
+ClientFile/STACK_ERROR/
+
+# Runtime error log written when LoadBitmap / asset loaders fail
+ClientFile/REX.txt
+
+# Boot logs from the gl3 engine bridge (engine_bridge::Init)
+ClientFile/*.log
+
 # OS / IDE noise
 .vs/
 *.suo

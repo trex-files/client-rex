@@ -26,27 +26,54 @@ layout(std140) uniform Camera {
 };
 
 uniform sampler2D uPrimaryLight;  // dynamic per-frame terrain light (slot 2)
+uniform sampler2D uTerrainWind;   // dynamic per-frame TerrainGrassWind (slot 3)
+                                  // R8, encoded signed [-64..+64] biased into u8
 
 out vec4 vColor;
-out vec2 vUV0;       // base / overlay tile UV (tiled)
+out vec2 vUV0;       // RAW world cell coords (gx..gx+1, gy..gy+1).
+                     // Fragment shader multiplies by uTileUVScale[layer]
+                     // to apply legacy `xf * (64/srcW)` per-source spread.
 out vec2 vUV1;       // alpha-map UV (normalised 0..1 over full terrain)
 out vec3 vViewPos;   // view-space position for fog distance
 flat out uint vLayer0;
 flat out uint vLayer1;
 flat out uint vIsWater;  // 1 on TW_WATER cells, 0 otherwise
+flat out float vWindV;   // V-axis water wobble, decoded from uTerrainWind in
+                         // the same units as TerrainGrassWind (~[-64..+64])
 
 void main() {
     vec4 viewPos  = uView * vec4(aPosition, 1.0);
     gl_Position   = uProj * viewPos;
     vViewPos      = viewPos.xyz;
-    // aTexCoord1 is gx/256, gy/256 at each corner vertex (BuildTerrainGPU
-    // computes it from the integer cell index gx, gy). Multiplying by 256
-    // and rounding recovers the integer cell index, which texelFetch reads
-    // from the 256x256 light texture exactly. No interpolation between
-    // cells — matches legacy per-vertex glColor3fv(PrimaryTerrainLight[i]).
-    ivec2 cellXY  = ivec2(round(aTexCoord1 * 256.0));
+    // aTexCoord1 carries the alpha-map UV which BuildTerrainGPU shifts by
+    // +0.5/256 so the fragment shader's LINEAR sampler lands at TEXEL
+    // CENTER (see project_terrain_alphamap_half_texel_offset). That offset
+    // means `aTexCoord1 * 256 == gx + 0.5` for every corner — and `round`
+    // of a half-integer is implementation-defined in GLSL (banker's rounding
+    // on some drivers, round-half-up on others), so the recovered cell
+    // index was off-by-one-or-zero per GPU. On Select Server (World94)
+    // the playable boat sits in the centre of a 256-cell map and the cells
+    // past the visible perimeter have PrimaryTerrainLight ≈ 0; with a
+    // shifted cellXY the water cells sampled primary-light from those
+    // dark border cells → vColor.rgb ≈ 0 → entire ocean rendered black.
+    //
+    // Use `floor` instead. For aTexCoord1 = (gx + 0.5)/256:
+    //   floor(aTexCoord1 * 256) = floor(gx + 0.5) = gx (deterministic on
+    //   every GLSL implementation, no half-integer ambiguity).
+    // Restores the legacy per-vertex contract `glColor3fv(PrimaryTerrainLight[
+    // gx + gy*256])` exactly.
+    ivec2 cellXY  = ivec2(floor(aTexCoord1 * 256.0));
     cellXY        = clamp(cellXY, ivec2(0), ivec2(255));
     vec3 light    = texelFetch(uPrimaryLight, cellXY, 0).rgb;
+    // Decode the biased u8 wind sample back to a signed float in the
+    // same units as TerrainGrassWind. Encoding (DrawTerrain.cpp
+    // UploadTerrainGrassWindTexture):
+    //   byte = ((clamp(w, -64, +64) / 64) * 0.5 + 0.5) * 255
+    // → decode: (byte/255 - 0.5) * 2 * 64. flat-interpolated so every
+    // vertex of a tile sees the same per-cell amplitude (legacy applies
+    // it per-tile in the immediate-mode loop).
+    float windRaw = texelFetch(uTerrainWind, cellXY, 0).r;
+    vWindV        = (windRaw - 0.5) * 2.0 * 64.0;
     // aColor is left wired through the layout for binding stability but
     // multiplied by zero so the optimiser cannot strip it (some drivers
     // disable the attribute slot when the shader has no live read,

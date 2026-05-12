@@ -6,8 +6,17 @@
 // uAlphaMap    — 256x256 R8 splat weight; alpha=0 → base, alpha=1 → overlay.
 //
 // uWaterMove   — UV scroll offset; the fragment shader applies it per-cell
-//                using vIsWater (set from TerrainWall & TW_WATER on the
-//                CPU side when chunks are built).
+//                using vIsWater. vIsWater is a 2-bit field set CPU-side from
+//                the RAW tile mapping (legacy parity, ZzzLodTerrain.cpp:
+//                1546-1573):
+//                  bit 0  → TerrainMappingLayer1[i] == 5 (water on BASE)
+//                  bit 1  → TerrainMappingLayer2[i] == 5 (water on OVERLAY)
+//                The two are independent so each layer's UV scrolls only if
+//                that specific layer is water. Used to be `TerrainWall &
+//                TW_WATER`, but that's a separate .att-file collision flag
+//                that doesn't track tile mapping — Select Server (World94)
+//                cells with Layer1==5 had no TW_WATER bit set, so water
+//                rendered static (root-cause fix 2026-05-08).
 // uAlphaTestEnabled — 1 only for map-specific alpha-test textures (e.g. Kanturu).
 
 in vec4 vColor;
@@ -16,10 +25,20 @@ in vec2 vUV1;
 in vec3 vViewPos;
 flat in uint vLayer0;
 flat in uint vLayer1;
-flat in uint vIsWater;  // per-cell, set from TerrainWall & TW_WATER
+flat in uint vIsWater;  // bit 0 = base layer is water, bit 1 = overlay is water
+                        // (raw TerrainMappingLayer1/2 == 5; see header comment)
+flat in float vWindV;   // per-cell TerrainGrassWind sample for V-axis wobble
 
 uniform sampler2DArray uTileArray;
 uniform sampler2D      uAlphaMap;
+
+// Per-layer UV scale (legacy parity: `Width = 64 / srcW` and
+// `Height = 64 / srcH` per BITMAP_MAPTILE source bitmap, see
+// ZzzLodTerrain.cpp:1469-1478). vUV0 is in RAW world cell coords
+// (gx..gx+1); multiplying by this gives the legacy `xf * Width` UV
+// each cell needs. Different layer slots can have different source
+// sizes, so base and overlay sample at independent UVs.
+uniform vec2 uTileUVScale[32];
 
 // Fog mirrors legacy fixed-function fog state (FogEnable global). Most
 // maps run with fog OFF (default: World loaders set FogEnable=false; only
@@ -43,33 +62,72 @@ uniform int   uAlphaTestEnabled;
 out vec4 fragColor;
 
 void main() {
-    vec2 sampleUV = vUV0;
-    if (vIsWater == 1u) {
-        // Legacy ZzzLodTerrain.cpp:1502 adds WaterMove to U only; V wave
-        // comes from TerrainGrassWind which we don't pass to the shader
-        // yet (would be a second per-vertex attribute). U-axis scroll
-        // alone is the visible shimmer the user expects from rivers and
-        // Atlans surface; secondary V wobble can come in a follow-up.
-        sampleUV.x += uWaterMove;
+    // 2026-05-08: per-layer UV scale for legacy parity.
+    // vUV0 is RAW world cell coords (gx..gx+1, gy..gy+1). The legacy
+    // FaceTexture builds UV = (xf * Width, yf * Height) where Width =
+    // 64/srcW per source bitmap. Scale base and overlay independently
+    // because they can pick different layers with different source sizes.
+    vec2 uvBase    = vUV0 * uTileUVScale[vLayer0];
+    vec2 uvOverlay = vUV0 * uTileUVScale[vLayer1];
+
+    // Per-layer water UV scroll. Legacy ZzzLodTerrain.cpp:1502-1521 adds
+    // WaterMove to U and (TerrainGrassWind * 0.002) to V on each water
+    // tile. The 0.008 multiplier from the legacy `Scale` branch only
+    // fires for CTerrain::CalcUV(..., Scale=true) callers — none of the
+    // standard RenderTerrainTile / RenderFaceAlpha paths reach the
+    // chunked GL3 stream, so we use 0.002 to match the visible gameplay
+    // path. Restores Atlans/Tarkan/PKField surface ripple V-axis
+    // component (Gap #2 in the GL3 terrain audit).
+    //
+    // 2026-05-08: previously this gated on `vIsWater == 1u` and applied
+    // the scroll to BOTH layers together. That broke Select Server water:
+    // a cell with Layer1==5 (water) and Layer2==<dirt> would either get
+    // no scroll (when the old TW_WATER check missed) or scroll the
+    // overlay's dirt UV uselessly. The bitfield split lets each layer
+    // animate only when it IS water — base scrolls when bit 0 is set,
+    // overlay scrolls when bit 1 is set, and a base-water + overlay-water
+    // cell gets both, identical to the legacy two-pass behaviour.
+    if ((vIsWater & 1u) != 0u) {
+        uvBase.x += uWaterMove;
+        uvBase.y += vWindV * 0.002;
+    }
+    if ((vIsWater & 2u) != 0u) {
+        uvOverlay.x += uWaterMove;
+        uvOverlay.y += vWindV * 0.002;
     }
 
-    vec4 base    = texture(uTileArray, vec3(sampleUV, float(vLayer0)));
-    vec4 overlay = texture(uTileArray, vec3(sampleUV, float(vLayer1)));
+    vec4 base    = texture(uTileArray, vec3(uvBase,    float(vLayer0)));
+    vec4 overlay = texture(uTileArray, vec3(uvOverlay, float(vLayer1)));
     float alpha  = texture(uAlphaMap, vUV1).r;
 
     if (uAlphaTestEnabled == 1 && base.a < 0.25) discard;
 
-    // Splat blend: alpha=0 → base, alpha=1 → overlay.
-    vec3 splat = mix(base.rgb, overlay.rgb, alpha);
+    // 2026-05-08: continuous-weight Layer-2 overlay blend (legacy parity).
+    //
+    // Legacy renders the overlay in a SECOND pass via RenderFaceAlpha
+    // (ZzzLodTerrain.cpp:1439) → EnableAlphaTest() → glBlendFunc(GL_SRC_ALPHA,
+    // GL_ONE_MINUS_SRC_ALPHA). The vertex_alpha is TerrainMappingAlpha
+    // (per-vertex via VertexAlpha0..3 → glColor4f). Under default GL_MODULATE
+    // texture combiner, the FRAGMENT'S effective alpha is
+    //     fragAlpha = overlay.a * vertex.a = overlay.a * TerrainMappingAlpha
+    // and the alpha-test (glAlphaFunc(GL_GREATER, 0.25), see
+    // ZzzOpenglUtil.cpp:796) discards pixels with `fragAlpha <= 0.25`.
+    // Surviving pixels then alpha-blend with weight = fragAlpha:
+    //     final = base * (1 - fragAlpha) + overlay * fragAlpha
+    //
+    // The previous `step(0.25, overlay.a)` made the OVERLAY alpha BINARY
+    // (1 or 0) and weighted only by the alphaMap → overlay rendered ~2x
+    // heavier than legacy. Most visible on Stadium/Arena dirt-stone path
+    // boundaries: the stone overlay drowned the dirt base, paths read as
+    // a single flat slab instead of legacy's softer transition.
+    //
+    // Fix: take the modulated alpha CONTINUOUSLY and gate via the
+    // legacy 0.25 threshold AFTER modulation, not before.
+    float fragAlpha = overlay.a * alpha;          // modulated alpha
+    if (fragAlpha <= 0.25) fragAlpha = 0.0;       // legacy alpha-test discard
 
-    // Defensive fallback: if both base and overlay sample to pure (0,0,0)
-    // (texture array unbound, missing tile, glReadPixels readback failure),
-    // pretend it was white. Without this the floor is unconditionally
-    // BLACK because color = (0,0,0) * vColor = (0,0,0). With this, the
-    // user at least sees the baked vertex light and we can reason about
-    // texture-vs-light separately. Costs one float compare per fragment.
-    float splatLum = splat.r + splat.g + splat.b;
-    if (splatLum < 0.001) splat = vec3(1.0);
+    // Splat blend: fragAlpha=0 → base only, fragAlpha=1 → overlay only.
+    vec3 splat = mix(base.rgb, overlay.rgb, fragAlpha);
 
     // Apply pre-baked vertex light (PrimaryTerrainLight).
     vec3 color = splat * vColor.rgb;
