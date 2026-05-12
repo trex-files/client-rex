@@ -380,7 +380,7 @@
 379	"(%s fruto) %d puntos de estadística se han %s."
 380	"Abandonarás el juego en %d segundos."
 381	"Salir del Juego"
-382	"Servidor"
+382	"Seleccionar Servidor"
 383	"Cambiar Personaje"
 384	"Cancelar"
 385	"Opciones"
