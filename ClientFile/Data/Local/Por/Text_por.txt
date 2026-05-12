@@ -4337,3 +4337,4 @@
 5750	"Carregando áudio..."
 5751	"Pronto"
 5752	"Carregando mundo..."
+5753	"Pets"
