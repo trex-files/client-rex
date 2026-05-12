@@ -383,7 +383,7 @@
 382	"Servidor"
 383	"Cambiar Personaje"
 384	"Cancelar"
-385	"Opción"
+385	"Opciones"
 386	"Ataque Automático"
 387	"Musica"
 388	"cerrar"
