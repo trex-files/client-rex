@@ -3981,7 +3981,7 @@
 5392	"Marketplace"
 5393	"Titles"
 5394	"Top Up Coin"
-5395	"Jewel Bank"
+5395	"Banco de Joias"
 5396	"VIP Char"
 5397	"Remover Exc Option"
 5398	"Change Password"
