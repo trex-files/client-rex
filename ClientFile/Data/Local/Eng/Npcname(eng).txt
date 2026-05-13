@@ -494,7 +494,7 @@
 542	1	"Final Reward Chest"
 543	1	"Gens Duprian Steward"	
 544	1	"Gens Vanert Steward"	
-545	1	"Christine the General Goods Merchant"	
+545	1	"Christine Merchant"                  	
 546	1	"Jeweler Raul"
 547	1	"Market Union Member Julia"
 548	1	"Transformed Skeleton"
