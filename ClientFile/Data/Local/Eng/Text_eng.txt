@@ -4341,3 +4341,6 @@
 5753	"Pets"
 5754	"Lucky Item Exchange NPC"
 5755	"You can exchange or refine Lucky Items here."
+5756	"Delete Character"
+5757	"Security PIN:  %d"
+5758	"Type the quantity of jewels to withdraw."

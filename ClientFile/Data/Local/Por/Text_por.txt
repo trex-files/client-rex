@@ -4340,3 +4340,6 @@
 5753	"Pets"
 5754	"NPC de Troca de Itens Lucky"
 5755	"Você pode trocar ou refinar Itens Lucky aqui."
+5756	"Excluir Personagem"
+5757	"PIN de segurança:  %d"
+5758	"Digite a quantidade de joias para retirar."
