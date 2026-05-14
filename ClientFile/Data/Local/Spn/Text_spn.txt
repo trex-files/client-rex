@@ -4339,3 +4339,5 @@
 5751	"Listo"
 5752	"Cargando mundo..."
 5753	"Mascotas"
+5754	"NPC de Intercambio de Lucky Items"
+5755	"Puedes intercambiar o refinar Lucky Items aquí."

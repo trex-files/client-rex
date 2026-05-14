@@ -4339,3 +4339,5 @@
 5751	"Ready"
 5752	"Loading world..."
 5753	"Pets"
+5754	"Lucky Item Exchange NPC"
+5755	"You can exchange or refine Lucky Items here."
