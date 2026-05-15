@@ -26,10 +26,12 @@ uniform vec2 uTexCoordOffset;   // for RENDER_WAVE textures
 
 out vec4 vColor;
 out vec2 vUV;
+out vec3 vWorldPos;   // world-space position for per-pixel fog (legacy GL_FOG parity)
 
 void main() {
     vec4 worldPos = uWorld * vec4(aPosition, 1.0);
     gl_Position   = uProj * uView * worldPos;
     vColor        = aColor;
     vUV           = aTexCoord + uTexCoordOffset;
+    vWorldPos     = worldPos.xyz;
 }

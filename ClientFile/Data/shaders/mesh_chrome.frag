@@ -26,6 +26,12 @@ uniform sampler2D uTex;
 uniform float     uAlpha;
 uniform float     uChromeWave;   // (WorldTime % 5000) * 0.00024 - 0.4
 
+// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
+uniform int   uFogEnabled;
+uniform float uFogStart;
+uniform float uFogEnd;
+uniform vec4  uFogColor;
+
 out vec4 fragColor;
 
 void main() {
@@ -33,6 +39,11 @@ void main() {
     float u = (n.z + n.x) * 0.8 + uChromeWave * 2.0;
     float v = (n.y + n.x) * 1.0 + uChromeWave * 3.0;
     vec4 texel = texture(uTex, vec2(u, v));
-    fragColor = vec4(texel.rgb * vColor.rgb,
-                     texel.a   * vColor.a * uAlpha);
+    vec3 rgb = texel.rgb * vColor.rgb;
+    if (uFogEnabled == 1) {
+        float dist = length(vWorldPos);
+        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
+        rgb = mix(uFogColor.rgb, rgb, fogF);
+    }
+    fragColor = vec4(rgb, texel.a * vColor.a * uAlpha);
 }

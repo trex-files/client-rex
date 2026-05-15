@@ -7,6 +7,15 @@
 
 in vec2 vUV;
 in vec4 vColor;
+in vec3 vWorldPos;   // world-space position from vert, used for fog distance
+
+// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
+// In legacy GL every triangle drawn got auto-fog; GL3 Core requires each shader
+// to compute it manually. The gate (uFogEnabled==0) fast-paths most maps.
+uniform int   uFogEnabled;
+uniform float uFogStart;
+uniform float uFogEnd;
+uniform vec4  uFogColor;
 
 uniform sampler2D uTex;
 
@@ -31,5 +40,11 @@ void main() {
     // hard pure-black pixels — which always indicate "transparency intent"
     // for additive-authored effect textures — get discarded.
     if (max(texel.r, max(texel.g, texel.b)) < 0.005) discard;
-    fragColor = texel * vColor;
+    vec4 c = texel * vColor;
+    if (uFogEnabled == 1) {
+        float dist = length(vWorldPos);
+        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
+        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
+    }
+    fragColor = c;
 }

@@ -19,9 +19,11 @@ layout(std140) uniform Camera {
 
 out vec2 vUV;
 out vec4 vColor;
+out vec3 vEyePos;   // eye-space position for fog distance (legacy GL_FOG parity)
 
 void main() {
     gl_Position = uProj * vec4(aPosition, 1.0);
-    vUV    = aTexCoord;
-    vColor = aColor;
+    vUV     = aTexCoord;
+    vColor  = aColor;
+    vEyePos = aPosition;   // already in eye-space; length() = distance from camera
 }

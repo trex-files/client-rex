@@ -47,6 +47,7 @@ layout(std140) uniform Camera {
 
 out vec4 vColor;
 out vec2 vUV;
+out vec3 vWorldPos;   // world-space position for per-pixel fog (legacy GL_FOG parity)
 
 void main() {
     mat4 uWorld = mat4(aInstWorldCol0, aInstWorldCol1, aInstWorldCol2, aInstWorldCol3);
@@ -54,4 +55,5 @@ void main() {
     gl_Position    = uProj * uView * worldPos;
     vColor         = vec4(aColor.rgb * aInstBodyLight.rgb, aColor.a);
     vUV            = aTexCoord;
+    vWorldPos      = worldPos.xyz;
 }

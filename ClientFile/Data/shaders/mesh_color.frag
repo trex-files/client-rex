@@ -4,11 +4,24 @@
 // just BodyLight tint).
 
 in vec4 vColor;
+in vec3 vWorldPos;   // world-space position from vert, used for fog distance
 
 uniform float uAlpha;
+
+// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
+uniform int   uFogEnabled;
+uniform float uFogStart;
+uniform float uFogEnd;
+uniform vec4  uFogColor;
 
 out vec4 fragColor;
 
 void main() {
-    fragColor = vec4(vColor.rgb, vColor.a * uAlpha);
+    vec3 rgb = vColor.rgb;
+    if (uFogEnabled == 1) {
+        float dist = length(vWorldPos);
+        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
+        rgb = mix(uFogColor.rgb, rgb, fogF);
+    }
+    fragColor = vec4(rgb, vColor.a * uAlpha);
 }
