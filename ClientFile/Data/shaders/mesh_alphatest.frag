@@ -6,7 +6,7 @@
 
 in vec2 vUV;
 in vec4 vColor;
-in vec3 vWorldPos;   // world-space position from vert, used for fog distance
+in vec3 vViewPos;   // view-space position (camera at origin) — fog distance
 
 // Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
 uniform int   uFogEnabled;
@@ -23,7 +23,7 @@ void main() {
     vec4 c = texel * vColor;
     if (c.a < 0.25) discard;
     if (uFogEnabled == 1) {
-        float dist = length(vWorldPos);
+        float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
     }

@@ -1,6 +1,6 @@
 #version 330 core
 
-// TODO Phase 2 — needs a dedicated mesh_chrome.vert that emits vWorldPos
+// TODO Phase 2 — needs a dedicated mesh_chrome.vert that emits vViewPos
 // and vNormal varyings for sphere-map UV computation. Currently this frag
 // is paired with mesh_static.vert (which emits vColor + vUV only) and the
 // program will fail to link. Chrome rendering remains on the legacy path
@@ -18,7 +18,7 @@
 // are separate shader programs (kept minimal — chrome variants are
 // uncommon and easy to compile-fork).
 
-in vec3 vWorldPos;
+in vec3 vViewPos;
 in vec3 vNormal;
 in vec4 vColor;
 
@@ -41,7 +41,7 @@ void main() {
     vec4 texel = texture(uTex, vec2(u, v));
     vec3 rgb = texel.rgb * vColor.rgb;
     if (uFogEnabled == 1) {
-        float dist = length(vWorldPos);
+        float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         rgb = mix(uFogColor.rgb, rgb, fogF);
     }

@@ -17,11 +17,12 @@ layout(std140) uniform Camera {
 
 out vec2 vUV;
 out vec4 vColor;
-out vec3 vWorldPos;   // world-space position for fog distance (legacy GL_FOG parity)
+out vec3 vViewPos;   // view-space position (camera at origin) for fog distance — legacy GL_FOG parity
 
 void main() {
-    gl_Position = uProj * uView * vec4(aPosition, 1.0);
-    vUV      = aTexCoord;
-    vColor   = aColor;
-    vWorldPos = aPosition;   // aPosition is already in world-space (see file header)
+    vec4 viewPos = uView * vec4(aPosition, 1.0);
+    gl_Position  = uProj * viewPos;
+    vUV          = aTexCoord;
+    vColor       = aColor;
+    vViewPos     = viewPos.xyz;
 }

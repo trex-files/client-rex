@@ -4,7 +4,7 @@
 // just BodyLight tint).
 
 in vec4 vColor;
-in vec3 vWorldPos;   // world-space position from vert, used for fog distance
+in vec3 vViewPos;   // view-space position (camera at origin) — fog distance
 
 uniform float uAlpha;
 
@@ -19,7 +19,7 @@ out vec4 fragColor;
 void main() {
     vec3 rgb = vColor.rgb;
     if (uFogEnabled == 1) {
-        float dist = length(vWorldPos);
+        float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         rgb = mix(uFogColor.rgb, rgb, fogF);
     }
