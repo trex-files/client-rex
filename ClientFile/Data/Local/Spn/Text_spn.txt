@@ -4349,3 +4349,8 @@
 5762	"Este item tiene contraseña."
 5763	"Ingrésala para completar la compra."
 5760	"Cuentas guardadas"
+5800	"MOVIMIENTO AUTOMATICO"
+5801	"Caminando hacia la coordenada %d, %d"
+5802	"Presione ESCAPE o ESPACIO para cancelar"
+5803	"NO HAY RUTA DISPONIBLE"
+5804	"No se puede llegar a la coordenada %d, %d"

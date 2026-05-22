@@ -4349,3 +4349,8 @@
 5762	"This item is password-protected."
 5763	"Enter it to complete the purchase."
 5760	"Saved accounts"
+5800	"AUTOMATIC MOVEMENT"
+5801	"Walking to coordinate %d, %d"
+5802	"Press ESCAPE or SPACE to cancel"
+5803	"NO ROUTE AVAILABLE"
+5804	"Cannot reach coordinate %d, %d"

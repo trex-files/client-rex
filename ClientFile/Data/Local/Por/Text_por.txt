@@ -4348,3 +4348,8 @@
 5762	"Este item tem senha."
 5763	"Digite-a para concluir a compra."
 5760	"Contas salvas"
+5800	"MOVIMENTO AUTOMATICO"
+5801	"Caminhando para a coordenada %d, %d"
+5802	"Pressione ESCAPE ou ESPACO para cancelar"
+5803	"SEM ROTA DISPONIVEL"
+5804	"Nao e possivel alcancar a coordenada %d, %d"
