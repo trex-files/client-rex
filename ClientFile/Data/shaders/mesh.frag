@@ -19,17 +19,20 @@ uniform vec4  uFogColor;
 
 uniform sampler2D uTex;
 
+// 0 (default): suppress hard-black border pixels from effect-atlas JPG textures
+// (Components==3, alpha forced to 1) that land on pipeLit instead of the additive
+// pipeline. 1: skip that cut — set only for the Dark Horse forced-opaque body,
+// whose black-leather barding is authored as pure-black (RGB<=1) and must render
+// solid (near-black) like legacy GL_MODULATE instead of being discarded into
+// see-through holes. See DrawMesh.cpp skipRgbCut.
+uniform int uSkipRgbCut;
+
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
-    // Suppress hard-black border pixels from effect-atlas JPG textures
-    // (Components==3, alpha forced to 1) that land on pipeLit instead of the
-    // additive pipeline. The 0.005 threshold (~1.3/255) matches the authored
-    // pure-black border pixels without cutting legitimately-dark armor texels
-    // (which stay above ~0.02). Dark Horse RGBA cutouts must use pipeAlphaTest
-    // (mesh_alphatest.frag) so their barding shadow pixels aren't killed here.
-    if (max(texel.r, max(texel.g, texel.b)) < 0.005) discard;
+    // The 0.005 threshold (~1.3/255) matches authored pure-black border pixels.
+    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.005) discard;
     vec4 c = texel * vColor;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
