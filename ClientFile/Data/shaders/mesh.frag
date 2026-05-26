@@ -31,14 +31,23 @@ out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
-    // Threshold 0.04 (~10/255) catches the JPEG anti-alias dark border band
-    // (decoded byte ~5–25, RGB ≈ 0.02–0.10) AS WELL AS pure-black authored
-    // pixels. The previous 0.005 (~1.3/255) only caught fully-black texels
-    // and left the anti-alias band as opaque dark — producing the "first-load
-    // black halo" around Tarkan WD_8 lava chunks (and any other JPEG mesh
-    // whose authoring relied on legacy GL_MODULATE eating the dark bg).
-    // Dark Horse / cannon dark texels protected via uSkipRgbCut=1.
-    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.10) discard;
+    // Threshold 0.04 (~byte 10) catches most JPEG anti-alias dark border
+    // texels (decoded byte 0–10, RGB ≈ 0–0.04) without eating authored
+    // dark content (byte 11+, RGB ≥ 0.04).
+    // History: 0.005 (~byte 1.3) caught only pure black and let the entire
+    // anti-alias band through as opaque dark = "first-load black halo" on
+    // Tarkan WD_8 lava chunks. Bumped to 0.04 in 3630dfb2f.
+    // Then escalated to 0.10 in 5d458f39c trying to kill the residual
+    // first-load halo — that ate authored dark content across many
+    // textures (bright crystals, cannon barrels, dark armor trim, etc.)
+    // User reverted: "empezamos a recortar muchos puntos negros que NO
+    // habia que recortar". Back to 0.04 as the prior known-safe value.
+    // The first-load residual halo is being attacked from a different
+    // layer (per-Type render handler in GM_PK_Field.cpp + lava tint
+    // diagnostic 406039905), not by escalating the shader cut.
+    // Dark Horse / cannon dark texels still protected via uSkipRgbCut=1
+    // set by DrawMesh.cpp when g_bForceOpaqueMesh is true.
+    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.04) discard;
     vec4 c = texel * vColor;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);

@@ -16,7 +16,7 @@ void main() {
     // Discard near-zero alpha so JPEG noise doesn't accumulate under additive blend.
     if (c.a < 0.01) discard;
     // Discard near-black RGB (JPEG quantization artifacts, black atlas borders).
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.10) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
+    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // 0.04 = prior safe band; reverted from 0.10 which cut authored darks (user 2026-05-26)
 
     fragColor = c;
 }
