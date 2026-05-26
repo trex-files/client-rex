@@ -26,7 +26,7 @@ void main() {
     // on the alpha-test pipeline (e.g. AlphaBlendType=2 packed atlases with
     // hard alpha cutouts) do not paint opaque black squares around the
     // visible glyph. Threshold mirrors sprite3d.frag.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
+    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
     if (uFogEnabled == 1) {
         float dist = length(vEyePos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);

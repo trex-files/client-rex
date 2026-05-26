@@ -46,7 +46,7 @@ void main() {
     // skill flare, magic circle) all have RGB tapering to 0 at the texture
     // edges; legitimate near-black sprites (e.g. dark damage numbers) still
     // have measurable RGB above the threshold.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
+    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
     if (uFogEnabled == 1) {
         float dist = length(vEyePos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);

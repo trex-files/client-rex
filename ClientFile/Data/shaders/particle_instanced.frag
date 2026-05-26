@@ -25,6 +25,6 @@ void main() {
     // routed through alpha-blend they show as opaque black squares.
     // Discard near-zero RGB pixels to mirror the legacy additive-only
     // contract regardless of which pipeline the batch lands on.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
+    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
     fragColor = c;
 }
