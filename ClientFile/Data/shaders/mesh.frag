@@ -31,8 +31,14 @@ out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
-    // The 0.005 threshold (~1.3/255) matches authored pure-black border pixels.
-    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.005) discard;
+    // Threshold 0.04 (~10/255) catches the JPEG anti-alias dark border band
+    // (decoded byte ~5–25, RGB ≈ 0.02–0.10) AS WELL AS pure-black authored
+    // pixels. The previous 0.005 (~1.3/255) only caught fully-black texels
+    // and left the anti-alias band as opaque dark — producing the "first-load
+    // black halo" around Tarkan WD_8 lava chunks (and any other JPEG mesh
+    // whose authoring relied on legacy GL_MODULATE eating the dark bg).
+    // Dark Horse / cannon dark texels protected via uSkipRgbCut=1.
+    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.04) discard;
     vec4 c = texel * vColor;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
