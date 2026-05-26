@@ -19,35 +19,22 @@ uniform vec4  uFogColor;
 
 uniform sampler2D uTex;
 
-// 0 (default): suppress hard-black border pixels from effect-atlas JPG textures
-// (Components==3, alpha forced to 1) that land on pipeLit instead of the additive
-// pipeline. 1: skip that cut — set only for the Dark Horse forced-opaque body,
-// whose black-leather barding is authored as pure-black (RGB<=1) and must render
-// solid (near-black) like legacy GL_MODULATE instead of being discarded into
-// see-through holes. See DrawMesh.cpp skipRgbCut.
+// LEGACY MATCH 2026-05-26: RGB-cut removed entirely per user request.
+// Legacy fixed-function pipeline has NO RGB threshold — only alpha
+// (via glAlphaFunc). The previous GL3 RGB-cut was a defensive workaround
+// for JPG-additive sprites that got misrouted onto an alpha-blend
+// pipeline (showed black borders as opaque squares). The correct fix is
+// pipeline routing (additive sprites → additive pipeline) NOT a shader
+// cut that ate authored dark content from random meshes.
+//
+// uSkipRgbCut is kept as a NOOP uniform so DrawMesh.cpp can keep setting
+// it without compiler warnings; it has no effect now that the cut is gone.
 uniform int uSkipRgbCut;
 
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
-    // Threshold 0.04 (~byte 10) catches most JPEG anti-alias dark border
-    // texels (decoded byte 0–10, RGB ≈ 0–0.04) without eating authored
-    // dark content (byte 11+, RGB ≥ 0.04).
-    // History: 0.005 (~byte 1.3) caught only pure black and let the entire
-    // anti-alias band through as opaque dark = "first-load black halo" on
-    // Tarkan WD_8 lava chunks. Bumped to 0.04 in 3630dfb2f.
-    // Then escalated to 0.10 in 5d458f39c trying to kill the residual
-    // first-load halo — that ate authored dark content across many
-    // textures (bright crystals, cannon barrels, dark armor trim, etc.)
-    // User reverted: "empezamos a recortar muchos puntos negros que NO
-    // habia que recortar". Back to 0.04 as the prior known-safe value.
-    // The first-load residual halo is being attacked from a different
-    // layer (per-Type render handler in GM_PK_Field.cpp + lava tint
-    // diagnostic 406039905), not by escalating the shader cut.
-    // Dark Horse / cannon dark texels still protected via uSkipRgbCut=1
-    // set by DrawMesh.cpp when g_bForceOpaqueMesh is true.
-    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.04) discard;
     vec4 c = texel * vColor;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);

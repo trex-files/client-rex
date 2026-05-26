@@ -27,11 +27,7 @@ void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
     if (c.a < 0.01) discard;
-    // Same rationale as sprite3d.frag: ribbons / circles / dynmeshes that
-    // were authored for additive blending have RGB=0 borders treated as
-    // transparent by legacy. Mirror the contract by discarding near-zero
-    // RGB pixels regardless of which pipeline the batch lands on.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // 0.04 = prior safe band; reverted from 0.10 which cut authored darks (user 2026-05-26)
+    // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);

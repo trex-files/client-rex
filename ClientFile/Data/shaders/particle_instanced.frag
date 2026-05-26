@@ -20,11 +20,6 @@ void main() {
     vec4 sampled = texture(uAtlas, vUV);
     vec4 c = sampled * vColor;
     if (c.a < 0.01) discard;
-    // Same rationale as sprite3d.frag: particle atlases authored for
-    // additive blending have black borders meant to be invisible. When
-    // routed through alpha-blend they show as opaque black squares.
-    // Discard near-zero RGB pixels to mirror the legacy additive-only
-    // contract regardless of which pipeline the batch lands on.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // 0.04 = prior safe band; reverted from 0.10 which cut authored darks (user 2026-05-26)
+    // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
     fragColor = c;
 }

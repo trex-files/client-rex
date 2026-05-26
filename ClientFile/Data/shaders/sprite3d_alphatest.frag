@@ -22,11 +22,7 @@ void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
     if (c.a < 0.25) discard;
-    // Defensive RGB-near-zero discard so additive-authored sprites that land
-    // on the alpha-test pipeline (e.g. AlphaBlendType=2 packed atlases with
-    // hard alpha cutouts) do not paint opaque black squares around the
-    // visible glyph. Threshold mirrors sprite3d.frag.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // 0.04 = prior safe band; reverted from 0.10 which cut authored darks (user 2026-05-26)
+    // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
     if (uFogEnabled == 1) {
         float dist = length(vEyePos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
