@@ -31,7 +31,7 @@ void main() {
     // were authored for additive blending have RGB=0 borders treated as
     // transparent by legacy. Mirror the contract by discarding near-zero
     // RGB pixels regardless of which pipeline the batch lands on.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.04) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
+    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.10) discard;  // raised 0.02 → 0.04 to match mesh.frag JPEG anti-alias band
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);

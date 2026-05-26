@@ -38,7 +38,7 @@ void main() {
     // black halo" around Tarkan WD_8 lava chunks (and any other JPEG mesh
     // whose authoring relied on legacy GL_MODULATE eating the dark bg).
     // Dark Horse / cannon dark texels protected via uSkipRgbCut=1.
-    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.04) discard;
+    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.10) discard;
     vec4 c = texel * vColor;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
