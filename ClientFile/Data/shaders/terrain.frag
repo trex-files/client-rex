@@ -23,6 +23,7 @@ in vec4 vColor;
 in vec2 vUV0;
 in vec2 vUV1;
 in vec3 vViewPos;
+in vec3 vWorldPos;
 flat in uint vLayer0;
 flat in uint vLayer1;
 flat in uint vIsWater;  // bit 0 = base layer is water, bit 1 = overlay is water
@@ -32,23 +33,22 @@ flat in float vWindV;   // per-cell TerrainGrassWind sample for V-axis wobble
 uniform sampler2DArray uTileArray;
 uniform sampler2D      uAlphaMap;
 
-// Per-layer UV scale (legacy parity: `Width = 64 / srcW` and
-// `Height = 64 / srcH` per BITMAP_MAPTILE source bitmap, see
-// ZzzLodTerrain.cpp:1469-1478). vUV0 is in RAW world cell coords
-// (gx..gx+1); multiplying by this gives the legacy `xf * Width` UV
-// each cell needs. Different layer slots can have different source
-// sizes, so base and overlay sample at independent UVs.
-uniform vec2 uTileUVScale[32];
+// Per-layer UV scale packed into TerrainBlock UBO (binding=3).
+// std140 packs vec2 at vec4 stride — shader reads .xy only.
+layout(std140) uniform TerrainBlock {
+    vec4 uTileUVScale[32];   // .xy = scaleX/scaleY, .zw = padding
+};
 
-// Fog mirrors legacy fixed-function fog state (FogEnable global). Most
-// maps run with fog OFF (default: World loaders set FogEnable=false; only
-// special scenes like EX700 select-server flip it on). Honour the flag
-// or the GL3 path tints distant terrain darker than legacy did, which
-// reads as 'lighting / brightness wrong' to the user.
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
+
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
 
 // uWaterMove is the legacy `WaterMove` global animated by ProcessTerrain
 // (sin-driven UV offset; ZzzLodTerrain.cpp updates it every frame). The
@@ -67,8 +67,8 @@ void main() {
     // FaceTexture builds UV = (xf * Width, yf * Height) where Width =
     // 64/srcW per source bitmap. Scale base and overlay independently
     // because they can pick different layers with different source sizes.
-    vec2 uvBase    = vUV0 * uTileUVScale[vLayer0];
-    vec2 uvOverlay = vUV0 * uTileUVScale[vLayer1];
+    vec2 uvBase    = vUV0 * uTileUVScale[vLayer0].xy;
+    vec2 uvOverlay = vUV0 * uTileUVScale[vLayer1].xy;
 
     // Per-layer water UV scroll. Legacy ZzzLodTerrain.cpp:1502-1521 adds
     // WaterMove to U and (TerrainGrassWind * 0.002) to V on each water
@@ -132,14 +132,27 @@ void main() {
     // Apply pre-baked vertex light (PrimaryTerrainLight).
     vec3 color = splat * vColor.rgb;
 
-    // Linear fog — legacy parity. Only applied when the engine flipped
-    // FogEnable=true (EX700 select-server, certain cinematics). Normal
-    // gameplay maps (Lorencia, Devias, Atlans, etc.) leave fog off.
-    if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        color = mix(uFogColor.rgb, color, fogF);
-    }
+#ifdef FOG_ENABLED
+    float dist = -vViewPos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    color = mix(uFogColorRGBA.rgb, color, fogF);
+#endif
 
-    fragColor = vec4(color, 1.0);
+    vec4 c = vec4(color, 1.0);
+    // Fog of war: radial darken to black beyond the entity visibility radius.
+    // Terrain stays OPAQUE (alpha=1) — only rgb is darkened — so the ground
+    // reads solid black at the edge regardless of the per-map clear colour
+    // (several maps clear to dark blue/purple, not black). Guard: w<=0 means
+    // the UBO hasn't been uploaded (or was disabled for this phase) → no fade.
+    if (uVisibility.w > 0.0) {
+        // kVisFloor keeps the far area dim-but-VISIBLE instead of pure black
+        // ("más claridad" — you can still make out terrain/structures the fog
+        // covers). 0.0 = full black edge, higher = clearer. Tunable (runtime).
+        const float kVisFloor = 0.28;
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= mix(kVisFloor, 1.0, visFactor);
+    }
+    fragColor = c;
 }

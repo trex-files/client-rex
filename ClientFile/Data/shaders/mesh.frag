@@ -8,14 +8,14 @@
 in vec2 vUV;
 in vec4 vColor;
 in vec3 vViewPos;   // view-space position from vert (camera at origin) — fog distance
+in vec3 vWorldPos;
 
-// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
-// In legacy GL every triangle drawn got auto-fog; GL3 Core requires each shader
-// to compute it manually. The gate (uFogEnabled==0) fast-paths most maps.
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
 
 uniform sampler2D uTex;
 
@@ -31,15 +31,32 @@ uniform sampler2D uTex;
 // it without compiler warnings; it has no effect now that the cut is gone.
 uniform int uSkipRgbCut;
 
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
+
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
     vec4 c = texel * vColor;
-    if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
+#ifdef FOG_ENABLED
+    float dist = -vViewPos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
+#endif
+    // Fog of war: radial fade to black beyond the entity visibility radius.
+    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
+    if (uVisibility.w > 0.0) {
+        // Structures stay dim-but-VISIBLE in the fog ("que se vean las
+        // estructuras que tapa"): floor the brightness and keep them opaque
+        // (no alpha fade). Per-entity fade-out for chars/objects is handled
+        // CPU-side via o->Alpha, not here. kVisFloor tunable (runtime).
+        const float kVisFloor = 0.28;
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= mix(kVisFloor, 1.0, visFactor);
     }
     fragColor = c;
 }
