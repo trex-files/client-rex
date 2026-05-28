@@ -30,7 +30,10 @@ out vec4 fragColor;
 void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
-    if (c.a < 0.01) discard;
+    // 2026-05-27: Lowered discard threshold 0.01 → 0.001 so particle edges
+    // fade smoothly instead of stopping at a hard cutoff. Same fix applied
+    // to sprite3d_additive.frag for the additive path.
+    if (c.a < 0.001) discard;
     // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
     // The fix for JPG-additive sprites on misrouted pipelines is pipeline
     // routing (additive path), not a shader cut that ate authored darks.

@@ -32,16 +32,27 @@ uniform vec4  uFogColor;
 
 uniform sampler2D uTex;
 
+// 2026-05-27: Output RGB multiplier. CPU sets this via SetUniformFloat
+// in DrawMesh::Flush — defaults to 1.0 (no change) for world/hero/skill
+// bright renders. The inventory grid bumps it to ~1.7 for chrome
+// additive contribution that needs to match legacy intensity. GLSL 330
+// doesn't allow default uniform initializers; CPU must set every Flush.
+uniform float uBrightMult;
+
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
     vec4 c = texel * vColor;
-    if (c.a < 0.01) discard;
+    // 2026-05-27: Lowered discard threshold 0.01 → 0.001 for smooth particle
+    // edges (Flame skill, Doorkeeper Titus fire). Hard 0.01 cutoff produced a
+    // visible noisy boundary between "barely visible" and "discarded" pixels.
+    if (c.a < 0.001) discard;
     if (uFogEnabled == 1) {
         float dist = length(vViewPos);
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
     }
+    c.rgb *= uBrightMult;
     fragColor = c;
 }
