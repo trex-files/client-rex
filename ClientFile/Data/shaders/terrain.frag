@@ -145,14 +145,14 @@ void main() {
     // (several maps clear to dark blue/purple, not black). Guard: w<=0 means
     // the UBO hasn't been uploaded (or was disabled for this phase) → no fade.
     if (uVisibility.w > 0.0) {
-        // kVisFloor keeps the far area dim-but-VISIBLE instead of pure black
-        // ("más claridad" — you can still make out terrain/structures the fog
-        // covers). 0.0 = full black edge, higher = clearer. Tunable (runtime).
-        const float kVisFloor = 0.28;
+        // Gradual world-space depth fade: clear near the camera, darkening
+        // SMOOTHLY to black at the far edge (uVisibility.w = horizon / terrain
+        // render radius). The wide inner..outer band (set in DrawTerrain) makes
+        // the whole visible range dim little by little so the horizon is smooth.
         vec2  worldXYTiles = vWorldPos.xy * 0.01;
         float distTiles    = length(worldXYTiles - uVisibility.xy);
         float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= mix(kVisFloor, 1.0, visFactor);
+        c.rgb *= visFactor;
     }
     fragColor = c;
 }

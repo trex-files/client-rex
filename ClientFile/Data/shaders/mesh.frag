@@ -48,15 +48,14 @@ void main() {
     // Fog of war: radial fade to black beyond the entity visibility radius.
     // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
     if (uVisibility.w > 0.0) {
-        // Structures stay dim-but-VISIBLE in the fog ("que se vean las
-        // estructuras que tapa"): floor the brightness and keep them opaque
-        // (no alpha fade). Per-entity fade-out for chars/objects is handled
-        // CPU-side via o->Alpha, not here. kVisFloor tunable (runtime).
-        const float kVisFloor = 0.28;
+        // Structures fade with the world-space depth fog (gradual to black at
+        // the horizon), staying opaque (no alpha fade) so they read as dark
+        // silhouettes, not transparent holes. Per-entity fade-out for moving
+        // chars/npcs is handled CPU-side via o->Alpha (see ZzzCharacter).
         vec2  worldXYTiles = vWorldPos.xy * 0.01;
         float distTiles    = length(worldXYTiles - uVisibility.xy);
         float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= mix(kVisFloor, 1.0, visFactor);
+        c.rgb *= visFactor;
     }
     fragColor = c;
 }

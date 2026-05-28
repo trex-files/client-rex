@@ -29,11 +29,10 @@ void main() {
     // Keep the blade alpha (its shape) and only darken rgb so blades read as
     // black against the (also-darkened) terrain. Guard: w<=0 → no fade.
     if (uVisibility.w > 0.0) {
-        const float kVisFloor = 0.28;   // dim-but-visible floor (see terrain.frag)
         vec2  worldXYTiles = vWorldPos.xy * 0.01;
         float distTiles    = length(worldXYTiles - uVisibility.xy);
         float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= mix(kVisFloor, 1.0, visFactor);
+        c.rgb *= visFactor;
     }
     fragColor = c;
 }
