@@ -22,12 +22,7 @@
 
 in vec2 vUV;
 in vec4 vColor;
-in vec3 vEyePos;   // eye-space position (not used here, kept for layout parity)
-
-uniform int   uFogEnabled;  // ignored — additive should never be fogged
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+in vec3 vEyePos;   // eye-space position (unused — no fog on additive path)
 
 uniform sampler2D uTex;
 

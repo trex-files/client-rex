@@ -21,6 +21,7 @@
 in vec3 vViewPos;
 in vec3 vNormal;
 in vec4 vColor;
+in vec3 vWorldPos;
 
 uniform sampler2D uTex;
 uniform float     uAlpha;
@@ -28,6 +29,11 @@ uniform float     uChromeWave;   // (WorldTime % 5000) * 0.00024 - 0.4
 
 // Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
 uniform int   uFogEnabled;
+// NOTE: fog-of-war fade on chrome needs visual validation — environment
+// reflection darkening may look odd; revisit after Phase 2 chrome vert is linked.
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
 uniform float uFogStart;
 uniform float uFogEnd;
 uniform vec4  uFogColor;
@@ -41,9 +47,19 @@ void main() {
     vec4 texel = texture(uTex, vec2(u, v));
     vec3 rgb = texel.rgb * vColor.rgb;
     if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
+        float dist = -vViewPos.z;
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         rgb = mix(uFogColor.rgb, rgb, fogF);
     }
-    fragColor = vec4(rgb, texel.a * vColor.a * uAlpha);
+    vec4 c = vec4(rgb, texel.a * vColor.a * uAlpha);
+    // Fog of war: radial fade to black beyond the entity visibility radius.
+    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
+    if (uVisibility.w > 0.0) {
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= visFactor;
+        c.a   *= visFactor;
+    }
+    fragColor = c;
 }

@@ -15,28 +15,44 @@
 in vec2 vUV;
 in vec4 vColor;
 in vec3 vViewPos;
+in vec3 vWorldPos;
 
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
 
 uniform sampler2D uTex;
 
 // Kept as a NOOP to match the mesh.frag uniform set (DrawMesh.cpp sets it).
 uniform int uSkipRgbCut;
 
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
+
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
     vec4 c = texel * vColor;
-    if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
-    }
+#ifdef FOG_ENABLED
+    float dist = -vViewPos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
+#endif
     // Soften the subtractive payload — see file header.
     c.rgb *= 0.5;
+    // Fog of war: radial fade attenuates the subtractive payload with distance.
+    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
+    if (uVisibility.w > 0.0) {
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= visFactor;
+        c.a   *= visFactor;
+    }
     fragColor = c;
 }

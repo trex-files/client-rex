@@ -35,6 +35,7 @@ out vec2 vUV0;       // RAW world cell coords (gx..gx+1, gy..gy+1).
                      // to apply legacy `xf * (64/srcW)` per-source spread.
 out vec2 vUV1;       // alpha-map UV (normalised 0..1 over full terrain)
 out vec3 vViewPos;   // view-space position for fog distance
+out vec3 vWorldPos;  // world-space position for fog-of-war visibility fade
 flat out uint vLayer0;
 flat out uint vLayer1;
 flat out uint vIsWater;  // 1 on TW_WATER cells, 0 otherwise
@@ -45,6 +46,7 @@ void main() {
     vec4 viewPos  = uView * vec4(aPosition, 1.0);
     gl_Position   = uProj * viewPos;
     vViewPos      = viewPos.xyz;
+    vWorldPos     = aPosition;
     // aTexCoord1 carries the alpha-map UV which BuildTerrainGPU shifts by
     // +0.5/256 so the fragment shader's LINEAR sampler lands at TEXEL
     // CENTER (see project_terrain_alphamap_half_texel_offset). That offset

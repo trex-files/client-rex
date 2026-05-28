@@ -48,6 +48,7 @@ layout(std140) uniform Camera {
 out vec4 vColor;
 out vec2 vUV;
 out vec3 vViewPos;   // view-space position (camera at origin) for fog distance — legacy GL_FOG parity
+out vec3 vWorldPos;  // world-space position for fog-of-war visibility fade
 
 void main() {
     mat4 uWorld = mat4(aInstWorldCol0, aInstWorldCol1, aInstWorldCol2, aInstWorldCol3);
@@ -57,4 +58,5 @@ void main() {
     vColor         = vec4(aColor.rgb * aInstBodyLight.rgb, aColor.a);
     vUV            = aTexCoord;
     vViewPos       = viewPos.xyz;
+    vWorldPos      = worldPos.xyz;
 }

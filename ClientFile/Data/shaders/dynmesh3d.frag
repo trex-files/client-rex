@@ -12,6 +12,7 @@
 in vec2 vUV;
 in vec4 vColor;
 in vec3 vViewPos;   // view-space position (camera at origin) — fog distance
+in vec3 vWorldPos;
 
 // Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
 uniform int   uFogEnabled;
@@ -21,6 +22,10 @@ uniform vec4  uFogColor;
 
 uniform sampler2D uTex;
 
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
+
 out vec4 fragColor;
 
 void main() {
@@ -29,9 +34,18 @@ void main() {
     if (c.a < 0.01) discard;
     // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
     if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
+        float dist = -vViewPos.z;
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
+    }
+    // Fog of war: radial fade to black beyond the entity visibility radius.
+    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
+    if (uVisibility.w > 0.0) {
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= visFactor;
+        c.a   *= visFactor;
     }
     fragColor = c;
 }
