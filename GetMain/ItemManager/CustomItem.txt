@@ -80,10 +80,10 @@
 7376     -1        -1       -1       "rewardbox09"       	// Mastery Box (Standard)
 7377     -1        -1       -1       "rewardbox10"        	// Mastery Box (Greater)
 
-7349	0	0	0	"LongVu_CanhSeason2.5"
-7350	0	0	0	"LongVu_CanhCustom"
-7351	0	0	0	"LongVu_CanhSeason13"
-7352 	0	0	0	"LongVu_CanhSeason8"
+7349	0	0	0	"Wing401"               //LongVu_CanhSeason2.5 placeholder
+7350	0	0	0	"Wing401"               //LongVu_CanhCustom placeholder
+7351	0	0	0	"Wing401"               //LongVu_CanhSeason13 placeholder
+7352 	0	0	0	"Wing401"               //LongVu_CanhSeason8 placeholder
 7353 	0	0	0	"goldarms01"
 
 7360    0	0	0	"chip5k"
@@ -95,12 +95,12 @@
 7366    0	0	0	"chip200k"
 7367    0	0	0	"chip200k"
 
-7383    0	0	0	"1so"
-7384    0	0	0	"2so"
-7385    0	0	0	"3so"
-7386    0	0	0	"4so"
-7387    0	0	0	"5so"
-7388    0	0	0	"6so"
+7383    0	0	0	"orb_matery8cha"   //socket orb placeholder
+7384    0	0	0	"orb_matery8cha"   //socket orb placeholder
+7385    0	0	0	"orb_matery8cha"   //socket orb placeholder
+7386    0	0	0	"orb_matery8cha"   //socket orb placeholder
+7387    0	0	0	"orb_matery8cha"   //socket orb placeholder
+7388    0	0	0	"orb_matery8cha"   //socket orb placeholder
 
 6832		105		92		76		"ring_bloodangel"		 	 //"Blood God Ring (A)"		
 6833		105		92		76		"ring_bloodangel"		 	 //"Blood God Ring (B)"		
@@ -141,7 +141,7 @@
 38		  127 		127 	127 	"asura"								//Shadow Sword
 1043	 172 		169 	255 	"thunder_bolt"						//Thunder Scepter
 1044	 255 		255 	255 	"hornofsteel"						//Steel Horn
-1047	 148		83		5		"truyMaceOfKing"	                //King Mace
+1047	 148		83		5		"BloodAngel_Mace"        //truyMaceOfKing placeholder	                //King Mace
 1548	 127 		127 	127 	"MagmaSpear"						//Dragon Spear
 2595	 127		127		127		"MiracleStaff"						//Five-Color Staff
 2597	 255		107		37		"kerberos_spear_dark_road"			//Mars Staff
@@ -206,6 +206,12 @@
 3105	193			144		77		"Masteryshild_dk04"
 3106	122			139		168		"Masteryshild_dk05"
 3107	215			89		0		"Masteryshild_dk06"
+3113	159			150		102		"blakcNightshild_7"			//Manticore Shield
+3114	159			150		102		"matery_8chashild"			//Brilliant Shield
+3115	255			150		150		"apocalypse_shield"			//Apocalypse Shield
+3116	60			110		150		"lightning_shield"			//Lightning Shield
+3117	128			100		30		"TempleGuard_shild"			//Guard Shield
+3118	128			100		30		"Imperial_shield"			//Imperial Shield
 //---------------------------------------------------------------
 //STORM SET DK
 3674	 255 		162 	31	    "HelmMaleL"                  
@@ -538,4 +544,366 @@
 5825	78 		17 		166	"BootMale131"			//SilverHeart Magic
 5826	78 		17 		166	"BootMale130"			//Silverheart Lord
 5827	78 		17 		166	"BootMale131"			//Silverheart fighter
+//=== Items-pack merge ===
+43		  204		40		28		"blood_anglesword"					//Bloodangel Magic Sword
+56		  255 		226 	115		"master_twohandsword2NH"			//Dark th_Magic Sword
+59	  	  255 		197 	57		"HolyAngelMagicSword"				//Holy God Magic Sword
+60	  	  255 		197 	57		"master_x2chaNH"					//Holy God Magic Sword
+1061	  255		197		57		"HolyAngel_Mace"					//Holy God Rune Mace
+64		  239 		154 	70		"soulknightsword"					//Awakening Sword
+65		  239 		154 	70		"SoulmagicSword"					//Awakening Magic Sword
+66		  239 		154 	70		"MDHsword4bNH"						//Awakening Magic Sword
+68		  127		127		127		"hs_blueeyeknightA"					//Blue Eye Sword
+69		  127		127		127		"blue_eye_magicsword01"				//Blue Eye Magic Sword
+70		  127		127		127		"master_double05NH"					//Blue Eye Magic Sword
+72		  78 		17 		166		"mastery_sword6"					//Silver Heart Sword
+73		  78 		17 		166		"mastery_magicsword6"				//Silver Heart Magic Sword
+74		  78 		17 		166		"master_double06NH"					//Silver Heart Magic Sword
+76	   	159 	150 	102		"masteryknsw_7cha"		   //Manticore Sword
+77	   	159 	150 	102		"mastery7_maigcswrod"      //Manticore Magic Sword
+1068   	159  	150 	102		"mastery_darkoad7"         //Manticore Scepter
+1069   	159		150		102 	"mave_mastery07"		   //Manticore mace -----ok
+1567   	159		150		102 	"mastery_lance07"		   //Manticore Lance
+2630   	159		150		102 	"master7_staff"			   //Manticore staff
+2631   	159		150		102 	"hs_7MasteryStick"		   //Manticore Stick
+2632   	159		150		102 	"mastery_7book_S"		   //Manticore Book
+80    	102		202		255 	"swrod_8cah"               //Brilliant Sword
+81    	102		198		255 	"maigic_swordmaster08"     //Brilliant Magic Sword
+1070  	159  	150 	102		"8cha_mastery_septer"     //septerNH→septer	   //Brilliant Scepter
+1071  	159		150		102		"matery_8chamace"		   //Brilliant Mace
+1568  	159		150		102		"mastery_lancefb"		   //Brilliant Lance
+2633  	159		150		102		"staff_effect_8cha"		   //Brilliant Staff
+2634  	159		150		102		"mastery_stikc8"		   //Brilliant Stick
+2635  	159		150		102		"matery8cha_serBook"	   //Brilliant Book
+1072   	255  	150 	150		"apocalypse_mace"          //Apocalyse Mace
+1073   	255  	150 	150		"apocalypse_cepter"        //Apocalyse Scepter
+1569   	255		150		150		"apocalypse_lance"         //Apocalyse Lance
+2642   	255  	150 	150		"apocalypse_staff"         //Apocalyse Staff
+2643   	255  	150 	150		"apocalypse_stick"         //Apocalyse Stick
+2644   	255  	150 	150		"apocalypse_book"          //Apocalyse Book
+88		60 		110 	150		"lightning_sword"			//Lightning Sword
+89      60 		110 	150		"lightning_magicsword"     	//Lightning Magic Sword
+90      60 		110 	150		"lightning_twohandsword"   	//Lightning Magic Two
+1074    60 		110 	150		"lightning_scepter"        	//Lightning Scepter
+1075    60 		110 	150		"lightning_scepter"        	//Lightning Mace
+1570    60 		110 	150		"lightning_lance"          	//Lightning Lance
+2646	60 		110 	150		"lightning_staff"			//Lightning Staff
+2647	60 		110 	150		"lightning_stick"			//Lightning Stick
+2648	60 		110 	150		"lightning_book"			//Lightning Book 
+92		128 	100		30		"Templeguard_sword"			//Guard Sword
+93      128 	100		30		"Templeguard_Magicsword"   	//Guard Magic Sword
+94      128 	100		30		"Templeguard_TH_Sword"     	//Guard Magic Two
+1076    128 	100		30		"Templeguard_scepter"      	//Guard Scepter
+1077    128 	100		30		"Templeguard_scepter"      	//Guard mace
+1571    128 	100		30		"Templeguard_lance"        	//Guard Lance
+2649	128 	100		30		"Templeguard_staff"			//Guard Staff
+2650    128 	100		30		"TempleGuard_stick"			//Guard Stick
+2651    128 	100		30		"TempleGuard_book"			//Guard Book ok
+96		128 	100		30		"Imperial_sword"			//Imperial Sword
+97      128 	100		30		"Imperial_Magicsword"      	//Imperial Magic Sword
+98      128 	100		30		"Imperial_TH_sword"        	//Imperial Magic Two
+1078    128 	100		30		"Imperial_scepter"         	//Imperial Scepter
+1079    128 	100		30		"Hammer18"			  		//Imperial Hammer
+1572    128 	100		30		"Imperial_lance"           	//Imperial Lance
+2652	128 	100		30		"Imperial_staff"			//Imperial Staff
+2653    128 	100		30		"Imperial_stick"			//Imperial Stick
+2654    128 	100		30		"Imperial_book"			  	//Imperial Book ok
+3780	140		128		 83 	"HelmMale135_knight" 	//Silverheart king	37		36		 48
+3781	140		128		 83 	"HelmMale136_wizard"	//Silverheart wizzar
+3782	140		128		 83 	"HelmMale138_elf"		//Silverheart Elf
+3783	140		128		 83 	"HelmMale138_alice"		//Silverheart Summoner
+3785	140		128		 83 	"HelmMale136_lord"		//Silverheart Lord
+3786	140		128		 83 	"HelmMale135_fighter"	//Silverheart fighter
+4292	140		128		 83		"ArmorMale135_knight" 	//Silverheart king
+4293	140		128		 83		"ArmorMale136_wizard"	//Silverheart wizzar
+4294	140		128		 83		"ArmorMale138_elf"		//Silverheart Elf
+4295	140		128		 83		"ArmorMale138_alice"	//Silverheart Summoner
+4296	140		128		 83		"ArmorMale135_magic" 	//SilverHeart Magic
+4297	140		128		 83		"ArmorMale136_lord"		//Silverheart Lord
+4298	140		128		 83		"ArmorMale135_fighter"	//Silverheart fighter
+4804	140		128		 83 	"PantMale135_knight" 	//Silverheart king
+4805	140		128		 83 	"PantMale136_wizard"	//Silverheart wizzar
+4806	140		128		 83 	"PantMale138_elf"		//Silverheart Elf (A)
+4807	140		128		 83 	"PantMale138_alice"		//Silverheart Summoner
+4808	140		128		 83 	"PantMale135_magic" 	//SilverHeart Magic (A)
+4809	140		128		 83 	"PantMale136_lord"		//Silverheart Lord
+4810	140		128		 83 	"PantMale135_fighter" 	//Silverheart fighter
+5316	140		128		 83 	"GloveMale135_knight"	//Silverheart king
+5317	140		128		 83 	"GloveMale136_wizard"	//Silverheart wizzar
+5318	140		128		 83 	"GloveMale138_elf"		//Silverheart Elf
+5319	140		128		 83 	"GloveMale138_alice"	//Silverheart Summoner
+5320	140		128		 83 	"GloveMale135_magic"	//SilverHeart Magic
+5321	140		128		 83 	"GloveMale136_lord"		//Silverheart Lord
+5828	140		128		 83 	"BootMale135_knight"	//Silverheart king
+5829	140		128		 83 	"BootMale136_wizard"	//Silverheart wizzar
+5830	140		128		 83 	"BootMale138_elf"		//Silverheart Elf
+5831	140		128		 83 	"BootMale138_alice"		//Silverheart Summoner
+5832	140		128		 83 	"BootMale135_magic"		//SilverHeart Magic
+5833	140		128		 83 	"BootMale136_lord"		//Silverheart Lord
+5834	140		128		 83 	"BootMale135_fighter"	//Silverheart fighter
+3787	95		113		 153	"HelmMale150_knight" 	//Silverheart king
+3788	95		113		 153	"HelmMale149_wizard"	//Silverheart wizzar
+3789	95		113		 153	"HelmMale151_elf"		//Silverheart Elf
+3790	95		113		 153	"HelmMale151_alice"		//Silverheart Summoner
+3792	95		113		 153	"HelmMale149_dark"		//Silverheart Lord
+3793	95		113		 153	"HelmMale150_fight"		//Silverheart fighter
+4299	95		113		 153	"ArmorMale150" 		//Silverheart king
+4300	95		113		 153	"ArmorMale149"			//Silverheart wizzar
+4301	95		113		 153	"ArmorMale151"			//Silverheart Elf
+4302	95		113		 153	"ArmorMale151"			//Silverheart Summoner
+4303	95		113		 153	"ArmorMale150" 			//SilverHeart Magic
+4304	95		113		 153	"ArmorMale149"			//Silverheart Lord
+4305	95		113		 153	"ArmorMale150"			//Silverheart fighter
+4811	95		113		 153	"PantMale150" 			//Silverheart king
+4812	95		113		 153	"PantMale149"			//Silverheart wizzar
+4813	95		113		 153	"PantMale151"			//Silverheart Elf (A)
+4814	95		113		 153	"PantMale151"			//Silverheart Summoner
+4815	95		113		 153	"PantMale150" 			//SilverHeart Magic (A)
+4816	95		113		 153	"PantMale149"			//Silverheart Lord
+4817	95		113		 153	"PantMale150" 			//Silverheart fighter
+5323	95		113		 153	"GloveMale150"			//Silverheart king
+5324	95		113		 153	"GloveMale149"			//Silverheart wizzar
+5325	95		113		 153	"GloveMale151"			//Silverheart Elf
+5326	95		113		 153	"GloveMale151"			//Silverheart Summoner
+5327	95		113		 153	"GloveMale150"			//SilverHeart Magic
+5328	95		113		 153	"GloveMale149"			//Silverheart Lord
+5835	95		113		 153	"BootMale150"			//Silverheart king
+5836	95		113		 153	"BootMale149"			//Silverheart wizzar
+5837	95		113		 153	"BootMale151"			//Silverheart Elf
+5838	95		113		 153	"BootMale151"			//Silverheart Summoner
+5839	95		113		 153	"BootMale150"			//SilverHeart Magic
+5840	95		113		 153	"BootMale149"			//Silverheart Lord
+5841	95		113		 153	"BootMale150"			//Silverheart fighter
+3794	140		62		 77 	"HelmMale158" 			//Silverheart king
+3795	140		62		 77 	"HelmMale157"			//Silverheart wizzar
+3796	140		62		 77 	"HelmMale159_elf"		//Silverheart Elf
+3797	140		62		 77 	"HelmMale159_alice"		//Silverheart Summoner
+3799	140		62		 77 	"HelmMale157"			//Silverheart Lord
+3800	140		62		 77 	"HelmMale158"			//Silverheart fighter
+4306	140		62		 77 	"ArmorMale158" 			//Silverheart king
+4307	140		62		 77 	"ArmorMale157"			//Silverheart wizzar
+4308	140		62		 77 	"ArmorMale159"			//Silverheart Elf
+4309	140		62		 77 	"ArmorMale159"			//Silverheart Summoner
+4310	140		62		 77 	"ArmorMale158" 			//SilverHeart Magic
+4311	140		62		 77 	"ArmorMale157"			//Silverheart Lord
+4312	140		62		 77 	"ArmorMale158"			//Silverheart fighter
+4818	140		62		 77 	"PantMale158" 			//Silverheart king
+4819	140		62		 77 	"PantMale157"			//Silverheart wizzar
+4820	140		62		 77 	"PantMale159"			//Silverheart Elf (A)
+4821	140		62		 77 	"PantMale159"			//Silverheart Summoner
+4822	140		62		 77 	"PantMale158" 			//SilverHeart Magic (A)
+4823	140		62		 77 	"PantMale157"			//Silverheart Lord
+4824	140		62		 77 	"PantMale158" 			//Silverheart fighter
+5330	140		62		 77 	"GloveMale158"			//Silverheart king
+5331	140		62		 77 	"GloveMale157"			//Silverheart wizzar
+5332	140		62		 77 	"GloveMale159"			//Silverheart Elf
+5333	140		62		 77 	"GloveMale159"			//Silverheart Summoner
+5334	140		62		 77 	"GloveMale158"			//SilverHeart Magic
+5335	140		62		 77 	"GloveMale157"			//Silverheart Lord
+5842	140		62		 77 	"BootMale158"			//Silverheart king
+5843	140		62		 77 	"BootMale157"			//Silverheart wizzar
+5844	140		62		 77 	"BootMale159"			//Silverheart Elf
+5845	140		62		 77 	"BootMale159"			//Silverheart Summoner
+5846	140		62		 77 	"BootMale158"			//SilverHeart Magic
+5847	140		62		 77 	"BootMale157"			//Silverheart Lord
+5848	140		62		 77 	"BootMale158"			//Silverheart fighter
+3801	50		50		 50 	"HelmMale163NH" 		//Silverheart king
+3802	50		50		 50 	"HelmMale164NH"			//Silverheart wizzar
+3803	50		50		 50 	"HelmMale161_elfNH"		//Silverheart Elf
+3804	50		50		 50 	"HelmMale161_aliceNH"	//Silverheart Summoner
+3806	50		50		 50 	"HelmMale164NH"			//Silverheart Lord
+3807	50		50		 50 	"HelmMale163NH"			//Silverheart fighter
+4313	50		50		 50 	"ArmorMale163NH" 		//Silverheart king
+4314	50		50		 50 	"ArmorMale164NH"		//Silverheart wizzar
+4315	50		50		 50 	"ArmorMale161_elfNH"	//Silverheart Elf
+4316	50		50		 50 	"ArmorMale161_aliceNH"	//Silverheart Summoner
+4317	50		50		 50 	"ArmorMale163NH" 		//SilverHeart Magic
+4318	50		50		 50 	"ArmorMale164NH"		//Silverheart Lord
+4319	50		50		 50 	"ArmorMale163NH"		//Silverheart fighter
+4825	50		50		 50 	"PantMale163NH" 		//Silverheart king
+4826	50		50		 50 	"PantMale164NH"			//Silverheart wizzar
+4827	50		50		 50 	"PantMale161_elfNH"		//Silverheart Elf (A)
+4828	50		50		 50 	"PantMale161_aliceNH"	//Silverheart Summoner
+4829	50		50		 50 	"PantMale163NH" 		//SilverHeart Magic (A)
+4830	50		50		 50 	"PantMale164NH"			//Silverheart Lord
+4831	50		50		 50 	"PantMale163NH" 		//Silverheart fighter
+5337	50		50		 50 	"GloveMale163NH"		//Silverheart king
+5338	50		50		 50 	"GloveMale164NH"		//Silverheart wizzar
+5339	50		50		 50 	"GloveMale161_elfNH"	//Silverheart Elf
+5340	50		50		 50 	"GloveMale161_aliceNH"	//Silverheart Summoner
+5341	50		50		 50 	"GloveMale163NH"		//SilverHeart Magic
+5342	50		50		 50 	"GloveMale164NH"		//Silverheart Lord
+5849	50		50		 50 	"BootMale163NH"			//Silverheart king
+5850	50		50		 50 	"BootMale164NH"			//Silverheart wizzar
+5851	50		50		 50 	"BootMale161_elfNH"		//Silverheart Elf
+5852	50		50		 50 	"BootMale161_aliceNH"	//Silverheart Summoner
+5853	50		50		 50 	"BootMale163NH"			//SilverHeart Magic
+5854	50		50		 50 	"BootMale164NH"			//Silverheart Lord
+5855	50		50		 50 	"BootMale163NH"			//Silverheart fighter
+3808	163   	143    	 99 	"HelmMale172_knight" 	//Silverheart king
+3809	163   	143    	 99 	"HelmMale173_w_wizard"	//Silverheart wizzar
+3810	163   	143    	 99 	"HelmMale174_elf"		//Silverheart Elf
+3811	163   	143    	 99 	"HelmMale176_Summoner"	//Silverheart Summoner
+3813	163   	143    	 99 	"HelmMale172_dark"		//Silverheart Lord
+3814	163   	143    	 99 	"HelmMale172_fighter"	//Silverheart fighter
+4320	163   	143    	 99 	"ArmorMale172" 			//Silverheart king
+4321	163   	143    	 99 	"ArmorMale173"			//Silverheart wizzar
+4322	163   	143    	 99 	"ArmorMale174_elf"		//Silverheart Elf
+4323	163   	143    	 99 	"ArmorMale176_Summoner"	//Silverheart Summoner
+4324	163   	143    	 99 	"ArmorMale172" 			//SilverHeart Magic
+4325	163   	143    	 99 	"ArmorMale173"			//Silverheart Lord
+4326	163   	143    	 99 	"ArmorMale172"			//Silverheart fighter
+4832	163   	143    	 99 	"PantMale172" 			//Silverheart king
+4833	163   	143    	 99 	"PantMale173"			//Silverheart wizzar
+4834	163   	143    	 99 	"PantMale174_elf"		//Silverheart Elf (A)
+4835	163   	143    	 99 	"PantMale176_Summoner"	//Silverheart Summoner
+4836	163   	143    	 99 	"PantMale172" 			//SilverHeart Magic (A)
+4837	163   	143    	 99 	"PantMale173"			//Silverheart Lord
+4838	163   	143    	 99 	"PantMale172" 			//Silverheart fighter
+5344	163   	143    	 99 	"GloveMale172"			//Silverheart king
+5345	163   	143    	 99 	"GloveMale173"			//Silverheart wizzar
+5346	163   	143    	 99 	"GloveMale174_elf"		//Silverheart Elf
+5347	163   	143    	 99 	"GloveMale176_Summoner"	//Silverheart Summoner
+5348	163   	143    	 99 	"GloveMale172"			//SilverHeart Magic
+5349	163   	143    	 99 	"GloveMale173"			//Silverheart Lord
+5856	163   	143    	 99 	"BootMale172"			//Silverheart king
+5857	163   	143    	 99 	"BootMale173"			//Silverheart wizzar
+5858	163   	143    	 99 	"BootMale174_elf"		//Silverheart Elf
+5859	163   	143    	 99 	"BootMale176_Summoner"	//Silverheart Summoner
+5860	163   	143    	 99 	"BootMale172"			//SilverHeart Magic
+5861	163   	143    	 99 	"BootMale173"			//Silverheart Lord
+5862	163   	143    	 99 	"BootMale172"			//Silverheart fighter
+3815	146		43		 255 	"HelmMale177_knight" 	   //Silverheart king
+3816	146		43		 255 	"HelmMale179_w_wizard"	   //Silverheart wizzar
+3817	146		43		 255 	"HelmMale181_elf"		   //Silverheart Elf
+3818	146		43		 255 	"HelmMale182_summoner"	   //Silverheart Summoner
+3820	146		43		 255 	"HelmMale177_dark"		   //Silverheart Lord
+3821	146		43		 255 	"HelmMale177_fighter"	   //Silverheart fighter
+4327	146		43		 255 	"ArmorMale177" 			   //Silverheart king
+4328	146		43		 255 	"ArmorMale179"			   //Silverheart wizzar
+4329	146		43		 255 	"ArmorMale181_elf"		   //Silverheart Elf
+4330	146		43		 255 	"ArmorMale182_summoner"	   //Silverheart Summoner
+4331	146		43		 255 	"ArmorMale177" 			   //SilverHeart Magic
+4332	146		43		 255 	"ArmorMale179"			   //Silverheart Lord
+4333	146		43		 255 	"ArmorMale177"			   //Silverheart fighter
+4839	146		43		 255 	"PantMale177" 			   //Silverheart king
+4840	146		43		 255 	"PantMale179"			   //Silverheart wizzar
+4841	146		43		 255 	"PantMale181_elf"		   //Silverheart Elf (A)
+4842	146		43		 255 	"PantMale182_summoner"	   //Silverheart Summoner
+4843	146		43		 255 	"PantMale177" 			   //SilverHeart Magic (A)
+4844	146		43		 255 	"PantMale179"			   //Silverheart Lord
+4845	146		43		 255 	"PantMale177" 			   //Silverheart fighter
+5351	146		43		 255 	"GloveMale177"			   //Silverheart king
+5352	146		43		 255 	"GloveMale179"			   //Silverheart wizzar
+5353	146		43		 255 	"GloveMale181_elf"		   //Silverheart Elf
+5354	146		43		 255 	"GloveMale182_summoner"	   //Silverheart Summoner
+5355	146		43		 255 	"GloveMale177"			   //SilverHeart Magic
+5356	146		43		 255 	"GloveMale179"			   //Silverheart Lord
+5863	146		43		 255 	"BootMale177"			   //Silverheart king
+5864	146		43		 255 	"BootMale179"			   //Silverheart wizzar
+5865	146		43		 255 	"BootMale181_elf"		   //Silverheart Elf
+5866	146		43		 255 	"BootMale182_summoner"	   //Silverheart Summoner
+5867	146		43		 255 	"BootMale177"			   //SilverHeart Magic
+5868	146		43		 255 	"BootMale179"			   //Silverheart Lord
+5869	146		43		 255 	"BootMale177"			   //Silverheart fighter
+3822	255	255	255	"Abbadon_helm_sm"		//Abbadon Helm
+4334	255	255	255	"Abbadon_armor_m"		//Abbadon Armor
+4846	255	255	255	"Abbadon_pants_m"		//Abbadon Pants
+5358	255	255	255	"Abbadon_gloves_m"		//Abbadon Gloves
+5870	255	255	255	"Abbadon_boots_m"		//Abbadon Boots
+3823	255	255	255	"Arcanor_helm_sm"		//Arcanor Helm
+4335	255	255	255	"Arcanor_armor_m"		//Arcanor Armor
+4847	255	255	255	"Arcanor_pants_m"		//Arcanor Pants
+5359	255	255	255	"Arcanor_gloves_m"		//Arcanor Gloves
+5871	255	255	255	"Arcanor_boots_m"		//Arcanor Boots
+3824	255	255	255	"Aurion_helm_sm"		//Aurion Helm
+4336	255	255	255	"Aurion_armor_m"		//Aurion Armor
+4848	255	255	255	"Aurion_pants_m"		//Aurion Pants
+5360	255	255	255	"Aurion_gloves_m"		//Aurion Gloves
+5872	255	255	255	"Aurion_boots_m"		//Aurion Boots
+3825	255	255	255	"Blackray_helm_sm"		//Blackray Helm
+4337	255	255	255	"Blackray_armor_m"		//Blackray Armor
+4849	255	255	255	"Blackray_pants_m"		//Blackray Pants
+5361	255	255	255	"Blackray_gloves_m"		//Blackray Gloves
+5873	255	255	255	"Blackray_boots_m"		//Blackray Boots
+3826	255	255	255	"Bloodbound_helm_sm"		//Bloodbound Helm
+4338	255	255	255	"Bloodbound_armor_m"		//Bloodbound Armor
+4850	255	255	255	"Bloodbound_pants_m"		//Bloodbound Pants
+5362	255	255	255	"Bloodbound_gloves_m"		//Bloodbound Gloves
+5874	255	255	255	"Bloodbound_boots_m"		//Bloodbound Boots
+3827	255	255	255	"Carnival_helm_sm"		//Carnival Helm
+4339	255	255	255	"Carnival_armor_m"		//Carnival Armor
+4851	255	255	255	"Carnival_pants_m"		//Carnival Pants
+5363	255	255	255	"Carnival_gloves_m"		//Carnival Gloves
+5875	255	255	255	"Carnival_boots_m"		//Carnival Boots
+3828	255	255	255	"Darkness_helm_sm"		//Darkness Helm
+4340	255	255	255	"Darkness_armor_m"		//Darkness Armor
+4852	255	255	255	"Darkness_pants_m"		//Darkness Pants
+5364	255	255	255	"Darkness_gloves_m"		//Darkness Gloves
+5876	255	255	255	"Darkness_boots_m"		//Darkness Boots
+3829	255	255	255	"Death_helm_sm"		//Death Helm
+4341	255	255	255	"Death_armor_m"		//Death Armor
+4853	255	255	255	"Death_pants_m"		//Death Pants
+5365	255	255	255	"Death_gloves_m"		//Death Gloves
+5877	255	255	255	"Death_boots_m"		//Death Boots
+3830	255	255	255	"Devil_majestyc_helm_f"		//Devil Majestyc Helm
+4342	255	255	255	"Devil_Majestyc_armor_m"		//Devil Majestyc Armor
+4854	255	255	255	"Devil_Majestyc_pants_m"		//Devil Majestyc Pants
+5366	255	255	255	"Devil_Majestyc_gloves_m"		//Devil Majestyc Gloves
+5878	255	255	255	"Devil_Majestyc_boots_m"		//Devil Majestyc Boots
+3831	255	255	255	"Druid_helm_sm"		//Druid Helm
+4343	255	255	255	"Druid_armor_m"		//Druid Armor
+4855	255	255	255	"Druid_pants_m"		//Druid Pants
+5367	255	255	255	"Druid_gloves_m"		//Druid Gloves
+5879	255	255	255	"Druid_boots_m"		//Druid Boots
+3832	255	255	255	"Elegance_helm_sm"		//Elegance Helm
+4344	255	255	255	"Elegance_armor_m"		//Elegance Armor
+4856	255	255	255	"Elegance_pants_m"		//Elegance Pants
+5368	255	255	255	"Elegance_gloves_m"		//Elegance Gloves
+5880	255	255	255	"Elegance_boots_m"		//Elegance Boots
+3833	255	255	255	"Fallen_Angel_helm_sm"		//Fallen Angel Helm
+4345	255	255	255	"Fallen_Angel_armor_m"		//Fallen Angel Armor
+4857	255	255	255	"Fallen_Angel_pants_m"		//Fallen Angel Pants
+5369	255	255	255	"Fallen_Angel_gloves_m"		//Fallen Angel Gloves
+5881	255	255	255	"Fallen_Angel_boots_m"		//Fallen Angel Boots
+3834	255	255	255	"Hallow_helm_f"		//Hallow Helm
+4346	255	255	255	"Hallow_armor_m"		//Hallow Armor
+4858	255	255	255	"Hallow_pants_m"		//Hallow Pants
+5370	255	255	255	"Hallow_gloves_m"		//Hallow Gloves
+5882	255	255	255	"Hallow_boots_m"		//Hallow Boots
+3835	255	255	255	"Hellshade_helm_sm"		//Hellshade Helm
+4347	255	255	255	"Hellshade_armor_m"		//Hellshade Armor
+4859	255	255	255	"Hellshade_pants_m"		//Hellshade Pants
+5371	255	255	255	"Hellshade_gloves_m"		//Hellshade Gloves
+5883	255	255	255	"Hellshade_boots_m"		//Hellshade Boots
+3836	255	255	255	"Icefrost_helm_sm"		//Icefrost Helm
+4348	255	255	255	"Icefrost_armor_m"		//Icefrost Armor
+4860	255	255	255	"Icefrost_pants_m"		//Icefrost Pants
+5372	255	255	255	"Icefrost_gloves_m"		//Icefrost Gloves
+5884	255	255	255	"Icefrost_boots_m"		//Icefrost Boots
+3837	255	255	255	"Magma_helm_sm"		//Magma Helm
+4349	255	255	255	"Magma_armor_m"		//Magma Armor
+4861	255	255	255	"Magma_pants_m"		//Magma Pants
+5373	255	255	255	"Magma_gloves_m"		//Magma Gloves
+5885	255	255	255	"Magma_boots_m"		//Magma Boots
+3838	255	255	255	"Nightfire_helm_sm"		//Nightfire Helm
+4350	255	255	255	"Nightfire_armor_m"		//Nightfire Armor
+4862	255	255	255	"Nightfire_pants_m"		//Nightfire Pants
+5374	255	255	255	"Nightfire_gloves_m"		//Nightfire Gloves
+5886	255	255	255	"Nightfire_boots_m"		//Nightfire Boots
+3839	255	255	255	"Santablue_helm_sm"		//Santablue Helm
+4351	255	255	255	"Santablue_armor_m"		//Santablue Armor
+4863	255	255	255	"Santablue_pants_m"		//Santablue Pants
+5375	255	255	255	"Santablue_gloves_m"		//Santablue Gloves
+5887	255	255	255	"Santablue_boots_m"		//Santablue Boots
+3840	255	255	255	"Santagreen_helm_sm"		//Santagreen Helm
+4352	255	255	255	"Santagreen_armor_m"		//Santagreen Armor
+4864	255	255	255	"Santagreen_pants_m"		//Santagreen Pants
+5376	255	255	255	"Santagreen_gloves_m"		//Santagreen Gloves
+5888	255	255	255	"Santagreen_boots_m"		//Santagreen Boots
+3841	255	255	255	"Wraith_helm_sm"		//Wraith Helm
+4353	255	255	255	"Wraith_armor_m"		//Wraith Armor
+4865	255	255	255	"Wraith_pants_m"		//Wraith Pants
+5377	255	255	255	"Wraith_gloves_m"		//Wraith Gloves
+5889	255	255	255	"Wraith_boots_m"		//Wraith Boots
 end

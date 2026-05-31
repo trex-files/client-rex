@@ -9,4 +9,7 @@
 //===============================================================================================================
 //ItemIndex	TranslationX	TranslationY	RotationX	RotationY	RotationZ	Scale			Commnet
 
+// Imperial Shield - scale down oversized model
+3118		0		0		50		0		0		0.35
+
 end
