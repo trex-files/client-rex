@@ -23,7 +23,8 @@
 //     VERY slow subtle twinkle, denser near the horizon band.
 //   • Clouds: soft cottony puffs drifting slowly, per-map tint via uCloudTint
 //     (white default / celeste Atlans-Devias / gray Elbeland), additive, faint.
-//   • NO moon (the legacy sky had none) — omitted.
+//   * Moon: procedural disc + one-sided glow, GATED on uMoonVisible (drawn
+//     only when the camera is tilted up; offscreen at the default angle).
 //
 // View ray: from uInvViewProj (= inverse(proj*view), computed once/frame on the
 //   CPU — EngineBridge::GetInvViewProj). NO per-pixel inverse().
@@ -52,8 +53,9 @@ layout(std140) uniform Camera {
 // ---------------------------------------------------------------------------
 uniform mat4  uInvViewProj;     // inverse(proj*view) — CPU-computed once/frame
 
-uniform vec3  uSunDir;          // (legacy sky had no moon; kept for compat, unused for look)
+uniform vec3  uSunDir;          // moon direction (drives the moonlight glow + disc)
 uniform float uSunIntensity;    // global brightness scale for stars/clouds (small)
+uniform float uMoonVisible;     // 1 = draw moon (camera tilted up); 0 = skip (offscreen → wasted GPU)
 
 uniform vec3  uHorizonColor;    // per-map HORIZON stop (dark, from GetFowHorizonColor)
 uniform vec3  uSkyTint;         // multiplicative overall tint (default 1,1,1)
@@ -61,11 +63,7 @@ uniform vec3  uCloudTint;       // per-map cloud colour (white / celeste / gray)
 
 uniform float uTime;            // seconds — cloud drift + star twinkle
 
-uniform float uCloudBottom;     // cloud-plane #1 height (world Z)
-uniform float uCloudTop;        // cloud-plane #2 height (world Z) — second layer
 uniform float uCloudCoverage;   // [0..1] coverage
-uniform float uCloudDensity;    // density/contrast multiplier
-uniform float uCloudScale;      // spatial frequency of cloud noise
 uniform vec2  uWindDir;         // horizontal drift direction
 uniform float uWindSpeed;       // world units / second
 
@@ -160,31 +158,43 @@ vec3 nightGradient(vec3 dir) {
 
     sky *= uSkyTint;
 
-    // --- Moon (textured disc + soft glow) ----------------------------------
+    // --- Moon (procedural disc + soft glow) --------------------------------
     // A proper-looking moon instead of a flat bright dot: a pale limb-darkened
     // disc with darker "maria" patches (low-freq noise), a tight corona just
     // outside it, and a broad directional sky-glow (moonlight lighting the sky
     // from one side). Drawn into the backdrop so clouds can pass in front.
-    vec3  moonDir = normalize(uSunDir);
-    float md      = dot(dir, moonDir);
-    vec3  moonCol = vec3(0.80, 0.82, 0.88);              // pale moonlight (less blue)
+    //
+    // GATED on uMoonVisible: at the steep default isometric angle the moon sits
+    // out of the visible sky band, so computing it is wasted GPU. The gate is a
+    // UNIFORM (same value for every pixel) → coherent branch, the whole block is
+    // skipped with no divergence cost. ZzzScene sets it from skyTilted.
+    if (uMoonVisible > 0.5) {
+        vec3  moonDir = normalize(uSunDir);
+        float md      = dot(dir, moonDir);
+        vec3  moonCol = vec3(0.80, 0.82, 0.88);              // pale moonlight (less blue)
 
-    // Broad moonlight scattered across the sky (skybox-like, one-sided lighting).
-    sky += moonCol * pow(max(md, 0.0), 1.8) * 0.09;
+        // Broad moonlight scattered across the sky (skybox-like, one-sided lighting).
+        sky += moonCol * pow(max(md, 0.0), 1.8) * 0.09;
 
-    // 2D coords on the moon face via a tangent basis perpendicular to moonDir.
-    vec3  mRight = normalize(cross(vec3(0.0, 0.0, 1.0), moonDir));
-    vec3  mUp    = cross(moonDir, mRight);
-    vec2  mv     = vec2(dot(dir, mRight), dot(dir, mUp));
-    float discR  = 0.045;                                // angular radius (~2.6°)
-    float r      = length(mv) / discR;                   // 0 = center, 1 = edge
-    if (r < 1.7) {
-        float discMask = smoothstep(1.0, 0.86, r);       // soft disc edge
-        float limb     = mix(1.0, 0.50, r * r);          // limb darkening (dim rim)
-        float maria    = fbm2(mv / discR * 1.3 + 7.0);   // darker surface patches (maria)
-        float surf     = mix(0.60, 1.0, smoothstep(0.30, 0.70, maria));
-        sky += moonCol * (limb * surf) * discMask * 1.30;                    // moon body
-        sky += moonCol * smoothstep(1.7, 1.0, r) * (1.0 - discMask) * 0.25;  // corona
+        // 2D coords on the moon face via a tangent basis perpendicular to moonDir.
+        vec3  mRight = normalize(cross(vec3(0.0, 0.0, 1.0), moonDir));
+        vec3  mUp    = cross(moonDir, mRight);
+        vec2  mv     = vec2(dot(dir, mRight), dot(dir, mUp));
+        float discR  = 0.037;                                // angular radius ~2.1 deg (tune: smaller = smaller moon)
+        float r      = length(mv) / discR;                   // 0 = center, 1 = edge
+        // md > 0.0 confines the disc to the moon's OWN hemisphere. Without it,
+        // the tangent-basis projection (mv) is symmetric about the moon axis, so
+        // r is also ~0 at the antipode -moonDir — a phantom "anti-moon" appears
+        // downward, in the z=0 void exposed by precipices/cliffs. The glow above
+        // already uses max(md,0); the disc needs the same one-sided guard.
+        if (md > 0.0 && r < 1.7) {
+            float discMask = smoothstep(1.0, 0.86, r);       // soft disc edge
+            float limb     = mix(1.0, 0.50, r * r);          // limb darkening (dim rim)
+            float maria    = fbm2(mv / discR * 1.3 + 7.0);   // darker surface patches (maria)
+            float surf     = mix(0.60, 1.0, smoothstep(0.30, 0.70, maria));
+            sky += moonCol * (limb * surf) * discMask * 1.30;                    // moon body
+            sky += moonCol * smoothstep(1.7, 1.0, r) * (1.0 - discMask) * 0.25;  // corona
+        }
     }
 
     return max(sky, vec3(0.0));
@@ -233,34 +243,8 @@ vec3 stars(vec3 dir) {
 }
 
 // ===========================================================================
-//  CHEAP CLOUDS  (2D cloud-plane FBM — soft cottony puffs, drifting slowly)
+//  CLOUDS  (procedural dome-projected FBM - soft broken masses, slow drift)
 // ===========================================================================
-// Intersect the view ray with a horizontal plane at height H, sample soft FBM.
-// Returns coverage-remapped density in [0..1] (0 = clear). tOut = ray distance.
-float cloudLayer(vec3 camPos, vec3 dir, float H, float scale, vec2 wind,
-                 float speed, out float tOut) {
-    tOut = -1.0;
-    if (dir.z <= 0.02) return 0.0;                   // ray must climb to the plane
-    float t = (H - camPos.z) / dir.z;
-    if (t <= 0.0) return 0.0;                        // plane behind / below
-    tOut = t;
-
-    vec2 cp = camPos.xy + dir.xy * t;
-    vec2 uv = cp * scale + wind * speed * uTime;
-
-    float n = fbm2(uv);
-    // BROKEN-cloud remap (user 2026-05-29: "parecen un techo" → want separated
-    // wispy clouds with HOLES showing sky/stars). The threshold sits HIGH so
-    // only the noise peaks become cloud; everything below is clear sky (gaps).
-    // Narrow soft band keeps edges cottony but the clouds stay distinct islands.
-    float thr = 1.0 - uCloudCoverage * 0.65;   // high threshold → sparse islands
-    float density = smoothstep(thr, thr + 0.22, n);
-    // Extra contrast so the centres are denser than the feathered rims, but the
-    // whole thing never becomes a solid sheet.
-    density = density * density;
-    density *= uCloudDensity;
-    return clamp(density, 0.0, 1.0);
-}
 
 // Composite two slow-drifting cloud layers over the sky. Clouds are faint,
 // soft, BROKEN (with gaps), and concentrated in the mid/low band — NOT a moving
@@ -286,10 +270,13 @@ vec3 clouds(vec3 camPos, vec3 dir, vec3 skyBehind) {
     // grain); a base-dominant blend of two octaves keeps shape without the
     // high-freq speckle. (fbm2 is ~0..0.97, mean ~0.48 — threshold must sit
     // near/below that or clouds vanish.)
-    // VERTICAL DISPERSION: bias the sample Y by elevation so cloud masses sit at
-    // DIFFERENT heights (spread up↕down) instead of one layer that converges at
-    // the zenith — smooth offset, no extra grain.
-    vec2  cuv = vec2(proj.x, proj.y + dir.z * 1.6);
+    // Cloud field coords = pure DOME PROJECTION (proj = dir.xy/(dir.z+C)): an
+    // injective gnomonic map of the visible hemisphere, so no two rays sample
+    // the same point -> no mirror/fold. The old "+ dir.z*1.6" Y dispersion BROKE
+    // this: proj.y SHRINKS with elevation while dir.z*1.6 GROWS -> the Y coord
+    // went non-monotonic on the +Y (moon) side -> the cloud field folded back on
+    // itself = "clouds reflected from the horizon" lit by the moon glow.
+    vec2  cuv = proj;
     float n1 = fbm2(cuv * 1.2 + uWindDir * (drift * 0.0020));
     float n2 = fbm2(cuv * 2.3 + normalize(uWindDir + vec2(0.4, -0.2)) * (drift * 0.0032));
     float n  = n1 * 0.70 + n2 * 0.30;                    // base-dominant → soft masses
