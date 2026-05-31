@@ -1,0 +1,1127 @@
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4285  ItemIdx=3114  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1372  kw=no   fn=[hs_8thmasteryshield01.jpg]
+  mesh[1]  tris=336   kw=no   fn=[hs_8thmasteryshield02.jpg]
+  mesh[2]  tris=64    kw=YES  fn=[blur02_mono.JPG]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4276  ItemIdx=3105  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=572   kw=no   fn=[Masteryshild_dk041.jpg]
+  mesh[1]  tris=24    kw=no   fn=[mshild_back04.jpg]
+  mesh[2]  tris=78    kw=YES  fn=[Masteryshildabc_R.jpg]
+  mesh[3]  tris=72    kw=no   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268  ItemIdx=97  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=272   kw=no   fn=[Imperial_Magicsword_01.jpg]
+  mesh[1]  tris=44    kw=no   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2]  tris=900   kw=no   fn=[Imperial_Magicsword_02.jpg]
+  mesh[3]  tris=404   kw=no   fn=[Imperial_Magicsword_03.jpg]
+  mesh[4]  tris=58    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=3801  ItemIdx=2630  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=2072  kw=no   fn=[staff_master07.jpg]
+  mesh[1]  tris=80    kw=no   fn=[staff_master07a.jpg]
+
+=== Type=4284  ItemIdx=3113  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=54    kw=no   fn=[Shild_x7.jpg]
+  mesh[1]  tris=72    kw=YES  fn=[Masteryshild_dk072_render.JPG]
+  mesh[2]  tris=480   kw=no   fn=[Masteryshild_dk071.jpg]
+  mesh[3]  tris=88    kw=no   fn=[gra2_2.jpg]
+
+=== Type=3772  ItemIdx=2601  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=648   kw=no   fn=[bloodangelstaff01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813  ItemIdx=2642  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=816   kw=no   fn=[apocalypse_staffA.jpg]
+  mesh[1]  tris=1618  kw=no   fn=[apocalypse_staffB.jpg]
+  mesh[2]  tris=28    kw=no   fn=[flame_chrome.jpg]
+  mesh[3]  tris=102   kw=no   fn=[lava.jpg]
+
+=== Type=3823  ItemIdx=2652  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=350   kw=no   fn=[Imperial_Staff_02.jpg]
+  mesh[1]  tris=1938  kw=no   fn=[Imperial_Staff_03.jpg]
+  mesh[2]  tris=108   kw=no   fn=[Imperial_Staff_04.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Imperial_Staff_01.jpg]
+  mesh[4]  tris=120   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4278  ItemIdx=3107  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=424   kw=no   fn=[Masteryshild_dk061.jpg]
+  mesh[1]  tris=30    kw=no   fn=[mshild_back06.jpg]
+  mesh[2]  tris=40    kw=YES  fn=[Masteryshild_dk064_R.jpg]
+  mesh[3]  tris=180   kw=no   fn=[Masteryshild_dk062.jpg]
+  mesh[4]  tris=114   kw=no   fn=[Masteryshild_dk063.jpg]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4285  ItemIdx=3114  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1372  kw=no   fn=[hs_8thmasteryshield01.jpg]
+  mesh[1]  tris=336   kw=no   fn=[hs_8thmasteryshield02.jpg]
+  mesh[2]  tris=64    kw=YES  fn=[blur02_mono.JPG]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4276  ItemIdx=3105  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=572   kw=no   fn=[Masteryshild_dk041.jpg]
+  mesh[1]  tris=24    kw=no   fn=[mshild_back04.jpg]
+  mesh[2]  tris=78    kw=YES  fn=[Masteryshildabc_R.jpg]
+  mesh[3]  tris=72    kw=no   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268  ItemIdx=97  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=272   kw=no   fn=[Imperial_Magicsword_01.jpg]
+  mesh[1]  tris=44    kw=no   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2]  tris=900   kw=no   fn=[Imperial_Magicsword_02.jpg]
+  mesh[3]  tris=404   kw=no   fn=[Imperial_Magicsword_03.jpg]
+  mesh[4]  tris=58    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=3801  ItemIdx=2630  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=2072  kw=no   fn=[staff_master07.jpg]
+  mesh[1]  tris=80    kw=no   fn=[staff_master07a.jpg]
+
+=== Type=4284  ItemIdx=3113  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=54    kw=no   fn=[Shild_x7.jpg]
+  mesh[1]  tris=72    kw=YES  fn=[Masteryshild_dk072_render.JPG]
+  mesh[2]  tris=480   kw=no   fn=[Masteryshild_dk071.jpg]
+  mesh[3]  tris=88    kw=no   fn=[gra2_2.jpg]
+
+=== Type=3772  ItemIdx=2601  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=648   kw=no   fn=[bloodangelstaff01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813  ItemIdx=2642  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=816   kw=no   fn=[apocalypse_staffA.jpg]
+  mesh[1]  tris=1618  kw=no   fn=[apocalypse_staffB.jpg]
+  mesh[2]  tris=28    kw=no   fn=[flame_chrome.jpg]
+  mesh[3]  tris=102   kw=no   fn=[lava.jpg]
+
+=== Type=3823  ItemIdx=2652  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=350   kw=no   fn=[Imperial_Staff_02.jpg]
+  mesh[1]  tris=1938  kw=no   fn=[Imperial_Staff_03.jpg]
+  mesh[2]  tris=108   kw=no   fn=[Imperial_Staff_04.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Imperial_Staff_01.jpg]
+  mesh[4]  tris=120   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4278  ItemIdx=3107  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=424   kw=no   fn=[Masteryshild_dk061.jpg]
+  mesh[1]  tris=30    kw=no   fn=[mshild_back06.jpg]
+  mesh[2]  tris=40    kw=YES  fn=[Masteryshild_dk064_R.jpg]
+  mesh[3]  tris=180   kw=no   fn=[Masteryshild_dk062.jpg]
+  mesh[4]  tris=114   kw=no   fn=[Masteryshild_dk063.jpg]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=4285  ItemIdx=3114  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1372  kw=no   fn=[hs_8thmasteryshield01.jpg]
+  mesh[1]  tris=336   kw=no   fn=[hs_8thmasteryshield02.jpg]
+  mesh[2]  tris=64    kw=YES  fn=[blur02_mono.JPG]
+
+=== Type=4276  ItemIdx=3105  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=572   kw=no   fn=[Masteryshild_dk041.jpg]
+  mesh[1]  tris=24    kw=no   fn=[mshild_back04.jpg]
+  mesh[2]  tris=78    kw=YES  fn=[Masteryshildabc_R.jpg]
+  mesh[3]  tris=72    kw=no   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268  ItemIdx=97  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=272   kw=no   fn=[Imperial_Magicsword_01.jpg]
+  mesh[1]  tris=44    kw=no   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2]  tris=900   kw=no   fn=[Imperial_Magicsword_02.jpg]
+  mesh[3]  tris=404   kw=no   fn=[Imperial_Magicsword_03.jpg]
+  mesh[4]  tris=58    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=3801  ItemIdx=2630  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=2072  kw=no   fn=[staff_master07.jpg]
+  mesh[1]  tris=80    kw=no   fn=[staff_master07a.jpg]
+
+=== Type=4284  ItemIdx=3113  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=54    kw=no   fn=[Shild_x7.jpg]
+  mesh[1]  tris=72    kw=YES  fn=[Masteryshild_dk072_render.JPG]
+  mesh[2]  tris=480   kw=no   fn=[Masteryshild_dk071.jpg]
+  mesh[3]  tris=88    kw=no   fn=[gra2_2.jpg]
+
+=== Type=3772  ItemIdx=2601  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=648   kw=no   fn=[bloodangelstaff01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813  ItemIdx=2642  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=816   kw=no   fn=[apocalypse_staffA.jpg]
+  mesh[1]  tris=1618  kw=no   fn=[apocalypse_staffB.jpg]
+  mesh[2]  tris=28    kw=no   fn=[flame_chrome.jpg]
+  mesh[3]  tris=102   kw=no   fn=[lava.jpg]
+
+=== Type=3823  ItemIdx=2652  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=350   kw=no   fn=[Imperial_Staff_02.jpg]
+  mesh[1]  tris=1938  kw=no   fn=[Imperial_Staff_03.jpg]
+  mesh[2]  tris=108   kw=no   fn=[Imperial_Staff_04.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Imperial_Staff_01.jpg]
+  mesh[4]  tris=120   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4278  ItemIdx=3107  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=424   kw=no   fn=[Masteryshild_dk061.jpg]
+  mesh[1]  tris=30    kw=no   fn=[mshild_back06.jpg]
+  mesh[2]  tris=40    kw=YES  fn=[Masteryshild_dk064_R.jpg]
+  mesh[3]  tris=180   kw=no   fn=[Masteryshild_dk062.jpg]
+  mesh[4]  tris=114   kw=no   fn=[Masteryshild_dk063.jpg]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4276  ItemIdx=3105  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=572   kw=no   fn=[Masteryshild_dk041.jpg]
+  mesh[1]  tris=24    kw=no   fn=[mshild_back04.jpg]
+  mesh[2]  tris=78    kw=YES  fn=[Masteryshildabc_R.jpg]
+  mesh[3]  tris=72    kw=no   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268  ItemIdx=97  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=272   kw=no   fn=[Imperial_Magicsword_01.jpg]
+  mesh[1]  tris=44    kw=no   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2]  tris=900   kw=no   fn=[Imperial_Magicsword_02.jpg]
+  mesh[3]  tris=404   kw=no   fn=[Imperial_Magicsword_03.jpg]
+  mesh[4]  tris=58    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4285  ItemIdx=3114  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1372  kw=no   fn=[hs_8thmasteryshield01.jpg]
+  mesh[1]  tris=336   kw=no   fn=[hs_8thmasteryshield02.jpg]
+  mesh[2]  tris=64    kw=YES  fn=[blur02_mono.JPG]
+
+=== Type=3801  ItemIdx=2630  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=2072  kw=no   fn=[staff_master07.jpg]
+  mesh[1]  tris=80    kw=no   fn=[staff_master07a.jpg]
+
+=== Type=4284  ItemIdx=3113  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=54    kw=no   fn=[Shild_x7.jpg]
+  mesh[1]  tris=72    kw=YES  fn=[Masteryshild_dk072_render.JPG]
+  mesh[2]  tris=480   kw=no   fn=[Masteryshild_dk071.jpg]
+  mesh[3]  tris=88    kw=no   fn=[gra2_2.jpg]
+
+=== Type=3772  ItemIdx=2601  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=648   kw=no   fn=[bloodangelstaff01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813  ItemIdx=2642  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=816   kw=no   fn=[apocalypse_staffA.jpg]
+  mesh[1]  tris=1618  kw=no   fn=[apocalypse_staffB.jpg]
+  mesh[2]  tris=28    kw=no   fn=[flame_chrome.jpg]
+  mesh[3]  tris=102   kw=no   fn=[lava.jpg]
+
+=== Type=3823  ItemIdx=2652  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=350   kw=no   fn=[Imperial_Staff_02.jpg]
+  mesh[1]  tris=1938  kw=no   fn=[Imperial_Staff_03.jpg]
+  mesh[2]  tris=108   kw=no   fn=[Imperial_Staff_04.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Imperial_Staff_01.jpg]
+  mesh[4]  tris=120   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4278  ItemIdx=3107  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=424   kw=no   fn=[Masteryshild_dk061.jpg]
+  mesh[1]  tris=30    kw=no   fn=[mshild_back06.jpg]
+  mesh[2]  tris=40    kw=YES  fn=[Masteryshild_dk064_R.jpg]
+  mesh[3]  tris=180   kw=no   fn=[Masteryshild_dk062.jpg]
+  mesh[4]  tris=114   kw=no   fn=[Masteryshild_dk063.jpg]
+
+=== Type=1240  ItemIdx=69  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1036  kw=no   fn=[blueeyemagicsword01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[blueeyemagicsword03.jpg]
+  mesh[2]  tris=260   kw=no   fn=[blueeyemagicsword02.jpg]
+
+=== Type=1239  ItemIdx=68  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=950   kw=no   fn=[hs_blueeyeknightA01.jpg]
+  mesh[1]  tris=54    kw=no   fn=[hs_blueeyeknightA02.jpg]
+  mesh[2]  tris=74    kw=no   fn=[hs_blueeyeknightA03.JPG]
+
+=== Type=1237  ItemIdx=66  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=784   kw=no   fn=[MDHsword4a.jpg]
+  mesh[1]  tris=60    kw=no   fn=[gra3.JPG]
+  mesh[2]  tris=148   kw=no   fn=[MDHsword4c.jpg]
+  mesh[3]  tris=128   kw=no   fn=[MDHsword4b.jpg]
+
+=== Type=1269  ItemIdx=98  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=228   kw=no   fn=[Imperial_TH_sword_01.jpg]
+  mesh[1]  tris=60    kw=no   fn=[Imperial_TH_sword_04.jpg]
+  mesh[2]  tris=636   kw=no   fn=[Imperial_TH_sword_02.jpg]
+  mesh[3]  tris=1260  kw=no   fn=[Imperial_TH_sword_03.jpg]
+  mesh[4]  tris=52    kw=no   fn=[alpha_line2mono2.jpg]
+  mesh[5]  tris=256   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=1267  ItemIdx=96  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=892   kw=no   fn=[Imperial_Sword_02.jpg]
+  mesh[1]  tris=80    kw=no   fn=[Imperial_Sword_04.jpg]
+  mesh[2]  tris=304   kw=no   fn=[Imperial_Sword_01.jpg]
+  mesh[3]  tris=232   kw=no   fn=[Imperial_Sword_03.jpg]
+  mesh[4]  tris=72    kw=no   fn=[alpha_line2mono2.jpg]
+  mesh[5]  tris=20    kw=no   fn=[FireB00_4X4_mono.jpg]
+
+=== Type=1265  ItemIdx=94  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=156   kw=no   fn=[TempleGuard_TH_sword_03.jpg]
+  mesh[1]  tris=1692  kw=no   fn=[TempleGuard_TH_sword_01.jpg]
+  mesh[2]  tris=324   kw=no   fn=[TempleGuard_TH_sword_02.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Blur_Aura002.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=1264  ItemIdx=93  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1424  kw=no   fn=[TempleGuard_M_sword_01.jpg]
+  mesh[1]  tris=180   kw=no   fn=[TempleGuard_M_sword_03.jpg]
+  mesh[2]  tris=436   kw=no   fn=[TempleGuard_M_sword_02.jpg]
+  mesh[3]  tris=264   kw=no   fn=[ArrowLight01.jpg]
+  mesh[4]  tris=156   kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=1263  ItemIdx=92  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=160   kw=no   fn=[TempleGuard_sword_03.jpg]
+  mesh[1]  tris=196   kw=no   fn=[TempleGuard_sword_04.jpg]
+  mesh[2]  tris=184   kw=no   fn=[TempleGuard_sword_02.jpg]
+  mesh[3]  tris=1740  kw=no   fn=[TempleGuard_sword_01.jpg]
+  mesh[4]  tris=264   kw=no   fn=[Blur_Aura002.jpg]
+  mesh[5]  tris=4     kw=no   fn=[FireB00_4X4_mono.jpg]
+
+=== Type=1261  ItemIdx=90  NumMeshs=7  isCEffect=0
+  mesh[0]  tris=900   kw=no   fn=[lightning_Twosword_02.jpg]
+  mesh[1]  tris=776   kw=no   fn=[lightning_Twosword_01.jpg]
+  mesh[2]  tris=208   kw=no   fn=[lightning_Twosword_03.jpg]
+  mesh[3]  tris=2     kw=YES  fn=[lightning_Twosword_Glow.jpg]
+  mesh[4]  tris=32    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=900   kw=YES  fn=[lightning_Twosword_02_R.jpg]
+  mesh[6]  tris=96    kw=no   fn=[lightning00_4X4_Blue.jpg]
+
+=== Type=1260  ItemIdx=89  NumMeshs=7  isCEffect=0
+  mesh[0]  tris=1152  kw=no   fn=[lightning_magicSword_01.jpg]
+  mesh[1]  tris=576   kw=no   fn=[lightning_magicSword02.jpg]
+  mesh[2]  tris=240   kw=no   fn=[lightning_magicSword03.jpg]
+  mesh[3]  tris=56    kw=no   fn=[alpha_line2.jpg]
+  mesh[4]  tris=768   kw=no   fn=[K_Elec_light01_1X4.jpg]
+  mesh[5]  tris=2     kw=YES  fn=[lightning_magicSword_Glow.jpg]
+  mesh[6]  tris=1152  kw=YES  fn=[lightning_magicSword01_r.JPG]
+
+=== Type=1259  ItemIdx=88  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=1088  kw=no   fn=[lightning_sword_01.jpg]
+  mesh[1]  tris=762   kw=no   fn=[lightning_sword_02.jpg]
+  mesh[2]  tris=298   kw=no   fn=[lightning_sword_03.jpg]
+  mesh[3]  tris=48    kw=no   fn=[alpha_line2.jpg]
+  mesh[4]  tris=72    kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+  mesh[5]  tris=2     kw=YES  fn=[lightning_sword_Glow.jpg]
+
+=== Type=1256  ItemIdx=85  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1026  kw=no   fn=[Absolute_lance01A.jpg]
+  mesh[1]  tris=108   kw=no   fn=[Absolute_lance01B.jpg]
+  mesh[2]  tris=152   kw=no   fn=[Absolute_lance01C.jpg]
+  mesh[3]  tris=436   kw=no   fn=[Absolute_lance02.JPG]
+  mesh[4]  tris=240   kw=YES  fn=[eyejam_R.JPG]
+
+=== Type=1255  ItemIdx=84  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=626   kw=no   fn=[hsmastery_sword06.jpg]
+  mesh[1]  tris=288   kw=no   fn=[mastery_spear306.JPG]
+  mesh[2]  tris=120   kw=YES  fn=[masteryspear206_R.JPG]
+  mesh[3]  tris=78    kw=YES  fn=[hsmasterysword206_R.jpg]
+
+=== Type=1253  ItemIdx=82  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=896   kw=no   fn=[magicsword1master06.jpg]
+  mesh[1]  tris=288   kw=no   fn=[mastery_spear306.JPG]
+  mesh[2]  tris=120   kw=no   fn=[mastery_spear206.JPG]
+  mesh[3]  tris=160   kw=no   fn=[magicsword2master06.JPG]
+  mesh[4]  tris=40    kw=no   fn=[gra3.JPG]
+
+=== Type=7028  ItemIdx=5857  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=688   kw=no   fn=[Item1173_Boot.jpg]
+  mesh[1]  tris=280   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6516  ItemIdx=5345  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=642   kw=no   fn=[Item1173_Glove.jpg]
+  mesh[1]  tris=266   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=6004  ItemIdx=4833  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=516   kw=no   fn=[Item1173_Pant.jpg]
+  mesh[1]  tris=182   kw=no   fn=[Item1173_cotton.jpg]
+
+=== Type=5492  ItemIdx=4321  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1168  kw=no   fn=[Item1173_Armor.jpg]
+  mesh[1]  tris=90    kw=no   fn=[Item1173_cotton.jpg]
+  mesh[2]  tris=60    kw=no   fn=[Item1171_jewel.jpg]
+
+=== Type=4980  ItemIdx=3809  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=360   kw=no   fn=[Item1173_Helm.jpg]
+  mesh[1]  tris=226   kw=no   fn=[HQSkinClass412.jpg]
+
+=== Type=4285  ItemIdx=3114  NumMeshs=3  isCEffect=0
+  mesh[0]  tris=1372  kw=no   fn=[hs_8thmasteryshield01.jpg]
+  mesh[1]  tris=336   kw=no   fn=[hs_8thmasteryshield02.jpg]
+  mesh[2]  tris=64    kw=YES  fn=[blur02_mono.JPG]
+
+=== Type=3817  ItemIdx=2646  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=976   kw=no   fn=[lightning_staff_01.jpg]
+  mesh[1]  tris=1508  kw=no   fn=[lightning_staff_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_staff_Glow00.jpg]
+  mesh[3]  tris=148   kw=no   fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=2246  ItemIdx=1075  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Scepter_01.jpg]
+  mesh[1]  tris=1162  kw=no   fn=[lightning_Scepter_02.jpg]
+  mesh[2]  tris=2     kw=YES  fn=[lightning_Scepter_Glow.jpg]
+  mesh[3]  tris=1162  kw=YES  fn=[lightning_Scepter_02_r.jpg]
+  mesh[4]  tris=80    kw=no   fn=[alpha_line2.jpg]
+  mesh[5]  tris=240   kw=no   fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804  ItemIdx=2633  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=1660  kw=no   fn=[M8staffA.jpg]
+  mesh[1]  tris=524   kw=no   fn=[M8staffC.jpg]
+  mesh[2]  tris=32    kw=no   fn=[gra4.JPG]
+  mesh[3]  tris=40    kw=no   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820  ItemIdx=2649  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=108   kw=no   fn=[TempleGuard_Staff_03.jpg]
+  mesh[1]  tris=144   kw=no   fn=[TempleGuard_Staff_02.jpg]
+  mesh[2]  tris=1828  kw=no   fn=[TempleGuard_Staff_01.jpg]
+  mesh[3]  tris=2     kw=no   fn=[RuneMA00_mono.jpg]
+  mesh[4]  tris=288   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4288  ItemIdx=3117  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=1024  kw=no   fn=[TempleGuard_Shild_01.jpg]
+  mesh[1]  tris=368   kw=no   fn=[TempleGuard_Shild_02.jpg]
+  mesh[2]  tris=14    kw=no   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3]  tris=44    kw=no   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4]  tris=56    kw=no   fn=[alpha_line3_mono.jpg]
+
+=== Type=4277  ItemIdx=3106  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=354   kw=no   fn=[Masteryshild_dk051.jpg]
+  mesh[1]  tris=66    kw=no   fn=[mshild_back05.jpg]
+  mesh[2]  tris=10    kw=YES  fn=[eyejam_R.JPG]
+  mesh[3]  tris=106   kw=no   fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286  ItemIdx=3115  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=44    kw=no   fn=[Fire_01.JPG]
+  mesh[1]  tris=1038  kw=no   fn=[apocalypse_shield_A.jpg]
+  mesh[2]  tris=156   kw=no   fn=[apocalypse_shield_C.jpg]
+  mesh[3]  tris=538   kw=no   fn=[apocalypse_shield_B.jpg]
+
+=== Type=4289  ItemIdx=3118  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=38    kw=no   fn=[Imperial_shield_01.jpg]
+  mesh[1]  tris=304   kw=no   fn=[Imperial_shield_03.jpg]
+  mesh[2]  tris=20    kw=no   fn=[Imperial_shield_04.jpg]
+  mesh[3]  tris=52    kw=no   fn=[Imperial_shield_05.jpg]
+  mesh[4]  tris=610   kw=no   fn=[Imperial_shield_02.jpg]
+  mesh[5]  tris=64    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4276  ItemIdx=3105  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=572   kw=no   fn=[Masteryshild_dk041.jpg]
+  mesh[1]  tris=24    kw=no   fn=[mshild_back04.jpg]
+  mesh[2]  tris=78    kw=YES  fn=[Masteryshildabc_R.jpg]
+  mesh[3]  tris=72    kw=no   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268  ItemIdx=97  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=272   kw=no   fn=[Imperial_Magicsword_01.jpg]
+  mesh[1]  tris=44    kw=no   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2]  tris=900   kw=no   fn=[Imperial_Magicsword_02.jpg]
+  mesh[3]  tris=404   kw=no   fn=[Imperial_Magicsword_03.jpg]
+  mesh[4]  tris=58    kw=no   fn=[alpha_line2mono2.jpg]
+
+=== Type=4287  ItemIdx=3116  NumMeshs=6  isCEffect=0
+  mesh[0]  tris=810   kw=no   fn=[lightning_Shield_02.jpg]
+  mesh[1]  tris=144   kw=no   fn=[k_elec_light.jpg]
+  mesh[2]  tris=752   kw=no   fn=[lightning_Shield_01.jpg]
+  mesh[3]  tris=348   kw=no   fn=[lightning_Shield_03.jpg]
+  mesh[4]  tris=810   kw=YES  fn=[lightning_Shield_02_R.jpg]
+  mesh[5]  tris=64    kw=no   fn=[blue.JPG]
+
+=== Type=3801  ItemIdx=2630  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=2072  kw=no   fn=[staff_master07.jpg]
+  mesh[1]  tris=80    kw=no   fn=[staff_master07a.jpg]
+
+=== Type=4284  ItemIdx=3113  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=54    kw=no   fn=[Shild_x7.jpg]
+  mesh[1]  tris=72    kw=YES  fn=[Masteryshild_dk072_render.JPG]
+  mesh[2]  tris=480   kw=no   fn=[Masteryshild_dk071.jpg]
+  mesh[3]  tris=88    kw=no   fn=[gra2_2.jpg]
+
+=== Type=3772  ItemIdx=2601  NumMeshs=2  isCEffect=0
+  mesh[0]  tris=648   kw=no   fn=[bloodangelstaff01.jpg]
+  mesh[1]  tris=40    kw=no   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813  ItemIdx=2642  NumMeshs=4  isCEffect=0
+  mesh[0]  tris=816   kw=no   fn=[apocalypse_staffA.jpg]
+  mesh[1]  tris=1618  kw=no   fn=[apocalypse_staffB.jpg]
+  mesh[2]  tris=28    kw=no   fn=[flame_chrome.jpg]
+  mesh[3]  tris=102   kw=no   fn=[lava.jpg]
+
+=== Type=3823  ItemIdx=2652  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=350   kw=no   fn=[Imperial_Staff_02.jpg]
+  mesh[1]  tris=1938  kw=no   fn=[Imperial_Staff_03.jpg]
+  mesh[2]  tris=108   kw=no   fn=[Imperial_Staff_04.jpg]
+  mesh[3]  tris=264   kw=no   fn=[Imperial_Staff_01.jpg]
+  mesh[4]  tris=120   kw=no   fn=[ArrowLight00.jpg]
+
+=== Type=4278  ItemIdx=3107  NumMeshs=5  isCEffect=0
+  mesh[0]  tris=424   kw=no   fn=[Masteryshild_dk061.jpg]
+  mesh[1]  tris=30    kw=no   fn=[mshild_back06.jpg]
+  mesh[2]  tris=40    kw=YES  fn=[Masteryshild_dk064_R.jpg]
+  mesh[3]  tris=180   kw=no   fn=[Masteryshild_dk062.jpg]
+  mesh[4]  tris=114   kw=no   fn=[Masteryshild_dk063.jpg]
+
+=== Type=7028 ItemIdx=5857 NumMeshs=2
+  mesh[0] tris=688  fn=[Item1173_Boot.jpg]
+  mesh[1] tris=280  fn=[Item1173_cotton.jpg]
+
+=== Type=6516 ItemIdx=5345 NumMeshs=2
+  mesh[0] tris=642  fn=[Item1173_Glove.jpg]
+  mesh[1] tris=266  fn=[Item1173_cotton.jpg]
+
+=== Type=6004 ItemIdx=4833 NumMeshs=2
+  mesh[0] tris=516  fn=[Item1173_Pant.jpg]
+  mesh[1] tris=182  fn=[Item1173_cotton.jpg]
+
+=== Type=5492 ItemIdx=4321 NumMeshs=3
+  mesh[0] tris=1168 fn=[Item1173_Armor.jpg]
+  mesh[1] tris=90   fn=[Item1173_cotton.jpg]
+  mesh[2] tris=60   fn=[Item1171_jewel.jpg]
+
+=== Type=4980 ItemIdx=3809 NumMeshs=2
+  mesh[0] tris=360  fn=[Item1173_Helm.jpg]
+  mesh[1] tris=226  fn=[HQSkinClass412.jpg]
+
+=== Type=3817 ItemIdx=2646 NumMeshs=4
+  mesh[0] tris=976  fn=[lightning_staff_01.jpg]
+  mesh[1] tris=1508 fn=[lightning_staff_02.jpg]
+  mesh[2] tris=2    fn=[lightning_staff_Glow00.jpg]
+  mesh[3] tris=148  fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=4285 ItemIdx=3114 NumMeshs=3
+  mesh[0] tris=1372 fn=[hs_8thmasteryshield01.jpg]
+  mesh[1] tris=336  fn=[hs_8thmasteryshield02.jpg]
+  mesh[2] tris=64   fn=[blur02_mono.JPG]
+
+=== Type=2246 ItemIdx=1075 NumMeshs=6
+  mesh[0] tris=810  fn=[lightning_Scepter_01.jpg]
+  mesh[1] tris=1162 fn=[lightning_Scepter_02.jpg]
+  mesh[2] tris=2    fn=[lightning_Scepter_Glow.jpg]
+  mesh[3] tris=1162 fn=[lightning_Scepter_02_r.jpg]
+  mesh[4] tris=80   fn=[alpha_line2.jpg]
+  mesh[5] tris=240  fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804 ItemIdx=2633 NumMeshs=4
+  mesh[0] tris=1660 fn=[M8staffA.jpg]
+  mesh[1] tris=524  fn=[M8staffC.jpg]
+  mesh[2] tris=32   fn=[gra4.JPG]
+  mesh[3] tris=40   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820 ItemIdx=2649 NumMeshs=5
+  mesh[0] tris=108  fn=[TempleGuard_Staff_03.jpg]
+  mesh[1] tris=144  fn=[TempleGuard_Staff_02.jpg]
+  mesh[2] tris=1828 fn=[TempleGuard_Staff_01.jpg]
+  mesh[3] tris=2    fn=[RuneMA00_mono.jpg]
+  mesh[4] tris=288  fn=[ArrowLight00.jpg]
+
+=== Type=4277 ItemIdx=3106 NumMeshs=4
+  mesh[0] tris=354  fn=[Masteryshild_dk051.jpg]
+  mesh[1] tris=66   fn=[mshild_back05.jpg]
+  mesh[2] tris=10   fn=[eyejam_R.JPG]
+  mesh[3] tris=106  fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286 ItemIdx=3115 NumMeshs=4
+  mesh[0] tris=44   fn=[Fire_01.JPG]
+  mesh[1] tris=1038 fn=[apocalypse_shield_A.jpg]
+  mesh[2] tris=156  fn=[apocalypse_shield_C.jpg]
+  mesh[3] tris=538  fn=[apocalypse_shield_B.jpg]
+
+=== Type=7028 ItemIdx=5857 NumMeshs=2
+  mesh[0] tris=688  fn=[Item1173_Boot.jpg]
+  mesh[1] tris=280  fn=[Item1173_cotton.jpg]
+
+=== Type=6516 ItemIdx=5345 NumMeshs=2
+  mesh[0] tris=642  fn=[Item1173_Glove.jpg]
+  mesh[1] tris=266  fn=[Item1173_cotton.jpg]
+
+=== Type=6004 ItemIdx=4833 NumMeshs=2
+  mesh[0] tris=516  fn=[Item1173_Pant.jpg]
+  mesh[1] tris=182  fn=[Item1173_cotton.jpg]
+
+=== Type=5492 ItemIdx=4321 NumMeshs=3
+  mesh[0] tris=1168 fn=[Item1173_Armor.jpg]
+  mesh[1] tris=90   fn=[Item1173_cotton.jpg]
+  mesh[2] tris=60   fn=[Item1171_jewel.jpg]
+
+=== Type=4980 ItemIdx=3809 NumMeshs=2
+  mesh[0] tris=360  fn=[Item1173_Helm.jpg]
+  mesh[1] tris=226  fn=[HQSkinClass412.jpg]
+
+=== Type=3817 ItemIdx=2646 NumMeshs=4
+  mesh[0] tris=976  fn=[lightning_staff_01.jpg]
+  mesh[1] tris=1508 fn=[lightning_staff_02.jpg]
+  mesh[2] tris=2    fn=[lightning_staff_Glow00.jpg]
+  mesh[3] tris=148  fn=[K_Elec_light01_1X4.jpg]
+
+=== Type=4285 ItemIdx=3114 NumMeshs=3
+  mesh[0] tris=1372 fn=[hs_8thmasteryshield01.jpg]
+  mesh[1] tris=336  fn=[hs_8thmasteryshield02.jpg]
+  mesh[2] tris=64   fn=[blur02_mono.JPG]
+
+=== Type=2246 ItemIdx=1075 NumMeshs=6
+  mesh[0] tris=810  fn=[lightning_Scepter_01.jpg]
+  mesh[1] tris=1162 fn=[lightning_Scepter_02.jpg]
+  mesh[2] tris=2    fn=[lightning_Scepter_Glow.jpg]
+  mesh[3] tris=1162 fn=[lightning_Scepter_02_r.jpg]
+  mesh[4] tris=80   fn=[alpha_line2.jpg]
+  mesh[5] tris=240  fn=[K_lightning00_4X4_Blue.jpg]
+
+=== Type=3804 ItemIdx=2633 NumMeshs=4
+  mesh[0] tris=1660 fn=[M8staffA.jpg]
+  mesh[1] tris=524  fn=[M8staffC.jpg]
+  mesh[2] tris=32   fn=[gra4.JPG]
+  mesh[3] tris=40   fn=[force_Pillar_blue.jpg]
+
+=== Type=3820 ItemIdx=2649 NumMeshs=5
+  mesh[0] tris=108  fn=[TempleGuard_Staff_03.jpg]
+  mesh[1] tris=144  fn=[TempleGuard_Staff_02.jpg]
+  mesh[2] tris=1828 fn=[TempleGuard_Staff_01.jpg]
+  mesh[3] tris=2    fn=[RuneMA00_mono.jpg]
+  mesh[4] tris=288  fn=[ArrowLight00.jpg]
+
+=== Type=4277 ItemIdx=3106 NumMeshs=4
+  mesh[0] tris=354  fn=[Masteryshild_dk051.jpg]
+  mesh[1] tris=66   fn=[mshild_back05.jpg]
+  mesh[2] tris=10   fn=[eyejam_R.JPG]
+  mesh[3] tris=106  fn=[Masteryshild_dk052.jpg]
+
+=== Type=4286 ItemIdx=3115 NumMeshs=4
+  mesh[0] tris=44   fn=[Fire_01.JPG]
+  mesh[1] tris=1038 fn=[apocalypse_shield_A.jpg]
+  mesh[2] tris=156  fn=[apocalypse_shield_C.jpg]
+  mesh[3] tris=538  fn=[apocalypse_shield_B.jpg]
+
+=== Type=4288 ItemIdx=3117 NumMeshs=5
+  mesh[0] tris=1024 fn=[TempleGuard_Shild_01.jpg]
+  mesh[1] tris=368  fn=[TempleGuard_Shild_02.jpg]
+  mesh[2] tris=14   fn=[TempleGuard_Shild_03.jpg]
+  mesh[3] tris=44   fn=[TempleGuard_Shild_04.jpg]
+  mesh[4] tris=56   fn=[alpha_line3_mono.jpg]
+
+=== Type=4276 ItemIdx=3105 NumMeshs=4
+  mesh[0] tris=572  fn=[Masteryshild_dk041.jpg]
+  mesh[1] tris=24   fn=[mshild_back04.jpg]
+  mesh[2] tris=78   fn=[Masteryshildabc_R.jpg]
+  mesh[3] tris=72   fn=[Masteryshild_dk042.JPG]
+
+=== Type=1268 ItemIdx=97 NumMeshs=5
+  mesh[0] tris=272  fn=[Imperial_Magicsword_01.jpg]
+  mesh[1] tris=44   fn=[Imperial_Magicsword_04.jpg]
+  mesh[2] tris=900  fn=[Imperial_Magicsword_02.jpg]
+  mesh[3] tris=404  fn=[Imperial_Magicsword_03.jpg]
+  mesh[4] tris=58   fn=[alpha_line2mono2.jpg]
+
+=== Type=4289 ItemIdx=3118 NumMeshs=6
+  mesh[0] tris=38   fn=[Imperial_shield_01.jpg]
+  mesh[1] tris=304  fn=[Imperial_shield_03.jpg]
+  mesh[2] tris=20   fn=[Imperial_shield_04.jpg]
+  mesh[3] tris=52   fn=[Imperial_shield_05.jpg]
+  mesh[4] tris=610  fn=[Imperial_shield_02.jpg]
+  mesh[5] tris=64   fn=[alpha_line2mono2.jpg]
+
+=== Type=4287 ItemIdx=3116 NumMeshs=6
+  mesh[0] tris=810  fn=[lightning_Shield_02.jpg]
+  mesh[1] tris=144  fn=[k_elec_light.jpg]
+  mesh[2] tris=752  fn=[lightning_Shield_01.jpg]
+  mesh[3] tris=348  fn=[lightning_Shield_03.jpg]
+  mesh[4] tris=810  fn=[lightning_Shield_02_R.jpg]
+  mesh[5] tris=64   fn=[blue.JPG]
+
+=== Type=3801 ItemIdx=2630 NumMeshs=2
+  mesh[0] tris=2072 fn=[staff_master07.jpg]
+  mesh[1] tris=80   fn=[staff_master07a.jpg]
+
+=== Type=4284 ItemIdx=3113 NumMeshs=4
+  mesh[0] tris=54   fn=[Shild_x7.jpg]
+  mesh[1] tris=72   fn=[Masteryshild_dk072_render.JPG]
+  mesh[2] tris=480  fn=[Masteryshild_dk071.jpg]
+  mesh[3] tris=88   fn=[gra2_2.jpg]
+
+=== Type=3772 ItemIdx=2601 NumMeshs=2
+  mesh[0] tris=648  fn=[bloodangelstaff01.jpg]
+  mesh[1] tris=40   fn=[bloodangelstaff02.jpg]
+
+=== Type=3813 ItemIdx=2642 NumMeshs=4
+  mesh[0] tris=816  fn=[apocalypse_staffA.jpg]
+  mesh[1] tris=1618 fn=[apocalypse_staffB.jpg]
+  mesh[2] tris=28   fn=[flame_chrome.jpg]
+  mesh[3] tris=102  fn=[lava.jpg]
+
+=== Type=3823 ItemIdx=2652 NumMeshs=5
+  mesh[0] tris=350  fn=[Imperial_Staff_02.jpg]
+  mesh[1] tris=1938 fn=[Imperial_Staff_03.jpg]
+  mesh[2] tris=108  fn=[Imperial_Staff_04.jpg]
+  mesh[3] tris=264  fn=[Imperial_Staff_01.jpg]
+  mesh[4] tris=120  fn=[ArrowLight00.jpg]
+
+=== Type=4278 ItemIdx=3107 NumMeshs=5
+  mesh[0] tris=424  fn=[Masteryshild_dk061.jpg]
+  mesh[1] tris=30   fn=[mshild_back06.jpg]
+  mesh[2] tris=40   fn=[Masteryshild_dk064_R.jpg]
+  mesh[3] tris=180  fn=[Masteryshild_dk062.jpg]
+  mesh[4] tris=114  fn=[Masteryshild_dk063.jpg]
+
