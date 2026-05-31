@@ -20,18 +20,4 @@
 81			"PrickleGlove"		420		"PrickleGlove_left"		421			"PrickleGlove_right"		  255		48		 48			// Blood Dragon 400 Claw
 83			"Sword45"			418		"Sword45_L"				419			"Sword45_R"			  78 		17 		166		// Silver Heart Claw
 100			"Sword102"			422	    "SwordL102"				423			"SwordR102"			  10        10		 10			// Guardian Claw
-//=== Items-pack merge ===
-41			"PrickleGlove"		420			"PrickleGlove_left"		421				"PrickleGlove_right"  	255		48		 48			// Bloody Dragon Claw
-45	    	"BloodangelClo"		400			"BloodangelClo_L"		401	 			"BloodangelClo_R"     	255		197		 57       	// Blood God Claw
-57			"Sword39"			402			"Sword39_L"				403				"Sword39_R"		  	  	184     039      010		// Dark God Claw
-62			"Sword41"			406			"Sword41_L"				407				"Sword41_R"			  	255 	48 		 48			// Heavenly Lord Claw
-63			"Sword42"			408			"Sword42_L"				409				"Sword42_R"			  	253		255		 119		// Heavenly Lord Claw lv2
-67			"Sword43"			410			"Sword43_L"				411				"Sword43_R"			  	239		154		 70			// Awakening Claw
-71			"Sword44"			412			"Sword44_L"				413				"Sword44_R"			  	127		127		 127		// Blue Eye Claw
-75			"Sword45"			418			"Sword45_L"				419				"Sword45_R"			  	78 		17 		 166		// Silver Heart Claw
-79			"sword46"			422	    	"sword46_L"				423				"sword46_R"			  	10      10		 10			// Manticore Claw
-87			"sword48"			426	    	"sword48_L"				427				"sword48_R"			  	10      10		 10			// Apocalypse Claw
-91			"sword49"			428	    	"SwordL102"				429				"SwordR102"			  	10      10		 10			// Lightning Claw
-95			"sword50"			430	    	"SwordL102"				431				"SwordR102"			  	10      10		 10			// Guard Claw
-99			"sword51"			432	    	"SwordL102"				433				"SwordR102"			  	10      10		 10			// Imperial Claw
 end
