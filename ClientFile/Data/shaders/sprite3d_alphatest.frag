@@ -8,11 +8,12 @@ in vec2 vUV;
 in vec4 vColor;
 in vec3 vEyePos;   // eye-space position for fog distance
 
-// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
 
 uniform sampler2D uTex;
 
@@ -22,15 +23,10 @@ void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
     if (c.a < 0.25) discard;
-    // Defensive RGB-near-zero discard so additive-authored sprites that land
-    // on the alpha-test pipeline (e.g. AlphaBlendType=2 packed atlases with
-    // hard alpha cutouts) do not paint opaque black squares around the
-    // visible glyph. Threshold mirrors sprite3d.frag.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
-    if (uFogEnabled == 1) {
-        float dist = length(vEyePos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
-    }
+#ifdef FOG_ENABLED
+    float dist = -vEyePos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
+#endif
     fragColor = c;
 }

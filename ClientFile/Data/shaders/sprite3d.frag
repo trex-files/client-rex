@@ -17,11 +17,12 @@ in vec2 vUV;
 in vec4 vColor;
 in vec3 vEyePos;   // eye-space position for fog distance
 
-// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
 
 uniform sampler2D uTex;
 
@@ -30,27 +31,14 @@ out vec4 fragColor;
 void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
-    if (c.a < 0.01) discard;
-    // Many MU effect textures are JPG (Components=3, alpha is forced to 1.0
-    // by the legacy shim). Black corners of textures like flare01.jpg
-    // (BITMAP_LIGHT) are intended to be transparent — legacy relied on
-    // additive blending (One/One) to make them invisible (RGB=0 contributes
-    // 0 to dest). When the same sprite is routed to alpha-blend mode (via
-    // SubType / AlphaBlendType not landing on additive), those black corners
-    // render as opaque BLACK rectangles behind dropped-item glows / aura
-    // halos / damage flares — exactly what users see.
-    //
-    // Mirror the legacy "additive treats RGB=0 as transparent" contract by
-    // discarding fragments whose RGB is effectively zero, regardless of the
-    // alpha-test path. Effects authored for additive blending (drop glow,
-    // skill flare, magic circle) all have RGB tapering to 0 at the texture
-    // edges; legitimate near-black sprites (e.g. dark damage numbers) still
-    // have measurable RGB above the threshold.
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
-    if (uFogEnabled == 1) {
-        float dist = length(vEyePos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
-    }
+    // 2026-05-27: Lowered discard threshold 0.01 → 0.001 so particle edges
+    // fade smoothly instead of stopping at a hard cutoff. Same fix applied
+    // to sprite3d_additive.frag for the additive path.
+    if (c.a < 0.001) discard;
+#ifdef FOG_ENABLED
+    float dist = -vEyePos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
+#endif
     fragColor = c;
 }

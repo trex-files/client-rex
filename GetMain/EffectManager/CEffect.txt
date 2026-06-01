@@ -211,6 +211,10 @@
     12          160             56                      //13 -> Control Cloak
     12          161             14                      //14 -> The Wings    
     12          162             57                      //15 -> Referre Cloak
+	12			163				53						//Wings of Silence (Wing54) — case 53 in RenderCEffect
+	12			164				54						//Wings Condemnation (Wing55) — case 54
+	12			165				52						//Wings of Fate (Wing53) — case 52
+	12			166				51						//Wings of Disillusionment (Wing52) — case 51
 
 //----------------------------------------------------------------------------------------------------
 //	6			30				59						//59 -> Bloodangel Shield
@@ -220,14 +224,17 @@
 //	6			34				63						//63 -> Blueeye Shield
 //	6			35				64						//64 -> Silverheart Shield
 //Mix--------------------------------------------------------------------------------------------------
-	14			200				65
-	14			201				65
-	14			202				65
-	14			203				65
-	14			204				65
-	14			205				65
-	14			206				65
-	14			207				65
-	14			208				65
-	14			209				65
+// DISABLED: Mastery Boxes (7368-7377) had EffectIndex=65 but no case 65 exists
+// in RenderCEffect switch -> items were rendered invisible on floor and when equipped.
+// Remove these entries until a proper case 65 is implemented in CustomCloak.cpp.
+//	14			200				65
+//	14			201				65
+//	14			202				65
+//	14			203				65
+//	14			204				65
+//	14			205				65
+//	14			206				65
+//	14			207				65
+//	14			208				65
+//	14			209				65
 end

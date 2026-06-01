@@ -8,36 +8,54 @@
 in vec2 vUV;
 in vec4 vColor;
 in vec3 vViewPos;   // view-space position from vert (camera at origin) — fog distance
+in vec3 vWorldPos;
 
-// Fog mirrors legacy fixed-function GL_FOG (glEnable(GL_FOG) + GL_LINEAR mode).
-// In legacy GL every triangle drawn got auto-fog; GL3 Core requires each shader
-// to compute it manually. The gate (uFogEnabled==0) fast-paths most maps.
-uniform int   uFogEnabled;
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+#ifdef FOG_ENABLED
+layout(std140) uniform FogBlock {
+    vec4 uFogColorRGBA;
+    vec4 uFogParams;   // x=start, y=end, z=enabled(0|1), w=unused
+};
+#endif
 
 uniform sampler2D uTex;
 
-// 0 (default): suppress hard-black border pixels from effect-atlas JPG textures
-// (Components==3, alpha forced to 1) that land on pipeLit instead of the additive
-// pipeline. 1: skip that cut — set only for the Dark Horse forced-opaque body,
-// whose black-leather barding is authored as pure-black (RGB<=1) and must render
-// solid (near-black) like legacy GL_MODULATE instead of being discarded into
-// see-through holes. See DrawMesh.cpp skipRgbCut.
+// LEGACY MATCH 2026-05-26: RGB-cut removed entirely per user request.
+// Legacy fixed-function pipeline has NO RGB threshold — only alpha
+// (via glAlphaFunc). The previous GL3 RGB-cut was a defensive workaround
+// for JPG-additive sprites that got misrouted onto an alpha-blend
+// pipeline (showed black borders as opaque squares). The correct fix is
+// pipeline routing (additive sprites → additive pipeline) NOT a shader
+// cut that ate authored dark content from random meshes.
+//
+// uSkipRgbCut is kept as a NOOP uniform so DrawMesh.cpp can keep setting
+// it without compiler warnings; it has no effect now that the cut is gone.
 uniform int uSkipRgbCut;
+
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
 
 out vec4 fragColor;
 
 void main() {
     vec4 texel = texture(uTex, vUV);
-    // The 0.005 threshold (~1.3/255) matches authored pure-black border pixels.
-    if (uSkipRgbCut == 0 && max(texel.r, max(texel.g, texel.b)) < 0.005) discard;
     vec4 c = texel * vColor;
-    if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
-        float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
-        c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
+#ifdef FOG_ENABLED
+    float dist = -vViewPos.z;
+    float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
+    c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
+#endif
+    // Fog of war: radial fade to black beyond the entity visibility radius.
+    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
+    if (uVisibility.w > 0.0) {
+        // Structures fade with the world-space depth fog (gradual to black at
+        // the horizon), staying opaque (no alpha fade) so they read as dark
+        // silhouettes, not transparent holes. Per-entity fade-out for moving
+        // chars/npcs is handled CPU-side via o->Alpha (see ZzzCharacter).
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= visFactor;
     }
     fragColor = c;
 }

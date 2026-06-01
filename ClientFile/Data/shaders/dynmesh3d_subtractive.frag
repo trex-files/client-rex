@@ -31,7 +31,7 @@ void main() {
     if (c.a < 0.01) discard;
     // No RGB discard — see file header.
     if (uFogEnabled == 1) {
-        float dist = length(vViewPos);
+        float dist = -vViewPos.z;
         float fogF = clamp((uFogEnd - dist) / (uFogEnd - uFogStart), 0.0, 1.0);
         c.rgb = mix(uFogColor.rgb, c.rgb, fogF);
     }

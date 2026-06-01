@@ -10,14 +10,29 @@
 
 in vec2 vUV;
 in vec3 vColor;
+in vec3 vWorldPos;
 flat in uint vLayer;
 
 uniform sampler2DArray uGrass;
+
+layout(std140) uniform VisibilityBlock {
+    vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+};
 
 out vec4 fragColor;
 
 void main() {
     vec4 tex = texture(uGrass, vec3(vUV, float(vLayer)));
     if (tex.a < 0.25) discard;
-    fragColor = vec4(tex.rgb * vColor, tex.a);
+    vec4 c = vec4(tex.rgb * vColor, tex.a);
+    // Fog of war: radial darken to black beyond the entity visibility radius.
+    // Keep the blade alpha (its shape) and only darken rgb so blades read as
+    // black against the (also-darkened) terrain. Guard: w<=0 → no fade.
+    if (uVisibility.w > 0.0) {
+        vec2  worldXYTiles = vWorldPos.xy * 0.01;
+        float distTiles    = length(worldXYTiles - uVisibility.xy);
+        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
+        c.rgb *= visFactor;
+    }
+    fragColor = c;
 }

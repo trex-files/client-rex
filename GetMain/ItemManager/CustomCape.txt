@@ -11,6 +11,8 @@
 6304		1		"Item\\KF_darklordwing4de.tga"			"Item\\KF_darklordwing4dd.tga"
 6306		0		"Item\\KF_ragefighterwing4db.tga"		*
 6299		0		"Item\\KF_Death_clka.tga"				*
+6311		1		"Item\\Fifth_Darklord_cape_01.tga"		"Item\\Fifth_Darklord_cape_02.tga"
+6312		0		"Item\\Fifth_Rage_cape_01.tga"			*
 	
 
 

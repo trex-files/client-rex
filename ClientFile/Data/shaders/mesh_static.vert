@@ -27,6 +27,7 @@ uniform vec2 uTexCoordOffset;   // for RENDER_WAVE textures
 out vec4 vColor;
 out vec2 vUV;
 out vec3 vViewPos;   // view-space position (camera at origin) for fog distance — legacy GL_FOG parity
+out vec3 vWorldPos;  // world-space position for fog-of-war visibility fade
 
 void main() {
     vec4 worldPos = uWorld * vec4(aPosition, 1.0);
@@ -35,4 +36,5 @@ void main() {
     vColor        = aColor;
     vUV           = aTexCoord + uTexCoordOffset;
     vViewPos      = viewPos.xyz;
+    vWorldPos     = worldPos.xyz;
 }

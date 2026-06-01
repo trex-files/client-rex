@@ -22,12 +22,7 @@
 
 in vec2 vUV;
 in vec4 vColor;
-in vec3 vEyePos;   // eye-space position (not used here, kept for layout parity)
-
-uniform int   uFogEnabled;  // ignored — additive should never be fogged
-uniform float uFogStart;
-uniform float uFogEnd;
-uniform vec4  uFogColor;
+in vec3 vEyePos;   // eye-space position (unused — no fog on additive path)
 
 uniform sampler2D uTex;
 
@@ -36,7 +31,14 @@ out vec4 fragColor;
 void main() {
     vec4 sampled = texture(uTex, vUV);
     vec4 c = sampled * vColor;
-    if (c.a < 0.01) discard;
+    // 2026-05-27: Lowered discard threshold 0.01 → 0.001 to smooth particle
+    // edges. With additive blend (GL_ONE/GL_ONE), src.rgb * 0.001 contributes
+    // imperceptibly to the framebuffer — keeping these pixels gives a soft
+    // gradient down to zero instead of a hard cutoff at 0.01 alpha. User
+    // reported "bordes ruidosos / no smooth" on Doorkeeper Titus fire and
+    // Flame skill — that was the 0.01 threshold creating a visible boundary
+    // between "barely visible" and "discarded" pixels.
+    if (c.a < 0.001) discard;
     // No RGB discard — see file header.
     // No fog — see file header.
     fragColor = c;

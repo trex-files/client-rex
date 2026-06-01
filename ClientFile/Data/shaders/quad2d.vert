@@ -10,7 +10,9 @@ layout(location = 0) in vec2 aPosition;
 layout(location = 1) in vec4 aColor;     // 0..1 RGBA, normalized from UByte4
 layout(location = 2) in vec2 aTexCoord;
 
-uniform mat4 uOrtho;
+layout(std140) uniform UIBlock {
+    mat4 uOrtho;
+};
 
 out vec2 vUV;
 out vec4 vColor;

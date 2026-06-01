@@ -15,8 +15,7 @@ void main() {
 
     // Discard near-zero alpha so JPEG noise doesn't accumulate under additive blend.
     if (c.a < 0.01) discard;
-    // Discard near-black RGB (JPEG quantization artifacts, black atlas borders).
-    if (max(sampled.r, max(sampled.g, sampled.b)) < 0.02) discard;
+    // LEGACY MATCH 2026-05-26: RGB-cut removed. Legacy has NO RGB threshold.
 
     fragColor = c;
 }

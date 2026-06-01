@@ -28,10 +28,12 @@ uniform sampler2D uPrimaryLight;          // 256x256 RGB8, dynamic
 
 out vec2 vUV;
 out vec3 vColor;
+out vec3 vWorldPos;  // world-space position for fog-of-war visibility fade
 flat out uint vLayer;
 
 void main() {
     gl_Position = uProj * uView * vec4(aPosition, 1.0);
+    vWorldPos   = aPosition;
     vUV = aTexCoord0;
     // Sample the per-cell baked light. Same texture the base terrain
     // pipeline uses, so grass tints stay consistent with the floor under
