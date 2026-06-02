@@ -88,19 +88,19 @@
   6948	 6948	 5		"Mount28"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Black Bear
   6949	 6949	 5		"Mount29"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Eclipsebound Panther
   6950	 6950	 5		"Mount31"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Tiger
-  6951	 6951	 8		"Mount32"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir
+  6951	 6951	 5		"Mount32"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir
   6952	 6952	 5		"Mount33"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir Green
   6953	 6953	 5		"Mount35"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir Rose
   6954	 6954	 5		"Mount37"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Infernosaur
-  6955	 6955	 8		"Mount39"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Volcarnox
-  6956	 6956	 8		"Mount40"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Green Lion
+  6955	 6955	 5		"Mount39"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Volcarnox
+  6956	 6956	 5		"Mount40"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Green Lion
   6957	 6957	 5		"Mount41"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Lion Angel
   6958	 6958	 5		"Mount42"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Lion Demon
   6959	 6959	 5		"Mount45"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Purple Lion
   6960	 6960	 5		"Mount46"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Demonic
-  6961	 6961	 7		"Mount48"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Blue
-  6962	 6962	 7		"Mount49"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Fire
-  6963	 6963	 8		"Mount50"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Gold
-  6964	 6964	 7		"Mount51"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Green
-  6965	 6965	 7		"Mount52"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Purple
+  6961	 6961	 5		"Mount48"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Blue
+  6962	 6962	 5		"Mount49"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Fire
+  6963	 6963	 5		"Mount50"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Gold
+  6964	 6964	 5		"Mount51"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Green
+  6965	 6965	 5		"Mount52"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Purple
 end
