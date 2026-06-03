@@ -41,6 +41,11 @@ uniform sampler2D uTex;
 // doesn't allow default uniform initializers; CPU must set every Flush.
 uniform float uBrightMult;
 
+// Per-item RGB tint from CEFFECT_RENDER_MESH_INFO (ColorR/G/B).
+// CPU sets this every Flush: effect items get their authored tint, all
+// other meshes get (1,1,1) → strict no-op. GLSL 330 forbids defaults.
+uniform vec3 uTint;
+
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
 };
@@ -60,6 +65,9 @@ void main() {
     c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
 #endif
     c.rgb *= uBrightMult;
+    // Apply per-item RGB tint (Kapocha ColorR/G/B). CPU writes (1,1,1) for
+    // meshes without an effect entry → strict no-op for all other bright meshes.
+    c.rgb *= uTint;
     // Fog of war: radial fade to black beyond the entity visibility radius.
     // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
     if (uVisibility.w > 0.0) {
