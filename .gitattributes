@@ -1,7 +1,16 @@
+# Line-ending policy: auto-detect text, store LF in the repo, check out native.
+# Prevents the CRLF<->LF churn that WSL2/Windows checkouts produced on shaders
+# and data files. Binary formats below are exempted from any conversion.
+* text=auto
+
+# Shell scripts MUST stay LF (CRLF breaks bash on Linux — e.g. build scripts).
+*.sh text eol=lf
+
 # MU client binary formats — never apply text/CRLF conversion to these.
 # Treating them as text causes silent corruption when autocrlf is enabled.
 
 # MU proprietary data
+*.main binary
 *.bmd binary
 *.bin binary
 *.obj binary
