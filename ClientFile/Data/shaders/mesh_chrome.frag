@@ -33,7 +33,6 @@ uniform int   uFogEnabled;
 // reflection darkening may look odd; revisit after Phase 2 chrome vert is linked.
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
-    vec4 uVisFade;     // rgb = horizon mist colour distant objects fade into
 };
 uniform float uFogStart;
 uniform float uFogEnd;

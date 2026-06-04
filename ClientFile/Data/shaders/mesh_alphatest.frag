@@ -20,7 +20,6 @@ uniform sampler2D uTex;
 
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
-    vec4 uVisFade;     // rgb = horizon mist colour distant objects fade into
 };
 
 out vec4 fragColor;
