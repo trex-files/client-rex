@@ -46,6 +46,15 @@ uniform float uBrightMult;
 // other meshes get (1,1,1) → strict no-op. GLSL 330 forbids defaults.
 uniform vec3 uTint;
 
+// Kapocha lightning effect overrides. CPU sets g_FxEffectCut=1 + anim params
+// before the effect mesh Flush, then resets to 0. Inert for all other meshes.
+uniform int   uEffectCut;   // 1 = discard near-black texels (kills dark-bg ghost)
+uniform int   uAnimMode;    // 0 off, 1 scrollU, 2 scrollV, 3 both, 4 frameGrid, 5 pulse
+uniform float uAnimTime;    // seconds (WorldTime * 0.001)
+uniform float uAnimSpeed;   // scroll UV/sec (modes 1-3) OR frame rate (mode 4) OR pulse speed (mode 5)
+uniform vec2  uFrameGrid;   // (cols, rows) for frameGrid mode 4; (1,1) = static / other modes
+uniform float uFxGlow;      // GlowLevel multiplier (default 1.0 = neutral)
+
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
 };
@@ -53,7 +62,38 @@ layout(std140) uniform VisibilityBlock {
 out vec4 fragColor;
 
 void main() {
-    vec4 texel = texture(uTex, vUV);
+    vec2  _uv     = vUV;
+    float _bright = 1.0;
+
+    if (uAnimMode == 1) {
+        _uv.x = fract(_uv.x + mod(uAnimTime * uAnimSpeed, 1.0));
+    } else if (uAnimMode == 2) {
+        _uv.y = fract(_uv.y + mod(uAnimTime * uAnimSpeed, 1.0));
+    } else if (uAnimMode == 3) {
+        _uv.x = fract(_uv.x + mod(uAnimTime * uAnimSpeed,       1.0));
+        _uv.y = fract(_uv.y + mod(uAnimTime * uAnimSpeed * 0.5, 1.0));
+    } else if (uAnimMode == 4) {
+        // Frame-grid animation: advance through a sprite sheet.
+        // Frame index: floor(t * speed * 30) mod (cols * rows).
+        // t * speed * 30 converts speed (frames/sec in the DLL) to our time base.
+        float total = max(uFrameGrid.x * uFrameGrid.y, 1.0);
+        float idx   = mod(floor(uAnimTime * uAnimSpeed * 30.0), total);
+        float col   = mod(idx, uFrameGrid.x);
+        float row   = floor(idx / uFrameGrid.x);
+        _uv = vUV / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
+    } else if (uAnimMode == 5) {
+        // Electric crackle: brightness-only flicker, no UV change (so the
+        // weapon-shaped lightning wrap never "slides" like a ghost). Layered
+        // sines at incommensurate frequencies give an erratic, alive flicker
+        // that reads as moving electricity rather than a smooth breathing pulse.
+        float _f = sin(uAnimTime * 9.0)        * 0.5
+                 + sin(uAnimTime * 23.0 + 1.7) * 0.3
+                 + sin(uAnimTime * 53.0 + 0.5) * 0.2;
+        _bright = 0.40 + 0.60 * clamp(_f * 0.5 + 0.5, 0.0, 1.0);
+    }
+
+    vec4 texel = texture(uTex, _uv);
+    if (uEffectCut == 1 && max(max(texel.r, texel.g), texel.b) < 0.06) discard;
     vec4 c = texel * vColor;
     // 2026-05-27: Lowered discard threshold 0.01 → 0.001 for smooth particle
     // edges (Flame skill, Doorkeeper Titus fire). Hard 0.01 cutoff produced a
@@ -65,17 +105,21 @@ void main() {
     c.rgb = mix(uFogColorRGBA.rgb, c.rgb, fogF);
 #endif
     c.rgb *= uBrightMult;
+    // GlowLevel multiplier * pulse envelope (both are 1.0 for non-effect meshes).
+    // Kapocha effect meshes (uEffectCut==1): GlowLevel up to 2.0 over-saturates
+    // the GL_ONE/GL_ONE additive pass under GL3 ("dense burned light of rays").
+    // Tame with an intensity factor, gated so non-effect bright meshes
+    // (excellent/chrome/skills) are untouched. TUNABLE: lower if still too
+    // bright, raise toward 1.0 if too dim.
+    float _glow = uFxGlow;
+    if (uEffectCut == 1) {
+        const float uFxIntensity = 0.6;   // <-- tune kapocha effect brightness here
+        _glow = uFxGlow * uFxIntensity;
+    }
+    c.rgb *= _glow * _bright;
     // Apply per-item RGB tint (Kapocha ColorR/G/B). CPU writes (1,1,1) for
     // meshes without an effect entry → strict no-op for all other bright meshes.
     c.rgb *= uTint;
-    // Fog of war: radial fade to black beyond the entity visibility radius.
-    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
-    if (uVisibility.w > 0.0) {
-        vec2  worldXYTiles = vWorldPos.xy * 0.01;
-        float distTiles    = length(worldXYTiles - uVisibility.xy);
-        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= visFactor;
-        c.a   *= visFactor;
-    }
+    // FoW radial fade intentionally NOT applied to objects (objects keep full colour).
     fragColor = c;
 }

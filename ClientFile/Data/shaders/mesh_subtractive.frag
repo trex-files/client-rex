@@ -45,14 +45,6 @@ void main() {
 #endif
     // Soften the subtractive payload — see file header.
     c.rgb *= 0.5;
-    // Fog of war: radial fade attenuates the subtractive payload with distance.
-    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
-    if (uVisibility.w > 0.0) {
-        vec2  worldXYTiles = vWorldPos.xy * 0.01;
-        float distTiles    = length(worldXYTiles - uVisibility.xy);
-        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= visFactor;
-        c.a   *= visFactor;
-    }
+    // FoW radial fade intentionally NOT applied to objects (objects keep full colour).
     fragColor = c;
 }

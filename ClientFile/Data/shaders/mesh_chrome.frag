@@ -33,6 +33,7 @@ uniform int   uFogEnabled;
 // reflection darkening may look odd; revisit after Phase 2 chrome vert is linked.
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
+    vec4 uVisFade;     // rgb = horizon mist colour distant objects fade into
 };
 uniform float uFogStart;
 uniform float uFogEnd;
@@ -52,14 +53,6 @@ void main() {
         rgb = mix(uFogColor.rgb, rgb, fogF);
     }
     vec4 c = vec4(rgb, texel.a * vColor.a * uAlpha);
-    // Fog of war: radial fade to black beyond the entity visibility radius.
-    // Guard: w<=0 means the UBO hasn't been uploaded yet → full visibility.
-    if (uVisibility.w > 0.0) {
-        vec2  worldXYTiles = vWorldPos.xy * 0.01;
-        float distTiles    = length(worldXYTiles - uVisibility.xy);
-        float visFactor    = 1.0 - smoothstep(uVisibility.z, uVisibility.w, distTiles);
-        c.rgb *= visFactor;
-        c.a   *= visFactor;
-    }
+    // FoW radial fade intentionally NOT applied to objects (objects keep full colour).
     fragColor = c;
 }
