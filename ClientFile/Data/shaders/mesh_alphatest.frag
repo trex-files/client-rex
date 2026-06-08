@@ -18,6 +18,14 @@ layout(std140) uniform FogBlock {
 
 uniform sampler2D uTex;
 
+// Phase B: CPU-driven alpha-test threshold. 0 (default) → fall back to 0.01 (the
+// historical "drop only authored alpha=0 holes" behavior for case-0 translucent and
+// g_bForceAlphaTestMesh draws). DrawMesh sets 0.25 for case-2 (legacy EnableAlphaTest)
+// so the hard cutout (World95 atmospherics, foliage) survives the Core flip where FF
+// glAlphaFunc(GL_GREATER,0.25) disappears. GLSL 330 forbids initializers; CPU sets it
+// every Flush (location -1 = safe no-op on shaders that lack it).
+uniform float uAlphaTestRef;
+
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
 };
@@ -43,7 +51,9 @@ void main() {
     // texels still alpha-blend (with depth-write ON so the rider doesn't
     // bleed through fully opaque pixels). Real alpha-cutout textures
     // (wing membrane holes authored as alpha=0) still discard cleanly.
-    if (c.a < 0.01) discard;
+    // Phase B: case-2 cutout uses 0.25 (FF match); everything else keeps the 0.01 floor.
+    float alphaRef = (uAlphaTestRef > 0.0) ? uAlphaTestRef : 0.01;
+    if (c.a < alphaRef) discard;
 #ifdef FOG_ENABLED
     float dist = -vViewPos.z;
     float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
