@@ -4354,3 +4354,6 @@
 5802	"Press ESCAPE or SPACE to cancel"
 5803	"NO ROUTE AVAILABLE"
 5804	"Cannot reach coordinate %d, %d"
+5810	"Keys"
+5811	"Window Mode"
+5812	"Settings saved."

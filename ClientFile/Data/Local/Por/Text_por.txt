@@ -4353,3 +4353,6 @@
 5802	"Pressione ESCAPE ou ESPACO para cancelar"
 5803	"SEM ROTA DISPONIVEL"
 5804	"Nao e possivel alcancar a coordenada %d, %d"
+5810	"Teclas"
+5811	"Modo janela"
+5812	"Configuracoes salvas."

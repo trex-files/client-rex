@@ -4354,3 +4354,6 @@
 5802	"Presione ESCAPE o ESPACIO para cancelar"
 5803	"NO HAY RUTA DISPONIBLE"
 5804	"No se puede llegar a la coordenada %d, %d"
+5810	"Teclas"
+5811	"Modo ventana"
+5812	"Configuracion guardada."
