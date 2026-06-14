@@ -28,6 +28,15 @@ layout(std140) uniform Camera {
 uniform sampler2D uPrimaryLight;  // dynamic per-frame terrain light (slot 2)
 uniform sampler2D uTerrainWind;   // dynamic per-frame TerrainGrassWind (slot 3)
                                   // R8, encoded signed [-64..+64] biased into u8
+// [render-port Fase 1.2] Analytic terrain wind. The legacy TerrainGrassWind
+// field is a pure per-column function: wind(x) = sin(WindSpeed + x*xMul)*scale
+// (ZzzLodTerrain.cpp InitTerrainLight). When uWindAnalytic != 0 the host skips
+// the 64KB R8 texture upload + its 256KB FNV change hash and feeds the 3 scalars
+// here instead. uWindAnalytic == 0 keeps the original texelFetch(uTerrainWind)
+// path so default behaviour is bit-for-bit identical.
+//   uTerrainWindP: x = WindSpeed, y = xMul, z = effectiveScale
+uniform vec3 uTerrainWindP;
+uniform int  uWindAnalytic;       // 0 = texture path (default), 1 = analytic
 
 out vec4 vColor;
 out vec2 vUV0;       // RAW world cell coords (gx..gx+1, gy..gy+1).
@@ -74,8 +83,17 @@ void main() {
     // → decode: (byte/255 - 0.5) * 2 * 64. flat-interpolated so every
     // vertex of a tile sees the same per-cell amplitude (legacy applies
     // it per-tile in the immediate-mode loop).
-    float windRaw = texelFetch(uTerrainWind, cellXY, 0).r;
-    vWindV        = (windRaw - 0.5) * 2.0 * 64.0;
+    if (uWindAnalytic != 0) {
+        // [render-port Fase 1.2] Same formula InitTerrainLight bakes per column:
+        //   TerrainGrassWind[y*256+x] = sin(WindSpeed + x*xMul) * scale
+        // cellXY.x is exactly the legacy column index. More precise than the u8
+        // texture path (no quantization) and removes the per-frame wind upload.
+        vWindV = sin(uTerrainWindP.x + float(cellXY.x) * uTerrainWindP.y)
+               * uTerrainWindP.z;
+    } else {
+        float windRaw = texelFetch(uTerrainWind, cellXY, 0).r;
+        vWindV        = (windRaw - 0.5) * 2.0 * 64.0;
+    }
     // aColor is left wired through the layout for binding stability but
     // multiplied by zero so the optimiser cannot strip it (some drivers
     // disable the attribute slot when the shader has no live read,

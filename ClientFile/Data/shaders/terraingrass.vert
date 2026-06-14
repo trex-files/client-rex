@@ -25,6 +25,17 @@ layout(std140) uniform Camera {
 };
 
 uniform sampler2D uPrimaryLight;          // 256x256 RGB8, dynamic
+// [render-port Fase 1.3] Analytic grass wind. When uWindAnalytic != 0 the CPU
+// bakes the grass billboard top corners WITHOUT the per-cell wind Y offset, so
+// the built geometry is fully static per (camera view, map) and the VBO can be
+// cached across frames (the per-frame BuildGrassFrame walk is the biggest CPU
+// cost in open scenes). The top corners then sway HERE using the same legacy
+// formula:  windY = sin(uTerrainWindP.x + col*uTerrainWindP.y) * uTerrainWindP.z
+// keyed off the vertex's source wind column (aMeta.x). When uWindAnalytic == 0
+// the CPU bakes the sway as before and this shader does nothing — bit-for-bit
+// identical default behaviour. uTerrainWindP: x=WindSpeed, y=xMul, z=scale.
+uniform vec3 uTerrainWindP;
+uniform int  uWindAnalytic;               // 0 = CPU-baked sway (default), 1 = shader sway
 
 out vec2 vUV;
 out vec3 vColor;
@@ -32,8 +43,18 @@ out vec3 vWorldPos;  // world-space position for fog-of-war visibility fade
 flat out uint vLayer;
 
 void main() {
-    gl_Position = uProj * uView * vec4(aPosition, 1.0);
-    vWorldPos   = aPosition;
+    vec3 pos = aPosition;
+    // [render-port Fase 1.3] Top vertices (V==0, aTexCoord0.y < 0.5) sway with
+    // wind in the analytic path; bottom vertices stay pinned to the ground.
+    // Matches legacy: only top corners got the wind Y offset, and the legacy
+    // "top-right uses the SE/gx+1 wind column" quirk is preserved because TR
+    // carries aMeta.x = gx+1 (its source wind column).
+    if (uWindAnalytic != 0 && aTexCoord0.y < 0.5) {
+        pos.y += sin(uTerrainWindP.x + float(aMeta.x) * uTerrainWindP.y)
+               * uTerrainWindP.z;
+    }
+    gl_Position = uProj * uView * vec4(pos, 1.0);
+    vWorldPos   = pos;
     vUV = aTexCoord0;
     // Sample the per-cell baked light. Same texture the base terrain
     // pipeline uses, so grass tints stay consistent with the floor under
