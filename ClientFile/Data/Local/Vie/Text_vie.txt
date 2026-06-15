@@ -3587,3 +3587,4 @@
 4007 "Nâng Cấp Cánh VIP 9"
 end
 5813	"MU Helper"
+5820	"The new passwords do not match."

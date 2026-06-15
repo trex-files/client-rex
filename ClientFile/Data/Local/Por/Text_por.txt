@@ -4362,3 +4362,4 @@
 5816	"Recurso para remover uma opção Excellent"
 5817	"Nota: leia as condições abaixo com atenção!"
 5818	"Verifique o custo e as opções exc antes de remover"
+5820	"As novas senhas não coincidem."

@@ -4363,3 +4363,4 @@
 5816	"Función para remover una opción Excellent"
 5817	"Nota: ¡lee las condiciones de abajo con atención!"
 5818	"Revisa el costo y las opciones exc antes de remover"
+5820	"Las contraseñas nuevas no coinciden."

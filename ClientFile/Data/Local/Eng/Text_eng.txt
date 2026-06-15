@@ -4363,3 +4363,4 @@
 5816	"Featured used to remove an Excellent option"
 5817	"Note: read the conditions below carefully!!"
 5818	"Check cost and exc options before remove"
+5820	"The new passwords do not match."
