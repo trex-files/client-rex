@@ -2,13 +2,10 @@
 # Prevents the CRLF<->LF churn that WSL2/Windows checkouts produced on shaders
 # and data files. Binary formats below are exempted from any conversion.
 * text=auto
-
 # Shell scripts MUST stay LF (CRLF breaks bash on Linux — e.g. build scripts).
 *.sh text eol=lf
-
 # MU client binary formats — never apply text/CRLF conversion to these.
 # Treating them as text causes silent corruption when autocrlf is enabled.
-
 # MU proprietary data
 *.main binary
 *.bmd binary
@@ -25,12 +22,10 @@
 *.ozm binary
 *.ozd binary
 *.osk binary
-
 # Executables / native modules
-*.exe binary
+*.exe filter=lfs diff=lfs merge=lfs -text
 *.dll binary
 *.pdb binary
-
 # Images / textures
 *.bmp binary
 *.tga binary
@@ -40,7 +35,6 @@
 *.gif binary
 *.ico binary
 *.dds binary
-
 # Audio / video
 *.wav binary
 *.mp3 binary
@@ -49,7 +43,6 @@
 *.wma binary
 *.avi binary
 *.mp4 binary
-
 # Archives
 *.zip binary
 *.rar binary
