@@ -7,4 +7,3 @@
 31@7@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
 31@8@107@Silver Key@170@200@Open a sealed Silver box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@7280@2@1@1070|@0@508@669
 31@9@108@Gold Key@170@300@Open a sealed Gold box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1080|@7281@2@1@1080|@0@508@669
-32@1@109@Pet Panda@170@150@Gains +50% exp.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669
