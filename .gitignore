@@ -50,3 +50,6 @@ ehthumbs.db
 # _World9_backup_pre_polish/, World11/_backup_pre_blackbg/) — never commit.
 ClientFile/Data/Minimaps/**/*backup*/
 * - copia.*
+
+# Internal reports - never commit
+**/reports/
