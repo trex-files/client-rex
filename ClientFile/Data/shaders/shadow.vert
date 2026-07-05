@@ -1,8 +1,8 @@
+#version 330 core
 // SPDX-License-Identifier: Proprietary
 // shadow.vert — position-only pass-through for CPU-projected shadow geometry.
 // Vertices arrive already projected onto the ground plane by DrawShadowMesh().
 
-#version 330 core
 
 layout(location = 0) in vec3 aPosition;
 

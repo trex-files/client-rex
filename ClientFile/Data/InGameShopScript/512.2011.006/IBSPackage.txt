@@ -1,22 +1,10 @@
-31@3@122@Expand Inventory@170@50000@Expand personal inventory@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1220|@7330@2@1@1220|@0@508@669
-31@4@125@Expand Shared Vault@170@100000@Expand the shared vault@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1250|@7331@2@1@1250|@0@508@669
-32@1@106@Scroll of Experience@170@5000@+50% EXP@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@6699@2@3@1060|1061|1062|@0@508@669
-32@2@103@Archangel Scroll@170@10000@+50% EXP     #+100% drop rate@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1030|@6700@2@3@1030|1031|1032|@0@508@669
-32@3@109@Master Scroll@170@10000@+50% Master EXP@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6749@2@3@1090|1091|1092|@0@508@669
-32@4@110@Super Master Scroll@170@15000@+100% Master EXP     #+50% drop rate@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1100|@6750@2@3@1100|1101|1102|@0@508@669
-33@1@116@Scroll of Speed@170@30000@Attack Speed: +15    #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1160|@7240@2@1@1160|@0@508@669
-33@2@117@Scroll of Defense@170@30000@Defense: +60    #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1170|@7241@2@1@1170|@0@508@669
-33@3@118@Scroll of Attack@170@30000@Attack Power +30   #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1180|@7242@2@1@1180|@0@508@669
-33@4@119@Scroll of HP@170@30000@HP +200   #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1190|@7244@2@1@1190|@0@508@669
-33@5@120@Scroll of Magic@170@30000@Magic Power +30   #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1200|@7243@2@1@1200|@0@508@669
-33@6@123@Scroll of Critical@170@30000@Critical Damage +20%   #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1230|@7265@2@1@1230|@0@508@669
-33@7@124@Scroll of Perfect@170@30000@Perfect Damage +20%   #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1240|@7266@2@1@1240|@0@508@669
-34@1@113@Ruby Necklace@170@10000@+3% auto-recovery rate  #+10% Perfect Damage #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1130|@6769@2@1@1130|@0@508@669
-34@2@115@Ruby Ring@170@10000@+3% auto-recovery rate  #+10% Perfect Damage #Expires: 1 Day@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1150|@6766@2@1@1150|@0@508@669
-35@1@107@Panda@170@5000@Auto-pick up nearby ZEN    #+50% EXP     #Block Rate +50@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@6736@2@2@1070|1071|@0@508@669
-35@2@108@Panda Ring@170@5000@Panda Transformation Ring    #+50% Zen      #Magic Power: +30@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1080|@6732@2@2@1080|1081|@0@508@669
-35@3@102@Greater Devil@170@10000@+40% Damage   #Attack Speed: +10@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1020|@6720@2@2@1020|1021|@0@508@669
-35@4@111@Bone Dragon@170@5000@Auto-pick up ZEN   #+20% Damage    #Attack Speed: +10    #+30% EXP@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1110|@6779@2@2@1110|1111|@0@508@669
-35@5@112@Bone Ring@170@10000@Transform into a Bone Dragon warrior     #Attack Power: +40@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1120|@6778@2@2@1120|1121|@0@508@669
-37@1@104@Devil Square Ticket@170@5000@Devil Square Ticket@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1040|@6702@2@2@1040|1041|@0@508@669
-37@2@105@Blood Castle Ticket@170@5000@Blood Castle Ticket@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1050|@6703@2@2@1050|1051|@0@508@669
+31@1@100@Expand Inventory@170@300@Expand personal inventory (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1000|@7330@2@1@1000|@0@508@669
+31@2@101@Vault Expansion@170@300@Expand shared vault (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1010|@7331@2@1@1010|@0@508@669
+31@3@102@Devil SquareTicket@170@300@Entrance to the Devil Square event (10 times)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1020|@6702@2@1@1020|@0@508@669
+31@4@103@Blood Castle Ticket@170@300@Entrance to the Blood Castle event (10 times)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1030|@6703@2@1@1030|@0@508@669
+31@5@104@Kalima Ticket@170@300@Entrance to the Kalima (10 times)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1040|@6704@2@1@1040|@0@508@669
+31@6@105@Talisman of Luck@170@100@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1050|@7221@2@1@1050|@0@508@669
+31@7@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
+31@8@107@Silver Key@170@200@Open a sealed Silver box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@7280@2@1@1070|@0@508@669
+31@9@108@Gold Key@170@300@Open a sealed Gold box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1080|@7281@2@1@1080|@0@508@669
+32@1@109@Pet Panda@170@150@Gains +50% exp.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669

@@ -3588,3 +3588,7 @@
 end
 5813	"MU Helper"
 5820	"The new passwords do not match."
+5821	"+1 %s"
+5822	"Bulk: %s <n>"
+5823	"Item with dye applied"
+5824	"RGB(%d, %d, %d)"

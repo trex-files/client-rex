@@ -4363,3 +4363,7 @@
 5817	"Nota: leia as condições abaixo com atenção!"
 5818	"Verifique o custo e as opções exc antes de remover"
 5820	"As novas senhas não coincidem."
+5821	"+1 %s"
+5822	"Quantidade: %s <n>"
+5823	"Item com tintura aplicada"
+5824	"RGB(%d, %d, %d)"

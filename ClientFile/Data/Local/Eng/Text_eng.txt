@@ -4364,3 +4364,7 @@
 5817	"Note: read the conditions below carefully!!"
 5818	"Check cost and exc options before remove"
 5820	"The new passwords do not match."
+5821	"+1 %s"
+5822	"Bulk: %s <n>"
+5823	"Item with dye applied"
+5824	"RGB(%d, %d, %d)"
