@@ -3758,7 +3758,7 @@
 5170	"Confirmation Code"
 5171	"Enter Withdrawal Amount"
 5172	"Enter withdrawal amount: "
-5173	"Click (Deposit) to deposit jewels into the bank or Shift + right click to deposit quickly"
+5173	"Click (Deposit) to deposit jewels into the bank#or Shift + right click to deposit quickly"
 5174	"* Auto Pick automatically sends to the bank when picked up"
 5175	"Withdraw Jewel"
 5176	"Deposit Jewel"
@@ -4368,3 +4368,4 @@
 5822	"Bulk: %s <n>"
 5823	"Item with dye applied"
 5824	"RGB(%d, %d, %d)"
+5825	"Available durations:"
