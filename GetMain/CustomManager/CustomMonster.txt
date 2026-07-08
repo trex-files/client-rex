@@ -31,6 +31,12 @@
 901		1		"Giant Crab"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"USK_Green_Crab_Mob"			0.85
 902		1		"Treasure Chest"		"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"tesouro"			0.85
 
+// Hell Maine (invasion boss, class 309) reuses the same "epiboss" model as its
+// golden invasion twin below; it is NOT in CustomMonsterGlow.txt, so it renders
+// as the plain (non-golden) boss. Without this line it had no model and fell to
+// CreateMonster's default (rendered as Bull Fighter / class 0 in-game, and
+// "No disponible" in the Invasions-tab hover preview).
+309		1		"Hell Maine"			"Data\\Custom\\Monster\\Gold\\HellMain\\"	"Custom\\Monster\\Gold\\HellMain\\"	"monster106"		1.80
 904		1		"Golden Hell Main"		"Data\\Custom\\Monster\\Gold\\HellMain\\"	"Custom\\Monster\\Gold\\HellMain\\"	"monster106"		1.80
 905		1		"Golden Kundun Ilusion"	"Data\\Custom\\Monster\\Gold\\Kundun\\"		"Custom\\Monster\\Gold\\Kundun\\"	"monster65"			2.20
 906		1		"Golden Selupan"		"Data\\Custom\\Monster\\Gold\\Selupan\\"	"Custom\\Monster\\Gold\\Selupan\\"	"Monster151"		2.00
