@@ -207,6 +207,14 @@ vec3 nightGradient(vec3 dir) {
 // only the top fraction of cells host a star. Concentrated in the low-elevation
 // band (legacy stars sit 0..20° above the horizon).
 vec3 stars(vec3 dir) {
+#ifdef SKY_FAST
+    // SKY_FAST (software rasteriser, e.g. Mesa llvmpipe): atan()/asin() are
+    // transcendental and run PER PIXEL for every fragment of the fullscreen
+    // sky quad, purely to place stars. Skip them entirely — no stars on the
+    // cheap path, but the gradient + gated moon (both untouched) still read
+    // as a night sky.
+    return vec3(0.0);
+#else
     float az = atan(dir.y, dir.x);
     float el = asin(clamp(dir.z, -1.0, 1.0));
 
@@ -240,6 +248,7 @@ vec3 stars(vec3 dir) {
 
     vec3 col = vec3(1.0, 1.0, 0.92);                 // legacy warm-white
     return col * (point * tw * bright * lowBand);
+#endif
 }
 
 // ===========================================================================
@@ -250,6 +259,19 @@ vec3 stars(vec3 dir) {
 // soft, BROKEN (with gaps), and concentrated in the mid/low band — NOT a moving
 // ceiling overhead. Per-map tint via uCloudTint.
 vec3 clouds(vec3 camPos, vec3 dir, vec3 skyBehind) {
+#ifdef SKY_FAST
+    // SKY_FAST (software rasteriser, e.g. Mesa llvmpipe): the full path below
+    // calls fbm2() TWICE, and fbm2 is a 5-octave loop over vnoise2 (4×hash2
+    // each) = ~40 hash2() evaluations per pixel, for a fullscreen quad drawn
+    // first with depth off. That is the single most expensive thing in the
+    // frame on a CPU rasteriser. Replace it with a flat, no-noise coverage
+    // tint over the same horizon band — no cottony shape, but still reads as
+    // "haze near the horizon" instead of a hard, empty gradient.
+    vec3  cloudCol = uCloudTint * (0.24 + 0.11 * max(uSunIntensity, 0.0));
+    float band     = smoothstep(0.01, 0.07, dir.z) * (1.0 - smoothstep(0.78, 1.05, dir.z));
+    float density  = clamp(uCloudCoverage, 0.0, 1.0) * 0.5;   // flat coverage, no field/shape
+    return mix(skyBehind, cloudCol, clamp(density * band, 0.0, 1.0));
+#else
     // Clouds on the SKY DOME, mapped by view AZIMUTH/ELEVATION — NOT a
     // horizontal plane. Under MU's steep camera the visible sky is the LOW
     // horizon band; a horizontal cloud plane aliases there (t -> inf as
@@ -293,6 +315,7 @@ vec3 clouds(vec3 camPos, vec3 dir, vec3 skyBehind) {
     float band = smoothstep(0.01, 0.07, dir.z) * (1.0 - smoothstep(0.78, 1.05, dir.z));
 
     return mix(skyBehind, cloudCol, clamp(density * band, 0.0, 1.0));
+#endif
 }
 
 // ===========================================================================

@@ -1,0 +1,51 @@
+========================================
+ MU Online - MODO COMPATIBILIDAD (LEEME)
+========================================
+
+QUE ES
+------
+Este cliente usa OpenGL 3.3 para renderizar. La gran mayoria de las PCs
+(incluso viejas) lo soportan sin problema. Pero si tu tarjeta de video no
+tiene un driver con OpenGL 3.3 -- por ejemplo una notebook con el driver
+generico de Windows ("GDI Generic"), una maquina virtual sin aceleracion 3D,
+o una tarjeta muy vieja (previa a 2010) -- el juego no puede arrancar y
+muestra un cartel de error mencionando OpenGL 3.3.
+
+El MODO COMPATIBILIDAD resuelve esto: cambia el renderizador de video por
+uno que corre 100% por software (Mesa llvmpipe), sin depender de la tarjeta
+de video ni de su driver. Funciona en cualquier PC, pero es mas lento que el
+renderizador normal -- usalo solo si el juego no te abre de otra forma.
+
+COMO USARLO
+-----------
+1. Cerra el juego si esta abierto.
+2. Abri Launcher.exe (esta en la misma carpeta que Main.exe).
+3. Toca el boton CONFIG (arriba a la derecha).
+4. En el campo MOTOR, elegi una de estas tres opciones:
+     - AUTO -> el launcher detecta tu tarjeta de video y elige solo
+       (recomendado para la mayoria).
+     - GPU  -> fuerza el renderizador normal (tarjeta de video real).
+     - CPU  -> fuerza el MODO COMPATIBILIDAD (renderizador por software).
+5. Guarda los cambios y toca JUGAR.
+
+Si tu PC no abre el juego con AUTO/GPU, volve a CONFIG y elegi CPU. El
+launcher ajusta automaticamente la resolucion y otras opciones graficas
+para que el modo software sea lo mas jugable posible; no hace falta tocar
+nada mas a mano.
+
+VOLVER AL MODO NORMAL
+----------------------
+Repeti los mismos pasos y elegi GPU (o AUTO) en el campo MOTOR. El launcher
+restaura el driver de video real y la resolucion que tenias antes de pasar
+a modo CPU.
+
+NOTAS
+-----
+- El modo CPU es mas lento porque todo el renderizado lo hace el
+  procesador en vez de la tarjeta de video -- es normal ver menos FPS.
+- Si el launcher no puede guardar la configuracion (por ejemplo, la carpeta
+  del juego esta en modo solo lectura) te va a avisar con un mensaje; en
+  ese caso revisa los permisos de la carpeta del juego.
+- Los archivos MU-Compatibilidad.bat y MU-Normal.bat de versiones viejas de
+  esta guia ya NO se usan -- todo el modo compatibilidad se maneja ahora
+  desde Launcher.exe como se explica arriba.

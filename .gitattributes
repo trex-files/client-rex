@@ -49,3 +49,4 @@
 *.7z binary
 *.cab binary
 *.iso binary
+ClientFile/libgallium_wgl.dll filter=lfs diff=lfs merge=lfs -text
