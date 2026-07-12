@@ -237,7 +237,7 @@
 255	1	"Lumen a Garconete" 
 256	1	"Lahap"
 257	1	"Soldado Fantasma Sombrio"
-258	1	"Luke o Assistente"
+258	1	"Mestre de Missoes"
 259	1	"Oraculo Layla"
 260	1	"Anjo da Morte"
 261	1	"Centuriao da Morte"

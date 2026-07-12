@@ -237,7 +237,7 @@
 255	1	"Lumen la Camarera" 
 256	1	"Lahap"
 257	1	"Soldado Fantasma Sombrio"
-258	1	"Luke el Asistente"
+258	1	"Maestro de Misiones"
 259	1	"Oraculo Layla"
 260	1	"Angel de la Muerte"
 261	1	"Centurion de la Muerte"

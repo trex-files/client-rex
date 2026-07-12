@@ -237,7 +237,7 @@
 255	1	"Lumen the Barmaid" 
 256	1	"Lahap"
 257	1	"Shadow Phantom Soldier"
-258	1	"Luke the Helper"
+258	1	"Quests Master"
 259	1	"Oracle Layla"
 260	1	"Death Angel"
 261	1	"Death Centurion"

@@ -4416,7 +4416,7 @@
 5872	"Objects"
 5873	"Active Quests"
 5874	"No active quests."
-5875	"Talk to Luke the Helper to get one."
+5875	"Talk to the Quests Master to get one."
 5876	"Complete"
 5877	"Incomplete"
 5878	"Target: %s"
