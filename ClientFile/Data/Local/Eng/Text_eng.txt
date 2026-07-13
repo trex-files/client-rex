@@ -4420,7 +4420,7 @@
 5876	"Complete"
 5877	"Incomplete"
 5878	"Target: %s"
-5879	"Remaining: %u/%u"
+5879	"Progress: %u/%u"
 5880	"Ready to turn in"
 5881	"Quest Hub"
 5882	"Quests in progress"

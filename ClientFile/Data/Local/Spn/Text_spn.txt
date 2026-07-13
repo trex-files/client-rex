@@ -4420,7 +4420,7 @@
 5876	"Completa"
 5877	"Incompleta"
 5878	"Objetivo: %s"
-5879	"Faltan: %u/%u"
+5879	"Progreso: %u/%u"
 5880	"Listo para entregar"
 5881	"Centro de Misiones"
 5882	"Misiones en progreso"
