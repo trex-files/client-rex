@@ -1,4 +1,5 @@
 31@1@100@Expand Inventory@170@300@Expand personal inventory (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1000|@7330@2@1@1000|@0@508@669
+31@2@101@Vault Expansion@170@300@Expand storage (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1010|@6819@2@1@1010|@0@508@669
 31@3@105@Talisman of Luck@170@100@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1050|@7221@2@1@1050|@0@508@669
 31@4@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
 31@5@107@Silver Key@170@200@Open a sealed Silver box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@7280@2@1@1070|@0@508@669
@@ -62,3 +63,5 @@
 43@6@225@Demon@170@450@Combat pet: increases attack power.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2250|@6720@2@3@2250|2251|2252|@0@0@669
 43@7@226@Spirit of Guardian@170@450@Combat pet: increases defense power.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2260|@6721@2@3@2260|2261|2262|@0@0@669
 43@8@227@Dinorant@170@400@Mount pet with combat bonus.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2270|@6659@2@3@2270|2271|2272|@0@0@669
+61@1@117@Vault Expansion Certificate@170@2500@Expand storage (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1170|@6819@5@1@1170|@1@0@669
+61@2@118@Expand Inventory@170@2500@Expand personal inventory (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1180|@6818@5@1@1180|@1@0@669
