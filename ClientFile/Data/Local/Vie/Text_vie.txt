@@ -3592,3 +3592,8 @@ end
 5822	"Bulk: %s <n>"
 5823	"Item with dye applied"
 5824	"RGB(%d, %d, %d)"
+5887	"Điểm Chỉ Số - %s"
+5888	"Còn lại: %d"
+5889	"Nhập số lượng và nhấn OK."
+5392	"Chợ"
+5765	"Bạn có muốn đến %s không?"
