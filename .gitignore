@@ -53,3 +53,10 @@ ClientFile/Data/Minimaps/**/*backup*/
 
 # Internal reports - never commit
 **/reports/
+
+# Windows Explorer folder cruft — never ship or track these
+**/Thumbs.db
+**/desktop.ini
+
+# Stale manual .bmd backups (the .pre-* tooling pattern above is separate)
+**/*.bmd.bak
