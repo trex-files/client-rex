@@ -29,10 +29,12 @@
 #define MyInstallFolder "REX MMORPG"
 
 ; Carpeta del cliente en disco desde la que se empaqueta. Overridable por
-; linea de comando: ISCC /DSrcDir="C:\ruta\a\mi\checkout\ClientFile" ...
-; Default: una carpeta "REX MU Online" AL LADO de este .iss.
+; linea de comando: ISCC /DSrcDir="C:\ruta\a\ClientFile" ...
+; Default: ..\ClientFile (el layout de un checkout de la branch release:
+;   client-rex\ClientFile\ + client-rex\installer\este.iss). Asi un checkout
+;   de release compila sin configurar nada.
 #ifndef SrcDir
-  #define SrcDir        "REX MU Online"
+  #define SrcDir        "..\ClientFile"
 #endif
 
 [Setup]

@@ -25,19 +25,24 @@ de `release`.
 la carpeta instalada puede llamarse como sea. `ClientFile` está hardcodeado en
 GetMainInfo/Launcher.vcxproj — **no renombrarlo**.
 
-## Flujo de armado (en Windows)
+## Flujo de armado (en Windows — Inno Setup es Windows-only)
 
-1. Checkout de la branch release:
-   `git clone -b release <client-rex> && cd client-rex`
-   (o `git checkout release` en un clon existente).
-2. Preparar la carpeta de origen. Dos opciones:
-   - Copiar/renombrar `ClientFile\` a una carpeta **`REX MU Online\`** al lado
-     del `.iss` (+ `rex.ico`, `build-setup.bat`), o
-   - Dejar `ClientFile\` donde está y pasar su ruta:
-     `build-setup.bat "C:\...\client-rex\ClientFile"`.
-3. Compilar: `build-setup.bat` (o F9 en el IDE Inno, o
-   `ISCC.exe REX-MU-Online.iss`).
-4. Sale `Output\REXSetup100.exe` (~2.5 GB). Firmarlo (opcional, recomendado)
+1. Checkout de la branch release, con LFS materializado:
+   ```
+   git checkout release
+   git lfs pull            <- CRÍTICO: Launcher.exe/Main.exe son LFS; sin esto
+                              son punteros de ~130 bytes -> instalador roto.
+   ```
+2. Compilar desde `client-rex\installer\`:
+   ```
+   build-setup.bat
+   ```
+   El default toma `..\ClientFile` (el layout de un checkout de release), así que
+   no hay que configurar nada. Alternativas: pasar la ruta
+   (`build-setup.bat "C:\...\ClientFile"`), F9 en el IDE Inno, o
+   `ISCC.exe /DSrcDir="..\ClientFile" REX-MU-Online.iss`.
+   El `.bat` verifica que Main.exe no sea un puntero LFS antes de compilar.
+3. Sale `Output\REXSetup100.exe` (~2.5 GB). Firmarlo (opcional, recomendado)
    para evitar SmartScreen/AV.
 
 ## Qué NO se empaqueta (Excludes del .iss)
