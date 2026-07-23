@@ -108,8 +108,11 @@ Name: "{app}\Screenshots"
 ;   - desktop.ini          -> basura de vista de carpeta
 ;   - Screenshots\*        -> se crea vacía en [Dirs]
 ; rex.main SÍ se sobrescribe (es el puntero a tu server; querés el actual).
+; OJO con *.lib / *.obj: el cliente MU los usa como DATOS de terreno
+; (EncTerrain*.obj, etc.), NO se excluyen genericamente. Solo Main.lib (residuo
+; del linker) por nombre exacto. Igual criterio en tools/make-patch.mjs.
 Source: "{#SrcDir}\*"; DestDir: "{app}"; \
-    Excludes: "config.ini,Mu.ini,desktop.ini,Thumbs.db,Screenshots\*,*.pdb,*.exp,*.lib,*.log,*.bmd.bak,Main"; \
+    Excludes: "config.ini,Mu.ini,desktop.ini,Thumbs.db,.ruff_cache,*.rar,*.zip,*.7z,Screenshots\*,*.pdb,*.exp,Main.lib,*.log,*.bmd.bak,Main"; \
     Flags: recursesubdirs createallsubdirs ignoreversion
 
 ; --- Config de usuario: solo si NO existe (preserva prefs en reinstalación) --
@@ -130,9 +133,12 @@ Filename: "{sys}\icacls.exe"; \
     Flags: runhidden waituntilterminated; \
     StatusMsg: "Configurando permisos de actualización..."
 
-; Ofrecer lanzar el juego al terminar (checkbox en la última página).
-Filename: "{app}\{#MyAppExe}"; Description: "{cm:LaunchProgram,{#MyAppName}}"; \
-    WorkingDir: "{app}"; Flags: nowait postinstall skipifsilent
+; NO auto-lanzar el juego al terminar. El Launcher es RequireAdministrator; el
+; setup corre elevado y su "run postinstall" usa el token del usuario ORIGINAL
+; (de-elevado) -> Windows responde "requiere elevacion" y la primera ejecucion
+; falla. El acceso directo del escritorio SI muestra el UAC normal y funciona.
+; (Alternativa de fondo, requiere recompilar el launcher: quitarle
+; RequireAdministrator y confiar en el icacls de abajo -> sin UAC por arranque.)
 
 [UninstallDelete]
 ; El updater/juego generan archivos que Inno no trackea (logs, capturas,

@@ -60,3 +60,9 @@ ClientFile/Data/Minimaps/**/*backup*/
 
 # Stale manual .bmd backups (the .pre-* tooling pattern above is separate)
 **/*.bmd.bak
+
+# Archivos comprimidos / caches de tooling que NO deben empaquetarse ni trackearse
+**/*.rar
+**/*.zip
+**/*.7z
+**/.ruff_cache/

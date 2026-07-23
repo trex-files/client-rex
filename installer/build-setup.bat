@@ -39,6 +39,20 @@ if %MAINSZ% LSS 1000000 (
   exit /b 1
 )
 
+rem --- Aviso: strays sin trackear que se EMPAQUETARIAN --------------------------
+rem  Inno copia toda la carpeta; un archivo suelto (ej. Main.rar) que no este en
+rem  git se cuela en el instalador. Avisar (no bloquear) si los hay.
+where git >nul 2>&1
+if not errorlevel 1 (
+  git -C "%SRC%" ls-files --others --exclude-standard > "%TEMP%\_rexstrays.txt" 2>nul
+  for %%A in ("%TEMP%\_rexstrays.txt") do if %%~zA GTR 0 (
+    echo [AVISO] Archivos SIN TRACKEAR en el cliente que se empaquetarian:
+    type "%TEMP%\_rexstrays.txt"
+    echo         Borralos ^(o revisa 'git status' / 'git clean -nxd'^) antes de distribuir.
+  )
+  del "%TEMP%\_rexstrays.txt" >nul 2>&1
+)
+
 rem --- Compilar ---------------------------------------------------------------
 if "%~1"=="" (
   echo [build-setup] Origen: ..\ClientFile

@@ -94,8 +94,8 @@ const ALWAYS_EXCLUDED = new Set([
 ]);
 // Residuos por SUFIJO (nunca datos del juego). OJO: .lib/.obj NO van aca --
 // el cliente los reusa para datos de terreno (EncTerrain*.obj/.lib). Solo
-// extensiones que son inequivocamente artefactos de compilacion/backup.
-const ALWAYS_EXCLUDED_SUFFIX = ['.pdb', '.exp', '.log', '.bak'];
+// extensiones que son inequivocamente artefactos de compilacion/backup/empaque.
+const ALWAYS_EXCLUDED_SUFFIX = ['.pdb', '.exp', '.log', '.bak', '.rar', '.zip', '.7z', '.cab'];
 
 // Recorre dir recursivamente. Devuelve Map<relPathPosix, {abs, size, sha}>.
 // excludeBasenames: Set de nombres (lowercase) a saltear en cualquier nivel,
@@ -112,6 +112,9 @@ function walkTree(dir, excludeBasenames) {
     for (const ent of entries) {
       const abs = join(cur, ent.name);
       if (ent.isDirectory()) {
+        // Saltar dot-directorios (.ruff_cache, .git, etc.): son metadata/caches
+        // de herramientas, nunca contenido del cliente.
+        if (ent.name.startsWith('.')) continue;
         recurse(abs);
       } else if (ent.isFile()) {
         const lower = ent.name.toLowerCase();
