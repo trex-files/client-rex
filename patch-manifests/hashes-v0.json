@@ -1,18 +1,6 @@
 {
   "version": 0,
   "files": {
-    "Data/.ruff_cache/.gitignore": {
-      "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316",
-      "size": 35
-    },
-    "Data/.ruff_cache/0.15.15/13331472944793990035": {
-      "sha256": "e55f95bbc5c48ce8cf3bfa2b4d15cec853aec13ec21dca276cbe5b3283e2ffcb",
-      "size": 163
-    },
-    "Data/.ruff_cache/CACHEDIR.TAG": {
-      "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae",
-      "size": 43
-    },
     "Data/Custom/CTCMini/CTCMiniMap.ozt": {
       "sha256": "92e1cfb1860cedb3482198c5a1d096251a1cbf75f14a9ddeb5b4038b766264ee",
       "size": 65584
@@ -8144,18 +8132,6 @@
     "Data/Interface/partCharge1/statusicon.ozj": {
       "sha256": "6dc5599d6782eadf6af3eb9961d7ddc4dc69ce63375c1d9eea8a4a0983461997",
       "size": 138400
-    },
-    "Data/Interface/rex/.ruff_cache/.gitignore": {
-      "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316",
-      "size": 35
-    },
-    "Data/Interface/rex/.ruff_cache/0.15.15/11878155989555438833": {
-      "sha256": "87d98770d07529f22f7bc3939358b40f6cb6da5b541ab7d06d37b6c5994b1edc",
-      "size": 156
-    },
-    "Data/Interface/rex/.ruff_cache/CACHEDIR.TAG": {
-      "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae",
-      "size": 43
     },
     "Data/Interface/rex/BuyVipBtn.ozt": {
       "sha256": "40f84e405c49eb3c0db9a0193a436eddaacece2a03696f0ce76fd877f1f74035",
@@ -44640,18 +44616,6 @@
     "Data/Minimaps/World69/world_full.OZJ": {
       "sha256": "2a76faa20ebc154cc42e48d7be0a8fff6c4d02a683c0114b7c97d150f6b8ee9a",
       "size": 46317
-    },
-    "Data/Minimaps/World7/.ruff_cache/.gitignore": {
-      "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316",
-      "size": 35
-    },
-    "Data/Minimaps/World7/.ruff_cache/0.15.15/10108510584271680727": {
-      "sha256": "c3b356116e2e6c88b5c107156950ad126a574547589c7a61e51b882a81bb1a1c",
-      "size": 126
-    },
-    "Data/Minimaps/World7/.ruff_cache/CACHEDIR.TAG": {
-      "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae",
-      "size": 43
     },
     "Data/Minimaps/World7/World7_tile_00_00.OZJ": {
       "sha256": "a7de97af20d9e043bc041db73f667d5d198324a1f04ceaac2ce9f824020ae53b",
@@ -108993,17 +108957,9 @@
       "sha256": "23dc2e0f96574eff96edface80d9bbed0cf6409b4cf6904cbe0a260892ba70c1",
       "size": 13443072
     },
-    "Main.rar": {
-      "sha256": "5a192c61900279ad39d040761bc54a017620f20387d31e820762f714bfe0d3f9",
-      "size": 2458409
-    },
     "QeffectsGL.ini": {
       "sha256": "ee3f998d0b39052eda94f237086f040d25a3eb1910d3a658322938e74d9175de",
       "size": 363
-    },
-    "REX.txt": {
-      "sha256": "2266e65319fa6b7a2bdab2de9efca34a8412203bdd9465e31cd83277ef15258c",
-      "size": 171740
     },
     "Screen.dll": {
       "sha256": "0338a324a6deb340c07c415dd887b6873844db93f266e0ab12387db194f392de",
