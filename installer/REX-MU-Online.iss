@@ -107,12 +107,14 @@ Name: "{app}\Screenshots"
 ;   - config.ini / Mu.ini  -> se instalan aparte con onlyifdoesntexist (no pisar)
 ;   - desktop.ini          -> basura de vista de carpeta
 ;   - Screenshots\*        -> se crea vacía en [Dirs]
+;   - STACK_ERROR\*, REX.txt, MuError.log, *.pdb/*.exp/Main.lib/Main -> residuos
+;       de runtime/build del cliente (gitignored). No shipear al usuario.
 ; rex.main SÍ se sobrescribe (es el puntero a tu server; querés el actual).
 ; OJO con *.lib / *.obj: el cliente MU los usa como DATOS de terreno
 ; (EncTerrain*.obj, etc.), NO se excluyen genericamente. Solo Main.lib (residuo
 ; del linker) por nombre exacto. Igual criterio en tools/make-patch.mjs.
 Source: "{#SrcDir}\*"; DestDir: "{app}"; \
-    Excludes: "config.ini,Mu.ini,desktop.ini,Thumbs.db,.ruff_cache,*.rar,*.zip,*.7z,Screenshots\*,*.pdb,*.exp,Main.lib,*.log,*.bmd.bak,Main"; \
+    Excludes: "config.ini,Mu.ini,desktop.ini,Thumbs.db,.ruff_cache,*.rar,*.zip,*.7z,Screenshots\*,STACK_ERROR\*,REX.txt,*.pdb,*.exp,Main.lib,*.log,*.bmd.bak,Main"; \
     Flags: recursesubdirs createallsubdirs ignoreversion
 
 ; --- Config de usuario: solo si NO existe (preserva prefs en reinstalación) --
