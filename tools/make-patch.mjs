@@ -90,6 +90,8 @@ const ALWAYS_EXCLUDED = new Set([
   'launcher.exe', 'config.ini', 'mu.ini',
   'main.lib', 'muerror.log',      // residuos especificos del build/runtime
   'main',                         // leftover del linker (ELF sin extension; 0 archivos tracked "Main" en Data)
+  'rex.txt',                      // log de debug del cliente (OpenTexture/LoadBitmap Failed), gitignored
+  'screenshots', 'stack_error',   // dirs de runtime (capturas / dumps de crash), gitignored
   'thumbs.db', 'desktop.ini',     // basura de Explorer
 ]);
 // Residuos por SUFIJO (nunca datos del juego). OJO: .lib/.obj NO van aca --
@@ -115,6 +117,9 @@ function walkTree(dir, excludeBasenames) {
         // Saltar dot-directorios (.ruff_cache, .git, etc.): son metadata/caches
         // de herramientas, nunca contenido del cliente.
         if (ent.name.startsWith('.')) continue;
+        // Excluir dirs de runtime por nombre (Screenshots/, STACK_ERROR/): mismo
+        // criterio de hoja que para archivos, igual que CopyTreeExcluding del launcher.
+        if (excludeBasenames.has(ent.name.toLowerCase())) continue;
         recurse(abs);
       } else if (ent.isFile()) {
         const lower = ent.name.toLowerCase();
