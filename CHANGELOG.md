@@ -26,8 +26,9 @@ y `v0.1-beta` (nombre público), ambos sobre el mismo commit de `release`.
 
 ### Baseline de hashes
 `patch-manifests/hashes-v0.json` regenerado byte-exacto al Main.exe nuevo
-(`sha256 efd6c25e…`, 13442048 bytes). Validado por dos caminos independientes
-(edición quirúrgica del manifiesto viejo == `make-patch --emit-hashes-only`).
+(`sha256 7e058c3a…`, 13442048 bytes). Baseline byte-exacto al Main.exe shippeado,
+verificado con `make-patch --emit-hashes-only` (solo la entrada de Main.exe difiere
+del build previo — los binarios de MSVC no son byte-reproducibles).
 **Regla de oro**: si recompilás binarios antes de publicar, regenerá hashes-v0
 o los FullPatch salen mal (ver LAUNCH-PLAN, FASE A paso 3).
 
