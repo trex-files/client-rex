@@ -38222,7 +38222,7 @@
       "size": 23596
     },
     "Data/Local/Eng/ItemTooltip_eng.bmd": {
-      "sha256": "b789cc73bb7823892e00fce35b362579417cb435b39121d590d9fa5fb17c0689",
+      "sha256": "0fe7df78f3dba29758220c83295f33b10ac5347e262e79ef17ce879f8d12a5a6",
       "size": 1015812
     },
     "Data/Local/Eng/Item_eng.bmd": {
@@ -38342,7 +38342,7 @@
       "size": 23596
     },
     "Data/Local/Por/ItemTooltip_por.bmd": {
-      "sha256": "b789cc73bb7823892e00fce35b362579417cb435b39121d590d9fa5fb17c0689",
+      "sha256": "0fe7df78f3dba29758220c83295f33b10ac5347e262e79ef17ce879f8d12a5a6",
       "size": 1015812
     },
     "Data/Local/Por/Item_por.bmd": {
@@ -38438,7 +38438,7 @@
       "size": 23596
     },
     "Data/Local/Spn/ItemTooltip_spn.bmd": {
-      "sha256": "b789cc73bb7823892e00fce35b362579417cb435b39121d590d9fa5fb17c0689",
+      "sha256": "0fe7df78f3dba29758220c83295f33b10ac5347e262e79ef17ce879f8d12a5a6",
       "size": 1015812
     },
     "Data/Local/Spn/Item_spn.bmd": {
@@ -108954,7 +108954,7 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "a5408c4889c0a40e83b9ab163b3aff28106cf764140e5fe720702be8388ec595",
+      "sha256": "f8095bb2d4469a71cb14e93f4f8e1070f00b991d386ab3db215afc46c119bbb9",
       "size": 13447168
     },
     "QeffectsGL.ini": {
