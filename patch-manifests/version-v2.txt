@@ -4,6 +4,6 @@
 #   patch.N=<url>|<crc32-hex>|<size> (incremental N-1 -> N)
 
 latest=2
-full=https://dl.rexmu.online/patches/FullPatch.zip|df0e5ccd|3537153
+full=https://dl.rexmu.online/patches/FullPatch.zip|17f25870|3620617
 patch.1=https://dl.rexmu.online/patches/Patch1.zip|602c1112|3537366
-patch.2=https://dl.rexmu.online/patches/Patch2.zip|df0e5ccd|3537153
+patch.2=https://dl.rexmu.online/patches/Patch2.zip|17f25870|3620617
