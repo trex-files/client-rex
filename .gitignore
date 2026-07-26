@@ -66,3 +66,8 @@ ClientFile/Data/Minimaps/**/*backup*/
 **/*.zip
 **/*.7z
 **/.ruff_cache/
+
+# Salidas de build: instalador y zips de parche. Se regeneran.
+# Los manifiestos que SI se versionan viven en patch-manifests/.
+installer/Output/
+patch-out/
