@@ -681,7 +681,7 @@
 680 "Cấp độ"
 681 "Nhân vật"
 682 "Ghi điểm"
-683 "Kinh nghiệm"
+683 "EXP"
 684 "Thưởng Zen"
 685 "Thông tin"
 686 "Ngươi khiêm nhượng quá đấy. Hãy chọn mức độ cao hơn đi!"
