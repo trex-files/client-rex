@@ -140,4 +140,24 @@ Excluidos siempre (no entran a ningún zip): `Launcher.exe`, `config.ini`, `Mu.i
 ## 5. Lecciones aprendidas
 _(Se completa después de cada test/patch real.)_
 
-- **2026-07-24** — Mapeo completo del updater (este documento). Confirmado por lectura de código: los 4 hallazgos de la auditoría 07-23 (zip-slip, EngineSwap delete, re-download loop, WM_CLOSE) están **fixeados** en el source y en el `Launcher.exe` shippeado (commit `9c080b55`). Identificados 2 gaps de hardening pendientes (§1.6 a/b): falta detección proactiva de Main.exe corriendo y staging atómico. Test E2E diseñado (4 casos, incl. Main.exe lockeado). Artefactos v1/v2 generados. **Pendiente**: correr el test en Windows y anotar resultados acá.
+- **2026-07-24** — Mapeo completo del updater (este documento). Confirmado por lectura de código: los 4 hallazgos de la auditoría 07-23 (zip-slip, EngineSwap delete, re-download loop, WM_CLOSE) están **fixeados** en el source y en el `Launcher.exe` shippeado (commit `9c080b55`). Identificados 2 gaps de hardening pendientes (§1.6 a/b): falta detección proactiva de Main.exe corriendo y staging atómico. Test E2E diseñado (4 casos, incl. Main.exe lockeado). Artefactos v1/v2 generados.
+
+- **2026-07-24 — patch v1 PUBLICADO. ✅ Camino FULL validado en producción**, funcionó
+  perfecto a la primera (v0→v1). El test E2E sintético de §3 quedó **obsoleto para los casos
+  1-3**: se ejercitaron con parches reales, que es evidencia más fuerte.
+
+- **2026-07-26 — patch v2 PUBLICADO** (`latest=2`, 7 ficheros, crc `85b60cd7`).
+  ✅ **Ejercitó el camino INCREMENTAL** (`patch.2` encadenado), incluido el overwrite de
+  `Main.exe`.
+
+- 🔴 **Lo ÚNICO que sigue sin ejercitarse es el caso 4** de §3: usuario con el juego ABIERTO
+  mientras corre el launcher (`Main.exe` lockeado). Es el escenario de los gaps §1.6 a/b.
+  Failure mode esperado por lectura de código: la copia falla, NO bumpea la versión, bloquea
+  "Jugar" y pide VERIFICAR; recuperable cerrando el juego. Nunca observado en vivo.
+
+- 🔑 **LECCIÓN DE PROCESO (2026-07-28)**: esta sección se quedó sin actualizar tras publicar
+  v1 y v2, y una auditoría previa al v3 leyó el "Pendiente: correr el test" de la entrada del
+  24/07 como si fuera el estado actual — concluyendo que el updater **nunca** se había
+  probado, cuando llevaba dos publicaciones en producción. **Anotar aquí cada publicación en
+  el momento**: un runbook desactualizado no es neutro, induce conclusiones falsas y hace
+  perder tiempo revisando riesgos que no existen.
