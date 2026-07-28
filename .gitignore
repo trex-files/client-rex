@@ -67,7 +67,7 @@ ClientFile/Data/Minimaps/**/*backup*/
 **/*.7z
 **/.ruff_cache/
 
-# Salidas del pipeline de parches y del instalador (los manifiestos
-# versionados viven en patch-manifests/, ver UPDATE-RUNBOOK)
-patch-out/
+# Salidas de build: instalador y zips de parche. Se regeneran.
+# Los manifiestos que SI se versionan viven en patch-manifests/.
 installer/Output/
+patch-out/
