@@ -3597,3 +3597,5 @@ end
 5889	"Nhập số lượng và nhấn OK."
 5392	"Chợ"
 5765	"Bạn có muốn đến %s không?"
+5891	"Giới hạn thể lực & mana"
+5757	"Mã PIN bảo mật:  %d"
