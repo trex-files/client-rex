@@ -140,4 +140,59 @@ Excluidos siempre (no entran a ningún zip): `Launcher.exe`, `config.ini`, `Mu.i
 ## 5. Lecciones aprendidas
 _(Se completa después de cada test/patch real.)_
 
-- **2026-07-24** — Mapeo completo del updater (este documento). Confirmado por lectura de código: los 4 hallazgos de la auditoría 07-23 (zip-slip, EngineSwap delete, re-download loop, WM_CLOSE) están **fixeados** en el source y en el `Launcher.exe` shippeado (commit `9c080b55`). Identificados 2 gaps de hardening pendientes (§1.6 a/b): falta detección proactiva de Main.exe corriendo y staging atómico. Test E2E diseñado (4 casos, incl. Main.exe lockeado). Artefactos v1/v2 generados. **Pendiente**: correr el test en Windows y anotar resultados acá.
+- **2026-07-24** — Mapeo completo del updater (este documento). Confirmado por lectura de código: los 4 hallazgos de la auditoría 07-23 (zip-slip, EngineSwap delete, re-download loop, WM_CLOSE) están **fixeados** en el source y en el `Launcher.exe` shippeado (commit `9c080b55`). Identificados 2 gaps de hardening pendientes (§1.6 a/b): falta detección proactiva de Main.exe corriendo y staging atómico. Test E2E diseñado (4 casos, incl. Main.exe lockeado). Artefactos v1/v2 generados.
+
+- **2026-07-24 — patch v1 PUBLICADO. ✅ Camino FULL validado en producción**, funcionó
+  perfecto a la primera (v0→v1). El test E2E sintético de §3 quedó **obsoleto para los casos
+  1-3**: se ejercitaron con parches reales, que es evidencia más fuerte.
+
+- **2026-07-26 — patch v2 PUBLICADO** (`latest=2`, 7 ficheros, crc `85b60cd7`).
+  ✅ **Ejercitó el camino INCREMENTAL** (`patch.2` encadenado), incluido el overwrite de
+  `Main.exe`.
+
+- 🔴 **Lo ÚNICO que sigue sin ejercitarse es el caso 4** de §3: usuario con el juego ABIERTO
+  mientras corre el launcher (`Main.exe` lockeado). Es el escenario de los gaps §1.6 a/b.
+  Failure mode esperado por lectura de código: la copia falla, NO bumpea la versión, bloquea
+  "Jugar" y pide VERIFICAR; recuperable cerrando el juego. Nunca observado en vivo.
+
+- 🔑 **LECCIÓN DE PROCESO (2026-07-28)**: esta sección se quedó sin actualizar tras publicar
+  v1 y v2, y una auditoría previa al v3 leyó el "Pendiente: correr el test" de la entrada del
+  24/07 como si fuera el estado actual — concluyendo que el updater **nunca** se había
+  probado, cuando llevaba dos publicaciones en producción. **Anotar aquí cada publicación en
+  el momento**: un runbook desactualizado no es neutro, induce conclusiones falsas y hace
+  perder tiempo revisando riesgos que no existen.
+
+- **2026-07-28 — patch v3 PUBLICADO** (`latest=3`, 13 ficheros, `Patch3.zip` crc `03f46e15` /
+  4.274.094 B, `FullPatch.zip` crc `2c7b8d00` / 4.429.120 B). Tag `client-patch-3` sobre
+  `release` `2fca05fb`. Primer parche que sale **acoplado a un release de servidor**: los
+  `skill_*.bmd` del cliente y `Data/Skill/Skill.txt` del GameServer son la misma tanda de
+  rebalanceo; publicar uno solo habría hecho que los tooltips anunciaran valores que el
+  servidor no aplica. Lo mismo con `CustomWing.txt` ↔ `rex.main`.
+
+  Lecciones nuevas de esta publicación:
+
+  - 🔑 **Verificar SIMULANDO la aplicación, no sólo la integridad del zip.** Aplicar cada zip
+    sobre el manifiesto del estado anterior y comparar los 27.262 ficheros
+    (`st[n] = sha256(zip[n])` sobre el manifiesto previo, luego `assert st == manifiesto_v3`).
+    Dio `v2+Patch3 == v3`, `v0+FullPatch == v3` y `v1+Patch2+Patch3 == v3`. Eso demuestra que
+    el parche **hace lo que debe**, no sólo que está bien formado.
+  - 🔴 **`git merge-tree` en su forma antigua OCULTA conflictos binarios.** Al simular el merge
+    `dev`→`release` mostró 2 conflictos; el moderno `--write-tree` mostró 4, incluido
+    **`ClientFile/Main.exe`**. Resolverlo mal habría metido el binario VIEJO en el parche.
+    Usar siempre `git merge-tree --write-tree` (git ≥ 2.38), y `grep -a` sobre su salida.
+  - 🔑 **Merge a `release` con plumbing, sin `checkout`.** `read-tree -m` (sin `-u`) +
+    `update-index --cacheinfo` + `write-tree` + `commit-tree` + `update-ref`. Un `checkout`
+    reescribiría 27k ficheros vía LFS. Verificado después: mtime y sha256 de `Main.exe`
+    intactos.
+  - 🔑 **Trazabilidad de un binario compilado ANTES de commitear**: el `oid` LFS del blob
+    commiteado debe ser igual al sha256 del fichero en disco. `git show HEAD:<path>` devuelve
+    el puntero LFS con ese oid sin necesidad de checkout.
+  - 🔑 **Comprobar que un rebuild recogió un fix cuando no deja literal de string**: contar un
+    **inmediato numérico** nuevo (aquí el índice de mensaje `6244`, empaquetado LE) en el exe
+    viejo frente al nuevo. Pasó de 5 a 6. Los nombres de función y de campo dan 0 siempre en un
+    build de release.
+  - ⚠️ **Margen estrecho en la heurística de tamaño**: `Patch3` (4.274.094) quedó sólo 155 KB
+    por debajo del `FullPatch` (4.429.120). Un incremental un poco mayor habría mandado a
+    **todos** los usuarios al FullPatch. Vigilarlo en el v4.
+  - ✅ La ventana de CRC de §4 se gestionó bien: zips a R2 y `vercel --prod` encadenados, con
+    verificación por **descarga real** de las 4 entradas del manifiesto antes de publicar.
