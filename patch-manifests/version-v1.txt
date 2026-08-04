@@ -1,0 +1,8 @@
+# RexMU Launcher — manifest de auto-update (generado por make-patch.mjs)
+# Formato: key=value. Lineas # o vacias se ignoran.
+#   full=<url>|<crc32-hex>|<size>   (FullPatch acumulativo -> latest)
+#   patch.N=<url>|<crc32-hex>|<size> (incremental N-1 -> N)
+
+latest=1
+full=https://dl.rexmu.online/patches/FullPatch.zip|602c1112|3537366
+patch.1=https://dl.rexmu.online/patches/Patch1.zip|602c1112|3537366
