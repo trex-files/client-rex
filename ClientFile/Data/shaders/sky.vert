@@ -15,6 +15,8 @@ layout(location = 2) in vec2 aTexCoord;
 out vec2 vUV;
 
 void main() {
-    gl_Position = vec4(aPosition, 0.0, 1.0);
+    // z = w -> NDC depth 1.0 (far plane / default glClear depth), para que
+    // el early-Z lo compare contra el mismo espacio de profundidad del mundo.
+    gl_Position = vec4(aPosition, 1.0, 1.0);
     vUV         = aTexCoord;
 }
