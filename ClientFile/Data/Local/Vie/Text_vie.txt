@@ -3585,6 +3585,7 @@
 4005 "Nâng Cấp Cánh VIP 7"
 4006 "Nâng Cấp Cánh VIP 8"
 4007 "Nâng Cấp Cánh VIP 9"
+5218	"Vui lòng chậm lại!!"
 end
 5813	"MU Helper"
 5820	"The new passwords do not match."

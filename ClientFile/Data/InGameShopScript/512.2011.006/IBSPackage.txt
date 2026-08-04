@@ -4,9 +4,9 @@
 31@4@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
 31@5@107@Silver Key@170@200@Open a sealed Silver box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@7280@2@1@1070|@0@508@669
 31@6@108@Gold Key@170@300@Open a sealed Gold box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1080|@7281@2@1@1080|@0@508@669
-32@1@109@Pet Panda@170@100@Increases EXP by 25%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669
-32@2@120@Pet Unicorn@170@60@Increases EXP by 15%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1200|@6762@2@3@1200|1201|1202|@0@508@669
-32@3@121@Pet Skeleton@170@40@Increases EXP by 10%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1210|@6779@2@3@1210|1211|1212|@0@508@669
+32@1@109@Pet Panda@170@100@Increases EXP by 50%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669
+32@2@120@Pet Unicorn@170@60@Increases EXP by 25%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1200|@6762@2@3@1200|1201|1202|@0@508@669
+32@3@121@Pet Skeleton@170@40@Increases EXP by 25%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1210|@6779@2@3@1210|1211|1212|@0@508@669
 32@4@122@Guardian Angel@170@60@Combat pet: increases defense.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1220|@6656@2@3@1220|1221|1222|@0@508@669
 32@5@123@Imp@170@60@Combat pet: increases attack.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1230|@6657@2@3@1230|1231|1232|@0@508@669
 32@6@124@Demon@170@80@Combat pet: increases attack power.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1240|@6720@2@3@1240|1241|1242|@0@508@669
@@ -35,6 +35,18 @@
 36@3@140@Elixir of Vitality@170@60@Adds +50 Vitality.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1400|@7248@2@3@1400|1401|1402|@0@508@669
 36@4@141@Elixir of Energy@170@60@Adds +50 Energy.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1410|@7249@2@3@1410|1411|1412|@0@508@669
 36@5@142@Elixir of Leadership@170@60@Adds +50 Command.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1420|@7250@2@3@1420|1421|1422|@0@508@669
+37@1@249@Box of Kundun +4@170@150@Random reward box (tier 4).@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2490|@7179@2@1@2490|@0@508@669
+37@2@250@Box of Kundun +5@170@250@Random reward box (tier 5).@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2500|@7179@2@1@2500|@0@508@669
+37@3@251@Sealed Silver Box@170@200@Sealed box. Requires a Silver Key to open.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2510|@7290@2@1@2510|@0@508@669
+37@4@252@Sealed Golden Box@170@300@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2520|@7289@2@1@2520|@0@508@669
+37@5@233@Jewel Of Skill@170@200@Adds the Skill option to an item.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2330|@7413@2@1@2330|@0@508@669
+37@6@234@Jewel Of Luck@170@400@Adds the Luck option to an item.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2340|@7414@2@1@2340|@0@508@669
+37@7@235@Jewel Of Excelent@170@650@Adds one Excellent option (max 3). 20% success rate.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2350|@7416@2@1@2350|@0@508@669
+37@8@236@Jewel Of Level +11@170@300@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2360|@7378@2@1@2360|@0@508@669
+37@9@237@Jewel Of Level +12@170@500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2370|@7379@2@1@2370|@0@508@669
+37@10@238@Jewel Of Level +13@170@750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2380|@7380@2@1@2380|@0@508@669
+37@11@239@Jewel Of Level +14@170@1200@Upgrades an item from +13 to +14.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2390|@7381@2@1@2390|@0@508@669
+37@12@240@Jewel Of Level +15@170@1700@Upgrades an item from +14 to +15.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2400|@7382@2@1@2400|@0@508@669
 40@1@200@Seal of Ascension@170@800@Increases EXP by 25%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2000|@6699@2@3@2000|2001|2002|@0@0@669
 40@2@201@Master Seal of Ascension@170@900@Increases EXP by 30%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2010|@6749@2@3@2010|2011|2012|@0@0@669
 40@3@202@Party Experience Bonus@170@650@Increases party EXP by 30%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2020|@6759@2@3@2020|2021|2022|@0@0@669
@@ -55,13 +67,32 @@
 42@3@217@Elixir of Vitality@170@250@Adds +50 Vitality.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2170|@7248@2@3@2170|2171|2172|@0@0@669
 42@4@218@Elixir of Energy@170@250@Adds +50 Energy.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2180|@7249@2@3@2180|2181|2182|@0@0@669
 42@5@219@Elixir of Leadership@170@250@Adds +50 Command.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2190|@7250@2@3@2190|2191|2192|@0@0@669
-43@1@220@Pet Panda@170@550@Increases EXP by 25%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2200|@6736@2@3@2200|2201|2202|@0@0@669
-43@2@221@Pet Unicorn@170@350@Increases EXP by 15%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2210|@6762@2@3@2210|2211|2212|@0@0@669
-43@3@222@Pet Skeleton@170@250@Increases EXP by 10%.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2220|@6779@2@3@2220|2221|2222|@0@0@669
+43@1@220@Pet Panda@170@550@Increases EXP by 50%.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2200|@6736@5@3@2200|2201|2202|@1@0@669
+43@2@221@Pet Unicorn@170@350@Increases EXP by 25%.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2210|@6762@5@3@2210|2211|2212|@1@0@669
+43@3@222@Pet Skeleton@170@250@Increases EXP by 25%.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2220|@6779@5@3@2220|2221|2222|@1@0@669
 43@4@223@Guardian Angel@170@350@Combat pet: increases defense.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2230|@6656@2@3@2230|2231|2232|@0@0@669
 43@5@224@Imp@170@350@Combat pet: increases attack.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2240|@6657@2@3@2240|2241|2242|@0@0@669
 43@6@225@Demon@170@450@Combat pet: increases attack power.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2250|@6720@2@3@2250|2251|2252|@0@0@669
 43@7@226@Spirit of Guardian@170@450@Combat pet: increases defense power.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2260|@6721@2@3@2260|2261|2262|@0@0@669
 43@8@227@Dinorant@170@400@Mount pet with combat bonus.@@182@185@0@0@177@1@Goblin (P)@Goblin (P)@181@200@0@2270|@6659@2@3@2270|2271|2272|@0@0@669
-61@1@117@Vault Expansion Certificate@170@2500@Expand storage (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1170|@7331@2@1@1170|@1@0@669
+44@1@228@Devil SquareTicket@170@1000@Entrance to the Devil Square event (10 times)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2280|@6702@2@1@2280|@0@0@669
+44@2@229@Blood Castle Ticket@170@1000@Entrance to the Blood Castle event (10 times)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2290|@6703@2@1@2290|@0@0@669
+44@3@230@Kalima Ticket@170@1000@Entrance to the Kalima (10 times)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2300|@6704@2@1@2300|@0@0@669
+61@1@117@Vault Expansion@170@2500@Expand storage (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1170|@7331@5@1@1170|@1@0@669
 61@2@118@Expand Inventory@170@2500@Expand personal inventory (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1180|@7330@5@1@1180|@1@0@669
+61@3@119@Talisman of Luck@170@750@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1190|@7221@5@1@1190|@1@0@669
+61@4@127@Talisman of Chaos Assembly@170@750@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1270|@7264@5@1@1270|@1@0@669
+61@5@231@Silver Key@170@1650@Open a sealed Silver box.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2310|@7280@2@1@2310|@0@0@669
+61@6@232@Gold Key@170@2500@Open a sealed Gold box.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2320|@7281@2@1@2320|@0@0@669
+62@1@253@Box of Kundun +4@170@750@Random reward box (tier 4).@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2530|@7179@2@1@2530|@0@0@669
+62@2@254@Box of Kundun +5@170@1250@Random reward box (tier 5).@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2540|@7179@2@1@2540|@0@0@669
+62@3@255@Sealed Silver Box@170@1000@Sealed box. Requires a Silver Key to open.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2550|@7290@2@1@2550|@0@0@669
+62@4@256@Sealed Golden Box@170@1500@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2560|@7289@2@1@2560|@0@0@669
+62@5@241@Jewel Of Skill@170@1000@Adds the Skill option to an item.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2410|@7413@2@1@2410|@0@0@669
+62@6@242@Jewel Of Luck@170@2000@Adds the Luck option to an item.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2420|@7414@2@1@2420|@0@0@669
+62@7@243@Jewel Of Excelent@170@3250@Adds one Excellent option (max 3). 20% success rate.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2430|@7416@2@1@2430|@0@0@669
+62@8@244@Jewel Of Level +11@170@1500@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2440|@7378@2@1@2440|@0@0@669
+62@9@245@Jewel Of Level +12@170@2500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2450|@7379@2@1@2450|@0@0@669
+62@10@246@Jewel Of Level +13@170@3750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2460|@7380@2@1@2460|@0@0@669
+62@11@247@Jewel Of Level +14@170@6000@Upgrades an item from +13 to +14.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2470|@7381@2@1@2470|@0@0@669
+62@12@248@Jewel Of Level +15@170@8500@Upgrades an item from +14 to +15.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2480|@7382@2@1@2480|@0@0@669
