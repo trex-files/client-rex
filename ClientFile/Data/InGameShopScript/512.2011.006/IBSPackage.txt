@@ -41,7 +41,7 @@
 37@4@252@Sealed Golden Box@170@300@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2520|@7289@2@1@2520|@0@508@669
 37@5@233@Jewel Of Skill@170@200@Adds the Skill option to an item.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2330|@7413@2@1@2330|@0@508@669
 37@6@234@Jewel Of Luck@170@400@Adds the Luck option to an item.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2340|@7414@2@1@2340|@0@508@669
-37@7@235@Jewel Of Excelent@170@650@Adds one Excellent option (max 3). 20% success rate.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2350|@7416@2@1@2350|@0@508@669
+37@7@235@Jewel Of Excelent@170@650@Adds one Excellent option (max 3). 50% success rate.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2350|@7416@2@1@2350|@0@508@669
 37@8@236@Jewel Of Level +11@170@300@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2360|@7378@2@1@2360|@0@508@669
 37@9@237@Jewel Of Level +12@170@500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2370|@7379@2@1@2370|@0@508@669
 37@10@238@Jewel Of Level +13@170@750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@2380|@7380@2@1@2380|@0@508@669
@@ -90,7 +90,7 @@
 62@4@256@Sealed Golden Box@170@1500@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2560|@7289@2@1@2560|@0@0@669
 62@5@241@Jewel Of Skill@170@1000@Adds the Skill option to an item.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2410|@7413@2@1@2410|@0@0@669
 62@6@242@Jewel Of Luck@170@2000@Adds the Luck option to an item.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2420|@7414@2@1@2420|@0@0@669
-62@7@243@Jewel Of Excelent@170@3250@Adds one Excellent option (max 3). 20% success rate.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2430|@7416@2@1@2430|@0@0@669
+62@7@243@Jewel Of Excelent@170@3250@Adds one Excellent option (max 3). 50% success rate.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2430|@7416@2@1@2430|@0@0@669
 62@8@244@Jewel Of Level +11@170@1500@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2440|@7378@2@1@2440|@0@0@669
 62@9@245@Jewel Of Level +12@170@2500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2450|@7379@2@1@2450|@0@0@669
 62@10@246@Jewel Of Level +13@170@3750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2460|@7380@2@1@2460|@0@0@669
