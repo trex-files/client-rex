@@ -3600,3 +3600,4 @@ end
 5765	"Bạn có muốn đến %s không?"
 5891	"Giới hạn thể lực & mana"
 5757	"Mã PIN bảo mật:  %d"
+5892	"Số điểm này sẽ được cộng vào#chỉ số của bạn sau khi reset"

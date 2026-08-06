@@ -4435,3 +4435,4 @@
 5889	"Ingresa la cantidad y haz clic en OK."
 5890	"- Puntos que obtendrás:"
 5891	"Estado de HP y MP"
+5892	"Estos puntos se aplicarán a#tus stats después de resetear"

@@ -4435,3 +4435,4 @@
 5765	"Deseja viajar para %s?"
 5890	"- Pontos que você obterá:"
 5891	"HP e MP Status"
+5892	"Estes pontos serão aplicados#aos seus stats após o reset"
