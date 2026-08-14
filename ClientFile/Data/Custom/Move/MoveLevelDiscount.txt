@@ -1,0 +1,20 @@
+//############################################################
+//# GENERADO por tools/gen-client-movelevel.mjs - NO EDITAR A MANO
+//# Origen: GameServerInfo - Custom.ini (MoveLevelDiscountEnable)
+//#         + Move.txt/Gate.txt para resolver destino -> mapa
+//# Politica del descuento de nivel de /move para MG / DL / RF.
+//# Debe coincidir con CGate::GetMoveLevel del servidor: si no, el
+//# cliente ensenia un requisito y el servidor exige otro, y el
+//# rechazo del servidor es MUDO.
+//############################################################
+
+// Seccion 0: interruptor. 1 = MG/DL/RF pagan 2/3. 0 = todas las clases igual.
+0
+	1
+end
+
+// Seccion 1: indices de destino de Move.txt que NUNCA reciben descuento,
+// porque el servidor excluye su mapa. Vacia si el interruptor esta a 0.
+1
+	33		// Swamp_of_Calmness (mapa 56)
+end

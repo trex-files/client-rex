@@ -62,6 +62,7 @@
 74 "Shift + Right Click to deposit"
 
 87 "[SELL] %s"
+88 "[MARKET] %s"
 92 "Coordinates: %d ~ %d"
 93 "Moving to [%d ~ %d]"
 end
