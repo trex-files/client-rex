@@ -1,0 +1,44 @@
+//======================================================================
+// CustomHPBar.txt -- forzar el TIPO de barra de vida de un monstruo.
+//======================================================================
+//
+// Formato:   <id del monstruo>   <tier 0-3>
+//
+//   0 = barra normal (la chica de siempre)
+//   1 = elite
+//   2 = jefe
+//   3 = world boss (la grande y ornamentada)
+//
+// Sin este fichero el tier se decide SOLO por la vida del monstruo, con
+// estos cortes (definidos en tools/gen-client-monsterhp.mjs):
+//
+//   tier 1 desde      100.000 HP
+//   tier 2 desde    1.000.000 HP
+//   tier 3 desde   50.000.000 HP
+//
+// Este fichero sirve para las excepciones: un mob de evento con poca vida
+// que igual debe verse imponente, o un saco de vida que no merece la barra
+// grande. Lo que se ponga aca GANA sobre el corte automatico.
+//
+//----------------------------------------------------------------------
+// COMO SE APLICA  (importante: el cliente NO lee este fichero)
+//----------------------------------------------------------------------
+// Lo consume el generador, no el juego:
+//
+//     node tools/gen-client-monsterhp.mjs
+//
+// Eso reescribe ClientFile/Data/Custom/Monster/MonsterHP.txt, que es lo
+// que el cliente lee de verdad. Editar este fichero sin regenerar no
+// cambia nada en pantalla.
+//
+// Una linea malformada ABORTA el generador a proposito: un override que
+// no se aplica en silencio es peor que un error visible.
+//
+//----------------------------------------------------------------------
+// EJEMPLOS (comentados: quitar el // para activarlos)
+//----------------------------------------------------------------------
+//
+// 502 3      // Golden Rabbit: poca vida, pero es de evento -> barra de world boss
+// 275 3      // Kundun: ya cae en tier 3 por vida, esto solo lo deja explicito
+// 501 2      // Great Golden Dragon: bajarlo de world boss a jefe
+//
