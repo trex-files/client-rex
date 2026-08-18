@@ -72,7 +72,12 @@
 	53	6426	3	135	1	71	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing282"         //Wizard Magic Sum
 	54	6427	3	135	1	71	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing283"         //Elf
 	55	6428	3	171	0	29	0	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"ConquerorWing"         //All
-	56	6429	3	160	0	40	0	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing285"         //All
+//2026-08-18: FILA MUERTA, desactivada. El indice 6429 ya esta declarado en la linea 38 con el
+//modelo 'angel_devil_wing'. cCustomWing usa std::map::insert, que NO sobrescribe: gana SIEMPRE la
+//PRIMERA fila, y esta se descartaba en silencio. La primera ademas es la CORRECTA -- el servidor
+//(Item.txt seccion 12, indice 285) dice que 12/285 es "Wings of Angel and Devil".
+//Se comenta para que nadie la reordene por delante y rompa el ala sin darse cuenta.
+//	56	6429	3	160	0	40	0	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing285"         //All
 	57	6430	29	165	0	35	0	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"WingsOfPower"         //All
 	58	6431	4	139	1	61	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing52"         //Sum Elf
 	59	6432	82	155	1	57	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing53"         //Sum Elf

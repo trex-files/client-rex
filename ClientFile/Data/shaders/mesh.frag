@@ -64,11 +64,21 @@ vec2 ApplyUVAnimation(vec2 texCoord) {
         // *30.0 matches mesh_bright.frag's frame-grid formula (frames/sec in the
         // authored data -> our time base); without it this path animated 30x
         // slower than the additive path for the same FrameRate value.
-        float frameIndex = mod(floor(uAnimTime * uAnimSpeed * 30.0),
-                               uFrameGrid.x * uFrameGrid.y);
+        // 2026-08-18 FIX: texCoord must be DIVIDED by the grid before adding the
+        // cell offset, exactly as mesh_bright.frag:113 does. Without the divide
+        // this path only slid the WHOLE sheet around instead of zooming into one
+        // cell, so a frame-grid row on an opaque mesh showed every frame at once
+        // -- the same "the body repeats 4 times" symptom already diagnosed on
+        // item 129. Unlike AnimType=5, this divergence was NOT deliberate: the
+        // additive path had the divide and this one silently didn't.
+        // Returns early because the shared `fract(texCoord + offset)` tail below
+        // would re-wrap coordinates that are already inside their cell.
+        // max(...,1.0) guards a 0-sized grid (mod by 0 -> NaN -> black mesh).
+        float total = max(uFrameGrid.x * uFrameGrid.y, 1.0);
+        float frameIndex = mod(floor(uAnimTime * uAnimSpeed * 30.0), total);
         float row = floor(frameIndex / uFrameGrid.x);
         float col = mod(frameIndex, uFrameGrid.x);
-        offset = vec2(col / uFrameGrid.x, row / uFrameGrid.y);
+        return texCoord / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
     }
     // Mode 5 (pulse): UV intentionally unchanged here — it's a brightness-only
     // effect, applied by ApplyPulseBrightness() in main(). (This function's

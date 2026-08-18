@@ -8,11 +8,20 @@
 // Agregar archivos en: [Data/Item]
 //===============================================================================================================
 //ItemType	Mode 	CloakName								StripName
-6304		1		"Item\\KF_darklordwing4de.tga"			"Item\\KF_darklordwing4dd.tga"
-6306		0		"Item\\KF_ragefighterwing4db.tga"		*
+//2026-08-18: 4 FILAS OBSOLETAS desactivadas (esta y las 3 siguientes marcadas igual).
+//Los indices 6304/6306/6311/6312 son 12/160, 12/162, 12/167 y 12/168, que la tabla de items de
+//S21 REASIGNO a objetos del ciclo Pentagram ("Pentagram for Beginners", "Scroll of Etramu",
+//"Lorencia Knight's Iron Shield"...). Ya no existe ninguna capa en esos indices, asi que estas
+//filas eran dato mentiroso. Inertes en la practica -- gCloak.GetInfoByItem solo se consulta con
+//lo que hay en la ranura de ALAS (ZzzCharacter.cpp:10918) y un pentagrama no va ahi.
+//6304		1		"Item\\KF_darklordwing4de.tga"			"Item\\KF_darklordwing4dd.tga"
+//2026-08-18: obsoleta, ver nota de la linea 11.
+//6306		0		"Item\\KF_ragefighterwing4db.tga"		*
 6299		0		"Item\\KF_Death_clka.tga"				*
-6311		1		"Item\\Fifth_Darklord_cape_01.tga"		"Item\\Fifth_Darklord_cape_02.tga"
-6312		0		"Item\\Fifth_Rage_cape_01.tga"			*
+//2026-08-18: obsoleta, ver nota de la linea 11.
+//6311		1		"Item\\Fifth_Darklord_cape_01.tga"		"Item\\Fifth_Darklord_cape_02.tga"
+//2026-08-18: obsoleta, ver nota de la linea 11.
+//6312		0		"Item\\Fifth_Rage_cape_01.tga"			*
 
 // S21 sibling fill 2026-08-16 -- 15 of 17 matched cloak strips; 2 excluded (flat 6454, 6456)
 // because MAX_CUSTOMCLOAK=20 and this file already had 5 rows (5+17=22 > 20 ceiling).

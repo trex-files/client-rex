@@ -571,4 +571,41 @@
 	12			288				52						//Wing53 (indice 6432) - mirror de 12/364
 	12			287				51						//Wing52 (indice 6431) - mirror de 12/365
 
+
+//===================================================================
+// 2026-08-18 -- 24 alas SIN CEffect.txt previo, registradas bajo el
+// case generico 98 (mesh-driven, ver CustomCloak.cpp/RenderCEffect).
+// Arregla mallas de EFECTO (Swordeff_mono2line, fire_15fmono, etc.)
+// que se pintaban OPACAS por no pasar nunca por RenderCEffect.
+// Las otras 14 alas del mismo analisis YA tenian una fila aqui (bajo
+// un case viejo 9/10/12/14/54/56/57) -- deliberadamente NO tocadas,
+// ver informe WINGS-MESH.md / aviso al team-lead antes de decidir que
+// hacer con ellas (8 de las 14 apuntan a un numero de case que no
+// existe en el switch y caen a default silenciosamente).
+//===================================================================
+	12			281				98						//Wing281 (indice 6425) - case98 generico (wings black-mesh fix)
+	12			283				98						//Wing283 (indice 6427) - case98 generico (wings black-mesh fix)
+	12			286				98						//WingsOfPower (indice 6430) - case98 generico (wings black-mesh fix)
+	12			296				98						//ManaBurstWingNH (indice 6440) - case98 generico (wings black-mesh fix)
+	12			300				98						//NHCAPE08 (indice 6444) - case98 generico (wings black-mesh fix)
+	12			304				98						//NHCAPE03 (indice 6448) - case98 generico (wings black-mesh fix)
+	12			306				98						//Wing188 (indice 6450) - case98 generico (wings black-mesh fix)
+	12			307				98						//Wing189 (indice 6451) - case98 generico (wings black-mesh fix)
+	12			308				98						//Wing190 (indice 6452) - case98 generico (wings black-mesh fix)
+	12			309				98						//Wing191 (indice 6453) - case98 generico (wings black-mesh fix)
+	12			351				98						//Wing281 (indice 6495) - case98 generico (wings black-mesh fix)
+	12			353				98						//Wing283 (indice 6497) - case98 generico (wings black-mesh fix)
+	12			366				98						//Wing505 (indice 6510) - case98 generico (wings black-mesh fix)
+	12			367				98						//Wing507 (indice 6511) - case98 generico (wings black-mesh fix)
+	12			370				98						//Aurion_wing (indice 6514) - case98 generico (wings black-mesh fix)
+	12			371				98						//Blackray_wing (indice 6515) - case98 generico (wings black-mesh fix)
+	12			372				98						//Bloodbound_wing (indice 6516) - case98 generico (wings black-mesh fix)
+	12			375				98						//Death_wing (indice 6519) - case98 generico (wings black-mesh fix)
+	12			376				98						//Devil_majestyc_wing (indice 6520) - case98 generico (wings black-mesh fix)
+	12			378				98						//Fallen_angel_wing (indice 6522) - case98 generico (wings black-mesh fix)
+	12			381				98						//Icefrost_wing (indice 6525) - case98 generico (wings black-mesh fix)
+	12			382				98						//Magma_wing (indice 6526) - case98 generico (wings black-mesh fix)
+	12			383				98						//Nightfire_wing (indice 6527) - case98 generico (wings black-mesh fix)
+	12			386				98						//Wraith_wing (indice 6530) - case98 generico (wings black-mesh fix)
+
 end

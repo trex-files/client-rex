@@ -51,7 +51,11 @@
 //5138	204	40	28		"GloveMale19"
 //5650	204	40	28		"BootMale19"
 19		255 48 48		"Sword20"
-2570	255 48 48		"Staff11"
+//2026-08-18: FILA MUERTA, desactivada. El indice 2570 ya esta declarado en la linea 15.
+//CustomItem.cpp:57 usa m_CustomItemInfo.insert(), que NO sobrescribe -> gana la PRIMERA fila
+//(modelo "" = usa el modelo base del tipo, que para 5/10 es Staff11 igualmente; solo cambiaba
+//el tinte). Esta fila nunca llego a aplicarse. Comentada para no confundir.
+//2570	255 48 48		"Staff11"
 2596	255 48 48		"Archangelus"
 1037	255 48 48		"saint"
 //--------------------//NL Qoay Wing 2.5-------------------------------------------

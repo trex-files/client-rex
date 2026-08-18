@@ -112,26 +112,32 @@ void main() {
         float row   = floor(idx / uFrameGrid.x);
         _uv = vUV / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
     } else if (uAnimMode == 5) {
-        // DELIBERATE DIVERGENCE FROM THE SPEC -- DO NOT "UNIFY" THIS.
-        // AnimType=5 renders differently on purpose in the two paths:
-        //   - opaque path (mesh.frag / mesh_alphatest.frag): the faithful
-        //     RE'd Kapocha 2.0.3 formula, 0.2 + 0.7*sin(t*speed).
-        //   - additive path (HERE): the "electric crackle" below.
-        // The crackle is a conscious artistic reinterpretation that was
-        // already shipped and previously audited as intentional, not a bug.
-        // It is also the better fit in practice: every AnimType=5 row in
-        // CEffectRenderMesh.txt is BlendMode=66, i.e. they ALL take this
-        // additive path, and they are all electric weapons (flareBlue on
-        // lance/stick, K_Elec on staff). A smooth sine reads as breathing;
-        // this reads as live electricity.
-        // Restored 2026-08-18 after being replaced by the spec formula.
+        // AnimType=5 = brillo pulsante, sin cambio de UV (para que el envoltorio
+        // con forma de arma nunca "resbale" como un fantasma). Tres sinusoides a
+        // frecuencias inconmensurables dan un parpadeo erratico y vivo, en vez de
+        // la respiracion regular de un seno unico.
         //
-        // Brightness-only flicker, no UV change (so the weapon-shaped
-        // lightning wrap never "slides" like a ghost). Layered sines at
-        // incommensurate frequencies give an erratic, alive flicker.
-        float _f = sin(uAnimTime * 9.0)        * 0.5
-                 + sin(uAnimTime * 23.0 + 1.7) * 0.3
-                 + sin(uAnimTime * 53.0 + 0.5) * 0.2;
+        // 2026-08-18: LA FRECUENCIA AHORA ES UN DATO (uAnimSpeed = FrameRate de la
+        // fila), no una constante. Antes estaba fija en 9/23/53 rad/s -- el termino
+        // dominante son ~8,4 Hz -- y se documento como divergencia DELIBERADA frente
+        // a la formula spec del camino opaco, con esta justificacion textual:
+        // "todas las filas AnimType=5 son BlendMode=66 y son todas armas electricas".
+        // ESA PREMISA CADUCO: al dar de alta las alas nuevas, 29 de las 41 filas
+        // AnimType=5 del catalogo son ALAS. A 8,4 Hz un ala no lee como electricidad,
+        // lee como un estrobo -- que es justo lo que reporto el dueño
+        // ("parpadeantes, rapidamente").
+        //
+        // Las frecuencias base son las originales divididas por 20, escaladas por
+        // uAnimSpeed. Asi:
+        //   FrameRate = 20.0 -> 9 / 23 / 53 rad/s = EXACTAMENTE el crackle de antes.
+        //                       Es el valor que llevan ahora las 12 filas de arma.
+        //   FrameRate =  1.0 -> 20x mas lento (dominante ~0,42 Hz) = pulso calmado.
+        //                       Es el valor que llevan las 29 filas de ala.
+        // Cada fila se ajusta sola desde CEffectRenderMesh.txt sin tocar el shader.
+        float _s = max(uAnimSpeed, 0.0001);   // guarda: FrameRate 0 congelaria el pulso
+        float _f = sin(uAnimTime * 0.45 * _s)        * 0.5
+                 + sin(uAnimTime * 1.15 * _s + 1.7)  * 0.3
+                 + sin(uAnimTime * 2.65 * _s + 0.5)  * 0.2;
         _bright = 0.40 + 0.60 * clamp(_f * 0.5 + 0.5, 0.0, 1.0);
     }
 

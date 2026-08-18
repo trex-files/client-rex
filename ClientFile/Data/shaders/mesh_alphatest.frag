@@ -62,11 +62,17 @@ vec2 ApplyUVAnimation(vec2 texCoord) {
     } else if (uAnimMode == 3) {
         offset = mod(uAnimTime * uAnimSpeed * vec2(1.0, 0.5), 1.0);
     } else if (uAnimMode == 4) {
-        float frameIndex = mod(floor(uAnimTime * uAnimSpeed * 30.0),
-                               uFrameGrid.x * uFrameGrid.y);
+        // 2026-08-18 FIX: divide texCoord by the grid before adding the cell
+        // offset, matching mesh_bright.frag:113 and mesh.frag. Without it the
+        // sheet was only slid around, never zoomed into a single cell, so every
+        // frame showed at once. Not a deliberate divergence (unlike AnimType=5
+        // below) -- just a missing divide. Early return so the shared
+        // fract(texCoord + offset) tail does not re-wrap an in-cell coordinate.
+        float total = max(uFrameGrid.x * uFrameGrid.y, 1.0);
+        float frameIndex = mod(floor(uAnimTime * uAnimSpeed * 30.0), total);
         float row = floor(frameIndex / uFrameGrid.x);
         float col = mod(frameIndex, uFrameGrid.x);
-        offset = vec2(col / uFrameGrid.x, row / uFrameGrid.y);
+        return texCoord / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
     }
     // Mode 5 (pulse): brightness-only, no UV change — see ApplyPulseBrightness().
 
