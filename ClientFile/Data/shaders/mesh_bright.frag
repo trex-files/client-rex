@@ -55,11 +55,41 @@ uniform float uAnimSpeed;   // scroll UV/sec (modes 1-3) OR frame rate (mode 4) 
 uniform vec2  uFrameGrid;   // (cols, rows) for frameGrid mode 4; (1,1) = static / other modes
 uniform float uFxGlow;      // GlowLevel multiplier (default 1.0 = neutral)
 
+// Kapocha-compatible texture swap (CEFFECT_RENDER_MESH_INFO::SwapMode). Ported
+// verbatim from mesh.frag's ApplyTextureSwap (see that file for the opaque-path
+// counterpart) so the additive overlay path (BlendMode=66) gets the same
+// SwapMode=1 (hardAlternate) / SwapMode=2 (pulseBlend) behavior as the opaque
+// base mesh (BlendMode=2), instead of the old CPU-side full-texture toggle.
+// uSwapTexMode==0 (default) is a strict no-op — uTexAlt is never sampled.
+uniform int       uSwapTexMode;     // 0=disabled (default) 1=hardAlternate 2=pulseBlend
+uniform float     uSwapThreshold;   // blend threshold for pulseBlend (default 0.5)
+uniform sampler2D uTexAlt;          // alternative texture for swap modes
+
 layout(std140) uniform VisibilityBlock {
     vec4 uVisibility;  // xy=cameraXY tiles, z=innerR tiles, w=outerR tiles
 };
 
 out vec4 fragColor;
+
+// Blend between primary texture (color0) and uTexAlt based on swap mode.
+// Returns color0 unchanged when uSwapTexMode == 0.
+vec4 ApplyTextureSwap(vec2 texCoord, vec4 color0) {
+    if (uSwapTexMode == 0) return color0;
+
+    vec4 color1 = texture(uTexAlt, texCoord);
+
+    if (uSwapTexMode == 1) {
+        // Hard alternate: toggle every 1/uAnimSpeed seconds.
+        float phase = mod(uAnimTime * uAnimSpeed, 2.0);
+        return mix(color0, color1, step(1.0, phase));
+    } else if (uSwapTexMode == 2) {
+        // Pulse blend: smooth sine cross-fade.
+        float blend = (sin(uAnimTime * uAnimSpeed * 6.2831853) + 1.0) * 0.5;
+        return mix(color0, color1, blend);
+    }
+
+    return color0;
+}
 
 void main() {
     vec2  _uv     = vUV;
@@ -82,10 +112,23 @@ void main() {
         float row   = floor(idx / uFrameGrid.x);
         _uv = vUV / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
     } else if (uAnimMode == 5) {
-        // Electric crackle: brightness-only flicker, no UV change (so the
-        // weapon-shaped lightning wrap never "slides" like a ghost). Layered
-        // sines at incommensurate frequencies give an erratic, alive flicker
-        // that reads as moving electricity rather than a smooth breathing pulse.
+        // DELIBERATE DIVERGENCE FROM THE SPEC -- DO NOT "UNIFY" THIS.
+        // AnimType=5 renders differently on purpose in the two paths:
+        //   - opaque path (mesh.frag / mesh_alphatest.frag): the faithful
+        //     RE'd Kapocha 2.0.3 formula, 0.2 + 0.7*sin(t*speed).
+        //   - additive path (HERE): the "electric crackle" below.
+        // The crackle is a conscious artistic reinterpretation that was
+        // already shipped and previously audited as intentional, not a bug.
+        // It is also the better fit in practice: every AnimType=5 row in
+        // CEffectRenderMesh.txt is BlendMode=66, i.e. they ALL take this
+        // additive path, and they are all electric weapons (flareBlue on
+        // lance/stick, K_Elec on staff). A smooth sine reads as breathing;
+        // this reads as live electricity.
+        // Restored 2026-08-18 after being replaced by the spec formula.
+        //
+        // Brightness-only flicker, no UV change (so the weapon-shaped
+        // lightning wrap never "slides" like a ghost). Layered sines at
+        // incommensurate frequencies give an erratic, alive flicker.
         float _f = sin(uAnimTime * 9.0)        * 0.5
                  + sin(uAnimTime * 23.0 + 1.7) * 0.3
                  + sin(uAnimTime * 53.0 + 0.5) * 0.2;
@@ -93,6 +136,9 @@ void main() {
     }
 
     vec4 texel = texture(uTex, _uv);
+    // Apply texture swap blend between primary and alternate texture (no-op
+    // when uSwapTexMode==0 — returns texel unchanged).
+    texel = ApplyTextureSwap(_uv, texel);
     if (uEffectCut == 1 && max(max(texel.r, texel.g), texel.b) < 0.06) discard;
     vec4 c = texel * vColor;
     // 2026-05-27: Lowered discard threshold 0.01 → 0.001 for smooth particle

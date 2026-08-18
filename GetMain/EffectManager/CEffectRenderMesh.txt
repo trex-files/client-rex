@@ -1,61 +1,178 @@
 //////////////Kit Weapons Lightning S19 Part2 by Kapocha//////////////
-//lightning_sword
+// RECONSTRUCTED 2026-08-18: all rows below (except item 3116, see note) are
+// RECONSTRUCTED values, not the lost original-author data. Only the values
+// documented as "original reference" for items 2646 (staff) and 3116 (shield)
+// are the genuine preserved author data.
+//
+// Column layout (13 cols, TAB-separated):
+//   ItemIndex  MeshIndex  MeshId  BlendMode  AnimType  FrameCols  FrameRows
+//   FrameRate  SwapMode  GlowLevel  R  G  B
+// MeshId is always -1. BlendMode: 2=opaque base pass, 66=additive overlay.
+// AnimType: 0/-1=static, 1=scrollU, 2=scrollV, 3=scrollBoth, 4=frameGrid, 5=pulse.
+//
+// FrameCols/FrameRows convention: texture suffix "_CxR" maps DIRECTLY, in the
+// same left-to-right order, to FrameCols then FrameRows. "_4X4" -> Cols=4
+// Rows=4. "_1X4" -> Cols=1 Rows=4. Confirmed two ways: (a) real texture pixel
+// size (K_Elec_light01_1X4.ozj=256x512, K_Elec_light02_1X4.ozj=256x1024, both
+// only divide evenly as 1 col x 4 rows), and (b) independently via real BMD UV
+// ranges extracted by the team lead's decoder on three "_1X4" meshes (89
+// mesh4, 2646 mesh3, 2647 mesh6/7): U spans the full 0-1 range, V spans
+// exactly 1/4 -> 1 column x 4 rows. Precedence rule: if the texture FILENAME
+// declares "_NxM", that name wins. If there is no suffix but the mesh's real
+// UV range is a clean 1/N x 1/M fraction, use that (see item 3116 mesh1
+// below). Small/partial UV windows on non-sheet textures (swap alternates,
+// single flares) are NOT grid evidence - ignore those.
+//
+// Reconstruction rules applied per mesh, based on the role its texture name
+// reveals (see /tmp/.../FIX-RENDERMESH.md for the full per-weapon rationale):
+//   1) plain body texture (_01/_02/_03, no special suffix): BlendMode=2,
+//      AnimType=0, FrameCols/Rows=1 1, FrameRate=1.0, SwapMode=0, Glow=1.0,
+//      tint 1.0 1.0 1.0.
+//   2) "Glow" texture: BlendMode=66, AnimType=0, Glow=2.0, tint 1.0 1.0 1.0.
+//   3) texture with a real "_CxR" grid suffix: BlendMode=66, AnimType=4,
+//      FrameCols/Rows from the suffix, Glow=1.0, tint 1.0 1.0 1.0.
+//   4) base texture whose "_r"/"_R" alternate is used by ANOTHER mesh of the
+//      same model: the BASE mesh gets BlendMode=66, SwapMode=1, Glow=2.0.
+//      The alternate-texture mesh itself gets NO row (see rule 7) - it is the
+//      swap target, not an independent pass.
+//   5) "alpha_line2" generic streak texture: BlendMode=66, AnimType=1
+//      (scrollU), Glow=1.0, tint 1.0 1.0 1.0.
+//   6) "flareBlue"/"blue" flash texture: BlendMode=66, AnimType=5 (pulse),
+//      Glow=1.5, tint 1.0 1.0 1.0.
+//   7) meshes that ARE the "_r"/"_R" swap target of another mesh in rule 4:
+//      lightning_magicSword01_r (magicsword mesh6), lightning_Twosword_02_R
+//      (twohandsword mesh5), lightning_Scepter_02_r (scepter mesh3),
+//      lightning_book_02_r (book mesh2) - no row generated, per brief.
+//      Same treatment extended to lightning_lance_02_r (lance mesh4) by
+//      analogy - see FLAGGED note below, this pair was not in the brief's
+//      explicit example list.
+//
+// AnimType=5 (pulse) - RESOLVED 2026-08-18, note kept for the record.
+// This was first believed to be blocked by a 0-4 clamp in
+// ConvertFromKapochaRenderMesh. That turned out to be WRONG on investigation:
+// that function is not wired to any loader (client or generator), and the
+// generator never clamped either, so AnimType=5 already reached the client
+// intact - the SHADER was simply ignoring it in silence. Both were fixed:
+// the validator was widened to 0-5 anyway (it is clearly meant to be wired up
+// later, and leaving it capped would be a trap), and pulse is now implemented
+// in the shaders.
+// Deliberate divergence, do NOT "unify" it: the opaque path (mesh.frag) uses
+// the faithful spec formula 0.2+0.7*sin(t*speed); the additive path
+// (mesh_bright.frag) keeps its pre-existing 3-sine "electric crackle", a
+// conscious reinterpretation that was already shipped and audited. All three
+// pulse rows below are BlendMode=66, so they take the additive path and get
+// the crackle - which suits electric weapons better anyway.
+// Affected rows: lance(1570) mesh5, staff(2646) mesh3, stick(2647) mesh5.
+// NOTE: item 3116 (shield) mesh1 is NOT in this list - see its section below,
+// UV forensics showed it is actually a real 4x4 frameGrid, not pulse.
+//
+// FLAGGED items (see report for full detail, not silently improvised):
+//  - lance (1570) mesh1/mesh4: brief's rule-4 example list did not name this
+//    pair, but lightning_lance_02_r.jpg is literally lightning_lance_02.jpg's
+//    "_r" filename and no auto-detected ALT tag was given for it either way -
+//    treated as a rule-4/rule-7 pair by naming-pattern consistency.
+//  - stick (2647) mesh6/mesh7 (K_Elec_light01_1X4 / K_Elec_light02_1X4):
+//    RESOLVED, no longer a flag. The SAME K_Elec_light01_1X4 texture is used
+//    by staff (2646) mesh3 as AnimType=5 (pulse) per the preserved original
+//    reference, while stick uses AnimType=4 (grid) for the same file. Team
+//    lead confirmed via real BMD UV ranges this is not an inconsistency: both
+//    UVs independently confirm the 1x4 sheet layout, staff's original author
+//    chose to pulse a single mapped cell while stick scrubs the full sheet -
+//    two intentional, different artistic uses of the same source texture.
+//  - stone (7604) mesh1 "lightning_stone_Blue": does not match any of the 7
+//    named roles (no Glow/grid/alpha_line2/flareBlue-blue in the name). By
+//    analogy with every other "_Blue" texture in this catalog (all of which
+//    are additive glow/grid overlays, never opaque base passes:
+//    K_lightning00_4X4_Blue, lightning00_4X4_Blue), it was treated as a
+//    static additive overlay (BlendMode=66, Glow=2.0) instead of rule 1.
+//  - anvil (7608): RESOLVED 2026-08-18. Its two textures were missing, which
+//    made the whole item invisible (BMD::RenderMesh early-returns on
+//    BITMAP_HIDE, while RenderBodyShadow does not check textures at all - the
+//    classic "shadow but no model" signature). Team lead recovered
+//    lightning_anvil_01/02.OZJ from the S21 client and copied them into
+//    ClientFile/Data/Item as .ozj (lowercase, matching sibling convention).
+//    Verified by re-running the texture sweep. These rows now render.
+//  - lance (1570): STILL BLOCKED, missing art. Its four own textures
+//    (lightning_lance_01/02/Glow/02_r.jpg) do not exist anywhere under
+//    /workspace - not in this client, not in the S21 client, not in Mudream.
+//    Only the .bmd model exists. Its other three meshes (alpha_line2,
+//    flareBlue, lightning00_4X4_Blue) DO resolve, so the weapon renders
+//    PARTIALLY: overlays without a body. Rows are authored correctly and will
+//    work the moment the art lands. Owner action, not a data bug.
+//
+//lightning_sword (item 88)
 88	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 88	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-88	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
 88	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-88	3	-1	66	0	1	1	1.0	0	1.0	0.27	0.8	0.9
-88	4	-1	66	4	1	1	1.0	0	1.0	0.9	0.9	1.0
-88	5	-1	66	0	1	1	1.0	0	1.0	0.6	0.5	1.0
-//lightning_magicsword
-89	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+88	3	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+88	4	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
+88	5	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+//lightning_magicsword (item 89) - mesh6 (lightning_magicSword01_r) omitted, swap target of mesh0
+89	0	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
 89	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 89	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-89	3	-1	66	2	1	1	1.0	0	1.0	0.25	0.8	0.66
-89	4	-1	66	5	1	1	1.0	0	1.0	0.6	0.66	1.0
-89	5	-1	66	0	1	1	1.0	0	1.0	0.1	0.1	0.6
-89	6	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	1.0
-// TODO: needs real item index (twohandsword 90?)
-//32229	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	66	0	1	1	1.0	1	2.0	0.35	0.97	1.0
-//32229	2	-1	66	0	1	1	1.0	1	2.0	0.7	0.24	0.8
-//32229	3	-1	66	0	1	1	1.0	1	80.0	1.0	1.0	1.0
-//32229	4	-1	66	5	1	1	1.0	0	1.0	0.66	0.66	1.0
-//32229	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.70	1.0
-//lightning_scepter
+89	3	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+89	4	-1	66	4	1	4	1.0	0	1.0	1.0	1.0	1.0
+89	5	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+//lightning_twohandsword (item 90) - mesh5 (lightning_Twosword_02_R) omitted, swap target of mesh0
+90	0	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
+90	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+90	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+90	3	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+90	4	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+90	6	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
+//lightning_scepter (item 1074) - mesh3 (lightning_Scepter_02_r) omitted, swap target of mesh1
 1074	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-1074	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-1074	2	-1	66	0	1	1	1.0	0	1.0	0.4	0.4	0.66
-1074	3	-1	66	0	1	1	1.0	1	2.0	0.4	0.6	1.0
-1074	4	-1	66	0	1	1	1.0	0	1.0	0.1	0.37	1.0
-1074	5	-1	66	4	1	1	1.0	0	1.0	0.4	0.53	0.53
-// TODO: lightning_bow not registered in CustomItem
-//32229	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	2	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
-//32229	3	-1	66	2	1	1	1.0	0	1.0	0.0	0.24	0.7
-//32229	4	-1	66	4	1	1	1.0	0	1.0	0.765	0.765	0.85
-//lightning_staff
+1074	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
+1074	2	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+1074	4	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+1074	5	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
+//lightning_lance (item 1570) - FLAGGED: mesh4 (lightning_lance_02_r) omitted, assumed swap target of mesh1 (see header note); art assets missing on disk
+1570	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+1570	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
+1570	2	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+1570	3	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+// mesh5 (flareBlue.jpg) PULSE - clamp dependency, see header EXTERNAL DEPENDENCY note
+1570	5	-1	66	5	1	1	1.0	0	1.5	1.0	1.0	1.0
+1570	6	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
+//lightning_staff (item 2646) - mesh1/2/3 use the preserved original-author reference, NOT the generic rules
 2646	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2646	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 2646	1	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	0.7
-2646	2	-1	66	0	1	1	1.0	0	1.0	0.35	0.35	0.6
+2646	2	-1	66	0	1	1	1.0	0	2.0	0.35	0.35	0.6
+// mesh3 (K_Elec_light01_1X4.jpg) PULSE - clamp dependency, see header EXTERNAL DEPENDENCY note
 2646	3	-1	66	5	1	1	1.0	0	1.0	1.0	1.0	0.75
-//lightning_stick
+//lightning_stick (item 2647) - mesh6/mesh7 grid vs staff mesh3 pulse on the same texture: confirmed intentional, not a flag (see header note)
 2647	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 2647	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 2647	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2647	3	-1	66	0	1	1	1.0	0	1.0	0.13	0.35	0.4
-2647	4	-1	66	0	1	1	1.0	0	1.0	0.25	0.75	0.85
-2647	5	-1	66	0	1	1	1.0	1	2.0	0.66	0.66	1.0
-2647	6	-1	66	5	1	1	1.0	0	1.0	1.0	1.0	0.80
-2647	7	-1	66	5	1	1	1.0	0	1.0	0.6	0.6	0.75
-//lightning_shield
+2647	3	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+2647	4	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+// mesh5 (flareBlue.jpg) PULSE - clamp dependency, see header EXTERNAL DEPENDENCY note
+2647	5	-1	66	5	1	1	1.0	0	1.5	1.0	1.0	1.0
+2647	6	-1	66	4	1	4	1.0	0	1.0	1.0	1.0	1.0
+2647	7	-1	66	4	1	4	1.0	0	1.0	1.0	1.0	1.0
+//lightning_book (item 2648) - mesh2 (lightning_book_02_r) omitted, swap target of mesh1
+2648	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+2648	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
+2648	3	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
+//lightning_shield (item 3116) - already active/original. ONLY mesh1 changed, and
+// only its FrameCols/FrameRows: 1 1 -> 4 4. AnimType stays 4 (frameGrid), which is
+// what the preserved original-author reference says.
+// Root cause of the frozen glow was ALWAYS the 1 1 grid, never the AnimType: the
+// texture k_elec_light.jpg carries no "_CxR" suffix in its NAME, but its mesh UVs
+// span exactly U[0.001,0.251] V[0.000,0.250] = one cell of a 4x4 sheet. The
+// filename lies; the UVs are ground truth. See the FrameCols/FrameRows note above.
+// mesh0/mesh2/mesh3/mesh4/mesh5 are left untouched, they are the preserved original values.
 3116	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-3116	1	-1	66	4	1	1	1.0	0	1.0	1.0	1.0	1.0
+3116	1	-1	66	4	4	4	1.0	0	1.0	1.0	1.0	1.0
 3116	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 3116	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 3116	4	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
 3116	5	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+//lightning_stone (item 7604) - FLAGGED: mesh1 "_Blue" treated as additive overlay by analogy, not rule 1 (see header note)
+7604	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+7604	1	-1	66	0	1	1	1.0	0	2.0	1.0	1.0	1.0
+//lightning_anvil (item 7608) - both meshes are plain opaque body parts, no special-role texture names; art assets RESOLVED 2026-08-18 (see header note)
+7608	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+7608	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
 end
