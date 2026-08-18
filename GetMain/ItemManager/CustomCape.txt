@@ -13,7 +13,25 @@
 6299		0		"Item\\KF_Death_clka.tga"				*
 6311		1		"Item\\Fifth_Darklord_cape_01.tga"		"Item\\Fifth_Darklord_cape_02.tga"
 6312		0		"Item\\Fifth_Rage_cape_01.tga"			*
-	
 
+// S21 sibling fill 2026-08-16 -- 15 of 17 matched cloak strips; 2 excluded (flat 6454, 6456)
+// because MAX_CUSTOMCLOAK=20 and this file already had 5 rows (5+17=22 > 20 ceiling).
+// Base wing model for all 17 is already covered via CustomWing.txt, so the excluded 2
+// still render (just without this cosmetic strip overlay). See scratchpad report.
+6424		1		"Item\\KF_Death_clka.tga"				"Item\\KF_Death_clkb.tga"
+6416		1		"Item\\KF_darklordwing4de.tga"			"Item\\KF_darklordwing4dd.tga"
+6418		0		"Item\\ragefighterwing4db.tga"			"Item\\ragefighterwing4da.tga"
+6429		0		"Item\\US_AdmangtoCloak_02.tga"			*
+6435		0		"Item\\CloakoflimiteNH02.tga"			*
+6436		0		"Item\\WingGL3NG001.tga"				*
+6437		0		"Item\\US_growlancerwing4db.tga"		*
+6442		0		"Item\\kundun_purewhite2.tga"			*
+6443		0		"Item\\kundun_innocence2.tga"			*
+6444		0		"Item\\kundun_sparkle3.tga"				*
+6445		0		"Item\\kundun_resplendent_5.tga"		*
+6446		0		"Item\\Ironcloak2.tga"					*
+6447		0		"Item\\BlackCloak_3.tga"				*
+6448		0		"Item\\Desperatecloak3.tga"				*
+6449		0		"Item\\Hatredcloak_3.tga"				*
 
 end

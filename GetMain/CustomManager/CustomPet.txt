@@ -30,77 +30,129 @@
 //===========================================================================
 //Index	IndexInv Type	ModelName		Fenrir	Inv		Drop	View	ScaleX(<-> 		ScaleY(LenXuong)		Angle ( Quay)
 //===========================================================================
-  6828	 6828	 6 		"warhornc" 			2	1.6		1.8		1.50      0.01		-0.04		-270
-  6829	 6829	 6 		"HolyFenrir_Inv" 	2	0.7		1.8		1.50      0.01		-0.04		-0
-  6830	 6830	 6 		"DivineHorse_Inv" 	2	0.9		1.8		1.50      0.01		-0.04		-0
-  6831	 6831	 6 		"Ghosthorse" 		2	1.2		1.8		1.50      -0.02		-0.04		-0
+  7070	 7070	 6 		"warhornc" 			2	1.6		1.8		1.50      0.01		-0.04		-270
+  7071	 7071	 6 		"HolyFenrir_Inv" 	2	0.7		1.8		1.50      0.01		-0.04		-0
+  7072	 7072	 6 		"DivineHorse_Inv" 	2	0.9		1.8		1.50      0.01		-0.04		-0
+  7073	 7073	 6 		"Ghosthorse" 		2	1.2		1.8		1.50      -0.02		-0.04		-0
  
   //6856	 6856	 8		"chvsr"				0	0.6		0.6		0.65      -0.01		-0.04		-40
-  6856	 6856	 0		"Desmodus_evol"			0	1.0		0.6		0.80      -0.01		0.01		-40
-  6857	 6661	 0		"DivineSpirit_Ice"		0	0.6		0.6		0.65      -0.01		-0.04		-40
-  6858	 6661	 0		"DivineSpirit_Fire"		0	0.6		0.6		0.65      -0.01		-0.04		-40
-  6859	 6661	 0		"DivineSpirit"			0	0.6		0.6		0.65      -0.01		-0.04		-40
+  6856	6856	6		"ghost_horse_decrypted"		0	1.0	0.36	0.81	-0.01	-0.04	-40	//Ghost Horse
+  6857	6857	8		"DragonKnight"		0	0.6	0.6	0.65	-0.01	-0.04	-40	//Dragon Knight
+  6858	6858	8		"DarkWizard"		0	0.6	0.6	0.65	-0.01	-0.04	-40	//Dark Wizard
+  6859	6859	8		"FairyElf"		0	0.6	0.6	0.73	-0.01	-0.04	-40	//Fairy Elf
   
-  6911	 6831	 6		"Ghost_Blue"		0	0.4		0.3		0.95      -0.01		-0.04		-90
-  6912	 6828	 5		"fenrir_blue"		2	0.4		0.3		0.80      0.01		-0.04		0
+  6911	6911	8		"pumpkingirl"		0	0.4	0.72	0.89	-0.01	-0.04	-40	//Pumpkin Girl
+  6912	6912	8		"pumpkingirlUp"		0	0.4	0.72	0.89	-0.01	-0.04	-40	//Pumpkin Girl (Evolved)
   
-  6913	 6830	 6		"Divine_Horse"		0	0.4		0.3		0.95      -0.01		-0.04		-90
-  6914	 6829	 5		"HolyFenrir"		2	0.4		0.3		0.80      0.01		-0.04		0
+  6913	6913	8		"ghost"		0	0.4	0.72	0.73	-0.01	-0.04	-40	//Ghost
+  6914	6914	8		"ghostUp"		0	0.4	0.72	0.73	-0.01	-0.04	-40	//Ghost (Evolved)
 
   
   //=== 16 Official Mounts ===
-  6860	 6860	 5		"Mount02"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6915	 6915	 5		"Mount05"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6916	 6916	 5		"Mount08"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6917	 6917	 5		"Mount11"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6918	 6918	 5		"Mount15"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6919	 6919	 5		"Mount18"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6920	 6920	 5		"Mount22"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6921	 6921	 5		"Mount25"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6922	 6922	 5		"Mount27"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6923	 6923	 5		"Mount30"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6924	 6924	 5		"Mount34"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6925	 6925	 6		"Mount36"		0	0.4		0.3		0.95	  -0.01		-0.04		-90
-  6926	 6926	 5		"Mount38"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6927	 6927	 6		"Mount43"		0	0.4		0.3		0.95	  -0.01		-0.04		-90
-  6928	 6928	 5		"Mount44"		0	0.4		0.3		0.80	  0.01		-0.04		0
-  6929	 6929	 5		"Mount47"		0	0.4		0.3		0.80	  0.01		-0.04		0
+  6860	6860	8		"dragonpet"		0	0.4	0.84	0.65	-0.01	-0.04	-40	//Luki
+  6915	6915	8		"mummyboy"		0	0.4	0.72	0.97	-0.01	-0.04	-40	//Mummified Boy
+  6916	6916	8		"mummyboyUp"		0	0.4	0.72	0.89	-0.01	-0.04	-40	//Mummified Boy (Evolved)
+  6917	6917	8		"polarbearpet"		0	0.4	0.72	0.57	-0.01	-0.04	-40	//Polar Bear
+  6918	6918	8		"polarbearpet_evol"		0	0.4	0.72	0.57	-0.01	-0.04	-40	//Polar Bear (Evolved)
+  6919	6919	8		"presentpet"		0	0.4	0.72	0.57	-0.01	-0.04	-40	//Present
+  6920	6920	8		"presentpet_evol"		0	0.4	0.72	0.57	-0.01	-0.04	-40	//Present (Evolved)
+  6921	6921	8		"rockinghorsepet"		0	0.4	0.72	0.73	-0.01	-0.04	-40	//Rockinghorse
+  6922	6922	8		"rockinghorsepet_evol"		0	0.4	0.72	0.65	-0.01	-0.04	-40	//Rockinghorse (Evolved)
+  6923	6923	8		"gigantespet"		0	0.4	0.48	0.49	-0.01	-0.04	-40	//Gigantes
+  6924	6924	8		"gigantespet_evol"		0	0.4	0.48	0.49	-0.01	-0.04	-40	//Gigantes (Evolved)
+  6925	6925	8		"xmastree"		0	0.4	0.72	0.65	-0.01	-0.04	-40	//Christmas Tree
+  6926	6926	8		"xmastreeUp"		0	0.4	0.72	0.65	-0.01	-0.04	-40	//Christmas Tree (Evolved)
+  6927	6927	8		"snowman"		0	0.4	0.72	0.65	-0.01	-0.04	-40	//Snowman
+  6928	6928	8		"snowmanUp"		0	0.4	0.72	0.65	-0.01	-0.04	-40	//Snowman (Evolved)
+  6929	6929	8		"snowfairy"		0	0.4	0.96	0.89	-0.01	-0.04	-40	//Snow Fairy
 
   //=== 36 Custom Mounts (batch 2) ===
-  6930	 6930	 5		"Mount01"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Fallen Angel Fenrir
-  6931	 6931	 5		"Mount03"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Carnival Fenrir
-  6932	 6932	 5		"Mount04"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Hellshade Fenrir
-  6933	 6933	 5		"Mount06"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Magma Fenrir
-  6934	 6934	 5		"Mount07"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Nightfire Fenrir
-  6935	 6935	 6		"Mount09"		0	0.4		0.3		0.95	  -0.01		-0.04		-90		//Devil Majestyc Horse
-  6936	 6936	 6		"Mount10"		0	0.4		0.3		0.95	  -0.01		-0.04		-90		//Aurion Horse
-  6937	 6937	 6		"Mount12"		0	0.4		0.3		0.95	  -0.01		-0.04		-90		//Icefrost Horse
-  6938	 6938	 5		"Mount13"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir Red
-  6939	 6939	 5		"Mount14"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir Green
-  6940	 6940	 5		"Mount16"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir Gold
-  6941	 6941	 5		"Mount17"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir White
-  6942	 6942	 5		"Mount19"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir Black
-  6943	 6943	 5		"Mount20"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Berserk Fenrir Blue
-  6944	 6944	 6		"Mount21"		0	0.4		0.3		0.95	  -0.01		-0.04		-90		//Holly Fenrir
-  6945	 6945	 5		"Mount23"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Holly Fenrir Blue
-  6946	 6946	 5		"Mount24"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Holly Fenrir Gold
-  6947	 6947	 5		"Mount26"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Holly Fenrir Black
-  6948	 6948	 5		"Mount28"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Black Bear
-  6949	 6949	 5		"Mount29"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Eclipsebound Panther
-  6950	 6950	 5		"Mount31"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Tiger
-  6951	 6951	 5		"Mount32"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir
-  6952	 6952	 5		"Mount33"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir Green
-  6953	 6953	 5		"Mount35"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Fenrir Rose
-  6954	 6954	 5		"Mount37"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Infernosaur
-  6955	 6955	 5		"Mount39"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Volcarnox
-  6956	 6956	 5		"Mount40"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Green Lion
-  6957	 6957	 5		"Mount41"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Lion Angel
-  6958	 6958	 5		"Mount42"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Lion Demon
-  6959	 6959	 5		"Mount45"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Purple Lion
-  6960	 6960	 5		"Mount46"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Celestial Demonic
-  6961	 6961	 5		"Mount48"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Blue
-  6962	 6962	 5		"Mount49"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Fire
-  6963	 6963	 5		"Mount50"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Gold
-  6964	 6964	 5		"Mount51"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Green
-  6965	 6965	 5		"Mount52"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Purple
+  6930	6930	8		"snowfairyUp"		0	0.4	0.96	0.89	-0.01	-0.04	-40	//Snow Fairy (Evolved)
+  6931	6931	8		"Mulen1"		0	0.4	0.6	0.73	-0.01	-0.04	-40	//Muren Rexmillon
+  6932	6932	5		"BlueG2"		0	0.4	0.3	0.8	0.01	-0.04	0	//Pierce Ryan
+  6933	6933	5		"RedG3"		0	0.4	0.3	0.8	0.01	-0.04	0	//Pierce Ryan (Rare)
+  6934	6934	8		"dotoK9"		0	0.4	0.6	0.32	-0.01	-0.04	-40	//Dotto
+  6935	6935	8		"walkerpet"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Walker
+  6936	6936	8		"walkerpet_evol"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Walker (Evolved)
+  6937	6937	8		"kunremu_"		0	0.4	0.6	0.49	-0.01	-0.04	-40	//Kundun Mephis and Lemuria
+  6938	6938	8		"commander"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Commander
+  6939	6939	8		"CommanderUp"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Commander (Evolved)
+  6940	6940	8		"LanceSoldier"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Lance Soldier
+  6941	6941	8		"LanceSoldierUp"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Lance Soldier (Evolved)
+  6942	6942	8		"bowsoldier"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Bow Soldier
+  6943	6943	8		"bowsoldierUp"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Bow Soldier (Evolved)
+  6944	6944	8		"Lycanpet"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Lycan
+  6945	6945	8		"Lycanpet_evol"		0	0.4	0.6	0.57	-0.01	-0.04	-40	//Lycan (Evolved)
+  6946	6946	8		"elpise"		0	0.4	0.6	0.55	-0.01	-0.04	-40	//Purification Elpis
+  6947	6947	8		"ellimentalelf"		0	0.4	0.24	0.28	-0.01	-0.04	-40	//Elemental Elf
+  6948	6948	5		"shiningtails"		0	0.4	0.3	0.98	0.01	-0.04	0	//Shining Tail
+  6949	6949	5		"rare_shiningtails"		0	0.4	0.3	0.98	0.01	-0.04	0	//Shining Tail (Rare)
+  6950	6950	5		"Newpet07"		0	0.4	0.3	0.89	0.01	-0.04	0	//Ur
+  6951	6951	5		"NewpetG08"		0	0.4	0.3	0.89	0.01	-0.04	0	//Ur (Rare)
+  6952	6952	8		"Newpet03"		0	0.4	0.6	1.05	-0.01	-0.04	-40	//Guardian
+  6953	6953	8		"Newpet04"		0	0.4	0.6	1.05	-0.01	-0.04	-40	//Guardian (Evolved)
+  6954	6954	8		"Newpet05"		0	0.4	0.6	0.73	-0.01	-0.04	-40	//Illusion Knight
+  6955	6955	8		"Newpet06"		0	0.4	0.6	0.73	-0.01	-0.04	-40	//Rage Fighter
+  6956	6956	8		"growmuun"		0	0.4	0.6	0.73	-0.01	-0.04	-40	//Grow Lancer
+  6957	6957	6		"Divine_Horse"		0	0.4	0.36	0.81	-0.01	-0.04	-40	//Divine Horse
+  6958	6958	8		"DivineSpirit_GG1"		0	0.4	0.6	0.81	-0.01	-0.04	-40	//Fire Divine Spirit
+  6959	6959	8		"DivineSpirit_RGG1"		0	0.4	0.6	0.81	-0.01	-0.04	-40	//Ice Divine Spirit
+  6960	6960	8		"DivineSpirit_R2"		0	0.4	0.6	0.81	-0.01	-0.04	-40	//Holy Divine Spirit
+  6961	6961	8		"dark_muun"		0	0.4	0.6	0.81	-0.01	-0.04	-40	//Dark Lord
+  6962	6962	6		"Leviathan"		0	0.4	0.36	0.65	-0.01	-0.04	-40	//Leviathan
+  6963	6963	6		"Leviathan_rare"		0	0.4	0.36	0.65	-0.01	-0.04	-40	//Leviathan (Rare)
+  7074	 7074	 5		"Mount51"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Green
+  7075	 7075	 5		"Mount52"		0	0.4		0.3		0.80	  0.01		-0.04		0		//Dragon Heart Purple
+
+  //=== S21 sibling fill (Type 8 = Muun Pet companions; scale block is a PLACEHOLDER, no PetType=8 precedent existed in this file, needs in-game visual tuning) ===
+  6861	 6861	 8 		"dragonpet_evol"			0	0.6		0.84		0.65	-0.01		-0.04		-40	//Luki (Evolved)
+  6862	 6862	 8 		"williumpet"			0	0.6		0.6		0.57	-0.01		-0.04		-40		//William
+  6863	 6863	 8 		"williumpet_evol"			0	0.6		0.6		0.49	-0.01		-0.04		-40	//William (Evolved)
+  6864	 6864	 8 		"wolfpet"			0	0.6		0.6		0.57	-0.01		-0.04		-40		//Tibetton
+  6865	 6865	 8 		"wolfpet_evol"			0	0.6		0.6		0.57	-0.01		-0.04		-40	//Tibetton (Evolved)
+  6866	 6866	 8 		"wooparoopet"			0	0.6		0.84		0.65	-0.01		-0.04		-40		//Wooparoo
+  6867	 6867	 8 		"wooparoopet_evol"			0	0.6		0.84		0.65	-0.01		-0.04		-40	//Wooparoo (Evolved)
+  6868	 6868	 8 		"Kironpet"			0	0.6		0.48		0.41	-0.01		-0.04		-40		//Chiron
+  6869	 6869	 8 		"Kironpet_evol"			0	0.6		0.48		0.41	-0.01		-0.04		-40	//Chiron (Evolved)
+  6870	 6870	 8 		"Desmodus"			0	0.6		0.6		0.97	-0.01		-0.04		-40		//Desmodus
+  6871	 6871	 8 		"Desmodus_evol"			0	0.6		0.6		0.97	-0.01		-0.04		-40	//Desmodus (Evolved)
+  6872	 6872	 5 		"swordnkgk1"			0	0.4		0.3		0.80	  0.01		-0.04		0	//Tibetton (Mount)
+  6873	 6873	 5 		"swordnkgk2"			0	0.4		0.3		0.80	  0.01		-0.04		0	//Tibetton (Mount Evolved)
+  6874	 6874	 8 		"runemuun"			0	0.6		0.6		0.81	-0.01		-0.04		-40		//Rune Wizard
+  6875	 6875	 8 		"gaionkharein"			0	0.6		0.6		0.73	-0.01		-0.04		-40		//Gaion Kharein
+  6876	 6876	 8 		"prince"			0	0.6		0.6		0.81	-0.01		-0.04		-40		//Prince
+  6877	 6877	 8 		"king"			0	0.6		0.6		0.81	-0.01		-0.04		-40	//King Rex Milon
+  6878	 6878	 8 		"loglepet"			0	0.6		0.24		0.24	-0.01		-0.04		-40		//Loggle
+  6879	 6879	 8 		"loglepet_evol"			0	0.6		0.24		0.24	-0.01		-0.04		-40	//Loggle (Evolved)
+  6880	 6880	 8 		"rippenpet"			0	0.6		0.6		0.41	-0.01		-0.04		-40		//Repen
+  6881	 6881	 8 		"rippenpet_evol"			0	0.6		0.6		0.41	-0.01		-0.04		-40	//Repen (Evolved)
+  6882	 6882	 5 		"rippen_ride"			0	0.4		0.3		0.80	  0.01		-0.04		0	//Repen (Mount)
+  6883	 6883	 5 		"rippenUp_ride"			0	0.4		0.3		0.80	  0.01		-0.04		0	//Repen (Mount Evolved)
+  6884	 6884	 8 		"balrog"			0	0.6		0.6		0.57	-0.01		-0.04		-40		//Balrog
+  6885	 6885	 8 		"balrogUp"			0	0.6		0.6		0.57	-0.01		-0.04		-40	//Balrog (Evolved)
+  6886	 6886	 8 		"phoenixofdarkness"			0	0.6		0.6		0.49	-0.01		-0.04		-40		//Phoenix of Darkness
+  6887	 6887	 8 		"phoenixofdarknessUp"			0	0.6		0.6		0.49	-0.01		-0.04		-40	//Phoenix of Darkness (Evolved)
+  6888	 6888	 8 		"kundun"			0	0.6		0.6		0.49	-0.01		-0.04		-40		//Kundun
+  6889	 6889	 8 		"kundunUp"			0	0.6		0.6		0.49	-0.01		-0.04		-40	//Kundun (Evolved)
+  6890	 6890	 8 		"nightmare"			0	0.6		0.6		0.81	-0.01		-0.04		-40		//Nightmare
+  6891	 6891	 8 		"nightmareUp"			0	0.6		0.6		0.81	-0.01		-0.04		-40	//Nightmare (Evolved)
+  6892	 6892	 8 		"hellmaine"			0	0.6		0.6		0.81	-0.01		-0.04		-40	//HellMaine
+  6893	 6893	 8 		"hellmaineUp"			0	0.6		0.6		0.81	-0.01		-0.04		-40	//HellMaine (Evolved)
+  6894	 6894	 8 		"selupan"			0	0.6		0.6		0.73	-0.01		-0.04		-40		//Selupan
+  6895	 6895	 8 		"selupanUp"			0	0.6		0.6		0.73	-0.01		-0.04		-40	//Selupan (Evolved)
+  6896	 6896	 8 		"medusa"			0	0.6		0.96		1.14	-0.01		-0.04		-40		//Medusa
+  6897	 6897	 8 		"medusaUp"			0	0.6		0.96		1.14	-0.01		-0.04		-40	//Medusa (Evolved)
+  6898	 6898	 8 		"lordsilvester"			0	0.6		0.6		0.97	-0.01		-0.04		-40		//Lord Silvester
+  6899	 6899	 8 		"lordsilvesterUp"			0	0.6		0.6		0.97	-0.01		-0.04		-40	//Lord Silvester (Evolved)
+  6900	 6900	 8 		"nix"			0	0.6		0.6		0.73	-0.01		-0.04		-40		//Nix
+  6901	 6901	 8 		"nixUp"			0	0.6		0.6		0.73	-0.01		-0.04		-40	//Nix (Evolved)
+  6902	 6902	 5 		"icedragon"			0	0.4		0.3		0.80	  0.01		-0.04		0		//Ice Dragon
+  6903	 6903	 5 		"icedragon_rare"			0	0.4		0.3		0.80	  0.01		-0.04		0		//Ice Dragon (Rare)
+  6904	 6904	 8 		"magician"			0	0.6		0.72		0.73	-0.01		-0.04		-40		//Great Wizard Etramu
+  6905	 6905	 8 		"Skullpet"			0	0.6		0.72		0.73	-0.01		-0.04		-40		//Skull
+  6906	 6906	 8 		"Skullpet_evol"			0	0.6		0.72		0.73	-0.01		-0.04		-40	//Skull (Evolved)
+  6907	 6907	 8 		"Witchpet"			0	0.6		0.72		0.73	-0.01		-0.04		-40		//Witch
+  6908	 6908	 8 		"Witchpet_evol"			0	0.6		0.72		0.73	-0.01		-0.04		-40	//Witch (Evolved)
+  6909	 6909	 8 		"pumpipet"			0	0.6		0.36		0.33	-0.01		-0.04		-40		//Pumpkin
+  6910	 6910	 8 		"pumpipet_evol"			0	0.6		0.36		0.33	-0.01		-0.04		-40	//Pumpkin (Evolved)
 end

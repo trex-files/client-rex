@@ -20,4 +20,20 @@
 81			"PrickleGlove"		420		"PrickleGlove_left"		421			"PrickleGlove_right"		  255		48		 48			// Blood Dragon 400 Claw
 83			"Sword45"			418		"Sword45_L"				419			"Sword45_R"			  78 		17 		166		// Silver Heart Claw
 100			"Sword102"			422	    "SwordL102"				423			"SwordR102"			  10        10		 10			// Guardian Claw
+101		"PrickleGlove"		424		"PrickleGlove_left"		425		"PrickleGlove_right"		255		229		153		// T10 Prickle Glove
+102		"Sword39"		426		"Sword39_L"		427		"Sword39_R"		125		125		150		// T12 Darkangel Claws
+103		"Sword40"		428		"Sword40_L"		429		"Sword40_R"		84		129		107		// T13 Holyangel Claws
+104		"Sword43"		430		"Sword43_L"		431		"Sword43_R"		137		77		0		// T14 Awakening Soul Claws
+105		"Sword41"		432		"Sword41_L"		433		"Sword41_R"		219		34		17		// Archangel Absolute Claws
+106		"Sword42"		434		"Sword42_L"		435		"Sword42_R"		0		19		189		// Blessed Arch's Ab Claws
+107		"Sword37"		436		"Sword37_L"		437		"Sword37_R"		71		163		233		// T9 Pantera Claws
+108		"Sword38"		438		"Sword38_L"		439		"Sword38_R"		236		198		140		// T10 Devast Claws
+109		"Sword44"		440		"Sword44_L"		441		"Sword44_R"		122		139		168		// T15 Blue Eye Claws
+110		"Sword45"		442		"Sword45_L"		443		"Sword45_R"		78		17		166		// T16 Silver Heart Claws
+112		"sword47"		444		"Sword47_L"		445		"Sword47_R"		45		108		171		// T18 Brilliant Claws
+113		"sword48"		446		"Sword48_L"		447		"Sword48_R"		200		160		100		// T19 Apocalypse Claws
+114		"sword49"		448		"Sword49_L"		449		"Sword49_R"		60		110		150		// T20 Lightning Claws
+115		"sword50"		450		"Sword50_L"		451		"Sword50_R"		128		100		30		// T21 Temple Guard Claws
+131		"Sword131"		452		"SwordL131"		453		"SwordR131"		255		255		255		// T5 Storm Blaze Claw
+111		"sword46"		454		"sword46_L"		455		"sword46_R"		255		255		255		// T17 Manticore Claws
 end

@@ -32,4 +32,12 @@
 2086           	"hs_soularcherbow_s"    0       296         239     154     70
 2088            "blue_eyebow_stand"     0       296         122     139     168
 2090            "mastery_bow6_stand"    0       296         78 		17 		166
+2080            "HolyAngelBow"          0       296         190 	142 	69 		// T13 Holyangel Bow
+2081            "hs_soularcherbow_s"    0       297         219     83      0  		// T14 Soul Bow
+2082            "blue_eyebow_stand"     0       298         122     139     168		// T15 Blue Eye Bow
+2083            "mastery_bow6_stand"    0       321         78      17      166		// T16 Silver Heart Bow
+2085            "gunmanB01"             0       509         79      154     70 		// Frere Magic Gun
+2087            "mastery_bow07_"        0       509         159     150     102		// T17 Manticore Bow
+2089            "apocalypse_bow"        0       296         200     160     100		// T19 Apocalypse Bow
+2091            "TempleGuard_bow"       0       324         128     100     30 		// T21 Temple Guard Bow
 end
