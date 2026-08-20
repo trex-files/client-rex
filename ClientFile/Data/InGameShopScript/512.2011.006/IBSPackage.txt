@@ -1,7 +1,7 @@
 31@1@100@Expand Inventory@170@300@Expand personal inventory (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1000|@7330@2@1@1000|@0@508@669
 31@2@101@Vault Expansion@170@300@Expand storage (1 slot)@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1010|@7331@2@1@1010|@0@508@669
 31@3@105@Talisman of Luck@170@100@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1050|@7221@2@1@1050|@0@508@669
-31@4@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
+31@4@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when upgrading it from +10 to +15 in the Chaos Machine.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1060|@7264@2@1@1060|@0@508@669
 31@5@107@Silver Key@170@200@Open a sealed Silver box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1070|@7280@2@1@1070|@0@508@669
 31@6@108@Gold Key@170@300@Open a sealed Gold box.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1080|@7281@2@1@1080|@0@508@669
 32@1@109@Pet Panda@170@100@Increases EXP by 50%.@@182@185@0@0@177@1@W Coin (C)@W Coin (C)@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669
@@ -81,7 +81,7 @@
 61@1@117@Vault Expansion@170@2500@Expand storage (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1170|@7331@5@1@1170|@1@0@669
 61@2@118@Expand Inventory@170@2500@Expand personal inventory (1 slot)@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1180|@7330@5@1@1180|@1@0@669
 61@3@119@Talisman of Luck@170@750@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1190|@7221@5@1@1190|@1@0@669
-61@4@127@Talisman of Chaos Assembly@170@750@Avoid losing your item when combining it in the Chaos Machine.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1270|@7264@5@1@1270|@1@0@669
+61@4@127@Talisman of Chaos Assembly@170@750@Avoid losing your item when upgrading it from +10 to +15 in the Chaos Machine.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@1270|@7264@5@1@1270|@1@0@669
 61@5@231@Silver Key@170@1650@Open a sealed Silver box.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2310|@7280@2@1@2310|@0@0@669
 61@6@232@Gold Key@170@2500@Open a sealed Gold box.@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2320|@7281@2@1@2320|@0@0@669
 62@1@253@Box of Kundun +4@170@750@Random reward box (tier 4).@@182@185@0@0@177@1@Goblin Points@Goblin Points@181@200@0@2530|@7179@2@1@2530|@0@0@669
