@@ -1,126 +1,37 @@
 //-- Index	Text
-// Level 5 gear
-1         "[+9]  PT +200 | HP +1000 | GST +1%"
-2         "[+10] PT +400 | HP +1200 | GST +2%"
-3         "[+11] PT +600 | HP +1400 | GST +3%"
-
-//Level 6
-8         "[+9]  PT +800  | HP +1800 | GST +4%"
-9         "[+10] PT +1000 | HP +2000 | GST +5%"
-10        "[+11] PT +1200 | HP +2200 | GST +6%"
-11        "[+12] PT +1400 | HP +2400 | GST +7%"
-12        "[+13] PT +1600 | HP +2600 | GST +8%"
-
-//Level 7
-15        "[+9]  PT +1400 | HP +2400 | GST +7%"
-16        "[+10] PT +1600 | HP +2600 | GST +8%"
-17        "[+11] PT +1800 | HP +2800 | GST +9%"
-18        "[+12] PT +2000 | HP +3000 | GST +10%"
-19        "[+13] PT +2200 | HP +3200 | GST +11%"
-20        "[+14] PT +2400 | HP +3400 | GST +12%"
-21        "[+15] PT +2600 | HP +3600 | GST +13%"
-//Level 8
-22        "[+9]  PT +2000 | HP +3000 | GST +10%"
-23        "[+10] PT +2200 | HP +3200 | GST +11%"
-24        "[+11] PT +2400 | HP +3400 | GST +12%"
-25        "[+12] PT +2600 | HP +3600 | GST +13%"
-26        "[+13] PT +2800 | HP +3800 | GST +14%"
-27        "[+14] PT +3000 | HP +4000 | GST +15%"
-28        "[+15] PT +3200 | HP +4200 | GST +16%"
-//400
-29        "[+9]  PT +2600 | HP +3600 | GST +13%"
-30        "[+10] PT +2800 | HP +3800 | GST +14%"
-31        "[+11] PT +3000 | HP +4000 | GST +15%"
-32        "[+12] PT +3200 | HP +4200 | GST +16%"
-33        "[+13] PT +3400 | HP +4400 | GST +17%"
-34        "[+14] PT +3600 | HP +4600 | GST +18%"
-35        "[+15] PT +3800 | HP +4800 | GST +19%"
-// Level 6 weapon
-36        "[+9]  Damage +2%"
-37        "[+10] Damage +4%"
-38        "[+11] Damage +6%"
-//Level 7 weapon
-39        "[+9]  Damage +6%"
-40        "[+10] Damage +8%"
-41        "[+11] Damage +10%"
-42        "[+12] Damage +12%"
-43        "[+13] Damage +14%"
-// Dragon weapon 1
-44        "[+9]  Damage +10%"
-45        "[+10] Damage +12%"
-46        "[+11] Damage +14%"
-47        "[+12] Damage +16%"
-48        "[+13] Damage +18%"
-49        "[+14] Damage +20%"
-50        "[+15] Damage +22%"
-///380 weapon
-51       "[+9]  Damage +14%"
-52       "[+10] Damage +16%"
-53       "[+11] Damage +18%"
-54       "[+12] Damage +20%"
-55       "[+13] Damage +22%"
-56       "[+14] Damage +24%"
-57       "[+15] Damage +26%"
-// 400 weapon
-58      "[+9]  Damage +18%"
-59      "[+10] Damage +20%"
-60      "[+11] Damage +22%"
-61      "[+12] Damage +24%"
-62      "[+13] Damage +26%"
-63      "[+14] Damage +28%"
-64      "[+15] Damage +30%"
-//Dragon weapon 2
-65     "[+9]  Damage +22%"
-66     "[+10] Damage +24%"
-67     "[+11] Damage +26%"
-68     "[+12] Damage +28%"
-69     "[+13] Damage +30%"
-70     "[+14] Damage +32%"
-71     "[+15] Damage +34%"
-// wing 1
-72     "[+9]  Defense +3% | Damage +3%"
-73     "[+10] Defense +5% | Damage +5%"
-74     "[+11] Defense +7% | Damage +7% | SD +3%"
-//wing 2
-76     "[+9]  Defense +5% | Damage +5%"
-77     "[+10] Defense +7% | Damage +7%"
-78     "[+11] Defense +9% | Damage +9% | SD +5%"
-79     "[+12] Defense +11% | Damage +11% | SD +7%"
-80     "[+13] Defense +13% | Damage +13% | SD +9%"
-//wing 2.5
-82    "[+9]  Defense +9%  |  Damage +9% | SD +7%"
-83    "[+10] Defense +11% | Damage +11% | SD +9%"
-84    "[+11] Defense +13% | Damage +13% | SD +11%"
-85    "[+12] Defense +15% | Damage +15% | SD +13%"
-86    "[+13] Defense +17% | Damage +17% | SD +15%"
-87    "[+14] Defense +19% | Damage +19% | SD +17%"
-88    "[+15] Defense +21% | Damage +21% | SD +19%"
-//wing 3
-89     "[+9]  Defense +15%|Damage 15% | SD +13%"
-90     "[+10] Defense +17%|Damage 17% | SD +15%"
-91     "[+11] Defense +19%|Damage 19% | SD +17%"
-92     "[+12] Defense +21%|Damage 21% | SD +19%"
-93     "[+13] Defense +23%|Damage 23% | SD +21%"
-94     "[+14] Defense +25%|Damage 25% | SD +23%"
-95     "[+15] Defense +27%|Damage 27% | SD +25%"
-// ring
-96     "[+3]  Defense +3% | GST +3%"
-97     "[+6]  Defense +5% | GST +5%"
-98     "[+9]  Defense +7% | GST +7%"
-99     "[+11] Defense +9% | GST +9% |X2 Damage Resist +5%"
-100    "[+13] Defense +11%| GST +11%|X2 Damage Resist +10%"
-101    "[+15] Defense +13%| GST +13%|X2 Damage Resist +15%"
-//PEN
-102    "[+3]  Damage +5% | X2 Damage 3%"
-103    "[+6]  Damage +7% | X2 Damage 5%"
-104    "[+9]  Damage +9% | X2 Damage 7%"
-105    "[+11] Damage +11%| X2 Damage 9% |Ignore DEF 3%"
-106    "[+13] Damage +13%| X2 Damage 11%|Ignore DEF 5%"
-107    "[+15] Damage +15%| X2 Damage 13%|Ignore DEF 7%"
-// bonus
-108     "Lv7 Weapon X2 Damage"
-109     "Dragon Weapon X2 Damage | Excellent Damage"
-111     "380 Weapon X2 Damage | Excellent | Critical Damage"
-112     "400 Weapon X2 Damage | Critical | Excellent | X3 Damage"
-110     "Dragon 2 Weapon X2 Damage | Critical | Excellent | X3 Damage | Ignore DEF"
+//
+// 2026-08-19: VACIADO A PROPOSITO. Este fichero traia 104 filas de texto
+// heredadas del emulador SSEMU, referenciadas desde CustomItemToolTip.txt,
+// tambien vaciado hoy (ver cabecera de ese fichero para el detalle). Los
+// datos originales quedan intactos en CustomTextTooltip.txt.ssemu-legacy
+// (mismo directorio) por si hace falta recuperar o auditar algo puntual.
+//
+// El parser (nCInfo::Load2 en Source/6.GetMainInfo/GetMainInfo/ItemToolTip.cpp)
+// solo necesita un "end" para terminar limpio -- un fichero sin filas de
+// datos es un estado 100% valido y soportado.
+//
+//====================================================================
+//-- FORMATO (una fila por linea, separado por espacios/TABs):
+//
+//   Index   "Texto"
+//
+//   Index : entero en el rango 0..7680 (struct nText, ver ItemTooltip.h).
+//           Es el valor que CustomItemToolTip.txt referencia como TextIndex.
+//   Texto : entre comillas dobles, maximo 254 caracteres (char Text[254]
+//           en la struct nText -- incluye el terminador NUL, asi que el
+//           limite practico util es 253 caracteres).
+//
+// Ejemplo de una fila bien formada (SOLO ilustrativo, comentada = no se carga):
+//1         "Ejemplo de linea de tooltip"
+//
+// IMPORTANTE: este texto es PURA DECORACION -- el cliente solo lo pinta,
+// ningun bonus lo aplica el GameServer. Si un texto anuncia un bono, ese
+// bono tiene que existir de verdad en el servidor o se le miente al jugador.
+//
+// IMPORTANTE: tras editar este fichero hay que REGENERAR rex.main
+// ejecutando GetMainInfo.exe (Windows) y distribuir el resultado en un
+// parche de datos. Los .txt no los lee el cliente en produccion, solo la
+// herramienta de build.
+//====================================================================
+// (sin filas -- ver cabecera arriba para el formato)
 end
