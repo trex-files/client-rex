@@ -71,3 +71,13 @@ ClientFile/Data/Minimaps/**/*backup*/
 # Los manifiestos que SI se versionan viven en patch-manifests/.
 installer/Output/
 patch-out/
+
+# ============================================================
+# Backups de trabajo de agentes/herramientas. Se crean al vuelo
+# antes de una edicion arriesgada (encodings EUC-KR, .bmd, .dat)
+# y NUNCA deben versionarse: son copias efimeras del working tree.
+# ============================================================
+*.bak-*
+.bak-*/
+*.ssemu-legacy
+*.pre-*.bak
