@@ -88,6 +88,11 @@ function fail(msg) {
 // config per-usuario (config.ini/Mu.ini van onlyifdoesntexist en el .iss).
 const ALWAYS_EXCLUDED = new Set([
   'launcher.exe', 'config.ini', 'mu.ini',
+  // REX 2026-08-24: MainEdit.exe es el cliente de PRUEBAS con auto-pocion
+  // (CB_MUHelper.cpp: el modulo solo se arma si su basename es MainEdit.exe).
+  // Si se cuela en un parche, TODOS los jugadores reciben auto-pocion.
+  // Vive en ClientFile/ junto al Main.exe real, asi que el walk lo encontraria.
+  'mainedit.exe',
   'main.lib', 'muerror.log',      // residuos especificos del build/runtime
   'main',                         // leftover del linker (ELF sin extension; 0 archivos tracked "Main" en Data)
   'rex.txt',                      // log de debug del cliente (OpenTexture/LoadBitmap Failed), gitignored
