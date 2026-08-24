@@ -98,6 +98,12 @@ const ALWAYS_EXCLUDED = new Set([
 // el cliente los reusa para datos de terreno (EncTerrain*.obj/.lib). Solo
 // extensiones que son inequivocamente artefactos de compilacion/backup/empaque.
 const ALWAYS_EXCLUDED_SUFFIX = ['.pdb', '.exp', '.log', '.bak', '.rar', '.zip', '.7z', '.cab'];
+// Backups de trabajo con sufijo propio: `Item_eng.bmd.bak-slot11`, `x.ozt.bak_pre13`.
+// NO los atrapa ALWAYS_EXCLUDED_SUFFIX porque no terminan en '.bak' exacto, y como
+// .gitignore los oculta (`.bak-*`), tampoco los ve `git status`. El 2026-08-18 se
+// colaron 29 de estos en el Patch8.zip (23 MB) y nadie lo detecto: el pipeline no
+// soporta borrado, asi que lo que entra se queda para siempre en el cliente del jugador.
+const ALWAYS_EXCLUDED_RE = /\.(bak|orig|tmp|old)[-_.]/i;
 
 // Recorre dir recursivamente. Devuelve Map<relPathPosix, {abs, size, sha}>.
 // excludeBasenames: Set de nombres (lowercase) a saltear en cualquier nivel,
@@ -125,6 +131,7 @@ function walkTree(dir, excludeBasenames) {
         const lower = ent.name.toLowerCase();
         if (excludeBasenames.has(lower)) continue;
         if (ALWAYS_EXCLUDED_SUFFIX.some(function (s) { return lower.endsWith(s); })) continue;
+        if (ALWAYS_EXCLUDED_RE.test(lower)) continue;
         const rel = relative(dir, abs).split(sep).join('/');
         const buf = readFileSync(abs);
         const sha = createHash('sha256').update(buf).digest('hex');

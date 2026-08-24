@@ -5014,14 +5014,10 @@
       "size": 431
     },
     "Data/InGameShopScript/512.2011.006/IBSPackage.txt": {
-      "sha256": "5a8c087a60c28bb7a877323b19cac50ecd9d1c4a9265f1303bb615a741113b33",
-      "size": 14829
+      "sha256": "5a4b08ad829d509cb94abd736ffa851ad8dae9c327a4c9de2aeb8af21113145e",
+      "size": 14861
     },
     "Data/InGameShopScript/512.2011.006/IBSProduct.txt": {
-      "sha256": "129499e7817ab1b4a766bef25fd3f334c7b2cecc0c798aa900cf73991cd63ecf",
-      "size": 35566
-    },
-    "Data/InGameShopScript/512.2011.006/IBSProduct.txt.bak-jewelsync": {
       "sha256": "129499e7817ab1b4a766bef25fd3f334c7b2cecc0c798aa900cf73991cd63ecf",
       "size": 35566
     },
@@ -8592,10 +8588,6 @@
     "Data/Interface/rex/Menu_Form_Teclas.ozt": {
       "sha256": "7e933276d49db7675d036d839830cc0253d3c4928a4b591bb7640059e89302c8",
       "size": 1987728
-    },
-    "Data/Interface/rex/Menu_Form_Teclas.ozt.bak_pre13": {
-      "sha256": "38805ff42296d33cc81bb3b889edde48c2e55a1bf43c8e33a1ee555b0089e53f",
-      "size": 1899168
     },
     "Data/Interface/rex/Menu_Form_Teclas.ozt_predivfix": {
       "sha256": "8669152372644438a8ce6a7819beb6d0328f88b26ea1f830ec2978f50aaa0a1c",
@@ -40282,7 +40274,7 @@
       "size": 24972
     },
     "Data/Local/Eng/Dialog_eng.bmd": {
-      "sha256": "3429bf9a6ecb8464a605c6c13777fe1bf1645352e4014fdc262cb272501ca513",
+      "sha256": "ebc44dba1ad78b260fc53ff2662a4d6b36e808cbb1d2e5fab3a220a1e99ac099",
       "size": 204800
     },
     "Data/Local/Eng/ItemAddOption_eng.bmd": {
@@ -40294,7 +40286,7 @@
       "size": 13060
     },
     "Data/Local/Eng/ItemSetOption_eng.bmd": {
-      "sha256": "d00babaa3833ef3261436c12045de4bec065f55898760143f5c768042b28b41f",
+      "sha256": "751208948e7b3032bd64b712043895f10b63d7e3410b653993d958eafd1c9b11",
       "size": 28164
     },
     "Data/Local/Eng/ItemTooltipText_eng.bmd": {
@@ -40306,39 +40298,11 @@
       "size": 23597
     },
     "Data/Local/Eng/ItemTooltip_eng.bmd": {
-      "sha256": "b68dd657ac49e499113ebd5d6632ba605650793bb1860c0a2601822ecf063e83",
-      "size": 1015812
-    },
-    "Data/Local/Eng/ItemTooltip_eng.bmd.bak-nameFix": {
-      "sha256": "fff8fed9ee989a4dd94c1f0289d7d8f3257c14cdd7379326d4f1ff559d266d64",
-      "size": 1015812
-    },
-    "Data/Local/Eng/ItemTooltip_eng.bmd.bak-rehome": {
-      "sha256": "67615dc727fad826766ad90d6e75dff8bcc409e16ecc90ffae7f5566937ba0c2",
-      "size": 1015812
-    },
-    "Data/Local/Eng/ItemTooltip_eng.bmd.bak-revert210": {
-      "sha256": "f3cb1b3ee8312d7ea7333cae5abf76c486478aec6b64ad5c3eac7331d6e89661",
+      "sha256": "9a5494f1ec492ef22968e24fc9d5d6bce698184312f715d5e28cabbba7ac3046",
       "size": 1015812
     },
     "Data/Local/Eng/Item_eng.bmd": {
-      "sha256": "17dd654718cbd80b1d51f30f11cb050a8217f982d3b852002d69bafab1cc1821",
-      "size": 688132
-    },
-    "Data/Local/Eng/Item_eng.bmd.bak-petslot": {
-      "sha256": "ac5827522b2621fa01e48e62e15955ddabff372b79fa03eaed4673426b8fec23",
-      "size": 688132
-    },
-    "Data/Local/Eng/Item_eng.bmd.bak-preS21": {
-      "sha256": "b3e63fbab252b8b2dea091e741ef56463730175cb5be1d0d30d4da460317cecd",
-      "size": 688132
-    },
-    "Data/Local/Eng/Item_eng.bmd.bak-rehome": {
-      "sha256": "10dded620a39c223818e13ce49c530ba306074cf2836adada5f2cd9bb56dfe51",
-      "size": 688132
-    },
-    "Data/Local/Eng/Item_eng.bmd.bak-revert210": {
-      "sha256": "2641a6908f00d72946b29ffeaa85057f811872eb2c93667c42acdba01d409d61",
+      "sha256": "00cc3c5e333c5828ce6af2ff74adbe7d87cb3d4031aaa57a1c8bbd38b578b7fa",
       "size": 688132
     },
     "Data/Local/Eng/JewelOfHarmonyOption_eng.bmd": {
@@ -40366,12 +40330,12 @@
       "size": 148800
     },
     "Data/Local/Eng/Text_eng.bmd": {
-      "sha256": "3808990c9dcff40c20ca80356482cfdc72306d5c069697f7cd0bc0995832ff7c",
-      "size": 159120
+      "sha256": "c8578f544f98149d745090d752dfc5ff018550e81639897342bd4684b23f54d5",
+      "size": 159299
     },
     "Data/Local/Eng/Text_eng.txt": {
-      "sha256": "60a64a186e961922f4981214b2d8f51e2981ce299373ac79e12bb6d9168a4b3b",
-      "size": 162394
+      "sha256": "395efa37280e460d5227e3b422013ffca70bafe13fcf179b1280142d02816f27",
+      "size": 162579
     },
     "Data/Local/Eng/movereq_eng.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -40406,7 +40370,7 @@
       "size": 131072
     },
     "Data/Local/ItemSetType.bmd": {
-      "sha256": "6a46789373e3d9cfe74e058c0e9cc1748f2f249d3ed6b8de75c2bb9fe8d7519f",
+      "sha256": "d5f3c63ecbed80b977c6dbf0baffcfb953cb66b053d57acc1adb14f595b71373",
       "size": 32772
     },
     "Data/Local/MasterSkillTreeData.bmd": {
@@ -40430,7 +40394,7 @@
       "size": 24972
     },
     "Data/Local/Por/Dialog_por.bmd": {
-      "sha256": "3429bf9a6ecb8464a605c6c13777fe1bf1645352e4014fdc262cb272501ca513",
+      "sha256": "ebc44dba1ad78b260fc53ff2662a4d6b36e808cbb1d2e5fab3a220a1e99ac099",
       "size": 204800
     },
     "Data/Local/Por/ItemAddOption_por.bmd": {
@@ -40442,7 +40406,7 @@
       "size": 13060
     },
     "Data/Local/Por/ItemSetOption_por.bmd": {
-      "sha256": "d00babaa3833ef3261436c12045de4bec065f55898760143f5c768042b28b41f",
+      "sha256": "751208948e7b3032bd64b712043895f10b63d7e3410b653993d958eafd1c9b11",
       "size": 28164
     },
     "Data/Local/Por/ItemTooltipText_por.bmd": {
@@ -40454,39 +40418,11 @@
       "size": 23597
     },
     "Data/Local/Por/ItemTooltip_por.bmd": {
-      "sha256": "b68dd657ac49e499113ebd5d6632ba605650793bb1860c0a2601822ecf063e83",
-      "size": 1015812
-    },
-    "Data/Local/Por/ItemTooltip_por.bmd.bak-nameFix": {
-      "sha256": "fff8fed9ee989a4dd94c1f0289d7d8f3257c14cdd7379326d4f1ff559d266d64",
-      "size": 1015812
-    },
-    "Data/Local/Por/ItemTooltip_por.bmd.bak-rehome": {
-      "sha256": "67615dc727fad826766ad90d6e75dff8bcc409e16ecc90ffae7f5566937ba0c2",
-      "size": 1015812
-    },
-    "Data/Local/Por/ItemTooltip_por.bmd.bak-revert210": {
-      "sha256": "f3cb1b3ee8312d7ea7333cae5abf76c486478aec6b64ad5c3eac7331d6e89661",
+      "sha256": "9a5494f1ec492ef22968e24fc9d5d6bce698184312f715d5e28cabbba7ac3046",
       "size": 1015812
     },
     "Data/Local/Por/Item_por.bmd": {
-      "sha256": "17dd654718cbd80b1d51f30f11cb050a8217f982d3b852002d69bafab1cc1821",
-      "size": 688132
-    },
-    "Data/Local/Por/Item_por.bmd.bak-petslot": {
-      "sha256": "ac5827522b2621fa01e48e62e15955ddabff372b79fa03eaed4673426b8fec23",
-      "size": 688132
-    },
-    "Data/Local/Por/Item_por.bmd.bak-preS21": {
-      "sha256": "2147b748d2f0de03f2421cf7822aa50550da9780e942f62717bac24ba4eae5c0",
-      "size": 688132
-    },
-    "Data/Local/Por/Item_por.bmd.bak-rehome": {
-      "sha256": "10dded620a39c223818e13ce49c530ba306074cf2836adada5f2cd9bb56dfe51",
-      "size": 688132
-    },
-    "Data/Local/Por/Item_por.bmd.bak-revert210": {
-      "sha256": "2641a6908f00d72946b29ffeaa85057f811872eb2c93667c42acdba01d409d61",
+      "sha256": "00cc3c5e333c5828ce6af2ff74adbe7d87cb3d4031aaa57a1c8bbd38b578b7fa",
       "size": 688132
     },
     "Data/Local/Por/JewelOfHarmonyOption_por.bmd": {
@@ -40526,12 +40462,12 @@
       "size": 15600
     },
     "Data/Local/Por/Text_por.bmd": {
-      "sha256": "ad3337d44faccd778abbe0ef81f95808f17d0ba15ece14ab71d9c26bfd792852",
-      "size": 168903
+      "sha256": "8d7e06c18d71a254b6c5b328d9d3ee2b12d064e8878121dabfdddb7e383c4de4",
+      "size": 169078
     },
     "Data/Local/Por/Text_por.txt": {
-      "sha256": "6a1514c07a96e6cf410a5a9174e7253e4487204fd7eb7677763782f443ac4684",
-      "size": 172179
+      "sha256": "edda19eea5870e20ace9835cdae4ccb7ab6c895227b73ab88d78f403cb29532c",
+      "size": 172360
     },
     "Data/Local/Por/movereq_por.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -40554,7 +40490,7 @@
       "size": 24972
     },
     "Data/Local/Spn/Dialog_spn.bmd": {
-      "sha256": "3429bf9a6ecb8464a605c6c13777fe1bf1645352e4014fdc262cb272501ca513",
+      "sha256": "ebc44dba1ad78b260fc53ff2662a4d6b36e808cbb1d2e5fab3a220a1e99ac099",
       "size": 204800
     },
     "Data/Local/Spn/ItemAddOption_spn.bmd": {
@@ -40566,7 +40502,7 @@
       "size": 13060
     },
     "Data/Local/Spn/ItemSetOption_spn.bmd": {
-      "sha256": "d00babaa3833ef3261436c12045de4bec065f55898760143f5c768042b28b41f",
+      "sha256": "751208948e7b3032bd64b712043895f10b63d7e3410b653993d958eafd1c9b11",
       "size": 28164
     },
     "Data/Local/Spn/ItemTooltipText_spn.bmd": {
@@ -40578,39 +40514,11 @@
       "size": 23597
     },
     "Data/Local/Spn/ItemTooltip_spn.bmd": {
-      "sha256": "b68dd657ac49e499113ebd5d6632ba605650793bb1860c0a2601822ecf063e83",
-      "size": 1015812
-    },
-    "Data/Local/Spn/ItemTooltip_spn.bmd.bak-nameFix": {
-      "sha256": "fff8fed9ee989a4dd94c1f0289d7d8f3257c14cdd7379326d4f1ff559d266d64",
-      "size": 1015812
-    },
-    "Data/Local/Spn/ItemTooltip_spn.bmd.bak-rehome": {
-      "sha256": "67615dc727fad826766ad90d6e75dff8bcc409e16ecc90ffae7f5566937ba0c2",
-      "size": 1015812
-    },
-    "Data/Local/Spn/ItemTooltip_spn.bmd.bak-revert210": {
-      "sha256": "f3cb1b3ee8312d7ea7333cae5abf76c486478aec6b64ad5c3eac7331d6e89661",
+      "sha256": "9a5494f1ec492ef22968e24fc9d5d6bce698184312f715d5e28cabbba7ac3046",
       "size": 1015812
     },
     "Data/Local/Spn/Item_spn.bmd": {
-      "sha256": "17dd654718cbd80b1d51f30f11cb050a8217f982d3b852002d69bafab1cc1821",
-      "size": 688132
-    },
-    "Data/Local/Spn/Item_spn.bmd.bak-petslot": {
-      "sha256": "ac5827522b2621fa01e48e62e15955ddabff372b79fa03eaed4673426b8fec23",
-      "size": 688132
-    },
-    "Data/Local/Spn/Item_spn.bmd.bak-preS21": {
-      "sha256": "2147b748d2f0de03f2421cf7822aa50550da9780e942f62717bac24ba4eae5c0",
-      "size": 688132
-    },
-    "Data/Local/Spn/Item_spn.bmd.bak-rehome": {
-      "sha256": "10dded620a39c223818e13ce49c530ba306074cf2836adada5f2cd9bb56dfe51",
-      "size": 688132
-    },
-    "Data/Local/Spn/Item_spn.bmd.bak-revert210": {
-      "sha256": "2641a6908f00d72946b29ffeaa85057f811872eb2c93667c42acdba01d409d61",
+      "sha256": "00cc3c5e333c5828ce6af2ff74adbe7d87cb3d4031aaa57a1c8bbd38b578b7fa",
       "size": 688132
     },
     "Data/Local/Spn/JewelOfHarmonyOption_spn.bmd": {
@@ -40638,12 +40546,12 @@
       "size": 148800
     },
     "Data/Local/Spn/Text_spn.bmd": {
-      "sha256": "25d9a0654f499598c095fad50c3245be961131fc02c762edba2abcff7ec8aea8",
-      "size": 176330
+      "sha256": "6f66d5e444ceeb2e02ddd8846de498d19e7735e54349ff9ba9737087d234dc53",
+      "size": 176513
     },
     "Data/Local/Spn/Text_spn.txt": {
-      "sha256": "8d7c24fa1a60fa6f77861abbb220dc6df8ae5461f57900797f4417f24e3b47fa",
-      "size": 179604
+      "sha256": "1d7bd33c4d5ba2a34795fc51e36a4d9e34527e1184a4b20a81a12dd71d97ded8",
+      "size": 179793
     },
     "Data/Local/Spn/movereq_spn.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -40674,7 +40582,7 @@
       "size": 24972
     },
     "Data/Local/Vie/Dialog_vie.bmd": {
-      "sha256": "3429bf9a6ecb8464a605c6c13777fe1bf1645352e4014fdc262cb272501ca513",
+      "sha256": "ebc44dba1ad78b260fc53ff2662a4d6b36e808cbb1d2e5fab3a220a1e99ac099",
       "size": 204800
     },
     "Data/Local/Vie/ItemAddOption_vie.bmd": {
@@ -40686,11 +40594,11 @@
       "size": 13060
     },
     "Data/Local/Vie/ItemSetOption_vie.bmd": {
-      "sha256": "6e7593f21cb0d459a27641f01463e8a2f02a54dbe3be4ec5bbd6bee264d257fd",
+      "sha256": "751208948e7b3032bd64b712043895f10b63d7e3410b653993d958eafd1c9b11",
       "size": 28164
     },
     "Data/Local/Vie/ItemTooltipText_vie.bmd": {
-      "sha256": "e6f883b2bf113f552e7d09c77468469eb1fbb516799ecd320b21a3a8c28ccdc1",
+      "sha256": "d07e6122e0f61078ea0a0a78e5228dbd1d737d6659c40f9854e66d017a3fb19b",
       "size": 133124
     },
     "Data/Local/Vie/ItemTooltipText_vie.txt": {
@@ -40698,39 +40606,11 @@
       "size": 28328
     },
     "Data/Local/Vie/ItemTooltip_vie.bmd": {
-      "sha256": "377d83919e91cb8443d4624d2c6686d3c09e15ff3933d0f91697a2141adcfc64",
-      "size": 1015812
-    },
-    "Data/Local/Vie/ItemTooltip_vie.bmd.bak-nameFix": {
-      "sha256": "0c97f0c9e273a3102bee66bc54d6ad2c9475ded6e970526f3bfe1f8c9c0826e4",
-      "size": 1015812
-    },
-    "Data/Local/Vie/ItemTooltip_vie.bmd.bak-rehome": {
-      "sha256": "c158a5286c7af95d3364085752e37ec85a9f5efcf6d4a620a0aab470bb30ae08",
-      "size": 1015812
-    },
-    "Data/Local/Vie/ItemTooltip_vie.bmd.bak-revert210": {
-      "sha256": "713fe605b459aab7838fca07135cc44789b0021dd17acd7e31ded1513ea8c1b0",
+      "sha256": "e10b81327d75af8f5efa56d03f9320d80321d0e66cdbe90bc035de4236747626",
       "size": 1015812
     },
     "Data/Local/Vie/Item_vie.bmd": {
-      "sha256": "ea0faf94b32f3ffe9b433a453758675e15d0e3ec225f2bf08f8b30a8b4a5fff6",
-      "size": 688132
-    },
-    "Data/Local/Vie/Item_vie.bmd.bak-petslot": {
-      "sha256": "0b9a730cf84a1357d56d521efd857666b4695f7fc6d7953f8ba977a8a33fb924",
-      "size": 688132
-    },
-    "Data/Local/Vie/Item_vie.bmd.bak-preS21": {
-      "sha256": "20dc919d3e9016c06d8cc847ad5e80a208449511b40f638fd815babd51bd7155",
-      "size": 688132
-    },
-    "Data/Local/Vie/Item_vie.bmd.bak-rehome": {
-      "sha256": "b976b5d286eb42fa25fffa1a773f724cc1ce738367541a2adb0a3198270566e9",
-      "size": 688132
-    },
-    "Data/Local/Vie/Item_vie.bmd.bak-revert210": {
-      "sha256": "1040de09f0fadae02c82a207a38ea6ee9d0eabc7e0d24ce8056ca4b3532f4b7a",
+      "sha256": "24289d3713f6323f8ce6cd7a8142c2f57c5067360058c27479af6710169bef62",
       "size": 688132
     },
     "Data/Local/Vie/JewelOfHarmonyOption_vie.bmd": {
@@ -40758,12 +40638,12 @@
       "size": 148800
     },
     "Data/Local/Vie/Text_vie.bmd": {
-      "sha256": "90bcc160106174216dc58a3f00668ad7c4eec0eaa45c304d6696af1cf9456952",
-      "size": 161355
+      "sha256": "7d3b355d832559c73f6d78712538cb2fc6f9ee23a0aa040bf345236925b6a556",
+      "size": 161607
     },
     "Data/Local/Vie/Text_vie.txt": {
-      "sha256": "843306f1743539413f91aadb04f7b35800698d121fe09ce415005b9d937d31d1",
-      "size": 163641
+      "sha256": "2df12c905cac1b890f6085eb4659ce9cd212b7912be71f3c9c06bf90e50af7dd",
+      "size": 163899
     },
     "Data/Local/Vie/movereq_vie.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -40794,8 +40674,8 @@
       "size": 2512
     },
     "Data/Local/rex.main": {
-      "sha256": "0e5a59304b2fe56a6574a1cfbf9da1f1a2ec45d9017769a16d6f25d24e37b50d",
-      "size": 3716340
+      "sha256": "81697435391e7e7cd4c46c9a8c758483bc56640c78271bc21d8cc663c32b953f",
+      "size": 3716428
     },
     "Data/Logo/0Account.OZT": {
       "sha256": "56f2c6eae79d037d2d5bf79e8a736097abcc4ac419e55b6988fce9e5b267ffd4",
@@ -112154,8 +112034,8 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "a35dcf6fd0bbc141dbb7e94fef5560e0ae8a50fcde3deca32fef8038490be66c",
-      "size": 13573632
+      "sha256": "d2a101028fae35d9f73f0facb66725f3e792a2a2745144f2e1fd2a4e1af60a52",
+      "size": 13605888
     },
     "QeffectsGL.ini": {
       "sha256": "ee3f998d0b39052eda94f237086f040d25a3eb1910d3a658322938e74d9175de",
