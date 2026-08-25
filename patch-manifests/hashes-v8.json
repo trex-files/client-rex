@@ -3118,8 +3118,8 @@
       "size": 86201
     },
     "Data/Custom/Monster/MonsterHP.txt": {
-      "sha256": "5becb0021b74b0dd142316a2cae7a8d574c0d356c9a58c80c81a5861d1ce6f64",
-      "size": 30632
+      "sha256": "65ff274aac08b1c5464b1120dcfe373e65942ad6f5d8092d28e5a70495b49445",
+      "size": 30654
     },
     "Data/Custom/Monster/NPC/KMUA_NPC_012.ozj": {
       "sha256": "84411785407e61c0c2a46b478fa613aab3bfb3682103f335bb8e28e6c69cd438",
@@ -40342,7 +40342,7 @@
       "size": 3532
     },
     "Data/Local/Eng/skill_eng.bmd": {
-      "sha256": "79719639de59e5f426c57c2415eb9164bb19b4faa2db4597827f82f1308f0f2a",
+      "sha256": "dbca3314b78dd9a62cebcd7ddd40fe15c7f471b7803bacc3dd470ce8ce1d9618",
       "size": 57204
     },
     "Data/Local/Eng/slide_eng.bmd": {
@@ -40450,7 +40450,7 @@
       "size": 148800
     },
     "Data/Local/Por/Skill_por.bmd": {
-      "sha256": "79719639de59e5f426c57c2415eb9164bb19b4faa2db4597827f82f1308f0f2a",
+      "sha256": "dbca3314b78dd9a62cebcd7ddd40fe15c7f471b7803bacc3dd470ce8ce1d9618",
       "size": 57204
     },
     "Data/Local/Por/Slide_por.bmd": {
@@ -40558,7 +40558,7 @@
       "size": 3532
     },
     "Data/Local/Spn/skill_spn.bmd": {
-      "sha256": "79719639de59e5f426c57c2415eb9164bb19b4faa2db4597827f82f1308f0f2a",
+      "sha256": "dbca3314b78dd9a62cebcd7ddd40fe15c7f471b7803bacc3dd470ce8ce1d9618",
       "size": 57204
     },
     "Data/Local/Spn/slide_spn.bmd": {
@@ -40650,7 +40650,7 @@
       "size": 3532
     },
     "Data/Local/Vie/skill_vie.bmd": {
-      "sha256": "4fa1a4d60ed735d244a0df558f53ba1561ffc07295083c8053d9e5c3cd8bb626",
+      "sha256": "29d1b0e626455ee194b5fab6fcaf6797d715cca70bb1c7013bb2fc2aa6f46d5c",
       "size": 57204
     },
     "Data/Local/Vie/slide_vie.bmd": {
@@ -48178,8 +48178,8 @@
       "size": 200137
     },
     "Data/Minimaps/tabmap_markers.txt": {
-      "sha256": "eec3376755e77a4275d8eda9ed53696418666a99516228ec29bd1efdbde73507",
-      "size": 107574
+      "sha256": "0053ee525be7bf7987213ea8ac4dda4839787986950374f60c8caf4cb0990b55",
+      "size": 107622
     },
     "Data/Monster/AssassinLeader_alpha.OZT": {
       "sha256": "4032ecd1b4c4c4aed2c2cf95b786f8d0dabd243c3439750574371b4c8d46eca9",
@@ -112034,8 +112034,8 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "d2a101028fae35d9f73f0facb66725f3e792a2a2745144f2e1fd2a4e1af60a52",
-      "size": 13605888
+      "sha256": "72266e212fbb61305101194e70a7284affea942ce78898997c43eb7aa6f1d32b",
+      "size": 13604864
     },
     "QeffectsGL.ini": {
       "sha256": "ee3f998d0b39052eda94f237086f040d25a3eb1910d3a658322938e74d9175de",

@@ -8,9 +8,9 @@
 //          el HP real en juego, no el del fichero del servidor.
 //
 // Tier = que barra del atlas boss_health_bar se dibuja:
-//   0 = L1 normal      HP >=          0   (388 monstruos)
-//   1 = L2 elite       HP >=     100000   (128 monstruos)
-//   2 = L3 boss        HP >=    1000000   (19 monstruos)
+//   0 = L1 normal      HP >=          0   (366 monstruos)
+//   1 = L2 elite       HP >=     100000   (146 monstruos)
+//   2 = L3 boss        HP >=    1000000   (23 monstruos)
 //   3 = L4 world boss  HP >=   50000000   (32 monstruos)
 //
 // El cliente solo usa esto para PINTAR. La vida real la sigue mandando el
@@ -302,61 +302,61 @@
    427          34500   0   //"Chaos Castle 14" Lv114
     64          15000   0   //"Ogre archer" Lv70
     65          21000   0   //"Elite Ogre" Lv74
-   147            660   0   //"Aegis" Lv17
-   148            750   0   //"Rogue Centurion" Lv19
-   146            900   0   //"Blood Soldier" Lv21
-   144           1110   0   //"Death Angel" Lv24
-   149           1350   0   //"Necron" Lv28
-   145           1875   0   //"Death Centurion" Lv33
-   160           2700   0   //"Schriker" Lv40
-   161           4500   0   //"Illusion of Kundun" Lv52
-   177           1500   0   //"Aegis" Lv32
-   178           1800   0   //"Rogue Centurion" Lv34
-   176           2100   0   //"Blood Soldier" Lv37
-   174           2700   0   //"Death Angel" Lv40
-   179           3450   0   //"Necron" Lv44
-   175           4500   0   //"Death Centurion" Lv48
-   180           5850   0   //"Schriker" Lv53
-   181           9000   0   //"Illusion of Kundun" Lv65
-   185           4050   0   //"Aegis" Lv46
-   186           4650   0   //"Rogue Centurion" Lv48
-   184           5475   0   //"Blood Soldier" Lv50
-   182           6600   0   //"Death Angel" Lv53
-   187           7950   0   //"Necron" Lv58
-   183           9900   0   //"Death Centurion" Lv63
-   188          12600   0   //"Schriker" Lv69
-   189          21000   0   //"Illusion of Kundun" Lv81
-   193           9000   0   //"Aegis" Lv62
-   194          10350   0   //"Rogue Centurion" Lv66
-   192          13200   0   //"Blood Soldier" Lv70
-   190          18000   0   //"Death Angel" Lv74
-   195          24000   0   //"Necron" Lv78
-   191          33750   0   //"Death Centurion" Lv83
-   196          45000   0   //"Schriker" Lv88
-   197          75000   0   //"Illusion of Kundun" Lv100
-   263          27000   0   //"Aegis" Lv79
-   264          31500   0   //"Rogue Centurion" Lv82
-   262          39000   0   //"Blood Soldier" Lv85
-   260          46500   0   //"Death Angel" Lv88
-   265          57750   0   //"Necron" Lv93
-   261          72000   0   //"Death Centurion" Lv98
-   266          90000   0   //"Schriker" Lv105
-   267         150000   1   //"Illusion of Kundun" Lv117
-   271          63000   0   //"Aegis" Lv95
-   272          72750   0   //"Rogue Centurion" Lv98
-   270          84000   0   //"Blood Soldier" Lv101
-   268          97500   0   //"Death Angel" Lv105
-   273         113250   1   //"Necron" Lv109
-   269         131250   1   //"Death Centurion" Lv114
-   274         157500   1   //"Schriker" Lv119
-   331         123000   1   //"Aegis" Lv111
-   332         132000   1   //"Rogue Centurion" Lv114
-   333         145950   1   //"Blood Soldier" Lv117
-   334         165000   1   //"Death Angel" Lv121
-   335         187500   1   //"Necron" Lv125
-   336         217500   1   //"Death Centurion" Lv130
-   337         255000   1   //"Schriker" Lv135
-   338         210000   1   //"Illusion of Kundun" Lv140
+   147           2700   0   //"Aegis" Lv27
+   148           3435   0   //"Rogue Centurion" Lv30
+   146           4590   0   //"Blood Soldier" Lv34
+   144           5925   0   //"Death Angel" Lv38
+   149           8730   0   //"Necron" Lv45
+   145          12720   0   //"Death Centurion" Lv53
+   160          19635   0   //"Schriker" Lv64
+   161         300000   1   //"Illusion of Kundun" Lv83
+   177          17580   0   //"Aegis" Lv61
+   178          19635   0   //"Rogue Centurion" Lv64
+   176          24120   0   //"Blood Soldier" Lv70
+   174          29130   0   //"Death Angel" Lv76
+   179          35670   0   //"Necron" Lv83
+   175          44070   0   //"Death Centurion" Lv91
+   180          54750   0   //"Schriker" Lv100
+   181         750000   1   //"Illusion of Kundun" Lv123
+   185          41880   0   //"Aegis" Lv89
+   186          46335   0   //"Rogue Centurion" Lv93
+   184          51045   0   //"Blood Soldier" Lv97
+   182          58590   0   //"Death Angel" Lv103
+   187          71025   0   //"Necron" Lv112
+   183          86460   0   //"Death Centurion" Lv122
+   188         107265   1   //"Schriker" Lv134
+   189        1500000   2   //"Illusion of Kundun" Lv157
+   193          94815   0   //"Aegis" Lv127
+   194         109110   1   //"Rogue Centurion" Lv135
+   192         124545   1   //"Blood Soldier" Lv143
+   190         143295   1   //"Death Angel" Lv152
+   195         161220   1   //"Necron" Lv160
+   191         185325   1   //"Death Centurion" Lv170
+   196         211335   1   //"Schriker" Lv180
+   197        3750000   2   //"Illusion of Kundun" Lv205
+   263         198090   1   //"Aegis" Lv175
+   264         214050   1   //"Rogue Centurion" Lv181
+   262         233550   1   //"Blood Soldier" Lv188
+   260         254025   1   //"Death Angel" Lv195
+   265         288165   1   //"Necron" Lv206
+   261         324765   1   //"Death Centurion" Lv217
+   266         378690   1   //"Schriker" Lv232
+   267        7500000   2   //"Illusion of Kundun" Lv259
+   271         356550   1   //"Aegis" Lv226
+   272         386235   1   //"Rogue Centurion" Lv234
+   270         413295   1   //"Blood Soldier" Lv241
+   268         449625   1   //"Death Angel" Lv250
+   273         492045   1   //"Necron" Lv260
+   269         545805   1   //"Death Centurion" Lv272
+   274         602730   1   //"Schriker" Lv284
+   338       18000000   2   //"Illusion of Kundun" Lv305
+   331         500790   1   //"Aegis" Lv262
+   332         532065   1   //"Rogue Centurion" Lv269
+   333         564420   1   //"Blood Soldier" Lv276
+   334         607620   1   //"Death Angel" Lv285
+   335         657735   1   //"Necron" Lv295
+   336         715470   1   //"Death Centurion" Lv306
+   337         781605   1   //"Schriker" Lv318
    152             75   0   //"Magic stone of %s " Lv10
    153             75   0   //"Magic stone of %s " Lv10
    154             75   0   //"Magic stone of %s " Lv10
