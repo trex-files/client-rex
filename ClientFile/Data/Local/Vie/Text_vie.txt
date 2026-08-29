@@ -3607,3 +3607,4 @@ end
 5903 "Quảng Trường Quỷ %d (Reset %d-%d)"
 5904 "Quảng Trường Quỷ %d (Reset %d+)"
 5905 "Quảng Trường Quỷ %d (không khả dụng)"
+5906 "You can only wear one mount and one companion at a time."

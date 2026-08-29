@@ -4442,3 +4442,4 @@
 5903	"The %d Square (Reset %d-%d)"
 5904	"The %d Square (Reset %d+)"
 5905	"The %d Square (unavailable)"
+5906	"You can only wear one mount and one companion at a time."

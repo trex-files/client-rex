@@ -4442,3 +4442,4 @@
 5903	"A Praça %d (Reset %d-%d)"
 5904	"A Praça %d (Reset %d+)"
 5905	"A Praça %d (indisponível)"
+5906	"Você só pode usar uma montaria e um companheiro por vez."
