@@ -9,6 +9,7 @@ Zips ya generados y verificados en `patch-out/`. **Falta solo publicarlos.**
 | `Main.exe` | preview de Event&Invasion rehecho (ver abajo) |
 | `Data/Custom/Monster/MonsterHP.txt` | tabla de respaldo regenerada a `MonsterLifeRate = 100` |
 | `Text_{eng,por,spn,vie}.bmd` + `.txt` | strings del Hunting Log en los 4 idiomas |
+| `Data/Minimaps/tabmap_markers.txt` | 8 marcadores "Guardian Invasion" (kind_14) + Devil Square corregido |
 
 **Main.exe** trae, acumulado de toda la sesion:
 - Preview de Event&Invasion: **16 de 37 clases mostraban otro monstruo**; la tabla
@@ -22,16 +23,20 @@ Zips ya generados y verificados en `patch-out/`. **Falta solo publicarlos.**
   estirada del form.
 - Abrir Event&Invasions cierra el resto de la UI.
 - Hunting Log: fila "Ocultar" + traduccion.
+- Marcadores del mapa TAB: los 8 Guardians. **Es puro dato** — el icono se resuelve
+  por nombre en runtime, asi que esta parte no exigia recompilar.
 - MU Helper: la caminata de vuelta al punto.
 - HP/ATK/DEF empujados por el servidor (`0xFB:32`), con el `.txt` de respaldo.
 
 ## Numeros verificados
 
 ```
-Patch11.zip   crc=b36c4241  size=4136393    10 ficheros
-FullPatch.zip crc=847ff8ed  size=39714721  838 ficheros
+Patch11.zip   crc=4830fd49  size=4150201    11 ficheros
+FullPatch.zip crc=999f1667  size=39713928  838 ficheros
 version.txt   latest=11, 12 lineas (full + patch.1..11)
 ```
+> Rebuild del 30/08 23:5x: se sumo `Data/Minimaps/tabmap_markers.txt` (10 -> 11 ficheros).
+> Los CRC de arriba REEMPLAZAN a los del primer build (`b36c4241` / `847ff8ed`), que ya no valen.
 
 Verificado antes de dar por buenos los zips:
 - CRC32 y tamaño de **las 12 entradas** del manifest contra los ficheros reales: 12/12 OK.
