@@ -3,15 +3,15 @@
 // NO EDITAR A MANO: se regenera y se pierden los cambios.
 //
 // Fuente : 4.GameServer/Data/Monster/MonsterList.txt
-// Rate   : MonsterLifeRate = 150  (GameServerInfo - Common.ini)
+// Rate   : MonsterLifeRate = 100  (GameServerInfo - Common.ini)
 //          Los MaxLife de aqui YA llevan el rate aplicado, o sea que son
 //          el HP real en juego, no el del fichero del servidor.
 //
 // Tier = que barra del atlas boss_health_bar se dibuja:
-//   0 = L1 normal      HP >=          0   (365 monstruos)
-//   1 = L2 elite       HP >=     100000   (146 monstruos)
+//   0 = L1 normal      HP >=          0   (389 monstruos)
+//   1 = L2 elite       HP >=     100000   (124 monstruos)
 //   2 = L3 boss        HP >=    1000000   (25 monstruos)
-//   3 = L4 world boss  HP >=   50000000   (31 monstruos)
+//   3 = L4 world boss  HP >=   50000000   (29 monstruos)
 //
 // El cliente solo usa esto para PINTAR. La vida real la sigue mandando el
 // servidor como porcentaje (0xF3:0xE2), asi que tocar este fichero no da
@@ -20,573 +20,573 @@
 
 1
 //Index   MaxLife        Tier
-   362        4500000   2   //"Maya Hand" Lv135
-   363        3000000   2   //"Maya Hand" Lv135
-   364        7500000   2   //"Maya" Lv111
-   361       22500000   2   //"Nightmare" Lv135
-   295       75000000   3   //"Erohim" Lv128
-   275       60000000   3   //"Kundun" Lv147
-   561      150000000   3   //"Medusa" Lv175
-   459      375000000   3   //"Selupan" Lv145
-   460         600000   1   //"Spider Eggs" Lv10
-   461         600000   1   //"Spider Eggs" Lv10
-   462         600000   1   //"Spider Eggs" Lv10
-   412        2250000   2   //"Dark Elf (Trainee Soldier)" Lv128
-   340        2250000   2   //"Dark Elf" Lv135
-   440         112500   1   //"Dark Elf" Lv135
-    44         225000   1   //"Dragon" Lv300
-     7        7500000   2   //"Giant" Lv50
-    32          45000   0   //"Stone Golem" Lv50
-   425          75000   0   //"Captain Grizzly" Lv100
-    18         225000   1   //"Gorgon" Lv180
-    25         150000   1   //"Ice Queen" Lv140
-    49         450000   1   //"Hydra" Lv240
-    38         300000   1   //"Balrog" Lv220
-    59         750000   1   //"Zaikan" Lv280
-   309        1500000   2   //"Hell Maine" Lv300
-    55        1500000   2   //"Death King" Lv300
-    77        1500000   2   //"Phoenix of Darkness" Lv300
-    63        1500000   2   //"Death Beam Knight" Lv300
-    76         109500   1   //"Phoenix Darkness shield" Lv106
-    67          39000   0   //"Metal Balrog" Lv77
-    42           7500   0   //"Red Dragon" Lv47
-    56           1050   0   //"Death Bone" Lv24
-   365          37500   0   //"Pouch of Blessing" Lv100
-   413          37500   0   //"Gold Rabbit" Lv149
-   463          37500   0   //"Fire Flame Ghost" Lv149
-   465          39000   0   //"Santa Claus" Lv149
-   466          18000   0   //"Cursed Goblin" Lv70
-   476          39000   0   //"Cursed Santa" Lv149
-    66         124800   1   //"Cursed king" Lv143
-   135         300000   1   //"White wizard" Lv200
-   136          30000   0   //"Destructive ogre soldier" Lv140
-   137          22500   0   //"Destructive ogre archer" Lv140
-    43          22500   0   //"Golden Budge Dragon" Lv300
-    78          37500   0   //"Golden Goblin" Lv300
-   502          75000   0   //"Golden Rabbit" Lv300
-    54         180000   1   //"Golden Soldier" Lv300
-    53         375000   1   //"Golden Titan" Lv300
-   493         600000   1   //"Golden Dark Knight" Lv300
-    81         900000   1   //"Golden Vepar" Lv300
-   494        1200000   2   //"Golden Devil" Lv300
-    83        1500000   2   //"Golden Wheel" Lv300
-    80        3000000   2   //"Golden Lizard King" Lv300
-   495        5250000   2   //"Golden Stone Golem" Lv300
-    82        7500000   2   //"Golden Tantalos" Lv300
-   496        9000000   2   //"Golden Crust" Lv300
-    79       15000000   2   //"Golden Derkon" Lv300
-   497       21000000   2   //"Golden Satyros" Lv300
-   498       30000000   2   //"Golden Twin Tail" Lv300
-   500       52500000   3   //"Golden Napin" Lv300
-   499       75000000   3   //"Golden Iron Knight" Lv300
-   501      300000000   3   //"Great Golden Dragon" Lv300
-     3             45   0   //"Spider" Lv2
-     2             90   0   //"Budge Dragon" Lv4
-     0            150   0   //"Bull Fighter" Lv6
-     1            210   0   //"Hound" Lv9
-     4            285   0   //"Elite Bull Fighter" Lv12
-     6            382   0   //"Lich" Lv14
-    26             67   0   //"Goblin" Lv3
-    27            120   0   //"Chain Scorpion" Lv5
-    33            180   0   //"Elite Goblin" Lv8
-    28            247   0   //"Beetle Monster" Lv10
-    29            330   0   //"Hunter" Lv13
-    30            442   0   //"Forest Monster" Lv15
-    31            510   0   //"Agon" Lv16
-   418             90   0   //"Strange Rabbit" Lv4
-   421            345   0   //"Polluted Butterfly" Lv12
-   419            780   0   //"Hideous Rabbit" Lv16
-   420           1080   0   //"Werewolf" Lv20
-   422           1350   0   //"Cursed Lich" Lv22
-   423           1800   0   //"Totem Golem" Lv26
-   424           2250   0   //"Grizzly" Lv30
-    14           3300   0   //"Skeleton" Lv30
-    12           4275   0   //"Larva" Lv33
-    17           5250   0   //"Cyclops" Lv36
-    11           6300   0   //"Ghost" Lv39
-    15           7500   0   //"Skeleton Archer" Lv42
-     5           8775   0   //"Hell Hound" Lv45
-    13          10200   0   //"Hell Spider" Lv48
-    16          11700   0   //"Chief Skeleton Warrior" Lv51
-     9          13350   0   //"Thunder Lich" Lv54
-     8          15075   0   //"Poison Bull Fighter" Lv57
-    10          16950   0   //"Dark Knight" Lv60
-    24          11175   0   //"Worm" Lv50
-    22          13875   0   //"Ice Monster" Lv55
-    23          16950   0   //"Hommerd" Lv60
-    21          19725   0   //"Assassin" Lv64
-    19          23400   0   //"Yeti" Lv69
-    20          27525   0   //"Elite Yeti" Lv74
-    45          24225   0   //"Bahamut" Lv70
-    46          28350   0   //"Vepar" Lv75
-    47          32850   0   //"Valkyrie" Lv80
-    51          36750   0   //"Great Bahamut" Lv84
-    52          42000   0   //"Silver Valkyrie" Lv89
-    48          47550   0   //"Lizard King" Lv94
-    36          43050   0   //"Shadow" Lv90
-    39          48750   0   //"Poison Shadow" Lv95
-    34          53550   0   //"Cursed Wizard" Lv99
-    41          60000   0   //"Death Cow" Lv104
-    37          66900   0   //"Devil" Lv109
-    40          72600   0   //"Death Knight" Lv113
-    35          80250   0   //"Death Gorgon" Lv118
-    69          83400   0   //"Alquamos" Lv120
-    71          93300   0   //"Mega Crust" Lv126
-    70         102000   1   //"Queen Rainier" Lv131
-    73         113100   1   //"Drakan" Lv137
-    74         137100   1   //"Alpha Crust" Lv149
-    72         147900   1   //"Phantom Knight" Lv154
-    75         161400   1   //"Great Drakan" Lv160
-   308          83400   0   //"Death Tree" Lv120
-   307          91650   0   //"Forest Orc" Lv125
-   306         100200   1   //"Death Rider" Lv130
-   305         109350   1   //"Blue Golem" Lv135
-   304         118800   1   //"Witch Queen" Lv140
-    62         100200   1   //"Mutant" Lv130
-    60         109350   1   //"Bloody wolf" Lv135
-    57         118800   1   //"Iron Wheel" Lv140
-    58         126750   1   //"Tantalos" Lv146
-    61         137100   1   //"Beam Knight" Lv154
-   351         139200   1   //"Splinter Wolf" Lv150
-   352         147900   1   //"Iron Rider" Lv154
-   353         159150   1   //"Satyros" Lv159
-   354         168450   1   //"Blade Hunter" Lv163
-   355         180600   1   //"Kentauros" Lv168
-   356         190650   1   //"Gigantis" Lv172
-   350         203550   1   //"Berserker" Lv177
-   357         214200   1   //"Genocider" Lv181
-   434         228150   1   //"Gigantis" Lv186
-   435         239550   1   //"Berserker" Lv190
-   359         239550   1   //"Twin Tale" Lv190
-   358         251250   1   //"Persona" Lv194
-   360         263250   1   //"Dreadfear" Lv198
-   438         272550   1   //"Persona" Lv201
-   439         285150   1   //"Dreadfear" Lv205
-   441         269400   1   //"Sapi-Unus" Lv200
-   442         282000   1   //"Sapi-Duo" Lv204
-   443         298050   1   //"Sapi-Tres" Lv209
-   444         314700   1   //"Shadow Pawn" Lv214
-   445         328350   1   //"Shadow Knight" Lv218
-   446         342300   1   //"Shadow Look" Lv222
-   447         360300   1   //"Thunder Napin" Lv227
-   448         378750   1   //"Ghost Napin" Lv232
-   449         393900   1   //"Blaze Napin" Lv236
-   454         371400   1   //"Ice Walker" Lv230
-   455         386400   1   //"Giant Mammoth" Lv234
-   456         405600   1   //"Ice Giant" Lv239
-   457         425250   1   //"Coolutin" Lv244
-   562         441450   1   //"Dark Mammoth" Lv248
-   458         457950   1   //"Iron Knight" Lv252
-   563         479100   1   //"Dark Giant" Lv257
-   564         500850   1   //"Dark Coolutin" Lv262
-   565         518550   1   //"Dark Iron Knight" Lv266
-   569         492000   1   //"Venomous Chain Scorpion" Lv260
-   570         518550   1   //"Bone Scorpion" Lv266
-   571         541200   1   //"Orcus" Lv271
-   572         569100   1   //"Gollock" Lv277
-   573         597750   1   //"Crypta" Lv283
-   574         627300   1   //"Crypos" Lv289
-   575         652500   1   //"Condra" Lv294
-   576         683400   1   //"Narcondra" Lv300
-   549         269400   1   //"Bloody Orc" Lv200
-   550         298050   1   //"Bloody Death Rider" Lv209
-   551         328350   1   //"Bloody Golem" Lv218
-   552         360300   1   //"Bloody Witch Queen" Lv227
-   553         393900   1   //"Berserker Warrior" Lv236
-   554         429300   1   //"Kentauros Warrior" Lv245
-   555         470550   1   //"Gigantis Warrior" Lv255
-   556         509550   1   //"Genocider Warrior" Lv264
-   557         550350   1   //"Sapi Queen" Lv273
-   558         592950   1   //"Ice Napin" Lv282
-   560         637350   1   //"Sapi Queen" Lv291
-   559         683400   1   //"Shadow Master" Lv300
-   294         139200   1   //"Ax Warrior" Lv150
-   290         188100   1   //"Lizard Warrior" Lv171
-   300         245400   1   //"Hero Mutant" Lv192
-   293         314700   1   //"Poison Golem" Lv214
-   302         390150   1   //"Axl Hero" Lv235
-   292         474900   1   //"Queen Bee" Lv256
-   303         573750   1   //"Gigas Golem" Lv278
-   291         678150   1   //"Fire Golem" Lv299
-   301         792600   1   //"Omega Wing" Lv320
-   310         139200   1   //"Hammer Scout" Lv150
-   311         152250   1   //"Lance Scout" Lv156
-   312         166050   1   //"Bow Scout" Lv162
-   409         180600   1   //"Balram (Trainee Soldier)" Lv168
-   436         195750   1   //"Balram (Trainee Soldier)" Lv174
-   313         208800   1   //"Werewolf" Lv179
-   410         225300   1   //"Death Spirit (Trainee Soldier)" Lv185
-   411         242400   1   //"Soram (Trainee Soldier)" Lv191
-   437         260250   1   //"Soram (Trainee Soldier)" Lv197
-   314         278850   1   //"Scout(Hero)" Lv203
-   315         298050   1   //"Werewolf(Hero)" Lv209
-   316         318150   1   //"Balram" Lv215
-   348         338850   1   //"Tanker" Lv221
-   317         356700   1   //"Soram" Lv226
-   341         378750   1   //"Soram" Lv232
-   344         401700   1   //"Balram" Lv238
-   345         425250   1   //"Death spirit" Lv244
-   349         449700   1   //"Balgass" Lv250
-    84          11250   0   //"Chief Skeleton Warrior" Lv64
-    85          14250   0   //"Chief Skeleton Archer" Lv69
-    86          18000   0   //"Dark Skull Soldier" Lv75
-    87          22500   0   //"Giant Ogre" Lv79
-    88          27000   0   //"Red Skeleton Knight" Lv82
-    89          36000   0   //"Magic Skeleton" Lv84
-    90          18000   0   //"Chief Skeleton Warrior" Lv70
-    91          22500   0   //"Chief Skeleton Archer" Lv75
-    92          28500   0   //"Dark Skull Soldier" Lv80
-    93          34500   0   //"Giant Ogre" Lv85
-    94          39000   0   //"Red Skeleton Knight" Lv87
-    95          48000   0   //"Magic Skeleton" Lv90
-    96          25500   0   //"Chief Skeleton Warrior" Lv76
-    97          30000   0   //"Chief Skeleton Archer" Lv81
-    98          37500   0   //"Dark Skull Soldier" Lv86
-    99          48000   0   //"Giant Ogre" Lv90
-   111          57000   0   //"Red Skeleton Knight" Lv94
-   112          70500   0   //"Magic Skeleton" Lv99
-   113          34500   0   //"Chief Skeleton Warrior" Lv85
-   114          39000   0   //"Chief Skeleton Archer" Lv87
-   115          48000   0   //"Dark Skull Soldier" Lv90
-   116          55500   0   //"Giant Ogre" Lv93
-   117          67500   0   //"Red Skeleton Knight" Lv98
-   118          82500   0   //"Magic Skeleton" Lv102
-   119          43500   0   //"Chief Skeleton Warrior" Lv105
-   120          48000   0   //"Chief Skeleton Archer" Lv106
-   121          55500   0   //"Dark Skull Soldier" Lv110
-   122          67500   0   //"Giant Ogre" Lv112
-   123          82500   0   //"Red Skeleton Knight" Lv119
-   124          97500   0   //"Magic Skeleton" Lv125
-   125          43500   0   //"Chief Skeleton Warrior" Lv105
-   126          48000   0   //"Chief Skeleton Archer" Lv106
-   127          55500   0   //"Dark Skull Soldier" Lv110
-   128          67500   0   //"Giant Ogre" Lv112
-   129          82500   0   //"Red Skeleton Knight" Lv119
-   130          97500   0   //"Magic Skeleton" Lv125
-   138          43500   0   //"Chief Skeleton Warrior" Lv105
-   139          48000   0   //"Chief Skeleton Archer" Lv106
-   140          55500   0   //"Dark Skull Soldier" Lv110
-   141          67500   0   //"Giant Ogre" Lv112
-   142          82500   0   //"Red Skeleton Knight" Lv119
-   143          97500   0   //"Magic Skeleton" Lv125
-   428          43500   0   //"Chief Skeleton Warrior" Lv105
-   429          48000   0   //"Chief Skeleton Archer" Lv106
-   430          55500   0   //"Dark Skull Soldier" Lv110
-   431          67500   0   //"Giant Ogre" Lv112
-   432          82500   0   //"Red Skeleton Knight" Lv119
-   433          97500   0   //"Magic Skeleton" Lv125
-   131           3000   0   //"Castle Gate" Lv2
-   132           4500   0   //"Statue of Saint" Lv2
-   133           4500   0   //"Statue of Saint" Lv2
-   134           4500   0   //"Statue of Saint" Lv2
-   104             75   0   //"Trap" Lv2
-   100           1500   0   //"Lance" Lv80
-   101           1500   0   //"Iron Stick" Lv80
-   102           1500   0   //"Fire" Lv80
-   105           1500   0   //"Canon Trap" Lv80
-   106           1500   0   //"Laser Trap" Lv80
-   103           1500   0   //"Meteorite" Lv90
-   162           6000   0   //"Chaos Castle 1" Lv54
-   163           7500   0   //"Chaos Castle 2" Lv60
-   164           9750   0   //"Chaos Castle 3" Lv65
-   165          12000   0   //"Chaos Castle 4" Lv68
-   166          15000   0   //"Chaos Castle 5" Lv70
-   167          18750   0   //"Chaos Castle 6" Lv75
-   168          22500   0   //"Chaos Castle 7" Lv76
-   169          27000   0   //"Chaos Castle 8" Lv80
-   170          30000   0   //"Chaos Castle 9" Lv111
-   172          30000   0   //"Chaos Castle 11" Lv111
-   426          30000   0   //"Chaos Castle 13" Lv111
-   171          34500   0   //"Chaos Castle 10" Lv114
-   173          34500   0   //"Chaos Castle 12" Lv114
-   427          34500   0   //"Chaos Castle 14" Lv114
-    64          15000   0   //"Ogre archer" Lv70
-    65          21000   0   //"Elite Ogre" Lv74
-   147           2700   0   //"Aegis" Lv27
-   148           3435   0   //"Rogue Centurion" Lv30
-   146           4590   0   //"Blood Soldier" Lv34
-   144           5925   0   //"Death Angel" Lv38
-   149           8730   0   //"Necron" Lv45
-   145          12720   0   //"Death Centurion" Lv53
-   160          19635   0   //"Schriker" Lv64
-   161         300000   1   //"Illusion of Kundun" Lv83
-   177          17580   0   //"Aegis" Lv61
-   178          19635   0   //"Rogue Centurion" Lv64
-   176          24120   0   //"Blood Soldier" Lv70
-   174          29130   0   //"Death Angel" Lv76
-   179          35670   0   //"Necron" Lv83
-   175          44070   0   //"Death Centurion" Lv91
-   180          54750   0   //"Schriker" Lv100
-   181         750000   1   //"Illusion of Kundun" Lv123
-   185          41880   0   //"Aegis" Lv89
-   186          46335   0   //"Rogue Centurion" Lv93
-   184          51045   0   //"Blood Soldier" Lv97
-   182          58590   0   //"Death Angel" Lv103
-   187          71025   0   //"Necron" Lv112
-   183          86460   0   //"Death Centurion" Lv122
-   188         107265   1   //"Schriker" Lv134
-   189        1500000   2   //"Illusion of Kundun" Lv157
-   193          94815   0   //"Aegis" Lv127
-   194         109110   1   //"Rogue Centurion" Lv135
-   192         124545   1   //"Blood Soldier" Lv143
-   190         143295   1   //"Death Angel" Lv152
-   195         161220   1   //"Necron" Lv160
-   191         185325   1   //"Death Centurion" Lv170
-   196         211335   1   //"Schriker" Lv180
-   197        3750000   2   //"Illusion of Kundun" Lv205
-   263         198090   1   //"Aegis" Lv175
-   264         214050   1   //"Rogue Centurion" Lv181
-   262         233550   1   //"Blood Soldier" Lv188
-   260         254025   1   //"Death Angel" Lv195
-   265         288165   1   //"Necron" Lv206
-   261         324765   1   //"Death Centurion" Lv217
-   266         378690   1   //"Schriker" Lv232
-   267        7500000   2   //"Illusion of Kundun" Lv259
-   271         356550   1   //"Aegis" Lv226
-   272         386235   1   //"Rogue Centurion" Lv234
-   270         413295   1   //"Blood Soldier" Lv241
-   268         449625   1   //"Death Angel" Lv250
-   273         492045   1   //"Necron" Lv260
-   269         545805   1   //"Death Centurion" Lv272
-   274         602730   1   //"Schriker" Lv284
-   338       18000000   2   //"Illusion of Kundun" Lv305
-   331         500790   1   //"Aegis" Lv262
-   332         532065   1   //"Rogue Centurion" Lv269
-   333         564420   1   //"Blood Soldier" Lv276
-   334         607620   1   //"Death Angel" Lv285
-   335         657735   1   //"Necron" Lv295
-   336         715470   1   //"Death Centurion" Lv306
-   337         781605   1   //"Schriker" Lv318
-   152             75   0   //"Magic stone of %s " Lv10
-   153             75   0   //"Magic stone of %s " Lv10
-   154             75   0   //"Magic stone of %s " Lv10
-   155             75   0   //"Magic stone of %s " Lv10
-   156             75   0   //"Magic stone of %s " Lv10
-   157             75   0   //"Magic stone of %s " Lv10
-   158             75   0   //"Magic stone of %s " Lv10
-   200           1500   0   //"Soccer Ball" Lv12
-   204             75   0   //"Wolf Status" Lv2
-   205             75   0   //"Wolf Altar1" Lv2
-   206             75   0   //"Wolf Altar2" Lv2
-   207             75   0   //"Wolf Altar3" Lv2
-   208             75   0   //"Wolf Altar4" Lv2
-   209             75   0   //"Wolf Altar5" Lv2
-   215             75   0   //"Shield" Lv2
-   216             75   0   //"Crown" Lv2
-   217             75   0   //"Crown Switch2" Lv2
-   218             75   0   //"Crown Switch1" Lv2
-   219             75   0   //"Castle Gate Switch" Lv2
-   220             75   0   //"Gatekeeper" Lv2
-   221             75   0   //"Slingshot attack" Lv2
-   222             75   0   //"Slingshot defense" Lv2
-   223             75   0   //"Senior" Lv2
-   224             75   0   //"Guardsman" Lv2
-   226             75   0   //"Trainer" Lv2
-   229             75   0   //"Marlon" Lv2
-   230             75   0   //"Wandering Merchant Alex" Lv2
-   231             75   0   //"Thompson Kenel" Lv2
-   232             75   0   //"Archangel" Lv2
-   233             75   0   //"Messenger of Archangel" Lv2
-   234             75   0   //"Pet Trainer" Lv2
-   235             75   0   //"Sebina the Priest" Lv2
-   236             75   0   //"Golden Archer" Lv2
-   237             75   0   //"Charon" Lv2
-   238             75   0   //"Chaos Goblin" Lv2
-   239             75   0   //"Arena Guard" Lv2
-   240             75   0   //"Safety Guardian" Lv2
-   241             75   0   //"Royal Guard Captain Lorence" Lv2
-   242             75   0   //"Elf Lala" Lv2
-   243             75   0   //"Eo the Craftsman" Lv2
-   244             75   0   //"Caren the Barmaid" Lv2
-   245             75   0   //"Wizard Izabel" Lv2
-   246           1500   0   //"Weapons Merchant Zienna" Lv20
-   247          15000   0   //"Guard" Lv90
-   248           1500   0   //"Wandering Merchant Martin" Lv20
-   249          15000   0   //"Guard" Lv90
-   250           1500   0   //"Wandering Merchant" Lv20
-   251           1500   0   //"Hanzo the Blacksmith" Lv20
-   253             75   0   //"Potion Girl Amy" Lv2
-   254             75   0   //"Pasi the Mage" Lv2
-   255             75   0   //"Lumen the Barmaid" Lv2
-   256             75   0   //"Lahap" Lv2
-   257             75   0   //"Shadow Phantom Soldier" Lv2
-   258          15000   0   //"Quests Master" Lv90
-   259             75   0   //"Oracle Layla" Lv2
-   277             75   0   //"Castle Gate" Lv2
-   278         375000   1   //"Life Stone" Lv2
-   283             75   0   //"Guardian Statue" Lv2
-   285          45000   0   //"Guardian" Lv2
-   286          34500   0   //"Archer" Lv100
-   287          39000   0   //"Spearman" Lv100
-   288             75   0   //"Canon Tower" Lv200
-   367           1500   0   //"Gateway Machine" Lv20
-   368           1500   0   //"Elpis" Lv20
-   369           1500   0   //"Osbourne" Lv20
-   370           1500   0   //"Jerridon" Lv20
-   371          15000   0   //"Leo the Helper" Lv90
-   372             15   0   //"Elite Skull Soldier" Lv10
-   373             15   0   //"Jack Olantern" Lv10
-   374             15   0   //"Santa" Lv10
-   375             15   0   //"Chaos Card Master" Lv10
-   376           1500   0   //"Pamela the Supplier" Lv20
-   377           1500   0   //"Angela the Supplier" Lv20
-   378             15   0   //"GameMaster" Lv2
-   379             15   0   //"Natasha Firecracker Merchant" Lv2
-   380             15   0   //"Stone Statue" Lv2
-   381             15   0   //"MU Allies General" Lv2
-   382             15   0   //"Illusion Sorcerer Elder" Lv2
-   383             15   0   //"Alliance Sacred Item Storage" Lv2
-   384             15   0   //"Illusion Castle Sacred Item Sto" Lv2
-   385             15   0   //"Mirage" Lv2
-   404             15   0   //"MU Allies" Lv2
-   405             15   0   //"Illusion Sorcerer" Lv2
-   406             15   0   //"Apostle Devin" Lv2
-   407             15   0   //"Werewolf Quarel" Lv2
-   408             15   0   //"Gatekeeper" Lv2
-   414             15   0   //"Helper Ellen" Lv2
-   415             15   0   //"Silvia" Lv2
-   416             15   0   //"Rhea" Lv2
-   417             15   0   //"Marce" Lv2
-   450             15   0   //"Cherry Blossom Spirit" Lv2
-   451             15   0   //"Cherry Blossom Tree" Lv2
-   452             15   0   //"Seed Master" Lv2
-   453             15   0   //"Seed Researcher" Lv2
-   464             15   0   //"Re-Initialization Helper" Lv2
-   467             15   0   //"Snowman" Lv10
-   468             15   0   //"Dasher" Lv10
-   469             15   0   //"Kermit" Lv10
-   470             15   0   //"Dancer" Lv10
-   471             15   0   //"Cupid" Lv10
-   472             15   0   //"Prancer" Lv10
-   473             15   0   //"Donner" Lv10
-   474             15   0   //"Vixen" Lv10
-   475             15   0   //"Blitzen" Lv10
-   477             15   0   //"Transformed Snowman" Lv10
-   478             15   0   //"Delgado" Lv2
-   479             15   0   //"Doorkeeper Titus" Lv10
-   492             15   0   //"Moss" Lv2
-   503             15   0   //"Transformed Panda" Lv10
-   540             15   0   //"Lugard" Lv2
-   541             15   0   //"Interim Reward Chest" Lv2
-   542             15   0   //"Final Reward Chest" Lv2
-   543             15   0   //"Gens Duprian Steward" Lv2
-   544             15   0   //"Gens Vanert Steward" Lv2
-   545             15   0   //"Christine the Merchant" Lv2
-   546             15   0   //"Jeweler Raul" Lv2
-   547             15   0   //"Market Union Member Julia" Lv2
-   548             15   0   //"Transformed Skeleton" Lv10
-   566             15   0   //"Mercenary Guild Manager Tercia" Lv2
-   567             15   0   //"Priestess Veina" Lv2
-   568             15   0   //"Wandering Merchant Zyro" Lv2
-   577             15   0   //"Leina the Merchant" Lv2
-   578             15   0   //"Weapons Merchant Bolo" Lv2
-   579             15   0   //"David" Lv2
-   150           7500   0   //"Bali" Lv52
-   151           6000   0   //"Soldier" Lv58
-   386          10725   0   //"Illusion Sorcerer Spirit" Lv65
-   387          10725   0   //"Illusion Sorcerer Spirit" Lv65
-   388          11055   0   //"Illusion Sorcerer Spirit" Lv67
-   389          28800   0   //"Illusion Sorcerer Spirit" Lv80
-   390          28800   0   //"Illusion Sorcerer Spirit" Lv80
-   391          29520   0   //"Illusion Sorcerer Spirit" Lv82
-   392          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   393          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   395          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   396          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   398          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   399          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   401          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   402          54000   0   //"Illusion Sorcerer Spirit" Lv112
-   394          55200   0   //"Illusion Sorcerer Spirit" Lv114
-   397          55200   0   //"Illusion Sorcerer Spirit" Lv114
-   400          55200   0   //"Illusion Sorcerer Spirit" Lv114
-   403          55200   0   //"Illusion Sorcerer Spirit" Lv114
-   480          30000   0   //"Zombie Fighter" Lv90
-   482          34500   0   //"Resurrected Gladiator" Lv93
-   484          40500   0   //"Ash Slaughterer" Lv100
-   486          55500   0   //"Blood Assassin" Lv107
-   487          60000   0   //"Cruel Blood Assassin" Lv109
-   489          75000   0   //"Burning Lava Giant" Lv111
-   490          82500   0   //"Ruthless Lava Giant" Lv113
-   481         750000   1   //"Zombie Fighter" Lv120
-   483         769500   1   //"Resurrected Gladiator" Lv121
-   485         780000   1   //"Ash Slaughterer" Lv122
-   488         784500   1   //"Cruel Blood Assassin" Lv123
-   491         795000   1   //"Ruthless Lava Giant" Lv124
-   504           1875   0   //"Gaion Kharein" Lv1
-   505           1395   0   //"Jerint" Lv1
-   506           1200   0   //"Raymond" Lv1
-   507           1200   0   //"Erkanne" Lv1
-   508           1170   0   //"Destler" Lv1
-   509           1170   0   //"Vermont" Lv1
-   510           1170   0   //"Kato" Lv1
-   511           1170   0   //"Galia" Lv1
-   512            975   0   //"Quartermaster" Lv1
-   513            975   0   //"Combat Instructor" Lv1
-   514            975   0   //"Knight Commander" Lv1
-   515            975   0   //"Grand Wizard" Lv1
-   516            975   0   //"Master Assassin" Lv1
-   517            975   0   //"Cavalry Captain" Lv1
-   518            870   0   //"Shield Bearer" Lv1
-   519            750   0   //"Medic" Lv1
-   520            825   0   //"Knights" Lv1
-   521            855   0   //"Bodyguard" Lv1
-   524            750   0   //"Castle Gate 1" Lv1
-   525            900   0   //"Castle Gate 2" Lv1
-   526            975   0   //"Stone Statue 1" Lv1
-   527            750   0   //"Castle Gate 3" Lv1
-   528            900   0   //"Castle Gate 4" Lv1
-   522             15   0   //"Jerint the Assistant" Lv2
-   523            150   0   //"Trap" Lv2
-   534           7500   0   //"Doppelganger Elf" Lv14
-   535           7500   0   //"Doppelganger Knight" Lv14
-   536           7500   0   //"Doppelganger Wizard" Lv14
-   537           7500   0   //"Doppelganger Magic Gladiator" Lv14
-   539           7500   0   //"Doppelganger Summoner" Lv14
-   533           9000   0   //"Doppelganger" Lv15
-   532          15000   0   //"Larva" Lv16
-   538          13500   0   //"Doppelganger Dark Lord" Lv17
-   530          34500   0   //"Slaughterer" Lv18
-   531          22500   0   //"Ice Walker" Lv19
-   529          42000   0   //"Furious Slaughterer" Lv20
-   600             15   0   //"NPC TESTING" Lv0
-   601             15   0   //"NPC TESTING" Lv0
-   602             15   0   //"Priest James" Lv0
-   603             15   0   //"NPC TESTING" Lv0
-   604             15   0   //"NPC TESTING" Lv0
-   609             15   0   //"NPC TESTING" Lv0
-   610             15   0   //"NPC TESTING" Lv0
-   611             15   0   //"NPC TESTING" Lv0
-   612             15   0   //"NPC TESTING" Lv0
-   613             15   0   //"NPC TESTING" Lv0
-   614             15   0   //"NPC TESTING" Lv0
-   252             75   0   //"" Lv2
-   284             75   0   //"" Lv2
-   900        1500000   2   //"Giant Crab" Lv149
-   901      300000000   3   //"Giant Crab" Lv149
-   902      300000000   3   //"Treasure Chest" Lv149
-   904      300000000   3   //"Golden Hell Main" Lv149
-   905      300000000   3   //"Golden Kundun Ilusion" Lv149
-   906      300000000   3   //"Golden Selupan" Lv149
-   907      300000000   3   //"Golden Medusa" Lv149
-   700      750000000   3   //"Boss Class DK" Lv175
-   701      750000000   3   //"Boss Class DW" Lv175
-   702      750000000   3   //"Boss Class ELF" Lv175
-   703      750000000   3   //"Boss Class MG" Lv175
-   704      750000000   3   //"Boss Class DL" Lv175
-   705      750000000   3   //"Boss Class SM" Lv175
-   706      750000000   3   //"Boss Class RF" Lv175
-   801      300000000   3   //"Sword Master" Lv175
-   802      300000000   3   //"Sacred Dragon" Lv175
-   803      300000000   3   //"Dark Knight" Lv175
-   804      300000000   3   //"Zhao Yun Dragon" Lv175
-   805      300000000   3   //"Forest God" Lv175
-   806      300000000   3   //"Werewolf" Lv175
-   807      300000000   3   //"War God" Lv175
-   808      300000000   3   //"Egyptian God" Lv175
-   809      300000000   3   //"Emperor" Lv175
-   810      300000000   3   //"Lord of Darkness" Lv175
-   811      300000000   3   //"Demon God" Lv175
+   362        3000000   2   //"Maya Hand" Lv135
+   363        2000000   2   //"Maya Hand" Lv135
+   364        5000000   2   //"Maya" Lv111
+   361       15000000   2   //"Nightmare" Lv135
+   295       50000000   3   //"Erohim" Lv128
+   275       40000000   2   //"Kundun" Lv147
+   561      100000000   3   //"Medusa" Lv175
+   459      250000000   3   //"Selupan" Lv145
+   460         400000   1   //"Spider Eggs" Lv10
+   461         400000   1   //"Spider Eggs" Lv10
+   462         400000   1   //"Spider Eggs" Lv10
+   412        1500000   2   //"Dark Elf (Trainee Soldier)" Lv128
+   340        1500000   2   //"Dark Elf" Lv135
+   440          75000   0   //"Dark Elf" Lv135
+    44         150000   1   //"Dragon" Lv300
+     7          30000   0   //"Giant" Lv50
+    32          30000   0   //"Stone Golem" Lv50
+   425          50000   0   //"Captain Grizzly" Lv100
+    18         150000   1   //"Gorgon" Lv180
+    25         100000   1   //"Ice Queen" Lv140
+    49         300000   1   //"Hydra" Lv240
+    38         200000   1   //"Balrog" Lv220
+    59         500000   1   //"Zaikan" Lv280
+   309        1000000   2   //"Hell Maine" Lv300
+    55        1000000   2   //"Death King" Lv300
+    77        1000000   2   //"Phoenix of Darkness" Lv300
+    63        1000000   2   //"Death Beam Knight" Lv300
+    76          73000   0   //"Phoenix Darkness shield" Lv106
+    67          26000   0   //"Metal Balrog" Lv77
+    42           5000   0   //"Red Dragon" Lv47
+    56            700   0   //"Death Bone" Lv24
+   365          25000   0   //"Pouch of Blessing" Lv100
+   413          25000   0   //"Gold Rabbit" Lv149
+   463          25000   0   //"Fire Flame Ghost" Lv149
+   465          26000   0   //"Santa Claus" Lv149
+   466          12000   0   //"Cursed Goblin" Lv70
+   476          26000   0   //"Cursed Santa" Lv149
+    66          83200   0   //"Cursed king" Lv143
+   135         200000   1   //"White wizard" Lv200
+   136          20000   0   //"Destructive ogre soldier" Lv140
+   137          15000   0   //"Destructive ogre archer" Lv140
+    43          15000   0   //"Golden Budge Dragon" Lv300
+    78          25000   0   //"Golden Goblin" Lv300
+   502          50000   0   //"Golden Rabbit" Lv300
+    54         120000   1   //"Golden Soldier" Lv300
+    53         250000   1   //"Golden Titan" Lv300
+   493         400000   1   //"Golden Dark Knight" Lv300
+    81         600000   1   //"Golden Vepar" Lv300
+   494         800000   1   //"Golden Devil" Lv300
+    83        1000000   2   //"Golden Wheel" Lv300
+    80        2000000   2   //"Golden Lizard King" Lv300
+   495        3500000   2   //"Golden Stone Golem" Lv300
+    82        5000000   2   //"Golden Tantalos" Lv300
+   496        6000000   2   //"Golden Crust" Lv300
+    79       10000000   2   //"Golden Derkon" Lv300
+   497       14000000   2   //"Golden Satyros" Lv300
+   498       20000000   2   //"Golden Twin Tail" Lv300
+   500       35000000   2   //"Golden Napin" Lv300
+   499       50000000   3   //"Golden Iron Knight" Lv300
+   501      200000000   3   //"Great Golden Dragon" Lv300
+     3             30   0   //"Spider" Lv2
+     2             60   0   //"Budge Dragon" Lv4
+     0            100   0   //"Bull Fighter" Lv6
+     1            140   0   //"Hound" Lv9
+     4            190   0   //"Elite Bull Fighter" Lv12
+     6            255   0   //"Lich" Lv14
+    26             45   0   //"Goblin" Lv3
+    27             80   0   //"Chain Scorpion" Lv5
+    33            120   0   //"Elite Goblin" Lv8
+    28            165   0   //"Beetle Monster" Lv10
+    29            220   0   //"Hunter" Lv13
+    30            295   0   //"Forest Monster" Lv15
+    31            340   0   //"Agon" Lv16
+   418             60   0   //"Strange Rabbit" Lv4
+   421            230   0   //"Polluted Butterfly" Lv12
+   419            520   0   //"Hideous Rabbit" Lv16
+   420            720   0   //"Werewolf" Lv20
+   422            900   0   //"Cursed Lich" Lv22
+   423           1200   0   //"Totem Golem" Lv26
+   424           1500   0   //"Grizzly" Lv30
+    14           2200   0   //"Skeleton" Lv30
+    12           2850   0   //"Larva" Lv33
+    17           3500   0   //"Cyclops" Lv36
+    11           4200   0   //"Ghost" Lv39
+    15           5000   0   //"Skeleton Archer" Lv42
+     5           5850   0   //"Hell Hound" Lv45
+    13           6800   0   //"Hell Spider" Lv48
+    16           7800   0   //"Chief Skeleton Warrior" Lv51
+     9           8900   0   //"Thunder Lich" Lv54
+     8          10050   0   //"Poison Bull Fighter" Lv57
+    10          11300   0   //"Dark Knight" Lv60
+    24           7450   0   //"Worm" Lv50
+    22           9250   0   //"Ice Monster" Lv55
+    23          11300   0   //"Hommerd" Lv60
+    21          13150   0   //"Assassin" Lv64
+    19          15600   0   //"Yeti" Lv69
+    20          18350   0   //"Elite Yeti" Lv74
+    45          16150   0   //"Bahamut" Lv70
+    46          18900   0   //"Vepar" Lv75
+    47          21900   0   //"Valkyrie" Lv80
+    51          24500   0   //"Great Bahamut" Lv84
+    52          28000   0   //"Silver Valkyrie" Lv89
+    48          31700   0   //"Lizard King" Lv94
+    36          28700   0   //"Shadow" Lv90
+    39          32500   0   //"Poison Shadow" Lv95
+    34          35700   0   //"Cursed Wizard" Lv99
+    41          40000   0   //"Death Cow" Lv104
+    37          44600   0   //"Devil" Lv109
+    40          48400   0   //"Death Knight" Lv113
+    35          53500   0   //"Death Gorgon" Lv118
+    69          55600   0   //"Alquamos" Lv120
+    71          62200   0   //"Mega Crust" Lv126
+    70          68000   0   //"Queen Rainier" Lv131
+    73          75400   0   //"Drakan" Lv137
+    74          91400   0   //"Alpha Crust" Lv149
+    72          98600   0   //"Phantom Knight" Lv154
+    75         107600   1   //"Great Drakan" Lv160
+   308          55600   0   //"Death Tree" Lv120
+   307          61100   0   //"Forest Orc" Lv125
+   306          66800   0   //"Death Rider" Lv130
+   305          72900   0   //"Blue Golem" Lv135
+   304          79200   0   //"Witch Queen" Lv140
+    62          66800   0   //"Mutant" Lv130
+    60          72900   0   //"Bloody wolf" Lv135
+    57          79200   0   //"Iron Wheel" Lv140
+    58          84500   0   //"Tantalos" Lv146
+    61          91400   0   //"Beam Knight" Lv154
+   351          92800   0   //"Splinter Wolf" Lv150
+   352          98600   0   //"Iron Rider" Lv154
+   353         106100   1   //"Satyros" Lv159
+   354         112300   1   //"Blade Hunter" Lv163
+   355         120400   1   //"Kentauros" Lv168
+   356         127100   1   //"Gigantis" Lv172
+   350         135700   1   //"Berserker" Lv177
+   357         142800   1   //"Genocider" Lv181
+   434         152100   1   //"Gigantis" Lv186
+   435         159700   1   //"Berserker" Lv190
+   359         159700   1   //"Twin Tale" Lv190
+   358         167500   1   //"Persona" Lv194
+   360         175500   1   //"Dreadfear" Lv198
+   438         181700   1   //"Persona" Lv201
+   439         190100   1   //"Dreadfear" Lv205
+   441         179600   1   //"Sapi-Unus" Lv200
+   442         188000   1   //"Sapi-Duo" Lv204
+   443         198700   1   //"Sapi-Tres" Lv209
+   444         209800   1   //"Shadow Pawn" Lv214
+   445         218900   1   //"Shadow Knight" Lv218
+   446         228200   1   //"Shadow Look" Lv222
+   447         240200   1   //"Thunder Napin" Lv227
+   448         252500   1   //"Ghost Napin" Lv232
+   449         262600   1   //"Blaze Napin" Lv236
+   454         247600   1   //"Ice Walker" Lv230
+   455         257600   1   //"Giant Mammoth" Lv234
+   456         270400   1   //"Ice Giant" Lv239
+   457         283500   1   //"Coolutin" Lv244
+   562         294300   1   //"Dark Mammoth" Lv248
+   458         305300   1   //"Iron Knight" Lv252
+   563         319400   1   //"Dark Giant" Lv257
+   564         333900   1   //"Dark Coolutin" Lv262
+   565         345700   1   //"Dark Iron Knight" Lv266
+   569         328000   1   //"Venomous Chain Scorpion" Lv260
+   570         345700   1   //"Bone Scorpion" Lv266
+   571         360800   1   //"Orcus" Lv271
+   572         379400   1   //"Gollock" Lv277
+   573         398500   1   //"Crypta" Lv283
+   574         418200   1   //"Crypos" Lv289
+   575         435000   1   //"Condra" Lv294
+   576         455600   1   //"Narcondra" Lv300
+   549         179600   1   //"Bloody Orc" Lv200
+   550         198700   1   //"Bloody Death Rider" Lv209
+   551         218900   1   //"Bloody Golem" Lv218
+   552         240200   1   //"Bloody Witch Queen" Lv227
+   553         262600   1   //"Berserker Warrior" Lv236
+   554         286200   1   //"Kentauros Warrior" Lv245
+   555         313700   1   //"Gigantis Warrior" Lv255
+   556         339700   1   //"Genocider Warrior" Lv264
+   557         366900   1   //"Sapi Queen" Lv273
+   558         395300   1   //"Ice Napin" Lv282
+   560         424900   1   //"Sapi Queen" Lv291
+   559         455600   1   //"Shadow Master" Lv300
+   294          92800   0   //"Ax Warrior" Lv150
+   290         125400   1   //"Lizard Warrior" Lv171
+   300         163600   1   //"Hero Mutant" Lv192
+   293         209800   1   //"Poison Golem" Lv214
+   302         260100   1   //"Axl Hero" Lv235
+   292         316600   1   //"Queen Bee" Lv256
+   303         382500   1   //"Gigas Golem" Lv278
+   291         452100   1   //"Fire Golem" Lv299
+   301         528400   1   //"Omega Wing" Lv320
+   310          92800   0   //"Hammer Scout" Lv150
+   311         101500   1   //"Lance Scout" Lv156
+   312         110700   1   //"Bow Scout" Lv162
+   409         120400   1   //"Balram (Trainee Soldier)" Lv168
+   436         130500   1   //"Balram (Trainee Soldier)" Lv174
+   313         139200   1   //"Werewolf" Lv179
+   410         150200   1   //"Death Spirit (Trainee Soldier)" Lv185
+   411         161600   1   //"Soram (Trainee Soldier)" Lv191
+   437         173500   1   //"Soram (Trainee Soldier)" Lv197
+   314         185900   1   //"Scout(Hero)" Lv203
+   315         198700   1   //"Werewolf(Hero)" Lv209
+   316         212100   1   //"Balram" Lv215
+   348         225900   1   //"Tanker" Lv221
+   317         237800   1   //"Soram" Lv226
+   341         252500   1   //"Soram" Lv232
+   344         267800   1   //"Balram" Lv238
+   345         283500   1   //"Death spirit" Lv244
+   349         299800   1   //"Balgass" Lv250
+    84           7500   0   //"Chief Skeleton Warrior" Lv64
+    85           9500   0   //"Chief Skeleton Archer" Lv69
+    86          12000   0   //"Dark Skull Soldier" Lv75
+    87          15000   0   //"Giant Ogre" Lv79
+    88          18000   0   //"Red Skeleton Knight" Lv82
+    89          24000   0   //"Magic Skeleton" Lv84
+    90          12000   0   //"Chief Skeleton Warrior" Lv70
+    91          15000   0   //"Chief Skeleton Archer" Lv75
+    92          19000   0   //"Dark Skull Soldier" Lv80
+    93          23000   0   //"Giant Ogre" Lv85
+    94          26000   0   //"Red Skeleton Knight" Lv87
+    95          32000   0   //"Magic Skeleton" Lv90
+    96          17000   0   //"Chief Skeleton Warrior" Lv76
+    97          20000   0   //"Chief Skeleton Archer" Lv81
+    98          25000   0   //"Dark Skull Soldier" Lv86
+    99          32000   0   //"Giant Ogre" Lv90
+   111          38000   0   //"Red Skeleton Knight" Lv94
+   112          47000   0   //"Magic Skeleton" Lv99
+   113          23000   0   //"Chief Skeleton Warrior" Lv85
+   114          26000   0   //"Chief Skeleton Archer" Lv87
+   115          32000   0   //"Dark Skull Soldier" Lv90
+   116          37000   0   //"Giant Ogre" Lv93
+   117          45000   0   //"Red Skeleton Knight" Lv98
+   118          55000   0   //"Magic Skeleton" Lv102
+   119          29000   0   //"Chief Skeleton Warrior" Lv105
+   120          32000   0   //"Chief Skeleton Archer" Lv106
+   121          37000   0   //"Dark Skull Soldier" Lv110
+   122          45000   0   //"Giant Ogre" Lv112
+   123          55000   0   //"Red Skeleton Knight" Lv119
+   124          65000   0   //"Magic Skeleton" Lv125
+   125          29000   0   //"Chief Skeleton Warrior" Lv105
+   126          32000   0   //"Chief Skeleton Archer" Lv106
+   127          37000   0   //"Dark Skull Soldier" Lv110
+   128          45000   0   //"Giant Ogre" Lv112
+   129          55000   0   //"Red Skeleton Knight" Lv119
+   130          65000   0   //"Magic Skeleton" Lv125
+   138          29000   0   //"Chief Skeleton Warrior" Lv105
+   139          32000   0   //"Chief Skeleton Archer" Lv106
+   140          37000   0   //"Dark Skull Soldier" Lv110
+   141          45000   0   //"Giant Ogre" Lv112
+   142          55000   0   //"Red Skeleton Knight" Lv119
+   143          65000   0   //"Magic Skeleton" Lv125
+   428          29000   0   //"Chief Skeleton Warrior" Lv105
+   429          32000   0   //"Chief Skeleton Archer" Lv106
+   430          37000   0   //"Dark Skull Soldier" Lv110
+   431          45000   0   //"Giant Ogre" Lv112
+   432          55000   0   //"Red Skeleton Knight" Lv119
+   433          65000   0   //"Magic Skeleton" Lv125
+   131           2000   0   //"Castle Gate" Lv2
+   132           3000   0   //"Statue of Saint" Lv2
+   133           3000   0   //"Statue of Saint" Lv2
+   134           3000   0   //"Statue of Saint" Lv2
+   104             50   0   //"Trap" Lv2
+   100           1000   0   //"Lance" Lv80
+   101           1000   0   //"Iron Stick" Lv80
+   102           1000   0   //"Fire" Lv80
+   105           1000   0   //"Canon Trap" Lv80
+   106           1000   0   //"Laser Trap" Lv80
+   103           1000   0   //"Meteorite" Lv90
+   162           4000   0   //"Chaos Castle 1" Lv54
+   163           5000   0   //"Chaos Castle 2" Lv60
+   164           6500   0   //"Chaos Castle 3" Lv65
+   165           8000   0   //"Chaos Castle 4" Lv68
+   166          10000   0   //"Chaos Castle 5" Lv70
+   167          12500   0   //"Chaos Castle 6" Lv75
+   168          15000   0   //"Chaos Castle 7" Lv76
+   169          18000   0   //"Chaos Castle 8" Lv80
+   170          20000   0   //"Chaos Castle 9" Lv111
+   172          20000   0   //"Chaos Castle 11" Lv111
+   426          20000   0   //"Chaos Castle 13" Lv111
+   171          23000   0   //"Chaos Castle 10" Lv114
+   173          23000   0   //"Chaos Castle 12" Lv114
+   427          23000   0   //"Chaos Castle 14" Lv114
+    64          10000   0   //"Ogre archer" Lv70
+    65          14000   0   //"Elite Ogre" Lv74
+   147           1800   0   //"Aegis" Lv27
+   148           2290   0   //"Rogue Centurion" Lv30
+   146           3060   0   //"Blood Soldier" Lv34
+   144           3950   0   //"Death Angel" Lv38
+   149           5820   0   //"Necron" Lv45
+   145           8480   0   //"Death Centurion" Lv53
+   160          13090   0   //"Schriker" Lv64
+   161         200000   1   //"Illusion of Kundun" Lv83
+   177          11720   0   //"Aegis" Lv61
+   178          13090   0   //"Rogue Centurion" Lv64
+   176          16080   0   //"Blood Soldier" Lv70
+   174          19420   0   //"Death Angel" Lv76
+   179          23780   0   //"Necron" Lv83
+   175          29380   0   //"Death Centurion" Lv91
+   180          36500   0   //"Schriker" Lv100
+   181         500000   1   //"Illusion of Kundun" Lv123
+   185          27920   0   //"Aegis" Lv89
+   186          30890   0   //"Rogue Centurion" Lv93
+   184          34030   0   //"Blood Soldier" Lv97
+   182          39060   0   //"Death Angel" Lv103
+   187          47350   0   //"Necron" Lv112
+   183          57640   0   //"Death Centurion" Lv122
+   188          71510   0   //"Schriker" Lv134
+   189        1000000   2   //"Illusion of Kundun" Lv157
+   193          63210   0   //"Aegis" Lv127
+   194          72740   0   //"Rogue Centurion" Lv135
+   192          83030   0   //"Blood Soldier" Lv143
+   190          95530   0   //"Death Angel" Lv152
+   195         107480   1   //"Necron" Lv160
+   191         123550   1   //"Death Centurion" Lv170
+   196         140890   1   //"Schriker" Lv180
+   197        2500000   2   //"Illusion of Kundun" Lv205
+   263         132060   1   //"Aegis" Lv175
+   264         142700   1   //"Rogue Centurion" Lv181
+   262         155700   1   //"Blood Soldier" Lv188
+   260         169350   1   //"Death Angel" Lv195
+   265         192110   1   //"Necron" Lv206
+   261         216510   1   //"Death Centurion" Lv217
+   266         252460   1   //"Schriker" Lv232
+   267        5000000   2   //"Illusion of Kundun" Lv259
+   271         237700   1   //"Aegis" Lv226
+   272         257490   1   //"Rogue Centurion" Lv234
+   270         275530   1   //"Blood Soldier" Lv241
+   268         299750   1   //"Death Angel" Lv250
+   273         328030   1   //"Necron" Lv260
+   269         363870   1   //"Death Centurion" Lv272
+   274         401820   1   //"Schriker" Lv284
+   338       12000000   2   //"Illusion of Kundun" Lv305
+   331         333860   1   //"Aegis" Lv262
+   332         354710   1   //"Rogue Centurion" Lv269
+   333         376280   1   //"Blood Soldier" Lv276
+   334         405080   1   //"Death Angel" Lv285
+   335         438490   1   //"Necron" Lv295
+   336         476980   1   //"Death Centurion" Lv306
+   337         521070   1   //"Schriker" Lv318
+   152             50   0   //"Magic stone of %s " Lv10
+   153             50   0   //"Magic stone of %s " Lv10
+   154             50   0   //"Magic stone of %s " Lv10
+   155             50   0   //"Magic stone of %s " Lv10
+   156             50   0   //"Magic stone of %s " Lv10
+   157             50   0   //"Magic stone of %s " Lv10
+   158             50   0   //"Magic stone of %s " Lv10
+   200           1000   0   //"Soccer Ball" Lv12
+   204             50   0   //"Wolf Status" Lv2
+   205             50   0   //"Wolf Altar1" Lv2
+   206             50   0   //"Wolf Altar2" Lv2
+   207             50   0   //"Wolf Altar3" Lv2
+   208             50   0   //"Wolf Altar4" Lv2
+   209             50   0   //"Wolf Altar5" Lv2
+   215             50   0   //"Shield" Lv2
+   216             50   0   //"Crown" Lv2
+   217             50   0   //"Crown Switch2" Lv2
+   218             50   0   //"Crown Switch1" Lv2
+   219             50   0   //"Castle Gate Switch" Lv2
+   220             50   0   //"Gatekeeper" Lv2
+   221             50   0   //"Slingshot attack" Lv2
+   222             50   0   //"Slingshot defense" Lv2
+   223             50   0   //"Senior" Lv2
+   224             50   0   //"Guardsman" Lv2
+   226             50   0   //"Trainer" Lv2
+   229             50   0   //"Marlon" Lv2
+   230             50   0   //"Wandering Merchant Alex" Lv2
+   231             50   0   //"Thompson Kenel" Lv2
+   232             50   0   //"Archangel" Lv2
+   233             50   0   //"Messenger of Archangel" Lv2
+   234             50   0   //"Pet Trainer" Lv2
+   235             50   0   //"Sebina the Priest" Lv2
+   236             50   0   //"Golden Archer" Lv2
+   237             50   0   //"Charon" Lv2
+   238             50   0   //"Chaos Goblin" Lv2
+   239             50   0   //"Arena Guard" Lv2
+   240             50   0   //"Safety Guardian" Lv2
+   241             50   0   //"Royal Guard Captain Lorence" Lv2
+   242             50   0   //"Elf Lala" Lv2
+   243             50   0   //"Eo the Craftsman" Lv2
+   244             50   0   //"Caren the Barmaid" Lv2
+   245             50   0   //"Wizard Izabel" Lv2
+   246           1000   0   //"Weapons Merchant Zienna" Lv20
+   247          10000   0   //"Guard" Lv90
+   248           1000   0   //"Wandering Merchant Martin" Lv20
+   249          10000   0   //"Guard" Lv90
+   250           1000   0   //"Wandering Merchant" Lv20
+   251           1000   0   //"Hanzo the Blacksmith" Lv20
+   253             50   0   //"Potion Girl Amy" Lv2
+   254             50   0   //"Pasi the Mage" Lv2
+   255             50   0   //"Lumen the Barmaid" Lv2
+   256             50   0   //"Lahap" Lv2
+   257             50   0   //"Shadow Phantom Soldier" Lv2
+   258          10000   0   //"Quests Master" Lv90
+   259             50   0   //"Oracle Layla" Lv2
+   277             50   0   //"Castle Gate" Lv2
+   278         250000   1   //"Life Stone" Lv2
+   283             50   0   //"Guardian Statue" Lv2
+   285          30000   0   //"Guardian" Lv2
+   286          23000   0   //"Archer" Lv100
+   287          26000   0   //"Spearman" Lv100
+   288             50   0   //"Canon Tower" Lv200
+   367           1000   0   //"Gateway Machine" Lv20
+   368           1000   0   //"Elpis" Lv20
+   369           1000   0   //"Osbourne" Lv20
+   370           1000   0   //"Jerridon" Lv20
+   371          10000   0   //"Leo the Helper" Lv90
+   372             10   0   //"Elite Skull Soldier" Lv10
+   373             10   0   //"Jack Olantern" Lv10
+   374             10   0   //"Santa" Lv10
+   375             10   0   //"Chaos Card Master" Lv10
+   376           1000   0   //"Pamela the Supplier" Lv20
+   377           1000   0   //"Angela the Supplier" Lv20
+   378             10   0   //"GameMaster" Lv2
+   379             10   0   //"Natasha Firecracker Merchant" Lv2
+   380             10   0   //"Stone Statue" Lv2
+   381             10   0   //"MU Allies General" Lv2
+   382             10   0   //"Illusion Sorcerer Elder" Lv2
+   383             10   0   //"Alliance Sacred Item Storage" Lv2
+   384             10   0   //"Illusion Castle Sacred Item Sto" Lv2
+   385             10   0   //"Mirage" Lv2
+   404             10   0   //"MU Allies" Lv2
+   405             10   0   //"Illusion Sorcerer" Lv2
+   406             10   0   //"Apostle Devin" Lv2
+   407             10   0   //"Werewolf Quarel" Lv2
+   408             10   0   //"Gatekeeper" Lv2
+   414             10   0   //"Helper Ellen" Lv2
+   415             10   0   //"Silvia" Lv2
+   416             10   0   //"Rhea" Lv2
+   417             10   0   //"Marce" Lv2
+   450             10   0   //"Cherry Blossom Spirit" Lv2
+   451             10   0   //"Cherry Blossom Tree" Lv2
+   452             10   0   //"Seed Master" Lv2
+   453             10   0   //"Seed Researcher" Lv2
+   464             10   0   //"Re-Initialization Helper" Lv2
+   467             10   0   //"Snowman" Lv10
+   468             10   0   //"Dasher" Lv10
+   469             10   0   //"Kermit" Lv10
+   470             10   0   //"Dancer" Lv10
+   471             10   0   //"Cupid" Lv10
+   472             10   0   //"Prancer" Lv10
+   473             10   0   //"Donner" Lv10
+   474             10   0   //"Vixen" Lv10
+   475             10   0   //"Blitzen" Lv10
+   477             10   0   //"Transformed Snowman" Lv10
+   478             10   0   //"Delgado" Lv2
+   479             10   0   //"Doorkeeper Titus" Lv10
+   492             10   0   //"Moss" Lv2
+   503             10   0   //"Transformed Panda" Lv10
+   540             10   0   //"Lugard" Lv2
+   541             10   0   //"Interim Reward Chest" Lv2
+   542             10   0   //"Final Reward Chest" Lv2
+   543             10   0   //"Gens Duprian Steward" Lv2
+   544             10   0   //"Gens Vanert Steward" Lv2
+   545             10   0   //"Christine the Merchant" Lv2
+   546             10   0   //"Jeweler Raul" Lv2
+   547             10   0   //"Market Union Member Julia" Lv2
+   548             10   0   //"Transformed Skeleton" Lv10
+   566             10   0   //"Mercenary Guild Manager Tercia" Lv2
+   567             10   0   //"Priestess Veina" Lv2
+   568             10   0   //"Wandering Merchant Zyro" Lv2
+   577             10   0   //"Leina the Merchant" Lv2
+   578             10   0   //"Weapons Merchant Bolo" Lv2
+   579             10   0   //"David" Lv2
+   150           5000   0   //"Bali" Lv52
+   151           4000   0   //"Soldier" Lv58
+   386           7150   0   //"Illusion Sorcerer Spirit" Lv65
+   387           7150   0   //"Illusion Sorcerer Spirit" Lv65
+   388           7370   0   //"Illusion Sorcerer Spirit" Lv67
+   389          19200   0   //"Illusion Sorcerer Spirit" Lv80
+   390          19200   0   //"Illusion Sorcerer Spirit" Lv80
+   391          19680   0   //"Illusion Sorcerer Spirit" Lv82
+   392          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   393          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   395          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   396          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   398          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   399          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   401          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   402          36000   0   //"Illusion Sorcerer Spirit" Lv112
+   394          36800   0   //"Illusion Sorcerer Spirit" Lv114
+   397          36800   0   //"Illusion Sorcerer Spirit" Lv114
+   400          36800   0   //"Illusion Sorcerer Spirit" Lv114
+   403          36800   0   //"Illusion Sorcerer Spirit" Lv114
+   480          20000   0   //"Zombie Fighter" Lv90
+   482          23000   0   //"Resurrected Gladiator" Lv93
+   484          27000   0   //"Ash Slaughterer" Lv100
+   486          37000   0   //"Blood Assassin" Lv107
+   487          40000   0   //"Cruel Blood Assassin" Lv109
+   489          50000   0   //"Burning Lava Giant" Lv111
+   490          55000   0   //"Ruthless Lava Giant" Lv113
+   481         500000   1   //"Zombie Fighter" Lv120
+   483         513000   1   //"Resurrected Gladiator" Lv121
+   485         520000   1   //"Ash Slaughterer" Lv122
+   488         523000   1   //"Cruel Blood Assassin" Lv123
+   491         530000   1   //"Ruthless Lava Giant" Lv124
+   504           1250   0   //"Gaion Kharein" Lv1
+   505            930   0   //"Jerint" Lv1
+   506            800   0   //"Raymond" Lv1
+   507            800   0   //"Erkanne" Lv1
+   508            780   0   //"Destler" Lv1
+   509            780   0   //"Vermont" Lv1
+   510            780   0   //"Kato" Lv1
+   511            780   0   //"Galia" Lv1
+   512            650   0   //"Quartermaster" Lv1
+   513            650   0   //"Combat Instructor" Lv1
+   514            650   0   //"Knight Commander" Lv1
+   515            650   0   //"Grand Wizard" Lv1
+   516            650   0   //"Master Assassin" Lv1
+   517            650   0   //"Cavalry Captain" Lv1
+   518            580   0   //"Shield Bearer" Lv1
+   519            500   0   //"Medic" Lv1
+   520            550   0   //"Knights" Lv1
+   521            570   0   //"Bodyguard" Lv1
+   524            500   0   //"Castle Gate 1" Lv1
+   525            600   0   //"Castle Gate 2" Lv1
+   526            650   0   //"Stone Statue 1" Lv1
+   527            500   0   //"Castle Gate 3" Lv1
+   528            600   0   //"Castle Gate 4" Lv1
+   522             10   0   //"Jerint the Assistant" Lv2
+   523            100   0   //"Trap" Lv2
+   534           5000   0   //"Doppelganger Elf" Lv14
+   535           5000   0   //"Doppelganger Knight" Lv14
+   536           5000   0   //"Doppelganger Wizard" Lv14
+   537           5000   0   //"Doppelganger Magic Gladiator" Lv14
+   539           5000   0   //"Doppelganger Summoner" Lv14
+   533           6000   0   //"Doppelganger" Lv15
+   532          10000   0   //"Larva" Lv16
+   538           9000   0   //"Doppelganger Dark Lord" Lv17
+   530          23000   0   //"Slaughterer" Lv18
+   531          15000   0   //"Ice Walker" Lv19
+   529          28000   0   //"Furious Slaughterer" Lv20
+   600             10   0   //"NPC TESTING" Lv0
+   601             10   0   //"NPC TESTING" Lv0
+   602             10   0   //"Priest James" Lv0
+   603             10   0   //"NPC TESTING" Lv0
+   604             10   0   //"NPC TESTING" Lv0
+   609             10   0   //"NPC TESTING" Lv0
+   610             10   0   //"NPC TESTING" Lv0
+   611             10   0   //"NPC TESTING" Lv0
+   612             10   0   //"NPC TESTING" Lv0
+   613             10   0   //"NPC TESTING" Lv0
+   614             10   0   //"NPC TESTING" Lv0
+   252             50   0   //"" Lv2
+   284             50   0   //"" Lv2
+   900        1000000   2   //"Giant Crab" Lv149
+   901      200000000   3   //"Giant Crab" Lv149
+   902      200000000   3   //"Treasure Chest" Lv149
+   904      200000000   3   //"Golden Hell Main" Lv149
+   905      200000000   3   //"Golden Kundun Ilusion" Lv149
+   906      200000000   3   //"Golden Selupan" Lv149
+   907      200000000   3   //"Golden Medusa" Lv149
+   700      500000000   3   //"Boss Class DK" Lv175
+   701      500000000   3   //"Boss Class DW" Lv175
+   702      500000000   3   //"Boss Class ELF" Lv175
+   703      500000000   3   //"Boss Class MG" Lv175
+   704      500000000   3   //"Boss Class DL" Lv175
+   705      500000000   3   //"Boss Class SM" Lv175
+   706      500000000   3   //"Boss Class RF" Lv175
+   801      200000000   3   //"Sword Master" Lv175
+   802      200000000   3   //"Sacred Dragon" Lv175
+   803      200000000   3   //"Dark Knight" Lv175
+   804      200000000   3   //"Zhao Yun Dragon" Lv175
+   805      200000000   3   //"Forest God" Lv175
+   806      200000000   3   //"Werewolf" Lv175
+   807      200000000   3   //"War God" Lv175
+   808      200000000   3   //"Egyptian God" Lv175
+   809      200000000   3   //"Emperor" Lv175
+   810      200000000   3   //"Lord of Darkness" Lv175
+   811      200000000   3   //"Demon God" Lv175
 end
 
 2
