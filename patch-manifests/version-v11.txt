@@ -1,0 +1,18 @@
+# RexMU Launcher — manifest de auto-update (generado por make-patch.mjs)
+# Formato: key=value. Lineas # o vacias se ignoran.
+#   full=<url>|<crc32-hex>|<size>   (FullPatch acumulativo -> latest)
+#   patch.N=<url>|<crc32-hex>|<size> (incremental N-1 -> N)
+
+latest=11
+full=https://dl.rexmu.online/patches/FullPatch.zip|847ff8ed|39714721
+patch.1=https://dl.rexmu.online/patches/Patch1.zip|602c1112|3537366
+patch.2=https://dl.rexmu.online/patches/Patch2.zip|85b60cd7|3692278
+patch.3=https://dl.rexmu.online/patches/Patch3.zip|03f46e15|4274094
+patch.4=https://dl.rexmu.online/patches/Patch4.zip|e7b1b3f7|4200028
+patch.5=https://dl.rexmu.online/patches/Patch5.zip|5b93065b|3697768
+patch.6=https://dl.rexmu.online/patches/Patch6.zip|4ed9c806|4697927
+patch.7=https://dl.rexmu.online/patches/Patch7.zip|4940091d|3894665
+patch.8=https://dl.rexmu.online/patches/Patch8.zip|9f3b176b|39427020
+patch.9=https://dl.rexmu.online/patches/Patch9.zip|c7acb00f|3792611
+patch.10=https://dl.rexmu.online/patches/Patch10.zip|574acbf0|3868928
+patch.11=https://dl.rexmu.online/patches/Patch11.zip|b36c4241|4136393
