@@ -4,7 +4,7 @@
 #   patch.N=<url>|<crc32-hex>|<size> (incremental N-1 -> N)
 
 latest=11
-full=https://dl.rexmu.online/patches/FullPatch.zip|847ff8ed|39714721
+full=https://dl.rexmu.online/patches/FullPatch.zip|999f1667|39713928
 patch.1=https://dl.rexmu.online/patches/Patch1.zip|602c1112|3537366
 patch.2=https://dl.rexmu.online/patches/Patch2.zip|85b60cd7|3692278
 patch.3=https://dl.rexmu.online/patches/Patch3.zip|03f46e15|4274094
@@ -15,4 +15,4 @@ patch.7=https://dl.rexmu.online/patches/Patch7.zip|4940091d|3894665
 patch.8=https://dl.rexmu.online/patches/Patch8.zip|9f3b176b|39427020
 patch.9=https://dl.rexmu.online/patches/Patch9.zip|c7acb00f|3792611
 patch.10=https://dl.rexmu.online/patches/Patch10.zip|574acbf0|3868928
-patch.11=https://dl.rexmu.online/patches/Patch11.zip|b36c4241|4136393
+patch.11=https://dl.rexmu.online/patches/Patch11.zip|4830fd49|4150201

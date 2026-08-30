@@ -48230,8 +48230,8 @@
       "size": 200137
     },
     "Data/Minimaps/tabmap_markers.txt": {
-      "sha256": "0053ee525be7bf7987213ea8ac4dda4839787986950374f60c8caf4cb0990b55",
-      "size": 107622
+      "sha256": "d6c327d67061e5ee2b40bd0f8adb7eff1cf7a73223cb673290e471b51b416d84",
+      "size": 108104
     },
     "Data/Monster/AssassinLeader_alpha.OZT": {
       "sha256": "4032ecd1b4c4c4aed2c2cf95b786f8d0dabd243c3439750574371b4c8d46eca9",
@@ -112086,8 +112086,8 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "7f98c6a4cc0daed1889dab2c745d4cc87ca35cf8d51d831fe6be2378e0dd47dd",
-      "size": 13618176
+      "sha256": "25c627febfb692ff756829e971aa53597dcf3e966844f175c8c969b9b1ae719d",
+      "size": 13617664
     },
     "QeffectsGL.ini": {
       "sha256": "ee3f998d0b39052eda94f237086f040d25a3eb1910d3a658322938e74d9175de",
