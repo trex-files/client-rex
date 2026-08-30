@@ -42,10 +42,23 @@ Verificado antes de dar por buenos los zips:
 
 ## Publicacion — EL ORDEN IMPORTA
 
+El `version.txt` **ya esta comiteado** en `Source/5.Webapp/web` (`20403ad`), **SIN PUSHEAR**.
+Ese repo despliega solo por Vercel al pushear a `main`, asi que el push ES la publicacion.
+
 1. **Zips a R2 PRIMERO** (`Patch11.zip` y `FullPatch.zip`).
 2. **Purgar Cloudflare**: `FullPatch.zip` conserva el nombre entre versiones y queda cacheado.
-3. **`version.txt` AL FINAL**, en la webapp. Si sale antes que los zips, el que
-   actualice se come un 404.
+3. **Recien ahi `git push` en `Source/5.Webapp/web`** (y el bump del superrepo).
+
+Estado comprobado el 30/08 23:5x contra `dl.rexmu.online`:
+- `Patch11.zip` -> **404**, no subido.
+- `FullPatch.zip` -> 200 pero pesa **39.702.490** = el **viejo de la v10**. El nuevo son
+  39.714.721. Pushear antes de reemplazarlo hace que el launcher **rechace la descarga por
+  CRC** (el manifiesto diria `847ff8ed` y bajaria `fb0e55d0`).
+
+Para re-chequear antes de pushear:
+
+    curl -sI https://dl.rexmu.online/patches/Patch11.zip   | head -1   # tiene que dar 200
+    curl -sI https://dl.rexmu.online/patches/FullPatch.zip | grep -i content-length   # 39714721
 
 ## Lado servidor — se puede desplegar por separado
 
