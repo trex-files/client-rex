@@ -8,9 +8,9 @@
 //          el HP real en juego, no el del fichero del servidor.
 //
 // Tier = que barra del atlas boss_health_bar se dibuja:
-//   0 = L1 normal      HP >=          0   (366 monstruos)
+//   0 = L1 normal      HP >=          0   (365 monstruos)
 //   1 = L2 elite       HP >=     100000   (146 monstruos)
-//   2 = L3 boss        HP >=    1000000   (24 monstruos)
+//   2 = L3 boss        HP >=    1000000   (25 monstruos)
 //   3 = L4 world boss  HP >=   50000000   (31 monstruos)
 //
 // El cliente solo usa esto para PINTAR. La vida real la sigue mandando el
@@ -35,7 +35,7 @@
    340        2250000   2   //"Dark Elf" Lv135
    440         112500   1   //"Dark Elf" Lv135
     44         225000   1   //"Dragon" Lv300
-     7          45000   0   //"Giant" Lv50
+     7        7500000   2   //"Giant" Lv50
     32          45000   0   //"Stone Golem" Lv50
    425          75000   0   //"Captain Grizzly" Lv100
     18         225000   1   //"Gorgon" Lv180
