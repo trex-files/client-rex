@@ -80,6 +80,7 @@ volcar esta carpeta en un servidor de pruebas.
 - **26 de 565 monstruos cambian de barra de vida** por el cambio de rate (los umbrales
   100k/1M/50M se evaluan sobre la vida ya multiplicada). Cosmetico. Si se quieren
   conservar, hay que bajar los umbrales en la misma proporcion.
-- **Giant (clase 7) quedo en 30.000 de vida**, nivel 50. Como guardian de Lorencia es
-  muy debil — decidir si vuelve a subir.
+- ~~**Giant (clase 7) quedo en 30.000 de vida**, nivel 50.~~ **CERRADO 30/08**: el dueño
+  pidio igualarlo a Stone Golem. Ya lo estaba — clase 7 y clase 32 son ambas Lv 50 con
+  30.000 de vida. Sin cambio, sin regenerar la tabla del cliente, sin rehacer los zips.
 - **Sapi Queen (560)** sigue sin modelo identificado.
