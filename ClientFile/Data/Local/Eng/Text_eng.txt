@@ -4466,3 +4466,5 @@
 7017	"Shop is open"
 7018	"Close your personal shop first: while it is open, its items cannot be moved."
 7019	"Beta"
+7020	"No servers of %s are online."
+7021	"Opening in %s"

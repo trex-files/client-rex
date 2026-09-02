@@ -3631,3 +3631,5 @@ end
 7017 "Cửa hàng đang mở"
 7018 "Hãy đóng cửa hàng cá nhân trước: khi còn mở, không thể di chuyển vật phẩm trong đó."
 7019 "Beta"
+7020 "Không có máy chủ nào của %s đang trực tuyến."
+7021 "Mở cửa sau %s"

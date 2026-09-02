@@ -4466,3 +4466,5 @@
 7017	"A loja esta aberta"
 7018	"Feche primeiro sua loja pessoal: enquanto estiver aberta, os itens dela nao podem ser movidos."
 7019	"Beta"
+7020	"Nenhum servidor de %s esta online."
+7021	"Abertura em %s"
