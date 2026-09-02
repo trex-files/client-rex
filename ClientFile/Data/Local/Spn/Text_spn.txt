@@ -4350,7 +4350,6 @@
 5765	"¿Desea viajar a %s?"
 5766	"Grand Reset"
 5767	"Tu personaje vuelve a nivel 1 con 0 resets. Los puntos repartidos se pierden."
-5768	"Llegaste al limite de resets. El Grand Reset reinicia tu personaje por completo."
 5800	"MOVIMIENTO AUTOMATICO"
 5801	"Caminando hacia la coordenada %d, %d"
 5802	"Presione ESCAPE o ESPACIO para cancelar"

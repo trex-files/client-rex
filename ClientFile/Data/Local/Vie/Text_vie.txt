@@ -3600,7 +3600,6 @@ end
 5765	"Bạn có muốn đến %s không?"
 5766	"Grand Reset"
 5767	"Nhan vat cua ban tro ve cap 1 voi 0 reset. Diem da cong se mat."
-5768	"Da dat gioi han reset. Grand Reset khoi dong lai nhan vat hoan toan."
 5891	"Giới hạn thể lực & mana"
 5757	"Mã PIN bảo mật:  %d"
 5892	"Số điểm này sẽ được cộng vào#chỉ số của bạn sau khi reset"

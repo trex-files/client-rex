@@ -4435,7 +4435,6 @@
 5765	"Deseja viajar para %s?"
 5766	"Grand Reset"
 5767	"Seu personagem volta ao nivel 1 com 0 resets. Os pontos distribuidos sao perdidos."
-5768	"Voce atingiu o limite de resets. O Grand Reset reinicia seu personagem completamente."
 5890	"- Pontos que você obterá:"
 5891	"HP e MP Status"
 5892	"Estes pontos serão aplicados#aos seus stats após o reset"
