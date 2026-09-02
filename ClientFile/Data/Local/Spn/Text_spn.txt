@@ -4468,3 +4468,8 @@
 7019	"Beta"
 7020	"No hay servidores de %s en linea."
 7021	"Apertura en %s"
+7022	"EXP %ux - %s"
+7023	"BATTLE"
+7024	"OFFICIAL"
+7025	"Estas en el servidor %s"
+7026	"No tenes permiso para ingresar a este servidor."

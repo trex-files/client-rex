@@ -3633,3 +3633,8 @@ end
 7019 "Beta"
 7020 "Không có máy chủ nào của %s đang trực tuyến."
 7021 "Mở cửa sau %s"
+7022 "EXP %ux - %s"
+7023 "BATTLE"
+7024 "OFFICIAL"
+7025 "Bạn đang ở máy chủ %s"
+7026 "Bạn không có quyền vào máy chủ này."
