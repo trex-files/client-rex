@@ -1,9 +1,12 @@
-# Patch 12 — REGENERADO desde cero (2026-09-03), FALTA PUBLICAR
+# Patch 12 — REGENERADO 2 VECES (2026-09-03), FALTA PUBLICAR
 
-El Patch12 anterior (armado 2026-09-02 17:37 UTC) nunca se publicó, así que se
-descartó y se regeneró completo contra el mismo baseline (v0) y espejo (v11 —
-última versión realmente publicada), incluyendo TODO lo que se acumuló en
-`client-rex` desde entonces.
+El Patch12 del intento 2026-09-02 17:37 UTC nunca se publicó, se descartó y se
+regeneró (commit `bc0f494b`, 13:xx UTC). Pocos minutos después se detectó que
+`Main.exe` había vuelto a cambiar en el working tree (recompilado por otro
+proceso, PE link 2026-09-03 12:49:44 UTC, +512 B, **sin ningún cambio de
+código fuente** — `git status` en `client-rex` no mostraba nada más que ese
+binario) — se comiteó (`27a6ad66`) y se **regeneró el patch por segunda vez**
+contra el mismo baseline/espejo para no publicar un build viejo.
 
 ## Qué llevaba el intento anterior (ya incluido)
 
@@ -23,29 +26,31 @@ servidor v2) — sin cambios, esos ya estaban.
   2026-09-02 21:23:13 UTC — más nuevo que el `bc7cbc52` del intento anterior,
   16:52:54 UTC).
 
-## Números verificados (regenerados 2026-09-03)
+## Números verificados (regeneración FINAL, 2026-09-03, commit `27a6ad66`)
 
 ```
-Patch12.zip   crc=e45c3c88  size=11790928   153 ficheros
-FullPatch.zip crc=37bcf4a4  size=46799926   967 ficheros
+Patch12.zip   crc=8eb93e5f  size=11791081   153 ficheros
+FullPatch.zip crc=7db9fdd8  size=46800079   967 ficheros
 version.txt   latest=12, 12 lineas (full + patch.1..12)
 ```
 
+(Los números `e45c3c88`/`37bcf4a4` de la corrida anterior quedaron OBSOLETOS
+por el recompile de `Main.exe` — no usar.)
+
 Verificado antes de dar por bueno:
-- CRC32 y tamaño de `full` y `patch.12` contra `version.txt`: 2/2 OK.
+- CRC32 y tamaño de `full` y `patch.12` recalculados independientemente
+  (`zlib.crc32` + `stat`) contra `version.txt`: 2/2 OK.
 - `Main.exe` y `rex.main` dentro de `Patch12.zip` son **byte a byte
-  idénticos** al working tree post-commit (`bc0f494b`) — sha256
-  `a0b6a166…` / `6e5c75a1…`. (Comparar contra `git show HEAD:...` da un
-  falso mismatch porque esos dos archivos son LFS — `git show` sin smudge
-  devuelve el puntero de 133 B, no el binario.)
+  idénticos** al working tree post-commit (`27a6ad66`) — sha256
+  `91e03d08…` / `6e5c75a1…` — verificado por streaming (`unzip -p | sha256sum`,
+  sin extraer a disco por el tmpfs de 512 MB lleno).
 - Los 8 `Item_*.bmd`/`ItemTooltip_*.bmd` renombrados están presentes en el
   zip, con el tamaño exacto esperado (688132 / 1015812 B, sin cambio de
   tamaño — son ediciones in-place).
 - Cero `.pdb/.exp/.log/.bak`, `Launcher.exe`, `config.ini`, `MainEdit.exe` en
-  `Patch12.zip` ni en `FullPatch.zip`.
-- `git status --ignored` en `ClientFile/` revisado antes de construir: todo
-  lo untracked cae en las exclusiones ya conocidas del script (`.bak` de
-  nuestro propio proceso de rename, residuos de build/runtime).
+  `Patch12.zip` ni en `FullPatch.zip` (verificado con `unzip -l`, sin extraer).
+- `git status` en `client-rex` limpio antes de construir (solo el commit
+  `27a6ad66` del Main.exe recompilado, nada más pendiente).
 
 ## 🔴 No verificable desde este sandbox (sin toolchain Windows)
 
