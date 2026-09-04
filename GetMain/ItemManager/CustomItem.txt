@@ -51,7 +51,11 @@
 //5138	204	40	28		"GloveMale19"
 //5650	204	40	28		"BootMale19"
 19		255 48 48		"Sword20"
-2570	255 48 48		"Staff11"
+//2026-08-18: FILA MUERTA, desactivada. El indice 2570 ya esta declarado en la linea 15.
+//CustomItem.cpp:57 usa m_CustomItemInfo.insert(), que NO sobrescribe -> gana la PRIMERA fila
+//(modelo "" = usa el modelo base del tipo, que para 5/10 es Staff11 igualmente; solo cambiaba
+//el tinte). Esta fila nunca llego a aplicarse. Comentada para no confundir.
+//2570	255 48 48		"Staff11"
 2596	255 48 48		"Archangelus"
 1037	255 48 48		"saint"
 //--------------------//NL Qoay Wing 2.5-------------------------------------------
@@ -608,6 +612,7 @@
 2652	128 	100		30		"Imperial_staff"			//Imperial Staff
 2653    128 	100		30		"Imperial_stick"			//Imperial Stick
 2654    128 	100		30		"Imperial_book"			  	//Imperial Book ok
+2660	255		255		255		"Staff100"					//T7 Emberfall Stick
 3780	140		128		 83 	"HelmMale135_knight" 	//Silverheart king	37		36		 48
 3781	140		128		 83 	"HelmMale136_wizard"	//Silverheart wizzar
 3782	140		128		 83 	"HelmMale138_elf"		//Silverheart Elf
@@ -774,34 +779,34 @@
 5861	163   	143    	 99 	"BootMale173"			//Silverheart Lord
 5862	163   	143    	 99 	"BootMale172"			//Silverheart fighter
 3815	146		43		 255 	"HelmMale177_knight" 	   //Silverheart king
-3816	146		43		 255 	"HelmMale179_w_wizard"	   //Silverheart wizzar
-3817	146		43		 255 	"HelmMale181_elf"		   //Silverheart Elf
+3816	255		255		 255 	"HelmMale232"	   //T6 Storm Blaze Helm
+3817	255		255		 255 	"HelmMale233"		   //T7 Emberfall Helm
 3818	146		43		 255 	"HelmMale182_summoner"	   //Silverheart Summoner
 3820	146		43		 255 	"HelmMale177_dark"		   //Silverheart Lord
 3821	146		43		 255 	"HelmMale177_fighter"	   //Silverheart fighter
 4327	146		43		 255 	"ArmorMale177" 			   //Silverheart king
-4328	146		43		 255 	"ArmorMale179"			   //Silverheart wizzar
-4329	146		43		 255 	"ArmorMale181_elf"		   //Silverheart Elf
+4328	255		255		 255 	"ArmorMale232"			   //T6 Storm Blaze Armor
+4329	255		255		 255 	"ArmorMale233"		   //T7 Emberfall Armor
 4330	146		43		 255 	"ArmorMale182_summoner"	   //Silverheart Summoner
 4331	146		43		 255 	"ArmorMale177" 			   //SilverHeart Magic
 4332	146		43		 255 	"ArmorMale179"			   //Silverheart Lord
 4333	146		43		 255 	"ArmorMale177"			   //Silverheart fighter
 4839	146		43		 255 	"PantMale177" 			   //Silverheart king
-4840	146		43		 255 	"PantMale179"			   //Silverheart wizzar
-4841	146		43		 255 	"PantMale181_elf"		   //Silverheart Elf (A)
+4840	255		255		 255 	"PantMale232"			   //T6 Storm Blaze Pants
+4841	255		255		 255 	"PantMale233"		   //T7 Emberfall Pants
 4842	146		43		 255 	"PantMale182_summoner"	   //Silverheart Summoner
 4843	146		43		 255 	"PantMale177" 			   //SilverHeart Magic (A)
 4844	146		43		 255 	"PantMale179"			   //Silverheart Lord
 4845	146		43		 255 	"PantMale177" 			   //Silverheart fighter
 5351	146		43		 255 	"GloveMale177"			   //Silverheart king
 5352	146		43		 255 	"GloveMale179"			   //Silverheart wizzar
-5353	146		43		 255 	"GloveMale181_elf"		   //Silverheart Elf
+5353	255		255		 255 	"GloveMale233"		   //T7 Emberfall Gloves
 5354	146		43		 255 	"GloveMale182_summoner"	   //Silverheart Summoner
 5355	146		43		 255 	"GloveMale177"			   //SilverHeart Magic
 5356	146		43		 255 	"GloveMale179"			   //Silverheart Lord
 5863	146		43		 255 	"BootMale177"			   //Silverheart king
-5864	146		43		 255 	"BootMale179"			   //Silverheart wizzar
-5865	146		43		 255 	"BootMale181_elf"		   //Silverheart Elf
+5864	255		255		 255 	"BootMale232"			   //T6 Storm Blaze Boots
+5865	255		255		 255 	"BootMale233"		   //T7 Emberfall Boots
 5866	146		43		 255 	"BootMale182_summoner"	   //Silverheart Summoner
 5867	146		43		 255 	"BootMale177"			   //SilverHeart Magic
 5868	146		43		 255 	"BootMale179"			   //Silverheart Lord
@@ -906,4 +911,469 @@
 4865	255	255	255	"Wraith_pants_m"		//Wraith Pants
 5377	255	255	255	"Wraith_gloves_m"		//Wraith Gloves
 5889	255	255	255	"Wraith_boots_m"		//Wraith Boots
+//---------S21 auto-fill (STEP 2, model coverage gap-fill from S21 CustomItem.txt) BEGIN
+29	255	162	31	"balhalla_sword"		//T10 Sonic Blade
+30	127	127	127	"asura"		//T10 Asura
+71	78	17	166	"mastery_sword6"		//T16 Silver Heart Sword
+87	223	99	68	"blade13"		//Dragon Blade
+91	159	150	102	"mastery7_maigcswrod_"		//T17 Manticore Magic Sword
+95	200	160	100	"apocalypse__msword"		//T19 Apocalypse Magic Sword
+120	255	15	51	"MDHsword1a"		//Bloodangel M Two Hand Sword
+121	255	204	0	"master_twohandsword2"		//Darkangel M Two Hand Sword
+122	100	100	70	"master_x2cha"		//Holyangel M Two Hand Sword
+123	174	123	0	"MDHsword4b"		//Soul M Two Hand Sword
+124	97	97	97	"master_double05"		//Blue Eye M Two Hand Sword
+125	78	78	50	"master_double06"		//Silver Heart M Two Hand Sword
+126	159	150	102	"master_twohandsw7_"		//Manticore M Two Hand Sword
+127	159	150	102	"matery_twohandsword"		//Brilliant M Two Hand Sword
+128	200	160	100	"apocalypse_twohand"		//Apocalypse M Two Hand Sword
+129	60	110	150	"lightning_twohandsword"		//Lightning M Two Hand Sword
+521	150	135	20	"axe02"		//T2 Hand Axe
+522	-1	-1	-1	"PickNH"		//Pandora Pick (two-handed)
+1052	205	133	63	"seoulRoad_septer"		//T14 Soul Scepter
+1053	122	139	168	"Blue_eye_road_secpter"		//T15 Blue Eye Scepter
+1054	78	17	166	"mastery_septera"		//T16 Silver Heart Scepter
+1055	159	150	102	"mastery_darkoad7_"		//T17 Manticore Scepter
+1056	159	150	102	"8cha_mastery_septer"		//T18 Brilliant Scepter
+1058	60	110	150	"lightning_scepter"		//T20 Lightning Scepter
+1549	102	178	255	"rapidelance"		//Lapid Lance
+1550	204	216	229	"conmocionlance"		//Conmocion Lance
+1551	229	204	255	"plumalance"		//Pluma Lance
+1552	204	117	63	"vislance"		//Vis Lance
+1553	204	178	76	"pricklelance"		//Prickle Lance
+1554	204	51	25	"alacranlance"		//Alacran Lance
+2617	122	139	168	"blue_eye_ws"		//T15 Blue Eye Staff
+2618	122	139	168	"blueeye_summoner"		//T15 Blue Eye Stick
+2620	204	216	229	"Yigye1Book"		//T11 Book of Bloodangel
+2623	255	146	76	"Yigye4Book"		//T14 Book of Soul
+2626	78	17	166	"Mastery_Stick6"		//T16 Silver Heart Stick
+2627	153	153	153	"mastery_book06"		//T16 Silver Heart Book
+2628	100	100	100	"Elhaz_Mace"		//El Hazard Mace
+2629	150	125	100	"Absolute_Mace"		//Absolute Mace of Archangel
+2636	200	160	100	"apocalypse_staff"		//T19 Apocalypse Staff
+2637	200	160	100	"apocalypse_stick"		//T19 Apocalypse Stick
+2638	200	160	100	"apocalypse_book"		//T19 Apocalypse Book
+2639	60	110	150	"lightning_staff"		//T20 Lightning Staff
+2640	60	110	150	"lightning_stick"		//T20 Lightning Stick
+2641	60	110	150	"book84"		//T20 Lightning Book
+3108	102	204	255	"rapideshield"		//Lapid Shield
+3109	229	204	255	"plumashield"		//Pluma Shield
+3110	204	51	25	"alacranshield"		//Alacran Shield
+3111	229	204	63	"visshield"		//Vis Shield
+3112	100	110	120	"shildrune_mixelf"		//El Hazard Shield
+3637	178	51	51	"helmmale98"		//T10 Succubus Helm
+3638	204	216	229	"helmmale75"		//T10 Lazy Wind Helm
+3639	255	24	22	"helmmale76"		//T10 Dark Devil Helm
+3640	153	204	102	"helmmale77"		//T10 Sticky Helm
+3642	0	127	255	"helmmale78"		//T10 Ambition Mask
+3694	-1	-1	-1	"helmmale83"		//Sealed Bloodangel Helm
+3697	-1	-1	-1	"helmmale87"		//Sealed Bloodangel Helm
+3699	-1	-1	-1	"helmmale88"		//Sealed Bloodangel Helm
+3700	-1	-1	-1	"helmmale90"		//Sealed Bloodangel Helm
+3729	122	147	99	"HelmMale112_knight"		//T13 Holyangel Knight Helm
+3730	122	147	99	"HelmMale111_magic"		//T13 Holyangel Wizard Helm
+3731	122	147	99	"HelmMale109_elf"		//T13 Holyangel Elf Helm
+3732	122	147	99	"HelmMale109_alice"		//T13 Holyangel Summoner Helm
+3738	255	146	76	"HelmMale113_elf"		//T14 Awakening Soul Elf Helm
+3741	255	146	76	"HelmMale115_dark"		//T14 Awakening Soul Lord Helm
+3742	255	146	76	"HelmMale116_fight"		//T14 Awaken Soul Fighter Helm
+3743	40	80	120	"HelmMale120_knight"		//T15 Blue Eye Knight Helm
+3744	40	80	120	"HelmMale119_magic"		//T15 Blue Eye Wizard Helm
+3745	40	80	120	"HelmMale117_elf"		//T15 Blue Eye Elf Helm
+3746	40	80	120	"HelmMale117_alice"		//T15 Blue Eye Summoner Helm
+3752	153	153	153	"HelmMale131"		//T16 Silver Heart Knight Helm
+3755	153	153	153	"HelmMale128_alice"		//T16 SilverHeart Summoner Helm
+3757	153	153	153	"HelmMale130"		//T16 Silver Heart Lord Helm
+3758	153	153	153	"HelmMale131"		//T16 Silver Heart Fighter Helm
+3759	140	128	83	"HelmMale135_knight"		//T17 Manticore Knight Helm
+3760	140	128	83	"HelmMale136_wizard"		//T17 Manticore Wizard Helm
+3761	140	128	83	"HelmMale138_elf"		//T17 Manticore Elf Helm
+3762	140	128	83	"HelmMale138_alice"		//T17 Manticore Summoner Helm
+3764	140	128	83	"HelmMale136_lord"		//T17 Manticore Lord Helm
+3765	140	128	83	"HelmMale135_fighter"		//T17 Manticore Fighter Helm
+3766	102	178	255	"HelmMale923D"		//Robust Helm
+3767	127	204	165	"HelmMale933D"		//Gru Hill Helm
+3768	229	204	255	"HelmMale943D"		//Princie Helm
+3769	191	255	153	"HelmMale953D"		//Hirat Helm
+3770	127	76	25	"HelmMale963D"		//Sate Helm
+3771	239	154	70	"HelmMale139"		//Frere Helm
+3772	100	75	100	"HelmMale123"		//Kenaz Hood
+3777	95	113	153	"HelmMale151_alice_"		//T18 Brilliant Summoner Helm
+3784	95	129	251	"HelmMale144_"		//Magic Flare Helm
+3791	214	225	224	"HelmMale154"		//Black Origin Helmet
+4149	178	51	51	"ArmorMale98"		//T10 Succubus Armor
+4150	204	216	229	"ArmorMale75"		//T10 Lazy Wind Armor
+4151	255	24	22	"ArmorMale76"		//T10 Dark Devil Armor
+4152	153	204	102	"ArmorMale77"		//T10 Sticky Armor
+4153	205	192	176	"ArmorMale84"		//T10 Hell Night Armor
+4154	0	127	255	"ArmorMale78"		//T10 Ambition Armor
+4209	-1	-1	-1	"ArmorMale87"		//Sealed Bloodangel Armor
+4210	-1	-1	-1	"ArmorMale89"		//Sealed Bloodangel Armor
+4211	-1	-1	-1	"ArmorMale88"		//Sealed Bloodangel Armor
+4212	-1	-1	-1	"ArmorMale90"		//Sealed Bloodangel Armor
+4241	122	147	99	"ArmorMale112"		//T13 Holyangel Knight Armor
+4242	122	147	99	"ArmorMale111"		//T13 Holyangel Wizard Armor
+4243	122	147	99	"ArmorMale109_elf"		//T13 Holyangel Elf Armor
+4244	122	147	99	"ArmorMale109_alice"		//T13 Holyangel Summoner Armor
+4245	122	147	99	"ArmorMale112"		//T13 Holyangel Magic Armor
+4253	255	146	76	"ArmorMale115"		//T14 Awakening Soul Lord Armor
+4254	255	146	76	"ArmorMale116"		//T14 Awaken Soul Fighter Armor
+4255	40	80	120	"ArmorMale120_knight"		//T15 Blue Eye Knight Armor
+4256	40	80	120	"ArmorMale119"		//T15 Blue Eye Wizard Armor
+4257	40	80	120	"ArmorMale117"		//T15 Blue Eye Elf Armor
+4258	40	80	120	"ArmorMale117"		//T15 Blue Eye Summoner Armor
+4259	40	80	120	"ArmorMale120_ma"		//T15 Blue Eye Magic Armor
+4267	153	153	153	"ArmorMale128_alice"		//T16 SilverHeart Summon Armor
+4268	153	153	153	"ArmorMale131"		//T16 Silver Heart Magic Armor
+4269	153	153	153	"ArmorMale130"		//T16 Silver Heart Lord Armor
+4270	153	153	153	"ArmorMale131"		//T16 SilverHeart Fighter Armor
+4271	140	128	83	"ArmorMale135_knight"		//T17 Manticore Knight Armor
+4272	140	128	83	"ArmorMale136_wizard"		//T17 Manticore Wizard Armor
+4273	140	128	83	"ArmorMale138_elf"		//T17 Manticore Elf Armor
+4274	140	128	83	"ArmorMale138_alice"		//T17 Manticore Summoner Armor
+4275	140	128	83	"ArmorMale135_magic"		//T17 Manticore Magic Armor
+4276	140	128	83	"ArmorMale136_lord"		//T17 Manticore Lord Armor
+4277	140	128	83	"ArmorMale135_fighter"		//T17 Manticore Fighter Armor
+4278	102	178	255	"ArmorMale923D"		//Robust Armor
+4279	127	204	165	"ArmorMale933D"		//Gru Hill Armor
+4280	229	204	255	"ArmorMale943D"		//Princie Armor
+4281	191	255	153	"ArmorMale953D"		//Hirat Armor
+4282	127	76	25	"ArmorMale963D"		//Sate Armor
+4283	239	154	70	"ArmorMale139"		//Frere Armor
+4284	100	75	100	"ArmorMale123"		//Kanaz Armor
+4661	178	51	51	"PantMale98"		//T10 Succubus Pants
+4662	204	216	229	"PantMale75"		//T10 Lazy Wind Pants
+4663	255	24	22	"PantMale76"		//T10 Dark Devil Pants
+4664	153	204	102	"PantMale77"		//T10 Sticky Pants
+4665	205	192	176	"PantMale84"		//T10 Hell Night Pants
+4666	0	127	255	"PantMale78"		//T10 Ambition Pants
+4721	-1	-1	-1	"PantMale87"		//Sealed Bloodangel Pants
+4722	-1	-1	-1	"PantMale89"		//Sealed Bloodangel Pants
+4723	-1	-1	-1	"PantMale88"		//Sealed Bloodangel Pants
+4724	-1	-1	-1	"PantMale90"		//Sealed Bloodangel Pants
+4753	122	147	99	"PantMale112"		//T13 Holyangel Knight Pants
+4754	122	147	99	"PantMale111"		//T13 Holyangel Wizard Pants
+4755	122	147	99	"PantMale109_elf"		//T13 Holyangel Elf Pants
+4756	122	147	99	"PantMale109_alice"		//T13 Holyangel Summoner Pants
+4757	122	147	99	"PantMale112"		//T13 Holyangel Magic Pants
+4765	255	146	76	"PantMale115"		//T14 Awakening Soul Lord Pants
+4766	255	146	76	"PantMale116"		//T14 Awaken Soul Fighter Pants
+4767	40	80	120	"PantMale120_knight"		//T15 Blue Eye Knight Pants
+4768	40	80	120	"PantMale119"		//T15 Blue Eye Wizard Pants
+4769	40	80	120	"PantMale117"		//T15 Blue Eye Elf Pants
+4770	40	80	120	"PantMale117"		//T15 Blue Eye Summoner Pants
+4771	40	80	120	"PantMale120_ma"		//T15 Blue Eye Magic Pants
+4779	153	153	153	"PantMale128_alice"		//T16 SilverHeart Summon Pants
+4780	153	153	153	"PantMale131"		//T16 Silver Heart Magic Pants
+4781	153	153	153	"PantMale130"		//T16 Silver Heart Lord Pants
+4782	153	153	153	"PantMale131"		//T16 SilverHeart Fighter Pants
+4783	140	128	83	"PantMale135_knight"		//T17 Manticore Knight Pants
+4784	140	128	83	"PantMale136_wizard"		//T17 Manticore Wizard Pants
+4785	140	128	83	"PantMale138_elf"		//T17 Manticore Elf Pants
+4786	140	128	83	"PantMale138_alice"		//T17 Manticore Summoner Pants
+4787	140	128	83	"PantMale135_magic"		//T17 Manticore Magic Pants
+4788	140	128	83	"PantMale136_lord"		//T17 Manticore Lord Pants
+4789	140	128	83	"PantMale135_fighter"		//T17 Manticore Fighter Pants
+4790	102	178	255	"PantMale923D"		//Robust Pants
+4791	127	204	165	"PantMale933D"		//Gru Hill Pants
+4792	229	204	255	"PantMale943D"		//Princie Pants
+4793	191	255	153	"PantMale953D"		//Hirat Pants
+4794	127	76	25	"PantMale963D"		//Sate Pants
+4795	239	154	70	"PantMale139"		//Frere Pants
+4796	100	75	100	"PantMale123"		//Kenaz Pants
+5173	178	51	51	"GloveMale98"		//T10 Succubus Gloves
+5174	204	216	229	"GloveMale75"		//T10 Lazy Wind Gloves
+5175	255	24	22	"GloveMale76"		//T10 Dark Devil Gloves
+5176	153	204	102	"GloveMale77"		//T10 Sticky Gloves
+5177	205	192	176	"GloveMale84"		//T10 Hell Night Gloves
+5178	0	127	255	"GloveMale78"		//T10 Ambition Gloves
+5232	-1	-1	-1	"GloveMale86"		//Sealed Bloodangel Gloves
+5233	-1	-1	-1	"GloveMale87"		//Sealed Bloodangel Gloves
+5234	-1	-1	-1	"GloveMale89"		//Sealed Bloodangel Gloves
+5235	-1	-1	-1	"GloveMale88"		//Sealed Bloodangel Gloves
+5265	122	147	99	"GloveMale112"		//T13 Holyangel Knight Gloves
+5266	122	147	99	"GloveMale111"		//T13 Holyangel Wizard Gloves
+5267	122	147	99	"GloveMale109"		//T13 Holyangel Elf Gloves
+5268	122	147	99	"GloveMale109"		//T13 Holyangel Summoner Gloves
+5269	122	147	99	"GloveMale112"		//T13 Holyangel Magic Gloves
+5276	255	146	76	"GloveMale116"		//T14 Awaken Soul Magic Gloves
+5277	255	146	76	"GloveMale115"		//T14 Awaken Soul Lord Gloves
+5279	40	80	120	"GloveMale120_knight"		//T15 Blue Eye Knight Gloves
+5280	40	80	120	"GloveMale119"		//T15 Blue Eye Wizard Gloves
+5281	40	80	120	"GloveMale117"		//T15 Blue Eye Elf Gloves
+5282	40	80	120	"GloveMale117"		//T15 Blue Eye Summoner Gloves
+5283	40	80	120	"GloveMale120_ma"		//T15 Blue Eye Magic Gloves
+5290	153	153	153	"GloveMale128_elf"		//T16 Silver Heart Elf Gloves
+5291	153	153	153	"GloveMale128_alice"		//T16 SilverHeart Summon Gloves
+5292	153	153	153	"GloveMale131"		//T16 Silver Heart Magic Gloves
+5293	153	153	153	"GloveMale130"		//T16 Silver Heart Lord Gloves
+5295	140	128	83	"GloveMale135_knight"		//T17 Manticore Knight Gloves
+5296	140	128	83	"GloveMale136_wizard"		//T17 Manticore Wizard Gloves
+5297	140	128	83	"GloveMale138_elf"		//T17 Manticore Elf Gloves
+5298	140	128	83	"GloveMale138_alice"		//T17 Manticore Summoner Gloves
+5299	140	128	83	"GloveMale135_magic"		//T17 Manticore Magic Gloves
+5300	140	128	83	"GloveMale136_lord"		//T17 Manticore Lord Gloves
+5302	102	178	255	"GloveMale923D"		//Robust Gloves
+5303	127	204	165	"GloveMale933D"		//Gru Hill Gloves
+5304	229	204	255	"GloveMale943D"		//Princie Gloves
+5305	191	255	153	"GloveMale953D"		//Hirat Gloves
+5306	127	76	25	"GloveMale963D"		//Sate Gloves
+5307	239	154	70	"GloveMale139"		//Frere Gloves
+5308	100	75	100	"GloveMale123"		//Kenaz Gloves
+5315	95	113	153	"GloveMale149_"		//T18 Brilliant Lord Gloves
+5322	119	88	51	"GloveMale145_"		//Bright Gloves
+5329	122	79	0	"GloveMale156_de"		//Apex Gloves
+5685	178	51	51	"BootMale98"		//T10 Succubus Boots
+5686	204	216	229	"BootMale75"		//T10 Lazy Wind Boots
+5687	255	24	22	"BootMale76"		//T10 Dark Devil Boots
+5688	153	204	102	"BootMale77"		//T10 Sticky Boots
+5689	205	192	176	"BootMale84"		//T10 Hell Night Boots
+5690	0	127	255	"BootMale78"		//T10 Ambition Boots
+5745	-1	-1	-1	"BootMale87"		//Sealed Bloodangel Boots
+5746	-1	-1	-1	"BootMale89"		//Sealed Bloodangel Boots
+5747	-1	-1	-1	"BootMale88"		//Sealed Bloodangel Boots
+5748	-1	-1	-1	"BootMale90"		//Sealed Bloodangel Boots
+5777	122	147	99	"BootMale112"		//T13 Holyangel Knight Boots
+5778	122	147	99	"BootMale111"		//T13 Holyangel Wizard Boots
+5779	122	147	99	"BootMale109"		//T13 Holyangel Elf Boots
+5780	122	147	99	"BootMale109"		//T13 Holyangel Summoner Boots
+5781	122	147	99	"BootMale112"		//T13 Holyangel Magic Boots
+5789	255	146	76	"BootMale115"		//T14 Awakening Soul Lord Boots
+5790	255	146	76	"BootMale116"		//T14 Awaken Soul Fighter Boots
+5791	40	80	120	"BootMale120_knight"		//T15 Blue Eye Knight Boots
+5792	40	80	120	"BootMale119"		//T15 Blue Eye Wizard Boots
+5793	40	80	120	"BootMale117"		//T15 Blue Eye Elf Boots
+5794	40	80	120	"BootMale117"		//T15 Blue Eye Summoner Boots
+5795	40	80	120	"BootMale120_ma"		//T15 Blue Eye Magic Boots
+5803	153	153	153	"BootMale128_alice"		//T16 SilverHeart Summon Boots
+5804	153	153	153	"BootMale131"		//T16 Silver Heart Magic Boots
+5805	153	153	153	"BootMale130"		//T16 Silver Heart Lord Boots
+5806	153	153	153	"BootMale131"		//T16 SilverHeart Fighter Boots
+5807	140	128	83	"BootMale135_knight"		//T17 Manticore Knight Boots
+5808	140	128	83	"BootMale136_wizard"		//T17 Manticore Wizard Boots
+5809	140	128	83	"BootMale138_elf"		//T17 Manticore Elf Boots
+5810	140	128	83	"BootMale138_alice"		//T17 Manticore Summoner Boots
+5811	140	128	83	"BootMale135_magic"		//T17 Manticore Magic Boots
+5812	140	128	83	"BootMale136_lord"		//T17 Manticore Lord Boots
+5813	140	128	83	"BootMale135_fighter"		//T17 Manticore Fighter Boots
+5814	102	178	255	"BootMale923D"		//Robust Boots
+5815	127	204	165	"BootMale933D"		//Gru Hill Boots
+5816	229	204	255	"BootMale943D"		//Princie Boots
+5817	191	255	153	"BootMale953D"		//Hirat Boots
+5818	127	76	25	"BootMale963D"		//Sate Boots
+5819	239	154	70	"BootMale139"		//Frere Boots
+5820	100	75	100	"BootMale123"		//Kenaz Boots
+6335	255	127	0	"penta02GG"		//Muren's book of Magic
+6336	255	127	0	"penta01GG"		//Scroll of Etramu
+6337	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6338	255	127	0	"pentaliquidAA"		//Hero Elixir
+6339	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6340	255	127	0	"penta02GG"		//Muren's book of Magic
+6341	255	127	0	"penta01GG"		//Scroll of Etramu
+6342	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6343	255	127	0	"pentaliquidAA"		//Hero Elixir
+6344	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6345	255	127	0	"penta02GG"		//Muren's book of Magic
+6346	255	127	0	"penta01GG"		//Scroll of Etramu
+6347	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6348	255	127	0	"pentaliquidAA"		//Hero Elixir
+6349	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6350	255	127	0	"penta02GG"		//Muren's book of Magic
+6351	255	127	0	"penta01GG"		//Scroll of Etramu
+6352	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6353	255	127	0	"pentaliquidAA"		//Hero Elixir
+6354	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6355	255	127	0	"penta02GG"		//Muren's book of Magic
+6356	255	127	0	"penta01GG"		//Scroll of Etramu
+6357	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6358	255	127	0	"pentaliquidAA"		//Hero Elixir
+6359	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6360	255	127	0	"penta02GG"		//Muren's book of Magic
+6361	255	127	0	"penta01GG"		//Scroll of Etramu
+6362	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6363	255	127	0	"pentaliquidAA"		//Hero Elixir
+6364	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6365	255	127	0	"penta02GG"		//Muren's book of Magic
+6366	255	127	0	"penta01GG"		//Scroll of Etramu
+6367	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6368	255	127	0	"pentaliquidAA"		//Hero Elixir
+6369	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6370	255	127	0	"penta02GG"		//Muren's book of Magic
+6371	255	127	0	"penta01GG"		//Scroll of Etramu
+6372	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6373	255	127	0	"pentaliquidAA"		//Hero Elixir
+6374	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6375	255	127	0	"penta02GG"		//Muren's book of Magic
+6376	255	127	0	"penta01GG"		//Scroll of Etramu
+6377	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6378	255	127	0	"pentaliquidAA"		//Hero Elixir
+6379	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6380	255	127	0	"penta02GG"		//Muren's book of Magic
+6381	255	127	0	"penta01GG"		//Scroll of Etramu
+6382	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6383	255	127	0	"pentaliquidAA"		//Hero Elixir
+6384	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6385	255	127	0	"penta02GG"		//Muren's book of Magic
+6386	255	127	0	"penta01GG"		//Scroll of Etramu
+6387	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6388	255	127	0	"pentaliquidAA"		//Hero Elixir
+6389	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6390	255	127	0	"penta02GG"		//Muren's book of Magic
+6391	255	127	0	"penta01GG"		//Scroll of Etramu
+6392	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6393	255	127	0	"pentaliquidAA"		//Hero Elixir
+6394	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6457	-1	-1	-1	"wing313"		//Habbit Wing
+6494	255	127	0	"penta02GG"		//Pentagram for Beginners
+6802	0	0	0	"amulet_emperor_cape"		//Talisman Cape of Emperor
+6804	0	0	0	"amulet_eternal_wings"		//Talisman Wings of Eternal
+6805	0	0	0	"amulet_illusion_wings"		//Talisman Wings of Illusion
+6808	0	0	0	"amulet_overrule_cloak"		//Talisman Cloak of Overrule
+6809	-1	-1	-1	"finalgori"		//Ring of Ultimatum
+6810	-1	-1	-1	"proguardring"		//Protector Protection Ring
+6811	-1	-1	-1	"guardring"		//Protection Ring
+6812	-1	-1	-1	"NecklaceOfAgony"		//Necklace Of Agony
+6813	-1	-1	-1	"SolidSymbol"		//Solid Symbol
+6814	-1	-1	-1	"Ring01"		//Decoration Ring
+6815	-1	-1	-1	"Ring02"		//Blessed Decoration Ring
+6816	0	0	0	"amulet_storm_wings"		//Talisman Wings of Storm
+6817	0	0	0	"amulet_warrior_cloak"		//Talisman Cloak of Warrior
+6853	-1	-1	-1	"spellst01"		//Muun Energy Converter
+6854	-1	-1	-1	"evolutionstone"		//Evolution Stone
+6855	-1	-1	-1	"PetEgg"		//Muun Egg
+7056	-1	-1	-1	"so_neckL"		//Earring Of Wrath (L)
+7057	-1	-1	-1	"so_neckR"		//Earring Of Wrath (R)
+7058	-1	-1	-1	"mr2earringL"		//Earring Of Ancestral (L)
+7059	-1	-1	-1	"mr2earringR"		//Earring Of Ancestral (R)
+7060	-1	-1	-1	"gloryearringL"		//Earring Of Glory (L)
+7061	-1	-1	-1	"gloryearringR"		//Earring Of Glory (R)
+7062	-1	-1	-1	"hs_Earring4th_L"		//Blood Earring (L)
+7063	-1	-1	-1	"hs_Earring4th_R"		//Blood Earring (R)
+7064	-1	-1	-1	"Earring5th_L"		//Earring of Deception (L)
+7065	-1	-1	-1	"Earring5th_R"		//Earring of Deception (R)
+7066	-1	-1	-1	"earring6th_L"		//Earring of Unity (L)
+7067	-1	-1	-1	"earring6th_R"		//Earring of Unity (R)
+7068	-1	-1	-1	"earring7th_L"		//Verdant Earring (L)
+7069	-1	-1	-1	"earring7th_R"		//Verdant Earring (R)
+7348	0	0	0	"IceWalkerMane"		//Ice Walker's Mane
+7354	0	0	0	"DarkGiantAxe"		//Dark Giant's Axe
+7355	0	0	0	"DarkCoolutinBlood"		//Dark Coolutin's Blood
+7356	0	0	0	"DarkIronKnightSword"		//Dark Iron Knight's Sword
+7359	0	0	0	"doubt_paper"		//Sonic Combination Note
+7423	-1	-1	-1	"Book000001"		//Titan's Anger
+7424	-1	-1	-1	"Book000001"		//Tantalose's Punishment
+7425	-1	-1	-1	"Book000001"		//Erohim's Nightmare
+7426	-1	-1	-1	"Book000001"		//Hell Maine's Insanity
+7427	-1	-1	-1	"Book000001"		//Kundun's Greed
+7428	-1	-1	-1	"Book000001"		//Evomon Summoning Scroll
+7430	-1	-1	-1	"doubt_paper_Y"		//Summon Scroll (Lv2)
+7431	-1	-1	-1	"doubt_paper_P"		//Summon Scroll (Lv3)
+7432	-1	-1	-1	"doubt_paper_R"		//Summon Scroll (Lv4)
+7433	-1	-1	-1	"attgempiece"		//Mithril Fragment
+7434	-1	-1	-1	"attjewel"		//Mithril
+7438	-1	-1	-1	"RageErthel"		//Errtel of Anger (Rank: 1)
+7439	-1	-1	-1	"RageErthel"		//Errtel of Anger (Rank: 2)
+7440	-1	-1	-1	"RageErthel"		//Errtel of Anger (Rank: 3)
+7441	-1	-1	-1	"blessing"		//Errtel of Blessing (Rank: 1)
+7442	-1	-1	-1	"blessing"		//Errtel of Blessing (Rank: 2)
+7443	-1	-1	-1	"blessing"		//Errtel of Blessing (Rank: 3)
+7444	-1	-1	-1	"NobleErthel"		//Errtel of Integrity (Rank: 1)
+7445	-1	-1	-1	"NobleErthel"		//Errtel of Integrity (Rank: 2)
+7446	-1	-1	-1	"NobleErthel"		//Errtel of Integrity (Rank: 3)
+7447	-1	-1	-1	"holyE"		//Errtel of Divinity (Rank: 1)
+7448	-1	-1	-1	"holyE"		//Errtel of Divinity (Rank: 2)
+7449	-1	-1	-1	"holyE"		//Errtel of Divinity (Rank: 3)
+7450	-1	-1	-1	"ExtremeErthel"		//Errtel Radiance (Rank: 1)
+7451	-1	-1	-1	"ExtremeErthel"		//Errtel Radiance (Rank: 2)
+7452	-1	-1	-1	"ExtremeErthel"		//Errtel Radiance (Rank: 3)
+7454	-1	-1	-1	"GM02"		//Pentagram Box
+7568	-1	-1	-1	"DeathKingBone"		//Death King's Bone
+7569	-1	-1	-1	"hellmine"		//Hell Maine's Leather
+7570	-1	-1	-1	"DarkPhoenixBz"		//Dark Phoenix Flame
+7571	-1	-1	-1	"deathsoul"		//Death Beam Knight Soul
+7572	-1	-1	-1	"spellstone3"		//Greater Spirit Stone
+7573	-1	-1	-1	"GarudaFlame"		//Garuda's Flame
+7574	-1	-1	-1	"GarudaFeather"		//Garuda's Feather
+7575	-1	-1	-1	"goldarms01"		//Golden Sentence
+7576	-1	-1	-1	"MixMaterialDA"		//Sealed Stone Shard
+7577	-1	-1	-1	"hs_hammerB"		//Steel of Heaven
+7578	-1	-1	-1	"hs_hammerA"		//Archangel's Hammer
+7579	-1	-1	-1	"AHeroSpiritUP"		//Ancient Hero's Soul
+7580	-1	-1	-1	"James_anvil"		//Darkangel Anvil
+7581	-1	-1	-1	"3cha_lightstone"		//Holyangel Spirit
+7582	-1	-1	-1	"sd_AwakeningSoul01"		//Awakening
+7583	-1	-1	-1	"holyangelanvil"		//Anvil of Holy Angel
+7584	-1	-1	-1	"FrostSoul"		//Cold Marriage
+7585	-1	-1	-1	"soulanvil"		//Soul Moru
+7586	-1	-1	-1	"BlueEyeAnvil"		//Blue Eye Anvil
+7587	-1	-1	-1	"6master_peice"		//Ancestral Spirit
+7588	-1	-1	-1	"Jamesanvil_6master"		//Silver Anvil
+7589	-1	-1	-1	"7mastery_mixiteam"		//Manticore Spirit
+7590	-1	-1	-1	"ResuPiece"		//Fragment of Resurreccion
+7591	-1	-1	-1	"Ghosthorse_item_shield"		//Seal of the Phantasmal Shield
+7592	-1	-1	-1	"hs_2GuadianiceD"		//Seal of Ice Dragon
+7593	-1	-1	-1	"hs_3Guadianice"		//Seal of Pierce Ryan
+7594	-1	-1	-1	"ProofOfConqueror"		//Conqueror's Badge
+7595	-1	-1	-1	"manticoremoru_"		//Manticore Moru
+7596	-1	-1	-1	"brillianthorn_"		//Brilliant Soul Moru
+7597	0	0	0	"doubt_paper"		//Item Socket Upgrade Note
+7598	-1	-1	-1	"tail_3D"		//Seal of Shining Tail
+7599	-1	-1	-1	"boss_invitationticket"		//Boss Battle Ticket
+7600	-1	-1	-1	"Apocal_stone"		//Soul of Apocalypse
+7601	-1	-1	-1	"8chamoru"		//Brilliant Anvil
+7602	-1	-1	-1	"urseal"		//Seal of Ur
+7603	-1	-1	-1	"apcalips_moru"		//Apocalypse Anvil
+7604	-1	-1	-1	"lightning_stone"		//Lightning Soul
+7605	-1	-1	-1	"wingcore_feather"		//Uriel Feather
+7606	-1	-1	-1	"WingsRelic5th"		//Relic 5th Wing
+7607	-1	-1	-1	"Leviathan_seal3D"		//Seal of Leviathan
+7608	-1	-1	-1	"lightning_anvil"		//Lightning Anvil
+//---------S21 auto-fill (STEP 2) END
+//---------S21 sibling fill (Temple Guard set, sourced from S21 CustomItem.txt's own commented-out lines)
+99	128	100	30	"Templeguard_Magicsword"		//T21 Temple Guard Magic Sword
+130	128	100	30	"Templeguard_TH_Sword"		//Temple Guard M Two Hand Sword
+1059	128	100	30	"Templeguard_scepter"		//T21 Temple Guard Scepter
+7609	-1	-1	-1	"TempleGuard_Material"		//Temple Guard Soul
+7610	-1	-1	-1	"TempleGuard_anvil"		//Temple Guard Anvil
+
+// -----------------------------------------------------------------------------
+// 2026-08-18 - Faltaban los 31 primeros items del sistema Pentagram.
+// El GameServer los define en la seccion 12, indices 160-190 (planos 6304-6334),
+// pero el cliente solo los tenia registrados a partir del 6335: el jugador veia
+// esos 30 objetos COMPLETAMENTE VACIOS (sin modelo, sin icono).
+// Nombres tomados literalmente del Item.txt del GameServer; el modelo de cada uno
+// se dedujo del mapa nombre->modelo que ya usan las filas 6335-6494 de este mismo
+// fichero, no se invento ninguno. Los 5 .bmd existen en Data/Item.
+// -----------------------------------------------------------------------------
+6304	255	127	0	"penta02GG"		//Pentagram for Beginners
+6305	255	127	0	"penta02GG"		//Muren's book of Magic
+6306	255	127	0	"penta01GG"		//Scroll of Etramu
+6307	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6308	255	127	0	"pentaliquidAA"		//Hero Elixir
+6309	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6310	255	127	0	"penta02GG"		//Muren's book of Magic
+6311	255	127	0	"penta01GG"		//Scroll of Etramu
+6312	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6313	255	127	0	"pentaliquidAA"		//Hero Elixir
+6314	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6315	255	127	0	"penta02GG"		//Muren's book of Magic
+6316	255	127	0	"penta01GG"		//Scroll of Etramu
+6317	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6318	255	127	0	"pentaliquidAA"		//Hero Elixir
+6319	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6320	255	127	0	"penta02GG"		//Muren's book of Magic
+6321	255	127	0	"penta01GG"		//Scroll of Etramu
+6322	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6323	255	127	0	"pentaliquidAA"		//Hero Elixir
+6324	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6325	255	127	0	"penta02GG"		//Muren's book of Magic
+6326	255	127	0	"penta01GG"		//Scroll of Etramu
+6327	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6328	255	127	0	"pentaliquidAA"		//Hero Elixir
+6329	255	127	0	"pentaexdan1"		//Gladiator's Dagger
+6330	255	127	0	"penta02GG"		//Muren's book of Magic
+6331	255	127	0	"penta01GG"		//Scroll of Etramu
+6332	255	127	0	"pentaexshiKK"		//Lorencia Knight's Iron Shield
+6333	255	127	0	"pentaliquidAA"		//Hero Elixir
+6334	255	127	0	"pentaexdan1"		//Gladiator's Dagger
 end

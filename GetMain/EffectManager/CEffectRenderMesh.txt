@@ -1,61 +1,341 @@
 //////////////Kit Weapons Lightning S19 Part2 by Kapocha//////////////
-//lightning_sword
-88	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-88	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-88	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
-88	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-88	3	-1	66	0	1	1	1.0	0	1.0	0.27	0.8	0.9
-88	4	-1	66	4	1	1	1.0	0	1.0	0.9	0.9	1.0
-88	5	-1	66	0	1	1	1.0	0	1.0	0.6	0.5	1.0
-//lightning_magicsword
-89	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-89	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-89	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-89	3	-1	66	2	1	1	1.0	0	1.0	0.25	0.8	0.66
-89	4	-1	66	5	1	1	1.0	0	1.0	0.6	0.66	1.0
-89	5	-1	66	0	1	1	1.0	0	1.0	0.1	0.1	0.6
-89	6	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	1.0
-// TODO: needs real item index (twohandsword 90?)
-//32229	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	66	0	1	1	1.0	1	2.0	0.35	0.97	1.0
-//32229	2	-1	66	0	1	1	1.0	1	2.0	0.7	0.24	0.8
-//32229	3	-1	66	0	1	1	1.0	1	80.0	1.0	1.0	1.0
-//32229	4	-1	66	5	1	1	1.0	0	1.0	0.66	0.66	1.0
-//32229	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.70	1.0
-//lightning_scepter
-1074	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-1074	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-1074	2	-1	66	0	1	1	1.0	0	1.0	0.4	0.4	0.66
-1074	3	-1	66	0	1	1	1.0	1	2.0	0.4	0.6	1.0
-1074	4	-1	66	0	1	1	1.0	0	1.0	0.1	0.37	1.0
-1074	5	-1	66	4	1	1	1.0	0	1.0	0.4	0.53	0.53
-// TODO: lightning_bow not registered in CustomItem
-//32229	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-//32229	2	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
-//32229	3	-1	66	2	1	1	1.0	0	1.0	0.0	0.24	0.7
-//32229	4	-1	66	4	1	1	1.0	0	1.0	0.765	0.765	0.85
-//lightning_staff
-2646	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2646	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2646	1	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	0.7
-2646	2	-1	66	0	1	1	1.0	0	1.0	0.35	0.35	0.6
-2646	3	-1	66	5	1	1	1.0	0	1.0	1.0	1.0	0.75
-//lightning_stick
-2647	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2647	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2647	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-2647	3	-1	66	0	1	1	1.0	0	1.0	0.13	0.35	0.4
-2647	4	-1	66	0	1	1	1.0	0	1.0	0.25	0.75	0.85
-2647	5	-1	66	0	1	1	1.0	1	2.0	0.66	0.66	1.0
-2647	6	-1	66	5	1	1	1.0	0	1.0	1.0	1.0	0.80
-2647	7	-1	66	5	1	1	1.0	0	1.0	0.6	0.6	0.75
-//lightning_shield
-3116	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-3116	1	-1	66	4	1	1	1.0	0	1.0	1.0	1.0	1.0
-3116	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-3116	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
-3116	4	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0
-3116	5	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0
+// REESCRITO 2026-08-18 (2a pasada) A PARTIR DE LA FUENTE ORIGINAL DEL AUTOR.
+//
+// FUENTE: /workspace/.codeck/uploads/working_em/CEffectRenderMesh.txt -- el
+// fichero del kit original de Kapocha. En el, TODAS las filas llevan el mismo
+// marcador 32229 en la columna ItemIndex y el arma se identifica SOLO por el
+// comentario de bloque; por eso la reconstruccion anterior tuvo que adivinar.
+// Verificado bloque a bloque contra el orden REAL de mallas de cada .bmd
+// (rexlib/formats/bmd.py): coincide 1:1 en los 6 modelos que trae (sword,
+// magicsword, scepter, staff, stick, shield). Es dato de autor, no inventado.
+//
+// Lo que la reconstruccion anterior habia perdido y aqui se recupera:
+//   - los TINTES por malla (todo estaba en blanco 1.0/1.0/1.0)
+//   - el AnimType real por malla (pulse/scroll, no "todo frameGrid")
+//   - SwapMode=1 + GlowLevel=2.0 en las mallas "_r"/"_R"/flare
+//   - la 2a fila aditiva sobre la MISMA malla (88 m1, 2646 m1)
+//
+// Column layout (13 cols, TAB-separated):
+//   ItemIndex  MeshIndex  MeshId  BlendMode  AnimType  FrameCols  FrameRows
+//   FrameRate  SwapMode  GlowLevel  R  G  B
+// MeshId siempre -1. BlendMode: 2=pase opaco, 66=overlay aditivo.
+// AnimType: 0=estatico, 1=scrollU, 2=scrollV, 3=scrollUV, 4=frameGrid, 5=pulse.
+// (El original escribe -1 en AnimType/SwapMode/GlowLevel; aqui se normaliza a
+//  0/0/1.0, que es EXACTAMENTE lo mismo -- DrawMesh.cpp ya trata GlowLevel<=0
+//  como 1.0 -- pero se queda dentro del contrato documentado 0..5.)
+//
+// 🔴 UNICA DESVIACION DELIBERADA respecto del original: AnimType=4 (frameGrid).
+// Nuestro shader hace  _uv = vUV / grid + celda  (mesh_bright.frag:113). O sea
+// espera que las UV de la malla cubran la HOJA ENTERA y el las reduce a UNA
+// celda. Medidas las UV reales de cada malla, hay DOS convenciones en el arte:
+//   (a) UV cubren la hoja entera  -> frameGrid CORRECTO. Son las mallas que
+//       usan  lightning00_4X4_Blue  (90/129 m6 dV=1.000, 2648 m3 dV=0.981,
+//       1570 m6 dV=0.999). ESTAS llevan AnimType=4 con la rejilla real 4x4.
+//   (b) UV ya encuadran UNA celda -> frameGrid DIVIDIRIA OTRA VEZ y ampliaria
+//       4x (se veria un borron gigante). Son las texturas con prefijo "K_"
+//       (K_lightning00_4X4_Blue, k_elec_light: 512x1024 = celdas 128x256).
+//       ESTAS llevan scroll (1/2) o pulse (5) en vez de 4.
+// El original ponia AnimType=4 con rejilla 1x1, que en NUESTRO shader es la
+// identidad = congelado. Se cambia a scroll para que se muevan.
+//
+// 🔑 ESTE ERA EL BUG REPORTADO POR EL DUENO: el item 129 ("Lightning M Two Hand
+// Sword", uno de los ultimos indices de la seccion 0) NO TENIA NI UNA FILA.
+// Sin filas, ZzzObject.cpp:10716 (_isKapocha) da false y el arma cae en la rama
+// heuristica por nombre de textura, que pinta  lightning00_4X4_Blue  SIN
+// frameGrid: la malla cubre la hoja 4x4 completa, asi que se veian las 16
+// celdas a la vez = "el cuerpo se repite 4 veces en blanco por encima del arma".
+// Con la fila  <item> 6 -1 66 4 4 4 ...  el shader encuadra UNA celda y anima.
+//
+// Indices que COMPARTEN modelo (mismas filas, duplicadas por indice porque el
+// registro es por ItemIndex, no por modelo):
+//   lightning_twohandsword -> 90, 129
+//   lightning_scepter      -> 1058, 1074, 1075
+//   lightning_staff        -> 2639, 2646
+//   lightning_stick        -> 2640, 2647
+//
+// ⚠️ AFORO: MAX_CEFFECT_RENDER_MESH = 256 (Defined_Global/CEffectRenderMesh.h,
+// mismo valor en Main y en GetMainInfo). Las filas que pasen de 256 se
+// DESCARTAN EN SILENCIO en SetInfo(). Contador al final del fichero.
+//
+// ⏳ lance (1570): sus 4 texturas propias (lightning_lance_01/02/Glow/02_r) no
+// existen en ningun sitio de /workspace. Las filas estan bien escritas y
+// funcionaran en cuanto llegue el arte. Es hueco de ARTE, no bug de dato.
+
+//lightning_sword (item 88) -- Lightning Sword
+88	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_sword_01 - cuerpo
+88	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_sword_02 - cuerpo
+88	1	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0	//m1 pase aditivo + swap (Kapocha)
+88	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_sword_03 - cuerpo
+88	3	-1	66	0	1	1	1.0	0	1.0	0.27	0.8	0.9	//m3 alpha_line2
+88	4	-1	66	2	1	1	1.0	0	1.0	0.9	0.9	1.0	//m4 K_lightning00_4X4_Blue: UV=1col x 2filas -> scrollV (ver cabecera)
+88	5	-1	66	0	1	1	1.0	0	1.0	0.6	0.5	1.0	//m5 lightning_sword_Glow
+//lightning_magicsword (item 89) -- Lightning Magic Sword
+89	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_magicSword_01 - cuerpo
+89	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_magicSword02 - cuerpo
+89	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_magicSword03 - cuerpo
+89	3	-1	66	2	1	1	1.0	0	1.0	0.25	0.8	0.66	//m3 alpha_line2 - scrollV
+89	4	-1	66	5	1	1	20.0	0	1.0	0.6	0.66	1.0	//m4 K_Elec_light01_1X4 - pulse (UV ya encuadra 1 celda)
+89	5	-1	66	0	1	1	1.0	0	1.0	0.1	0.1	0.6	//m5 lightning_magicSword_Glow
+89	6	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	1.0	//m6 lightning_magicSword01_r - swap + glow
+//lightning_twohandsword (item 90) -- Lightning Magic Two
+90	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Twosword_02 - cuerpo
+90	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Twosword_01 - cuerpo
+90	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_Twosword_03 - cuerpo
+90	3	-1	66	0	1	1	1.0	0	1.0	0.25	0.40	0.70	//m3 lightning_Twosword_Glow
+90	4	-1	66	1	1	1	1.0	0	1.0	0.27	0.80	0.90	//m4 alpha_line2 (dU=2.04 -> teselado) scrollU
+90	5	-1	66	0	1	1	1.0	1	2.0	0.50	0.60	1.00	//m5 lightning_Twosword_02_R - swap + glow, SIN pase opaco
+90	6	-1	66	4	4	4	1.0	0	1.0	0.90	0.90	1.00	//m6 lightning00_4X4_Blue: UV cubre la HOJA ENTERA -> frameGrid 4x4 OBLIGATORIO
+//lightning_twohandsword (item 129) -- Lightning M Two Hand Sword (T21) -- MISMO modelo que el 90
+129	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Twosword_02 - cuerpo
+129	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Twosword_01 - cuerpo
+129	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_Twosword_03 - cuerpo
+129	3	-1	66	0	1	1	1.0	0	1.0	0.25	0.40	0.70	//m3 lightning_Twosword_Glow
+129	4	-1	66	1	1	1	1.0	0	1.0	0.27	0.80	0.90	//m4 alpha_line2 (dU=2.04 -> teselado) scrollU
+129	5	-1	66	0	1	1	1.0	1	2.0	0.50	0.60	1.00	//m5 lightning_Twosword_02_R - swap + glow, SIN pase opaco
+129	6	-1	66	4	4	4	1.0	0	1.0	0.90	0.90	1.00	//m6 lightning00_4X4_Blue: UV cubre la HOJA ENTERA -> frameGrid 4x4 OBLIGATORIO
+//lightning_scepter (item 1058) -- T20 Lightning Scepter
+1058	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Scepter_01 - cuerpo
+1058	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Scepter_02 - cuerpo
+1058	2	-1	66	0	1	1	1.0	0	1.0	0.4	0.4	0.66	//m2 lightning_Scepter_Glow
+1058	3	-1	66	0	1	1	1.0	1	2.0	0.4	0.6	1.0	//m3 lightning_Scepter_02_r - swap + glow
+1058	4	-1	66	0	1	1	1.0	0	1.0	0.1	0.37	1.0	//m4 alpha_line2
+1058	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.53	0.53	//m5 K_lightning00_4X4_Blue: UV=3col x 2filas -> scrollV
+//lightning_scepter (item 1074) -- Lightning Scepter
+1074	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Scepter_01 - cuerpo
+1074	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Scepter_02 - cuerpo
+1074	2	-1	66	0	1	1	1.0	0	1.0	0.4	0.4	0.66	//m2 lightning_Scepter_Glow
+1074	3	-1	66	0	1	1	1.0	1	2.0	0.4	0.6	1.0	//m3 lightning_Scepter_02_r - swap + glow
+1074	4	-1	66	0	1	1	1.0	0	1.0	0.1	0.37	1.0	//m4 alpha_line2
+1074	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.53	0.53	//m5 K_lightning00_4X4_Blue: UV=3col x 2filas -> scrollV
+//lightning_scepter (item 1075) -- Lightning Mace
+1075	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Scepter_01 - cuerpo
+1075	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Scepter_02 - cuerpo
+1075	2	-1	66	0	1	1	1.0	0	1.0	0.4	0.4	0.66	//m2 lightning_Scepter_Glow
+1075	3	-1	66	0	1	1	1.0	1	2.0	0.4	0.6	1.0	//m3 lightning_Scepter_02_r - swap + glow
+1075	4	-1	66	0	1	1	1.0	0	1.0	0.1	0.37	1.0	//m4 alpha_line2
+1075	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.53	0.53	//m5 K_lightning00_4X4_Blue: UV=3col x 2filas -> scrollV
+//lightning_lance (item 1570) -- Lightning Lance -- ARTE AUSENTE, ver cabecera
+1570	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_lance_01 - cuerpo (TEXTURA AUSENTE, hueco de arte)
+1570	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_lance_02 - cuerpo (TEXTURA AUSENTE)
+1570	2	-1	66	1	1	1	1.0	0	1.0	0.27	0.80	0.90	//m2 alpha_line2 - scrollU
+1570	3	-1	66	0	1	1	1.0	0	1.0	0.25	0.40	0.70	//m3 lightning_lance_Glow (TEXTURA AUSENTE)
+1570	4	-1	66	0	1	1	1.0	1	2.0	0.50	0.60	1.00	//m4 lightning_lance_02_r - swap (TEXTURA AUSENTE)
+1570	5	-1	66	5	1	1	20.0	0	1.0	0.66	0.66	1.00	//m5 flareBlue - pulse
+1570	6	-1	66	4	4	4	1.0	0	1.0	0.90	0.90	1.00	//m6 lightning00_4X4_Blue: UV cubre la hoja entera -> frameGrid 4x4
+//lightning_staff (item 2639) -- T20 Lightning Staff
+2639	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_staff_01 - cuerpo
+2639	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_staff_02 - cuerpo
+2639	1	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	0.7	//m1 pase aditivo + swap (Kapocha)
+2639	2	-1	66	0	1	1	1.0	0	1.0	0.35	0.35	0.6	//m2 lightning_staff_Glow00
+2639	3	-1	66	5	1	1	20.0	0	1.0	1.0	1.0	0.75	//m3 K_Elec_light01_1X4 - pulse
+//lightning_stick (item 2640) -- T20 Lightning Stick
+2640	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Stick_01 - cuerpo
+2640	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Stick_02 - cuerpo
+2640	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_Stick_03 - cuerpo
+2640	3	-1	66	0	1	1	1.0	0	1.0	0.13	0.35	0.4	//m3 lightning_Stick_Glow
+2640	4	-1	66	0	1	1	1.0	0	1.0	0.25	0.75	0.85	//m4 alpha_line2
+2640	5	-1	66	0	1	1	1.0	1	2.0	0.66	0.66	1.0	//m5 flareBlue - swap + glow
+2640	6	-1	66	5	1	1	20.0	0	1.0	1.0	1.0	0.80	//m6 K_Elec_light01_1X4 - pulse
+2640	7	-1	66	5	1	1	20.0	0	1.0	0.6	0.6	0.75	//m7 K_Elec_light02_1X4 - pulse
+//lightning_staff (item 2646) -- Lightning Staff
+2646	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_staff_01 - cuerpo
+2646	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_staff_02 - cuerpo
+2646	1	-1	66	0	1	1	1.0	1	2.0	0.5	0.6	0.7	//m1 pase aditivo + swap (Kapocha)
+2646	2	-1	66	0	1	1	1.0	0	1.0	0.35	0.35	0.6	//m2 lightning_staff_Glow00
+2646	3	-1	66	5	1	1	20.0	0	1.0	1.0	1.0	0.75	//m3 K_Elec_light01_1X4 - pulse
+//lightning_stick (item 2647) -- Lightning Stick
+2647	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Stick_01 - cuerpo
+2647	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_Stick_02 - cuerpo
+2647	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_Stick_03 - cuerpo
+2647	3	-1	66	0	1	1	1.0	0	1.0	0.13	0.35	0.4	//m3 lightning_Stick_Glow
+2647	4	-1	66	0	1	1	1.0	0	1.0	0.25	0.75	0.85	//m4 alpha_line2
+2647	5	-1	66	0	1	1	1.0	1	2.0	0.66	0.66	1.0	//m5 flareBlue - swap + glow
+2647	6	-1	66	5	1	1	20.0	0	1.0	1.0	1.0	0.80	//m6 K_Elec_light01_1X4 - pulse
+2647	7	-1	66	5	1	1	20.0	0	1.0	0.6	0.6	0.75	//m7 K_Elec_light02_1X4 - pulse
+//lightning_book (item 2648) -- Lightning Book
+2648	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_book_01 - cuerpo
+2648	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_book_02 - cuerpo
+2648	2	-1	66	0	1	1	1.0	1	2.0	0.50	0.60	1.00	//m2 lightning_book_02_r - swap + glow, SIN pase opaco
+2648	3	-1	66	4	4	4	1.0	0	1.0	0.90	0.90	1.00	//m3 lightning00_4X4_Blue: UV cubre la hoja entera -> frameGrid 4x4
+//lightning_shield (item 3116) -- Lightning Shield
+3116	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_Shield_02 - cuerpo
+3116	1	-1	66	2	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 k_elec_light: UV ya encuadra 1 celda de 4x4 -> scrollV
+3116	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 lightning_Shield_01 - cuerpo
+3116	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m3 lightning_Shield_03 - cuerpo
+3116	4	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0	//m4 lightning_Shield_02_R - swap + glow, SIN pase opaco
+3116	5	-1	66	1	1	1	1.0	0	1.0	1.0	1.0	1.0	//m5 blue.JPG - scrollU
+//lightning_stone (item 7604) -- Lightning Soul
+7604	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_stone - cuerpo
+7604	1	-1	66	0	1	1	1.0	0	2.0	0.50	0.60	1.00	//m1 lightning_stone_Blue - overlay
+//lightning_anvil (item 7608) -- Lightning Anvil
+7608	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_anvil_01 - cuerpo
+7608	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_anvil_02 - cuerpo
+// --- fin del catalogo Lightning: 93 filas ---
+
+//===================================================================
+// 2026-08-18 -- filas de malla para las 24 alas nuevas de EffectIndex=98
+// (ver bloque hermano arriba en CEffect.txt). Una fila por CADA malla
+// del .bmd real (bmd.py), sin excepcion, para que el case98 no deje
+// ninguna sin cubrir. Reglas: malla 'base' -> BlendMode=2, tint 1 1 1;
+// malla 'EFECTO' -> SOLO BlendMode=66 (sin fila opaca, evita el
+// rectangulo negro de fondo), tinte por nombre de ala. AnimType=4 con
+// el grid real (nombre de textura / UV) cuando hay >1 frame, si no
+// AnimType=5 (pulse). SwapMode=1 solo cuando existe alterna _r/_R EN
+// DISCO y esa alterna no es ya la textura propia de OTRA malla del
+// mismo modelo (Death_wing mesh1/2/3 y Fallen_angel_wing mesh0 tienen
+// esa colision -- SwapMode desactivado ahi a proposito, ver informe).
+// NO se tocaron las 54 filas de catalogo Lightning de arriba.
+//===================================================================
+6425	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6425	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6425	2	-1	66	5	1	1	1.0	0	1.5	1.0	0.35	0.15
+6427	0	-1	66	5	1	1	1.0	0	1.5	1.0	0.4	0.1
+6430	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6430	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6430	2	-1	66	5	1	1	1.0	0	1.5	1.0	0.85	0.5
+6430	3	-1	66	4	4	4	1.0	1	1.0	1.0	0.85	0.5
+6430	4	-1	66	4	4	4	1.0	0	1.0	1.0	0.85	0.5
+6430	5	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6440	0	-1	66	4	4	4	1.0	1	1.0	0.4	0.3	1.0
+6440	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6440	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6444	0	-1	66	5	1	1	1.0	0	1.5	0.7	0.3	0.9
+6444	1	-1	66	5	1	1	1.0	0	1.5	0.7	0.3	0.9
+6448	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6448	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6448	2	-1	66	5	1	1	1.0	0	2.0	0.8	0.25	0.1
+6450	0	-1	66	5	1	1	1.0	0	1.5	0.45	0.35	1.0
+6450	1	-1	66	5	1	1	1.0	0	1.5	0.45	0.35	1.0
+6450	2	-1	66	5	1	1	1.0	0	1.5	0.45	0.35	1.0
+6450	3	-1	66	5	1	1	1.0	0	1.5	0.45	0.35	1.0
+6451	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6451	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6451	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6451	3	-1	66	4	4	4	1.0	0	1.0	1.0	0.3	0.05
+6452	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6452	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6452	2	-1	66	5	1	1	1.0	0	1.5	0.6	1.0	0.7
+6453	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6453	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6453	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6453	3	-1	2	0	1	1	1.0	1	1.0	1.0	1.0	1.0
+6453	4	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6453	5	-1	66	5	1	1	1.0	0	1.5	1.0	0.25	0.1
+6453	6	-1	66	4	4	4	1.0	0	1.0	1.0	0.25	0.1
+6495	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6495	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6495	2	-1	66	5	1	1	1.0	0	1.5	1.0	0.35	0.15
+6497	0	-1	66	5	1	1	1.0	0	1.5	1.0	0.4	0.1
+6510	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	4	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	5	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	6	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	7	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6510	8	-1	66	5	1	1	1.0	0	2.0	0.2	0.2	1.0
+6511	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6511	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6511	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6511	3	-1	66	4	4	4	1.0	0	1.0	0.2	0.2	1.0
+6511	4	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6514	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6514	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6514	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6514	3	-1	66	4	6	9	1.0	0	1.0	1.0	0.8	0.3
+6515	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6515	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6515	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6515	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6515	4	-1	66	5	1	1	1.0	0	1.5	0.15	0.02	0.02
+6516	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6516	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6516	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6516	3	-1	66	5	1	1	1.0	0	1.5	0.8	0.05	0.05
+6516	4	-1	66	5	1	1	1.0	0	1.5	0.8	0.05	0.05
+6519	0	-1	66	4	1	3	1.0	0	1.0	0.2	0.1	0.25
+6519	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	4	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	5	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	6	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6519	7	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6520	0	-1	66	5	1	1	1.0	0	1.5	0.7	0.1	0.1
+6520	1	-1	66	5	1	1	1.0	0	1.5	0.7	0.1	0.1
+6520	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6520	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6522	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6522	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6522	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6522	3	-1	66	4	5	1	1.0	0	1.0	0.5	0.05	0.05
+6522	4	-1	66	4	5	1	1.0	0	1.0	0.5	0.05	0.05
+6525	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6525	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6525	2	-1	66	5	1	1	1.0	0	2.0	0.3	0.7	1.0
+6525	3	-1	66	4	4	4	1.0	0	1.0	0.3	0.7	1.0
+6525	4	-1	66	5	1	1	1.0	0	1.5	0.3	0.7	1.0
+6525	5	-1	66	5	1	1	1.0	1	1.5	0.3	0.7	1.0
+6525	6	-1	66	5	1	1	1.0	0	2.0	0.3	0.7	1.0
+6526	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6526	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0
+6526	2	-1	2	0	1	1	1.0	1	1.0	1.0	1.0	1.0
+6526	3	-1	66	4	1	2	1.0	0	1.0	1.0	0.4	0.1
+6527	0	-1	66	5	1	1	1.0	0	1.5	0.5	0.15	0.6
+6527	1	-1	66	4	10	4	1.0	0	1.0	0.5	0.15	0.6
+6527	2	-1	66	4	10	4	1.0	0	1.0	0.5	0.15	0.6
+6527	3	-1	66	4	4	1	1.0	0	1.0	0.5	0.15	0.6
+6527	4	-1	66	4	5	4	1.0	0	1.0	0.5	0.15	0.6
+6527	5	-1	66	4	4	1	1.0	0	1.0	0.5	0.15	0.6
+6530	0	-1	66	5	1	1	1.0	0	1.5	0.35	0.25	0.45
+6530	1	-1	66	5	1	1	1.0	0	1.5	0.35	0.25	0.45
+6530	2	-1	66	5	1	1	1.0	0	1.5	0.35	0.25	0.45
+6530	3	-1	66	5	1	1	1.0	0	1.5	0.35	0.25	0.45
+6530	4	-1	66	4	1	4	1.0	0	1.0	0.35	0.25	0.45
+
+//sword49 / sword49_L / sword49_R (item 114) -- dato ORIGINAL del kit Kapocha
+// (bloque "Sword49-Sword49_L-Sword49_R" en working_em/CEffectRenderMesh.txt, marcador
+// ItemIndex=32229 normalizado a 114). FindByItemIndex es por indice, no por modelo:
+// los 3 .bmd comparten orden de malla 1:1 (verificado con bmd.py), una sola fila cubre las 3.
+// Normalizacion de centinelas del autor: AnimType -1->0, SwapMode -1->0, GlowLevel -1->1.0.
+// Ningun AnimType original es 4, no aplica la regla critica de frameGrid en este bloque.
+114	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 lightning_claw_01 - cuerpo
+114	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 lightning_claw_02 - cuerpo
+114	1	-1	66	0	1	1	1.0	1	2.0	0.35	0.97	1.0	//m1 pase aditivo + swap (dato autor)
+114	2	-1	66	0	1	1	1.0	1	2.0	0.7	0.24	0.8	//m2 Glow_26 - aditivo + swap (dato autor)
+114	3	-1	66	0	1	1	1.0	1	2.0	1.0	1.0	1.0	//m3 light_blue - aditivo + swap. ⚠️ el autor pone GlowLevel=80.0; AQUI SE BAJA A 2.0 A PROPOSITO
+//   Motivo: en NUESTRO motor GlowLevel es un multiplicador directo (DrawMesh.cpp -> uFxGlow /
+//   uBrightMult), asi que 80.0 = blanco puro reventado, que es justo el sintoma que reporta el
+//   dueño. Las otras 227 filas del fichero no pasan de 2.0. La DLL de Kapocha usaba otra escala
+//   para esta columna, asi que copiar el NUMERO no seria copiar el EFECTO. Para volver al valor
+//   literal del autor basta cambiar el 2.0 de la fila de arriba por 80.0.
+114	4	-1	66	5	1	1	20.0	0	1.0	0.66	0.66	1.0	//m4 K_Elec_light01_1X4 - pulse (prefijo K_: UV ya encuadran 1 celda, dU=1.000 dV=0.250)
+114	5	-1	66	2	1	1	1.0	0	1.0	0.4	0.70	1.0	//m5 alpha_line2 - scrollV (dato autor)
+//Templeguard_scepter (item 1077) -- sin dato de autor, rol deducido por textura + UV medidas con bmd.py
+1077	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 TempleGuard_scepter_01 - cuerpo (dU=0.969 dV=0.976, sin solape)
+1077	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 TempleGuard_scepter_03 - cuerpo
+1077	1	-1	66	0	1	1	1.0	1	2.0	1.0	0.3	0.15	//m1 pase aditivo + swap: existe TempleGuard_scepter_03_R.ozj en disco (alterna real via ResolveAltBitmapIndex)
+1077	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 TempleGuard_scepter_02 - cuerpo
+1077	3	-1	66	5	1	1	20.0	0	1.0	1.0	0.4	0.15	//m3 K_FireA00_4X3_mono - pulse (prefijo K_: UV ya encuadran 1 celda, dU=0.250 dV=0.187 pese al sufijo _4X3 -> NO frameGrid)
+1077	4	-1	66	1	1	1	1.0	0	1.0	1.0	0.8	0.4	//m4 gra4 - scrollU (streak: dU=5.275 desborda [0,1] repetidas veces, dV=0.506 sin desborde real)
+1077	5	-1	66	0	1	1	1.0	0	1.0	1.0	0.85	0.55	//m5 ArrowLight00 - glow estatico (dU=1.000 dV=1.000, cubre el quad entero, sin rejilla)
+//Templeguard_lance (item 1571) -- sin dato de autor, rol deducido por textura + UV; SIN ARTE en
+// disco (0 texturas TempleGuard_lance*/Templeguard_lance* en todo /workspace, mismo hueco que
+// lightning_lance/1570 documentado en memoria). Filas correctas, quedan a la espera del arte.
+1571	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 TempleGuard_lance_01 - cuerpo (textura ausente en disco)
+1571	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 TempleGuard_lance_02 - cuerpo (textura ausente en disco)
+1571	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 TempleGuard_lance_03 - cuerpo (textura ausente en disco)
+1571	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m3 TempleGuard_lance_04 - cuerpo (sin _R hermana en disco, no lleva swap)
+1571	4	-1	66	2	1	1	1.0	0	1.0	1.0	0.85	0.5	//m4 Blur_Aura002 - scrollV (V totalmente fuera de [0,1]: Vmin=1.003 Vmax=2.667, U exacto 0..1 -> desborde puro en V)
+1571	5	-1	66	5	1	1	20.0	0	1.0	1.0	0.7	0.3	//m5 FireB00_4X4_mono - pulse (misma textura que Imperial_lance m5: UV=0.250x0.249 = 1 celda ya encuadrada pese al sufijo _4X4 -> NO frameGrid)
+//Imperial_lance (item 1572) -- sin dato de autor, rol deducido por textura + UV medidas con bmd.py
+1572	0	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m0 Imperial_lance_02 - cuerpo
+1572	1	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m1 Imperial_lance_01 - cuerpo
+1572	1	-1	66	0	1	1	1.0	1	2.0	1.0	0.3	0.45	//m1 pase aditivo + swap: existe Imperial_lance_01_R.OZJ en disco (alterna real)
+1572	2	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m2 Imperial_lance_03 - cuerpo (sin _R hermana en disco)
+1572	3	-1	2	0	1	1	1.0	0	1.0	1.0	1.0	1.0	//m3 Imperial_lance_04 - cuerpo
+1572	3	-1	66	0	1	1	1.0	1	2.0	0.9	0.68	1.0	//m3 pase aditivo + swap: existe Imperial_lance_04_R.OZJ en disco (alterna real, violeta)
+1572	4	-1	66	1	1	1	1.0	0	1.0	1.0	0.35	0.25	//m4 alpha_line2mono2 - scrollU (dU=1.227 desborda ambos limites, dV=0.821 no llega a desbordar el limite superior)
+1572	5	-1	66	5	1	1	20.0	0	1.0	0.85	0.55	1.0	//m5 FireB00_4X4_mono - pulse (misma textura que Templeguard_lance m5: UV ya encuadran 1 celda)
 end

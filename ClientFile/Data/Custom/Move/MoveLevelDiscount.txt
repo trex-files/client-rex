@@ -10,7 +10,7 @@
 
 // Seccion 0: interruptor. 1 = MG/DL/RF pagan 2/3. 0 = todas las clases igual.
 0
-	1
+	0
 end
 
 // Seccion 1: indices de destino de Move.txt que NUNCA reciben descuento,

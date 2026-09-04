@@ -88,6 +88,11 @@ function fail(msg) {
 // config per-usuario (config.ini/Mu.ini van onlyifdoesntexist en el .iss).
 const ALWAYS_EXCLUDED = new Set([
   'launcher.exe', 'config.ini', 'mu.ini',
+  // REX 2026-08-24: MainEdit.exe es el cliente de PRUEBAS con auto-pocion
+  // (CB_MUHelper.cpp: el modulo solo se arma si su basename es MainEdit.exe).
+  // Si se cuela en un parche, TODOS los jugadores reciben auto-pocion.
+  // Vive en ClientFile/ junto al Main.exe real, asi que el walk lo encontraria.
+  'mainedit.exe',
   'main.lib', 'muerror.log',      // residuos especificos del build/runtime
   'main',                         // leftover del linker (ELF sin extension; 0 archivos tracked "Main" en Data)
   'rex.txt',                      // log de debug del cliente (OpenTexture/LoadBitmap Failed), gitignored
@@ -98,6 +103,12 @@ const ALWAYS_EXCLUDED = new Set([
 // el cliente los reusa para datos de terreno (EncTerrain*.obj/.lib). Solo
 // extensiones que son inequivocamente artefactos de compilacion/backup/empaque.
 const ALWAYS_EXCLUDED_SUFFIX = ['.pdb', '.exp', '.log', '.bak', '.rar', '.zip', '.7z', '.cab'];
+// Backups de trabajo con sufijo propio: `Item_eng.bmd.bak-slot11`, `x.ozt.bak_pre13`.
+// NO los atrapa ALWAYS_EXCLUDED_SUFFIX porque no terminan en '.bak' exacto, y como
+// .gitignore los oculta (`.bak-*`), tampoco los ve `git status`. El 2026-08-18 se
+// colaron 29 de estos en el Patch8.zip (23 MB) y nadie lo detecto: el pipeline no
+// soporta borrado, asi que lo que entra se queda para siempre en el cliente del jugador.
+const ALWAYS_EXCLUDED_RE = /\.(bak|orig|tmp|old)[-_.]/i;
 
 // Recorre dir recursivamente. Devuelve Map<relPathPosix, {abs, size, sha}>.
 // excludeBasenames: Set de nombres (lowercase) a saltear en cualquier nivel,
@@ -125,6 +136,7 @@ function walkTree(dir, excludeBasenames) {
         const lower = ent.name.toLowerCase();
         if (excludeBasenames.has(lower)) continue;
         if (ALWAYS_EXCLUDED_SUFFIX.some(function (s) { return lower.endsWith(s); })) continue;
+        if (ALWAYS_EXCLUDED_RE.test(lower)) continue;
         const rel = relative(dir, abs).split(sep).join('/');
         const buf = readFileSync(abs);
         const sha = createHash('sha256').update(buf).digest('hex');
@@ -192,6 +204,23 @@ function writeHashManifest(build, ver, outDir) {
 
 // Crea un .zip con `zip -X` (sin atributos extra) tomando rutas relativas desde
 // `rootDir`, leyendo la lista de nombres por stdin (-@). Devuelve {crc32, size}.
+// Busca un bsdtar (libarchive) que sepa --format=zip. OJO: en Git Bash el
+// 'tar' del PATH suele ser GNU tar, que NO soporta zip y falla con
+// "Invalid archive format" — por eso se prueban rutas concretas y se
+// confirma leyendo --version, en vez de confiar en el nombre.
+function findBsdtar() {
+  const cands = [
+    process.env.BSDTAR,
+    join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'tar.exe'),
+    'bsdtar',
+  ].filter(Boolean);
+  for (const c of cands) {
+    const v = spawnSync(c, ['--version'], { encoding: 'utf8' });
+    if (!v.error && /bsdtar|libarchive/i.test(v.stdout || '')) return c;
+  }
+  return null;
+}
+
 function makeZip(rootDir, relPaths, zipPath) {
   // El proceso hijo `zip` corre con cwd=rootDir (para que -@ escriba nombres de
   // entrada relativos al build). Ese cwd tambien cambia como el hijo resuelve
@@ -201,11 +230,34 @@ function makeZip(rootDir, relPaths, zipPath) {
   const absZip = resolve(zipPath);
   if (existsSync(absZip)) rmSync(absZip);
   const list = relPaths.join('\n') + '\n';
-  const res = spawnSync('zip', ['-X', '-q', '-@', absZip], {
+  let res = spawnSync('zip', ['-X', '-q', '-@', absZip], {
     cwd: rootDir,
     input: Buffer.from(list, 'utf8'),
     maxBuffer: 1024 * 1024 * 64,
   });
+  // Fallback a bsdtar cuando no hay Info-Zip. Windows 10+ trae tar.exe
+  // (libarchive) en System32 y sabe escribir zip estandar: deflate, rutas
+  // relativas con '/', sin data descriptor. Sale un zip equivalente para lo
+  // unico que le importa al launcher (leerlo y validar el CRC-32 del fichero).
+  // bsdtar no lee la lista por stdin de forma portable, asi que va por fichero.
+  if (res.error && res.error.code === 'ENOENT') {
+    const bsdtar = findBsdtar();
+    if (!bsdtar)
+      fail(`no hay 'zip' (Info-Zip) en el PATH ni un bsdtar que sepa --format=zip. ` +
+           `Instala Info-Zip, o usa Windows 10+ (System32\\tar.exe).`);
+    const listFile = absZip + '.filelist';
+    writeFileSync(listFile, list, 'utf8');
+    try {
+      res = spawnSync(bsdtar, ['-c', '-f', absZip, '--format=zip', '-T', listFile], {
+        cwd: rootDir,
+        maxBuffer: 1024 * 1024 * 64,
+      });
+    } finally {
+      if (existsSync(listFile)) rmSync(listFile);
+    }
+    if (res.error)
+      fail(`fallo al lanzar '${bsdtar}': ${res.error.code || res.error.message}`);
+  }
   if (res.error)
     fail(`could not launch 'zip' (${res.error.code || res.error.message}). Is Info-Zip 'zip' installed and on PATH?`);
   if (res.status !== 0) {

@@ -1,0 +1,120 @@
+12@1@257@Horn of Fenrir@170@5000@Summons the mighty Fenrir mount.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2570|@6693@2@1@2570|@0@509@669
+13@1@258@Jewel of Chaos@170@5@Used in the Chaos Machine to combine items.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2580|@6159@2@1@2580|@0@509@669
+13@2@259@Jewel of Soul@170@10@Adds +1 option to an item (max +3).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2590|@7182@2@1@2590|@0@509@669
+13@3@260@Jewel of Bless@170@10@Increases an item's level by +1.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2600|@7181@2@1@2600|@0@509@669
+13@4@261@Jewel of Guardian@170@50@Adds a Guardian option to an item.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2610|@7199@2@1@2610|@0@509@669
+13@5@262@Jewel of Harmony@170@50@Adds a Harmony option to an item.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2620|@7210@2@1@2620|@0@509@669
+14@1@263@Loch's Feather@170@200@Material for the +2.5 Wings quest.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2630|@6670@2@1@2630|@0@509@669
+14@2@264@Moonstone Pendant@170@150@Material for the +2.5 Wings quest.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2640|@6694@2@1@2640|@0@509@669
+14@3@265@Condor Feather@170@1000@Material for the +2.5 Wings quest.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2650|@6709@2@1@2650|@0@509@669
+15@1@266@Cape of Death (2.5)@170@2000@Upgraded Wings, tier 2.5.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2660|@6498@2@1@2660|@0@509@669
+15@2@267@Wing of Chaos (2.5)@170@2000@Upgraded Wings, tier 2.5.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2670|@6495@2@1@2670|@0@509@669
+15@3@268@Wing of Magic (2.5)@170@2000@Upgraded Wings, tier 2.5.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2680|@6496@2@1@2680|@0@509@669
+15@4@269@Wing of Flame (2.5)@170@2000@Upgraded Wings, tier 2.5.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2690|@6497@2@1@2690|@0@509@669
+16@1@270@Accessory Box@170@150@Random reward box.@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2700|@7220@2@1@2700|@0@509@669
+16@2@271@Box of Kundun +1@170@10@Random reward box (tier 1).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2710|@7179@2@1@2710|@0@509@669
+16@3@272@Box of Kundun +2@170@20@Random reward box (tier 2).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2720|@7179@2@1@2720|@0@509@669
+16@4@273@Box of Kundun +3@170@30@Random reward box (tier 3).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2730|@7179@2@1@2730|@0@509@669
+16@5@274@Box of Kundun +4@170@40@Random reward box (tier 4).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2740|@7179@2@1@2740|@0@509@669
+16@6@275@Box of Kundun +5@170@50@Random reward box (tier 5).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2750|@7179@2@1@2750|@0@509@669
+16@7@276@Mystic Box@170@100@Random reward box (tier 8).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2760|@7223@2@1@2760|@0@509@669
+16@8@277@Royal Box@170@180@Random reward box (tier 9).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2770|@7224@2@1@2770|@0@509@669
+16@9@278@Eternal Box@170@250@Random reward box (tier 10).@@182@185@0@0@177@1@Grand Coins@Grand Coins@181@200@0@2780|@7225@2@1@2780|@0@509@669
+31@1@100@Expand Inventory@170@300@Expand personal inventory (1 slot)@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1000|@7330@2@1@1000|@0@508@669
+31@2@101@Vault Expansion@170@300@Expand storage (1 slot)@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1010|@7331@2@1@1010|@0@508@669
+31@3@105@Talisman of Luck@170@100@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1050|@7221@2@1@1050|@0@508@669
+31@4@106@Talisman of Chaos Assembly@170@300@Avoid losing your item when upgrading it from +10 to +15 in the Chaos Machine.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1060|@7264@2@1@1060|@0@508@669
+31@5@107@Silver Key@170@50@Open a sealed Silver box.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1070|@7280@2@1@1070|@0@508@669
+31@6@108@Gold Key@170@100@Open a sealed Gold box.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1080|@7281@2@1@1080|@0@508@669
+32@1@109@Pet Panda@170@100@Increases EXP by 50%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1090|@6736@2@3@1090|1091|1092|@0@508@669
+32@2@120@Pet Unicorn@170@60@Increases EXP by 25%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1200|@6762@2@3@1200|1201|1202|@0@508@669
+32@3@121@Pet Skeleton@170@40@Increases EXP by 25%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1210|@6779@2@3@1210|1211|1212|@0@508@669
+32@4@122@Guardian Angel@170@60@Combat pet: increases defense.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1220|@6656@2@3@1220|1221|1222|@0@508@669
+32@5@123@Imp@170@60@Combat pet: increases attack.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1230|@6657@2@3@1230|1231|1232|@0@508@669
+32@6@124@Demon@170@80@Combat pet: increases attack power.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1240|@6720@2@3@1240|1241|1242|@0@508@669
+32@7@125@Spirit of Guardian@170@80@Combat pet: increases defense power.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1250|@6721@2@3@1250|1251|1252|@0@508@669
+32@8@126@Dinorant@170@70@Mount pet with combat bonus.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1260|@6659@2@3@1260|1261|1262|@0@508@669
+33@1@102@Devil SquareTicket@170@250@Entrance to the Devil Square event (10 times)@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1020|@6702@2@1@1020|@0@508@669
+33@2@103@Blood Castle Ticket@170@250@Entrance to the Blood Castle event (10 times)@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1030|@6703@2@1@1030|@0@508@669
+33@3@104@Kalima Ticket@170@250@Entrance to the Kalima (10 times)@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1040|@6704@2@1@1040|@0@508@669
+34@1@110@Seal of Ascension@170@100@Increases EXP by 25%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1100|@6699@2@3@1100|1101|1102|@0@508@669
+34@2@111@Master Seal of Ascension@170@120@Increases EXP by 30%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1110|@6749@2@3@1110|1111|1112|@0@508@669
+34@3@112@Party Experience Bonus@170@85@Increases party EXP by 30%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1120|@6759@2@3@1120|1121|1122|@0@508@669
+34@4@113@Seal of Wealth@170@100@Increases Drop Rate by 25%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1130|@6700@2@3@1130|1131|1132|@0@508@669
+34@5@114@Master Seal of Wealth@170@120@Increases Drop Rate by 30%.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1140|@6750@2@3@1140|1141|1142|@0@508@669
+34@6@115@Max AG Boost Aura@170@40@Adds +10 AG.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1150|@6760@2@3@1150|1151|1152|@0@508@669
+34@7@116@Max SD Boost Aura@170@40@Adds +10 SD.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1160|@6761@2@3@1160|1161|1162|@0@508@669
+35@1@130@Scroll of Quick@170@50@Adds +15 Agility.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1300|@7240@2@3@1300|1301|1302|@0@508@669
+35@2@131@Scroll of Defense@170@50@Adds +60 Defense.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1310|@7241@2@3@1310|1311|1312|@0@508@669
+35@3@132@Scroll of Damage@170@50@Adds +30 Damage.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1320|@7242@2@3@1320|1321|1322|@0@508@669
+35@4@133@Scroll of Magic Damage@170@50@Adds +30 Magic Damage.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1330|@7243@2@3@1330|1331|1332|@0@508@669
+35@5@134@Scroll of Life@170@50@Adds +200 HP.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1340|@7244@2@3@1340|1341|1342|@0@508@669
+35@6@135@Scroll of Mana@170@50@Adds +300 MP.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1350|@7245@2@3@1350|1351|1352|@0@508@669
+35@7@136@Scroll of Battle@170@40@Adds +20 Attack Speed.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1360|@7265@2@3@1360|1361|1362|@0@508@669
+35@8@137@Scroll of Strength@170@40@Adds +20 Strength.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1370|@7266@2@3@1370|1371|1372|@0@508@669
+36@1@138@Elixir of Strength@170@60@Adds +50 Strength.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1380|@7246@2@3@1380|1381|1382|@0@508@669
+36@2@139@Elixir of Dexterity@170@60@Adds +50 Agility.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1390|@7247@2@3@1390|1391|1392|@0@508@669
+36@3@140@Elixir of Vitality@170@60@Adds +50 Vitality.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1400|@7248@2@3@1400|1401|1402|@0@508@669
+36@4@141@Elixir of Energy@170@60@Adds +50 Energy.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1410|@7249@2@3@1410|1411|1412|@0@508@669
+36@5@142@Elixir of Leadership@170@60@Adds +50 Command.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@1420|@7250@2@3@1420|1421|1422|@0@508@669
+37@1@249@Box of Kundun +4@170@150@Random reward box (tier 4).@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2490|@7179@2@1@2490|@0@508@669
+37@2@250@Box of Kundun +5@170@250@Random reward box (tier 5).@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2500|@7179@2@1@2500|@0@508@669
+37@3@251@Sealed Silver Box@170@200@Sealed box. Requires a Silver Key to open.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2510|@7290@2@1@2510|@0@508@669
+37@4@252@Sealed Golden Box@170@300@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2520|@7289@2@1@2520|@0@508@669
+37@5@233@Jewel Of Skill@170@200@Adds the Skill option to an item.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2330|@7413@2@1@2330|@0@508@669
+37@6@234@Jewel Of Luck@170@400@Adds the Luck option to an item.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2340|@7414@2@1@2340|@0@508@669
+37@7@235@Jewel Of Excelent@170@650@Adds one Excellent option (max 3). 50% success rate.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2350|@7416@2@1@2350|@0@508@669
+37@8@236@Jewel Of Level +11@170@300@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2360|@7378@2@1@2360|@0@508@669
+37@9@237@Jewel Of Level +12@170@500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2370|@7379@2@1@2370|@0@508@669
+37@10@238@Jewel Of Level +13@170@750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2380|@7380@2@1@2380|@0@508@669
+37@11@239@Jewel Of Level +14@170@1200@Upgrades an item from +13 to +14.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2390|@7381@2@1@2390|@0@508@669
+37@12@240@Jewel Of Level +15@170@1700@Upgrades an item from +14 to +15.@@182@185@0@0@177@1@Rex Coins@Rex Coins@181@200@0@2400|@7382@2@1@2400|@0@508@669
+40@1@200@Seal of Ascension@170@800@Increases EXP by 25%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2000|@6699@2@3@2000|2001|2002|@0@0@669
+40@2@201@Master Seal of Ascension@170@900@Increases EXP by 30%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2010|@6749@2@3@2010|2011|2012|@0@0@669
+40@3@202@Party Experience Bonus@170@650@Increases party EXP by 30%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2020|@6759@2@3@2020|2021|2022|@0@0@669
+40@4@203@Seal of Wealth@170@800@Increases Drop Rate by 25%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2030|@6700@2@3@2030|2031|2032|@0@0@669
+40@5@204@Master Seal of Wealth@170@900@Increases Drop Rate by 30%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2040|@6750@2@3@2040|2041|2042|@0@0@669
+40@6@205@Max AG Boost Aura@170@200@Adds +10 AG.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2050|@6760@2@3@2050|2051|2052|@0@0@669
+40@7@206@Max SD Boost Aura@170@200@Adds +10 SD.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2060|@6761@2@3@2060|2061|2062|@0@0@669
+41@1@207@Scroll of Quick@170@200@Adds +15 Agility.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2070|@7240@2@3@2070|2071|2072|@0@0@669
+41@2@208@Scroll of Defense@170@200@Adds +60 Defense.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2080|@7241@2@3@2080|2081|2082|@0@0@669
+41@3@209@Scroll of Damage@170@200@Adds +30 Damage.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2090|@7242@2@3@2090|2091|2092|@0@0@669
+41@4@210@Scroll of Magic Damage@170@200@Adds +30 Magic Damage.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2100|@7243@2@3@2100|2101|2102|@0@0@669
+41@5@211@Scroll of Life@170@200@Adds +200 HP.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2110|@7244@2@3@2110|2111|2112|@0@0@669
+41@6@212@Scroll of Mana@170@200@Adds +300 MP.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2120|@7245@2@3@2120|2121|2122|@0@0@669
+41@7@213@Scroll of Battle@170@160@Adds +20 Attack Speed.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2130|@7265@2@3@2130|2131|2132|@0@0@669
+41@8@214@Scroll of Strength@170@160@Adds +20 Strength.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2140|@7266@2@3@2140|2141|2142|@0@0@669
+42@1@215@Elixir of Strength@170@250@Adds +50 Strength.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2150|@7246@2@3@2150|2151|2152|@0@0@669
+42@2@216@Elixir of Dexterity@170@250@Adds +50 Agility.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2160|@7247@2@3@2160|2161|2162|@0@0@669
+42@3@217@Elixir of Vitality@170@250@Adds +50 Vitality.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2170|@7248@2@3@2170|2171|2172|@0@0@669
+42@4@218@Elixir of Energy@170@250@Adds +50 Energy.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2180|@7249@2@3@2180|2181|2182|@0@0@669
+42@5@219@Elixir of Leadership@170@250@Adds +50 Command.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2190|@7250@2@3@2190|2191|2192|@0@0@669
+43@1@220@Pet Panda@170@550@Increases EXP by 50%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2200|@6736@5@3@2200|2201|2202|@1@0@669
+43@2@221@Pet Unicorn@170@350@Increases EXP by 25%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2210|@6762@5@3@2210|2211|2212|@1@0@669
+43@3@222@Pet Skeleton@170@250@Increases EXP by 25%.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2220|@6779@5@3@2220|2221|2222|@1@0@669
+43@4@223@Guardian Angel@170@350@Combat pet: increases defense.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2230|@6656@2@3@2230|2231|2232|@0@0@669
+43@5@224@Imp@170@350@Combat pet: increases attack.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2240|@6657@2@3@2240|2241|2242|@0@0@669
+43@6@225@Demon@170@450@Combat pet: increases attack power.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2250|@6720@2@3@2250|2251|2252|@0@0@669
+43@7@226@Spirit of Guardian@170@450@Combat pet: increases defense power.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2260|@6721@2@3@2260|2261|2262|@0@0@669
+43@8@227@Dinorant@170@400@Mount pet with combat bonus.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2270|@6659@2@3@2270|2271|2272|@0@0@669
+44@1@228@Devil SquareTicket@170@1000@Entrance to the Devil Square event (10 times)@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2280|@6702@2@1@2280|@0@0@669
+44@2@229@Blood Castle Ticket@170@1000@Entrance to the Blood Castle event (10 times)@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2290|@6703@2@1@2290|@0@0@669
+44@3@230@Kalima Ticket@170@1000@Entrance to the Kalima (10 times)@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2300|@6704@2@1@2300|@0@0@669
+61@1@117@Vault Expansion@170@2500@Expand storage (1 slot)@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@1170|@7331@5@1@1170|@1@0@669
+61@2@118@Expand Inventory@170@2500@Expand personal inventory (1 slot)@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@1180|@7330@5@1@1180|@1@0@669
+61@3@119@Talisman of Luck@170@750@Adds +5% luck to Chaos combinations.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@1190|@7221@5@1@1190|@1@0@669
+61@4@127@Talisman of Chaos Assembly@170@750@Avoid losing your item when upgrading it from +10 to +15 in the Chaos Machine.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@1270|@7264@5@1@1270|@1@0@669
+61@5@231@Silver Key@170@400@Open a sealed Silver box.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2310|@7280@2@1@2310|@0@0@669
+61@6@232@Gold Key@170@800@Open a sealed Gold box.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2320|@7281@2@1@2320|@0@0@669
+62@1@253@Box of Kundun +4@170@750@Random reward box (tier 4).@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2530|@7179@2@1@2530|@0@0@669
+62@2@254@Box of Kundun +5@170@1250@Random reward box (tier 5).@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2540|@7179@2@1@2540|@0@0@669
+62@3@255@Sealed Silver Box@170@1000@Sealed box. Requires a Silver Key to open.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2550|@7290@2@1@2550|@0@0@669
+62@4@256@Sealed Golden Box@170@1500@Sealed box. Requires a Gold Key to open.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2560|@7289@2@1@2560|@0@0@669
+62@5@241@Jewel Of Skill@170@1000@Adds the Skill option to an item.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2410|@7413@2@1@2410|@0@0@669
+62@6@242@Jewel Of Luck@170@2000@Adds the Luck option to an item.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2420|@7414@2@1@2420|@0@0@669
+62@7@243@Jewel Of Excelent@170@3250@Adds one Excellent option (max 3). 50% success rate.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2430|@7416@2@1@2430|@0@0@669
+62@8@244@Jewel Of Level +11@170@1500@Upgrades an item from +10 to +11.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2440|@7378@2@1@2440|@0@0@669
+62@9@245@Jewel Of Level +12@170@2500@Upgrades an item from +11 to +12.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2450|@7379@2@1@2450|@0@0@669
+62@10@246@Jewel Of Level +13@170@3750@Upgrades an item from +12 to +13.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2460|@7380@2@1@2460|@0@0@669
+62@11@247@Jewel Of Level +14@170@6000@Upgrades an item from +13 to +14.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2470|@7381@2@1@2470|@0@0@669
+62@12@248@Jewel Of Level +15@170@8500@Upgrades an item from +14 to +15.@@182@185@0@0@177@1@Adventure Coins@Adventure Coins@181@200@0@2480|@7382@2@1@2480|@0@0@669

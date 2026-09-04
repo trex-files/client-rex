@@ -61,16 +61,48 @@ vec2 ApplyUVAnimation(vec2 texCoord) {
     } else if (uAnimMode == 4) {
         // Frame-grid: sprite sheet advancing at uAnimSpeed frames/sec.
         // uFrameGrid.x = cols, uFrameGrid.y = rows.
-        float frameIndex = mod(floor(uAnimTime * uAnimSpeed),
-                               uFrameGrid.x * uFrameGrid.y);
+        // *30.0 matches mesh_bright.frag's frame-grid formula (frames/sec in the
+        // authored data -> our time base); without it this path animated 30x
+        // slower than the additive path for the same FrameRate value.
+        // 2026-08-18 FIX: texCoord must be DIVIDED by the grid before adding the
+        // cell offset, exactly as mesh_bright.frag:113 does. Without the divide
+        // this path only slid the WHOLE sheet around instead of zooming into one
+        // cell, so a frame-grid row on an opaque mesh showed every frame at once
+        // -- the same "the body repeats 4 times" symptom already diagnosed on
+        // item 129. Unlike AnimType=5, this divergence was NOT deliberate: the
+        // additive path had the divide and this one silently didn't.
+        // Returns early because the shared `fract(texCoord + offset)` tail below
+        // would re-wrap coordinates that are already inside their cell.
+        // max(...,1.0) guards a 0-sized grid (mod by 0 -> NaN -> black mesh).
+        float total = max(uFrameGrid.x * uFrameGrid.y, 1.0);
+        float frameIndex = mod(floor(uAnimTime * uAnimSpeed * 30.0), total);
         float row = floor(frameIndex / uFrameGrid.x);
         float col = mod(frameIndex, uFrameGrid.x);
-        offset = vec2(col / uFrameGrid.x, row / uFrameGrid.y);
+        return texCoord / uFrameGrid + vec2(col / uFrameGrid.x, row / uFrameGrid.y);
     }
-    // Mode 5 (pulse): UV unchanged — only color/alpha is modulated; handled
-    // via vColor.a on the CPU side; no UV offset needed here.
+    // Mode 5 (pulse): UV intentionally unchanged here — it's a brightness-only
+    // effect, applied by ApplyPulseBrightness() in main(). (This function's
+    // job is UV offset; mode 5 falls through with offset=(0,0), i.e. a no-op,
+    // which is correct for it.)
 
     return fract(texCoord + offset);
+}
+
+// Mode 5 (pulse): brightness-only flicker, no UV change — spec formula
+// (RE'd from the original Kapocha 2.0.3 DLL): 0.2 + 0.7*sin(t*speed), range
+// 0.2..0.9. Returns 1.0 (no-op) for every other uAnimMode.
+//
+// DELIBERATE DIVERGENCE FROM mesh_bright.frag -- DO NOT "UNIFY" THIS. The
+// additive path (mesh_bright.frag, BlendMode=66) uses a different, conscious
+// "electric crackle" reinterpretation instead of this formula -- already
+// shipped, already audited as intentional, not a bug. See the comment on its
+// AnimMode==5 branch for the full rationale (every AnimType=5 row in
+// CEffectRenderMesh.txt today is BlendMode=66, so this opaque-path formula
+// is what makes the opaque path stop being mute for AnimType=5, not what the
+// electric weapons actually render with).
+float ApplyPulseBrightness() {
+    if (uAnimMode != 5) return 1.0;
+    return 0.2 + 0.7 * sin(uAnimTime * uAnimSpeed);
 }
 
 // Blend between primary texture (color0) and uTexAlt based on swap mode.
@@ -129,6 +161,8 @@ void main() {
     // Apply per-item RGB tint (Kapocha ColorR/G/B). CPU sets uTint=(1,1,1)
     // for meshes without an effect entry → strict no-op for all other meshes.
     c.rgb *= uTint;
+    // Mode 5 (pulse) brightness flicker — no-op (1.0) for every other mode.
+    c.rgb *= ApplyPulseBrightness();
 #ifdef FOG_ENABLED
     float dist = -vViewPos.z;
     float fogF = clamp((uFogParams.y - dist) / (uFogParams.y - uFogParams.x), 0.0, 1.0);
