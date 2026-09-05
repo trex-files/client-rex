@@ -1,5 +1,5 @@
 10@Rex Coins@200@201@10@1@1
-20@Adventure Coins Shop@200@201@20@2@1
+20@Adventure Coins@200@201@20@2@1
 31@Special@200@201@10@2@0
 32@Pets@200@201@10@3@0
 33@Tickets@200@201@10@5@0
