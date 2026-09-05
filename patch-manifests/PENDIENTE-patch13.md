@@ -1,69 +1,97 @@
-# Patch 13 — generado 2026-09-04, FALTA PUBLICAR
+# Patch 13 — REGENERADO 2026-09-05 03:36, FALTA PUBLICAR
 
-## Qué lleva (12 archivos, diff v12 -> v13)
+> ⚠️ Este archivo reemplaza la versión del 2026-09-04 04:44. Aquel Patch13 se
+> generó con **12 archivos** y **nunca se publicó**. Se regeneró desde cero
+> porque el merge del PR#2 (New Visual) entró 15 h DESPUÉS de aquella corrida.
+> Respaldo del zip anterior en el scratchpad de la sesión (`Patch13-viejo.zip`,
+> crc `042cb46d`). Como v13 nunca salió, se mantiene el número 13: el
+> incremental sigue siendo v12 → build actual.
 
-- `Main.exe` recompilado — trae la revisión completa del repo principal
-  (`mu-sourcecode` s21, commits `880889862`..`62fcd7a0c`): fix reset-mode BC/DS,
-  revert QuestHub Weekly/CooldownTotal, render Level de Box of Kundun en la
-  tienda, fallback CPU del GPU-skin, preset low-spec v3, fix del freeze de
-  4GB RAM, fix de Power Slash a alta velocidad/FPS bajos.
-- `Data/InGameShopScript/512.2011.007/{IBSCategory,IBSPackage,IBSProduct}.txt`
-  — carpeta nueva del Cash Shop del Official (versión 7), par de
-  `CashShopScriptVersion3=7` ya pusheado en `muserver-rex`.
-- `Data/InGameShopScript/512.2011.006/IBSCategory.txt` — 1 línea, rename
-  cosmético "Adventure Coins Shop" -> "Adventure Coins" en la carpeta de
-  Battle (006). No estaba en mi plan de commits original — quedó en el
-  working tree, sin commitear a propósito por si no era intencional
-  (verificar con el dueño antes de publicar).
-- `Data/Local/{Eng,Por,Spn}/Text_{eng,por,spn}.{bmd,txt}` — relabel Quest Hub
-  Common/Unique -> Daily/Weekly + string 5895 "Repeatable every %s".
-- `Data/Custom/Move/MoveLevelDiscount.txt` — interruptor MG/DL/RF a 0
-  (coincide con `MoveLevelDiscountEnable=0` ya pusheado en `muserver-rex`).
-
-`MainEdit.exe`, `config.ini`, `Launcher.exe` — excluidos por el script como
-siempre (verificado: no aparecen en `Patch13.zip` ni en `FullPatch.zip`).
-
-## Números (generado con `node tools/make-patch.mjs`, Node 22.22.0)
+## Números (verificados de forma independiente)
 
 ```
-Patch13.zip   crc=042cb46d  size=4025671    12 ficheros
-FullPatch.zip crc=9e343d60  size=46809959   970 ficheros
-version.txt   latest=13, 13 lineas (full + patch.1..13)
+Patch13.zip    crc=d8fea293  size=9925440   (9,5 MB)    303 ficheros
+FullPatch.zip  crc=295a9557  size=52145693  (49,7 MB)  1253 ficheros
+version.txt    latest=13, 13 líneas (full + patch.1..13)
+build tree     28188 ficheros
 ```
 
-Verificado antes de dar por bueno:
-- CRC32 y tamaño de `full` y `patch.13` recalculados independientemente
-  (`zlib.crc32` + tamaño de archivo) contra `version.txt`: 2/2 OK.
-- `unzip -l` de ambos zips: sin `.pdb/.exp/.log/.bak`, sin `Launcher.exe`,
-  `config.ini` ni `MainEdit.exe`.
-- `hashes-v13.json` commiteado en `patch-manifests/` (+ `version-v13.txt` de
-  respaldo) para poder diferenciar el próximo parche contra este.
+Comando exacto:
+
+```
+node tools/make-patch.mjs --build ClientFile --version 13 --out patch-out \
+  --mirror-hashes patch-manifests/hashes-v12.json \
+  --baseline-hashes patch-manifests/hashes-v0.json \
+  --prev-manifest patch-manifests/version-v12.txt
+```
+
+## 🔑 Qué lleva: 303 ficheros — esto NO es un parche de arreglos
+
+```
+Data/Player          165   modelos de personaje  (.bmd)
+Data/Item            106   modelos de ítem       (.bmd/.ozj/.smd)
+Data/Local            13   4x Item_*.bmd + 8x Text_* + rex.main
+Data/Fonts             7   tipografías RexUI Prime (NUEVAS)
+Data/Interface         5   texturas de UI
+Data/InGameShopScript  4   Cash Shop v7 (3 nuevos) + rename de categoría
+Data/Custom            1   MoveLevelDiscount
+Data/Minimaps          1   tabmap_markers
+Main.exe               1
+```
+
+**271 de los 303 son modelos.** El salto de 12 → 303 tiene causa fechada: el
+Patch13 viejo se generó el 04/09 a las **04:43**, y el PR#2 "New Visual" de
+StudioCaliCode (276 assets) más las tipografías RexUI Prime se mergearon a las
+**19:47** del mismo día (`590ad32f`, `36594f95`). El parche de ayer los perdía
+por completo. **Éste es el parche que le entrega el rediseño visual a los
+jugadores** — comunicarlo como tal, y contar con ~9,5 MB de descarga.
+
+## Verificado antes de dar por bueno
+
+- CRC32 + tamaño de `full` y `patch.13` recalculados con `zlib.crc32` contra
+  `version.txt`: **2/2 OK**.
+- Contenido de ambos zips: **0 ficheros prohibidos** (`Launcher.exe`,
+  `config.ini`, `Mu.ini`, `MainEdit.exe`, `main.lib`, `muerror.log`, `rex.txt`)
+  y **0 basura** (`.pdb/.exp/.log/.bak/.rar/.zip/.7z/.cab` ni `.bak-*`).
+- **0 huérfanos**: ningún fichero de v12 falta en la build. Importa porque el
+  pipeline **no soporta borrado** — lo que entra queda para siempre.
+- `Main.exe`: PE válido, 6 secciones, sin truncar, link timestamp
+  **2026-09-05 03:12:16 UTC**.
+- `rex.main` dentro del zip = `ad7e1b62…`, la versión que el dueño confirmó
+  como correcta (NO la de pruebas `04bc3849…` ni la vieja `81697435…`).
+- Los 4 `Item_*.bmd`: 121/121 filas coinciden con `Data/Item/Item.txt` del
+  servidor tras el merge tmpData ronda 4.
+
+## ⚠️ 5 residuos del artista que entran y quedan PERMANENTES
+
+Vienen del commit `cd402dda "New Visual"`, no del trabajo de esta sesión:
+
+    Data/Item/HDK_Sword_old.bmd        20 KB
+    Data/Item/godesteel.smd            19 KB
+    Data/Item/wing01.SMD              468 KB
+    Data/Item/wing01_1.SMD             55 KB
+    Data/Item/Item762_Armor-New.ozj    74 KB
+
+~640 KB. El cliente no los carga (no siguen la convención `ItemNNN.bmd`). El
+filtro anti-basura NO los atrapa: su regex es `\.(bak|orig|tmp|old)[-_.]`, que
+busca el marcador DESPUÉS del punto, y acá el `_old` va antes de la extensión
+— el mismo agujero por el que en el Patch8 se colaron 29 backups. Se dejaron
+pasar porque borrar assets del artista sin poder probar el juego es peor
+riesgo. Si se quieren fuera: `--exclude HDK_Sword_old.bmd,godesteel.smd,wing01.SMD,wing01_1.SMD`.
 
 ## 🔴 No verificable desde este sandbox
 
-Mismo caso que Patch12: sin toolchain Windows para decompilar `Main.exe` más
-allá del hash, y sin poder aplicar el patch y entrar al juego de verdad desde
-acá. **No probado en juego.**
+Sin toolchain Windows ni cliente ejecutable. **Nada de esto se probó en juego.**
+El `Main.exe` lo compiló otra sesión; sólo se validó su cabecera PE, no su
+comportamiento. Y el rediseño visual completo — 271 modelos — **nunca se vio
+corriendo**.
 
-Recomendado antes de publicar: probar en cliente real el fix de reset-mode
-BC/DS, el tab Daily/Weekly del Quest Hub, el ícono de Box of Kundun en la
-tienda, el preset low-spec, y que no haya regresión visual del fallback de
-GPU-skin.
+Antes de publicar, probar en cliente real: que los modelos nuevos carguen sin
+crash, las tipografías, los tooltips T9/T10 (Level 350/450), el Cash Shop v7,
+el panel del 2º slot de pet y la selección de servidor (familia Official).
 
-## Publicación (cuando se decida) — mismo orden de siempre
+## Orden de publicación
 
-1. `Patch13.zip` + `FullPatch.zip` a R2 `patches/` (no hecho desde acá — sin
-   credenciales R2 en este sandbox).
-2. Purgar cache de Cloudflare para `FullPatch.zip`.
-3. Probar como usuario real.
-4. Recién ahí, `version.txt` a Vercel (no hecho desde acá).
-5. Confirmar el commit de `hashes-v13.json`/`version-v13.txt` (ya hecho, ver
-   abajo) + tag `client-patch-13` + push (ya hecho).
-
-## Lado servidor (aparte, no bloquea este cliente)
-
-`muserver-rex` s21 ya tiene el lado servidor de todo esto pusheado
-(`CashShopScriptVersion3=7`, QuestHub `CustomNpcQuest.txt`, rates
-`gs_rates_exp400_reset_coins_grandreset500`, `MoveLevelDiscountEnable=0`) —
-reiniciar el GameServer/GameServerCS Official para que tome los rates y el
-Cash Shop v7.
+1. Subir `FullPatch.zip` y `Patch13.zip` a R2.
+2. Publicar `version.txt` **AL FINAL** (si sale antes, el launcher pide un zip
+   que todavía no está).

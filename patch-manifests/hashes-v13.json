@@ -4937,6 +4937,26 @@
       "sha256": "eceb818c3d2d5c137da7e40982f9b7271572c096a5e42f80671df48d09211f35",
       "size": 54
     },
+    "Data/Fonts/Barlow-Light.ttf": {
+      "sha256": "20b1375c0c6606701867bf34c7cc97f44087850567a36587d25abb9510b183cc",
+      "size": 103136
+    },
+    "Data/Fonts/Barlow-Medium.ttf": {
+      "sha256": "f8906f762cb73dca441da034bc363b2d8e2e68bc10d5c05e58717646c20cc4b4",
+      "size": 103536
+    },
+    "Data/Fonts/Barlow-Regular.ttf": {
+      "sha256": "95aa02c7c43096e0dd44d787ba6216864a67157e402adab59b35572e0c1577ea",
+      "size": 104068
+    },
+    "Data/Fonts/BarlowCondensed-Medium.ttf": {
+      "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17",
+      "size": 103360
+    },
+    "Data/Fonts/BarlowCondensed-SemiBold.ttf": {
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+      "size": 109428
+    },
     "Data/Fonts/DefaultBold.ttf": {
       "sha256": "c2b3913902193593a9f86fef6ebef3d016490bddb0e52e91d732a477578bbc57",
       "size": 2072388
@@ -4944,6 +4964,10 @@
     "Data/Fonts/DefaultRegular.ttf": {
       "sha256": "cf050025dcce823de644153981ff8b171d5b78d7d0ddd6e3c9f39e814fad3564",
       "size": 2053328
+    },
+    "Data/Fonts/IBMPlexMono-Medium.ttf": {
+      "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755",
+      "size": 136704
     },
     "Data/Fonts/LICENSE-Montserrat.txt": {
       "sha256": "77669d97bc1fcef80d834ac2c1432943d48ed9ae4cdfc80f26e49d1da84830ac",
@@ -4992,6 +5016,10 @@
     "Data/Fonts/NanumGothic-Regular.ttf": {
       "sha256": "cf050025dcce823de644153981ff8b171d5b78d7d0ddd6e3c9f39e814fad3564",
       "size": 2053328
+    },
+    "Data/Fonts/SimbolosUI.ttf": {
+      "sha256": "039801813241104351a818467203ce044913700535339a8de12cb8b2699da62e",
+      "size": 9240
     },
     "Data/Gate.bmd": {
       "sha256": "dfcd55e110a49985ded2fda42b9bdf43274bf9929f5590b594c9566b747f8640",
@@ -7030,8 +7058,8 @@
       "size": 5513
     },
     "Data/Interface/new_Master_Icon.OZJ": {
-      "sha256": "9f786e7badb9ed1335ce3e8794fac6aafbd0f37a0f5c8b69f4e0f97e5bb484ef",
-      "size": 844980
+      "sha256": "56921a900375c6a811276fbe9bc0a8a457acd37ccc55f1b8cb021de1d85b957e",
+      "size": 1287382
     },
     "Data/Interface/new_Master_arrow01.OZT": {
       "sha256": "d75f9e169462d0f4c1d5edfe458e4e0c213e840fa241165f33ccef09451995f4",
@@ -8042,16 +8070,16 @@
       "size": 13308
     },
     "Data/Interface/newui_skill.OZJ": {
-      "sha256": "6c7d6a591ba9be3eefbe010f886edaff99560eefa309ea6ba4e49a6d332aa9bc",
-      "size": 177551
+      "sha256": "043da53020b4acbf6ac09a86611282af39f75327ae25da38ef44ab340a1d3859",
+      "size": 233984
     },
     "Data/Interface/newui_skill00.ozj": {
       "sha256": "757be6208d2d9cf19264293f4d8938c6074d2a41e3d11c756435010179519733",
       "size": 262220
     },
     "Data/Interface/newui_skill2.OZJ": {
-      "sha256": "8003435479f3a0d4c455d53e63a17df3fd67cc98de8af4850d140d7a2061ab8d",
-      "size": 901641
+      "sha256": "f1a2c49774a5ed96c5421b30fa63462249da710e88c9cbaf2bd2d8ebf2448c40",
+      "size": 347430
     },
     "Data/Interface/newui_skill3.OZJ": {
       "sha256": "dbfc052bee1b2df8ef87e0dc42e1ad86cfb74a207623f955ed21ee692f769859",
@@ -8066,12 +8094,12 @@
       "size": 2963
     },
     "Data/Interface/newui_statusicon.OZJ": {
-      "sha256": "6f879e9a862d2886acf6f0ae4253bbe6c9d516bfe407afd547a49526d5a965ba",
-      "size": 155803
+      "sha256": "d8e05812f13d91ee8f07f192f18597b82f57eb6808e16a9382b53fa6fd931b62",
+      "size": 264380
     },
     "Data/Interface/newui_statusicon2.OZJ": {
-      "sha256": "c4cc36582a810b02e654ffcc63b8fce018fa4bc49dd93e744352d012523d5b5f",
-      "size": 158303
+      "sha256": "cbdb5a5c49b7c0aa26d623908f94d141bc1a197c0555a6b142ffe647ae7a16b6",
+      "size": 269783
     },
     "Data/Interface/newui_statusicon3.OZJ": {
       "sha256": "1b7922a2c9a9a0e8a54a782c03db883f9517a97f53980b4346cf9e113828e7c9",
@@ -10090,24 +10118,24 @@
       "size": 30160
     },
     "Data/Item/ArmorElf01.bmd": {
-      "sha256": "398809fbf5adb77541e5e75519f560a90b26f76b34430b00babbe7c532deb969",
-      "size": 18483
+      "sha256": "76c1e5cf905296c1a8e00efaf5eebc817a491ce57b1c9c8d4609bf3e0524ec95",
+      "size": 40289
     },
     "Data/Item/ArmorElf02.bmd": {
-      "sha256": "a3f452454d0584630bab506f59bb7c39e1affef866dfce4a0904364e429c6b6a",
-      "size": 18051
+      "sha256": "8791798217c67b3f3ea77b0c6d18fb87e9328666267c2fbe8ae3589b409222ba",
+      "size": 35750
     },
     "Data/Item/ArmorElf03.bmd": {
-      "sha256": "b029fcfb7af0d52cc01181564389ff201d92029791a5d025859ad3d764c18392",
-      "size": 25123
+      "sha256": "d3c97259206f004a9ea2bdac2da96c317f404b50849aab38b6554b564707b2dd",
+      "size": 46601
     },
     "Data/Item/ArmorElf04.bmd": {
-      "sha256": "50932511b051db21156d7a8fb0c849b10fb9db543f89b3ff58354e67b12e05e4",
-      "size": 20941
+      "sha256": "89bb7a7768baff75a54b53c7477a5d44ba980eac900033632c2f5ef328e80573",
+      "size": 49921
     },
     "Data/Item/ArmorElf05.bmd": {
-      "sha256": "61d5aa91459b8193f8464be17d72b5b438d393cc70ec784de56d3df5d188fe9b",
-      "size": 25659
+      "sha256": "642115663e7d397084185a9e67ed951f3ccebb7d328025e5e47a9b3ad425c939",
+      "size": 51685
     },
     "Data/Item/ArmorMail3003.bmd": {
       "sha256": "30c5ee36d9fb4b38f74bc2c211b9cbc23b210abf7b0b6877f071e5bfe6b6a291",
@@ -10850,12 +10878,12 @@
       "size": 30170
     },
     "Data/Item/Arrows01.bmd": {
-      "sha256": "704d7cd0c2fa52ef34bea00e042bcafbf42bd0190de9cc65d98a60bc2b2e29fd",
-      "size": 9143
+      "sha256": "596926eb1f0301fdcb40dbfdbcc95b89bc96891481ec4a643fb26e979c7df6b9",
+      "size": 4157
     },
     "Data/Item/Arrows02.bmd": {
-      "sha256": "3872f5dd64bd90a0ef7a31812ff7710c5d635c67403e0fdf5bd891967f0a438f",
-      "size": 11414
+      "sha256": "28dffb5d9c67fbd74ded09640873e3bca0fb67ad083bdbfdfc7600283e3aea27",
+      "size": 7530
     },
     "Data/Item/Ashborn.bmd": {
       "sha256": "dd13b490b7ef9ff2b2710c8f11dd967461853fb55c06d8ca117924fb1859a400",
@@ -11034,40 +11062,40 @@
       "size": 64814
     },
     "Data/Item/Axe01.bmd": {
-      "sha256": "2ffd58bf01ba21d9b4fce44b7d5edf116aa673116ddee383c2fe3e870d0df18f",
-      "size": 27130
+      "sha256": "1aa2c667bf44a8c2dffc47ba59da9362e13927b559d83f8544c9462eff4d8928",
+      "size": 4722
     },
     "Data/Item/Axe02.bmd": {
-      "sha256": "09674ae16febbec5f783b4b180d8f45e939d5a330f85bf9937b3e68fb9027c12",
-      "size": 29674
+      "sha256": "70c1581b497fcb5bf71deaec074b22c38e15488a5505b64454c604a4e9d91a0e",
+      "size": 5854
     },
     "Data/Item/Axe03.bmd": {
-      "sha256": "7b83cb042ccc8cdd6eea3102693bba25009cd5602dd5db6bf91e491013343432",
-      "size": 38262
+      "sha256": "593a2f34d0fa000e853d21b705b0f8864abc21cdb0521d21cd19d33d1c7b279c",
+      "size": 6438
     },
     "Data/Item/Axe04.bmd": {
-      "sha256": "f01d7208e225c942878b76897662c13f180e15f1add3b87177b54ef2100b509f",
-      "size": 24338
+      "sha256": "965f95c260232f49483e71ed1b4d94c6a1f40422bca9d6e7c16023418ca6f337",
+      "size": 5834
     },
     "Data/Item/Axe05.bmd": {
-      "sha256": "0254d36ee3d6c2d5327ceaf878c04cbe83e41e2d5e82021b76c7ecf0b1751de3",
-      "size": 36814
+      "sha256": "c620e85c7b39e5e6d5b456f812aec3586dc6d323f2e9c8728b0b5cb5ff726b79",
+      "size": 3668
     },
     "Data/Item/Axe06.bmd": {
-      "sha256": "f0f265bacf635e4929994abb0ab0cbdcd5c8a4ae6ff80b494e0d5c7232a10ead",
-      "size": 42470
+      "sha256": "f708ee2bde91224751540ddc31970a87878f87c5cae345fb6c6316369dbb1bb1",
+      "size": 5502
     },
     "Data/Item/Axe07.bmd": {
-      "sha256": "83824a2483d0f26022613eda1d2d2b99ef2aa01e5d8fbaf5ea167109b8fa90d1",
-      "size": 25814
+      "sha256": "34e675d9d43ab09296c73f79428e35d7c8bce65d0972e1f180a50e46b7d9a70b",
+      "size": 6446
     },
     "Data/Item/Axe08.bmd": {
-      "sha256": "79756eade4e0691d32e800a4ce0bf20c172a9651fe7948fcf5deb3091b74ab74",
-      "size": 25282
+      "sha256": "774b6168b251798c30206f9e0694c3932e2415d9245a08760c24826319ad7784",
+      "size": 7222
     },
     "Data/Item/Axe09.bmd": {
-      "sha256": "386351807b65aee23452fe9a9408456ceb1e0b06f488bb0d42cbc9832915a9be",
-      "size": 44007
+      "sha256": "df2dcc08fee1a723e48a0f7b8777bfbc61156642294cc8acbe36c539431db28e",
+      "size": 10489
     },
     "Data/Item/Axes02.OZJ": {
       "sha256": "52d6d8c87c1ba07afd57471c7c7b0ba8ac7fe5a5d827ee8ded03f8b680e8deee",
@@ -12414,36 +12442,36 @@
       "size": 32504
     },
     "Data/Item/Bow01.bmd": {
-      "sha256": "348f61a52b332b89c3aa5e40fcbbb7fc31c0ee04d31bc16d4cc29792a77a6244",
-      "size": 22336
+      "sha256": "cb20f97ddb7ee26c9beee07e14a03e492f105e3cd2e0158197a85edb57bce07f",
+      "size": 8224
     },
     "Data/Item/Bow02.bmd": {
       "sha256": "020af854bdd948e376aab84712d05f792c2df489c5de51833e777ffc3325f1ee",
       "size": 10174
     },
     "Data/Item/Bow03.bmd": {
-      "sha256": "888fd6340e9416fad8c0676c265693304944cbf572876e37cf61d286c328b361",
-      "size": 26578
+      "sha256": "6f7c925ede15fd5574b79ac6b13b043897d4ca711790c4cc4500574d99df0adb",
+      "size": 10810
     },
     "Data/Item/Bow04.bmd": {
-      "sha256": "dcc6a5d2e2562e3fe9506c7d08c5f6a06cf8604d9121f888898da61630102159",
-      "size": 40072
+      "sha256": "d2484cc0ce8197a67e92e7d90f9d823fd05c3a021d366705b0f3bc2dc603405d",
+      "size": 12166
     },
     "Data/Item/Bow05.bmd": {
-      "sha256": "f725cbbc36476e30c8714f55aeeb8e5f3f0fd3710873a73d497782a2adcd5187",
-      "size": 31150
+      "sha256": "81dab1c968933499c0b476eddd2addf68c16f4e05c5592dda77c7c4d696b4175",
+      "size": 21446
     },
     "Data/Item/Bow06.bmd": {
-      "sha256": "412ed618f71c8a8f1e93a189b5a956bab1d9cf3b6fa8bcc8aee264372506d7f6",
-      "size": 47622
+      "sha256": "53ff92293bd4bea390d1884f366232150c1d3b36d1c53a9919b7c92c133ed663",
+      "size": 12892
     },
     "Data/Item/Bow07.bmd": {
       "sha256": "9059cadce5a0157b762317c6ef546a7b23176bd30bd452142d8a41240cfb46bc",
       "size": 31196
     },
     "Data/Item/Bow18.bmd": {
-      "sha256": "869d3c381019bb178e627b3cdc7e86c4851fb3380338808a19c101fcb4427233",
-      "size": 76290
+      "sha256": "746f3869ab8a1ff346bb1201b275d40d0d17a41bdc1f1a16138bb24552e8eb65",
+      "size": 70398
     },
     "Data/Item/Bow19.bmd": {
       "sha256": "695a3f5634806fdda5b7c85d5c9b3abe6f5db5beed6fc8924c7286e0c0f36791",
@@ -12962,8 +12990,8 @@
       "size": 10561
     },
     "Data/Item/Covenant.bmd": {
-      "sha256": "0e2c2ae7b70ac2c5176ecfad02cb22d69aa55ac949ae318c736d430fcf65ab12",
-      "size": 17376
+      "sha256": "f1f15e81dde38fda50ca0f4eedd05790d68fcbf9f855b0fc794db9d94ed84918",
+      "size": 17936
     },
     "Data/Item/CrazyWind.bmd": {
       "sha256": "ba8e56c79a6cb4d7307cf5415c2b6a811a10e5beb24386b72c20152a0a2b9b3b",
@@ -12978,8 +13006,8 @@
       "size": 854430
     },
     "Data/Item/CrossBow01.bmd": {
-      "sha256": "7aa7f8beb38a102eae5fa0ddd64335dba692e6f22cbd0c8f3c75287d621836f4",
-      "size": 21455
+      "sha256": "b942e385e97b51e00c49c0d5a7f3d25742af45bf2f690eab090efec663fbc6d8",
+      "size": 12137
     },
     "Data/Item/CrossBow02.bmd": {
       "sha256": "a24fc85703ee61a3dfe967175aa7dc582649dd7031cd43394925cbe6b128eb1c",
@@ -12990,12 +13018,12 @@
       "size": 15785
     },
     "Data/Item/CrossBow04.bmd": {
-      "sha256": "70112f038494d4558e72d410f8770e16a4329a79af579ef87126c6e420889ec4",
-      "size": 32251
+      "sha256": "50f39b0cdc7ef19eb35cbb1d67dffd174be6f0b9dc8958f7f4950a31cd32c5b2",
+      "size": 12333
     },
     "Data/Item/CrossBow05.bmd": {
-      "sha256": "625090d9b74fb07926e7c88ead51dc8d0f91cebf079b5b62233e1c54270bcdf4",
-      "size": 40869
+      "sha256": "1ceee1363e6bb37d4bcb42c63805d31c9300393375d0e2c6435f518cfc48a217",
+      "size": 18833
     },
     "Data/Item/CrossBow06.bmd": {
       "sha256": "bb4ecb436a8c97905af8b0ef530e15544b82dd16967186f1bee5e6f63ae0c375",
@@ -13010,8 +13038,8 @@
       "size": 32352
     },
     "Data/Item/CrossBow20.bmd": {
-      "sha256": "fd55388a36d0f66d522f3438e50d6536b3ad0bce876066b8ec55bd7859839cea",
-      "size": 31593
+      "sha256": "96f7f6b62a7a4f3d781566f364db8a1a9fa7be56c60f06f8c32bba9f1da37dbc",
+      "size": 31589
     },
     "Data/Item/Crossbow103.bmd": {
       "sha256": "15bb4ced05c1cb6a0213f49317fd703b48b68abc696f8e005462daad27512dbc",
@@ -13094,11 +13122,11 @@
       "size": 14759
     },
     "Data/Item/DarkHorseHorn.bmd": {
-      "sha256": "246ffbfaf11ddbcae50740dc0cfbdf5e78fadeeaae3cc14139b3521e166292c8",
-      "size": 3232
+      "sha256": "e9fdf526e117dd845de26623ba5a9f1f2dc798ca3db89377ef3d8c97c942499d",
+      "size": 3172
     },
     "Data/Item/DarkHorseSoul.bmd": {
-      "sha256": "dcbe277cb55f9d5715bb6b6f247f35a2a7e0562906859716f96e368860c701ac",
+      "sha256": "6ee26c8608bb5d963af249e6757a55cf1cb097068a997b19f489c28a31255f05",
       "size": 4146
     },
     "Data/Item/DarkIronKnightSword.bmd": {
@@ -14490,16 +14518,16 @@
       "size": 12666
     },
     "Data/Item/EventBloodCastle00.bmd": {
-      "sha256": "00bd129366fe255e27b98ab751e34bf80ecad61f6363f8b7786bd6eca92af9ae",
-      "size": 1897
+      "sha256": "9d45ce4cf586664118cb47ee0d8bc737776c144d9dd01f68075a6f83e1d852d1",
+      "size": 1893
     },
     "Data/Item/EventBloodCastle01.bmd": {
       "sha256": "1bba16ae30f2d7d9ef7c57b4f82dad0f06ddbf7cc3f336e8243388987f24c16b",
       "size": 3634
     },
     "Data/Item/EventBloodCastle02.bmd": {
-      "sha256": "337180020d98df4b2d5fc67fa229a3a43e2d4cee1d289a0ce2c09b057ef9ac68",
-      "size": 8698
+      "sha256": "3de1f0063208d2397c4f34ac6f1a898532e657302c95c54de497bcbedcbb2d0e",
+      "size": 8694
     },
     "Data/Item/EventBloodCastle03.bmd": {
       "sha256": "290013d085bcc5939f9391f93042e40042e8b0c01d21ad8baaa8011536ff274c",
@@ -14518,8 +14546,8 @@
       "size": 5633
     },
     "Data/Item/EventChaosCastle.bmd": {
-      "sha256": "20f77ca91291c62e8e072769c51fb6f5713fe9cccc0fd75dc7d1df993549c622",
-      "size": 19082
+      "sha256": "534740af2ac701505e1df148ee933799277c08b09058ae07fa134bec1a3bbc05",
+      "size": 20002
     },
     "Data/Item/ExtraAbility_A.bmd": {
       "sha256": "b8501ea5d1a4dd70c11fffefe4e6372cb18161ba655bd399e47de0e6def6c394",
@@ -14570,8 +14598,8 @@
       "size": 24388
     },
     "Data/Item/FR_1.bmd": {
-      "sha256": "4e28ffc294b26ca270a6e775e61e82304a159a8aaf1ffedc1081ae579fbc3de6",
-      "size": 2310
+      "sha256": "727840e820e39aa7ce8fc65c9c6b4b8aa37d7e3d770290e5198ec38b7740e2bf",
+      "size": 2674
     },
     "Data/Item/FR_2.bmd": {
       "sha256": "088156e4b3627d5a747ad1d06d172f2554a4bb9753d43734de49b27a968fd554",
@@ -16124,6 +16152,10 @@
     "Data/Item/HDK_Sword2.bmd": {
       "sha256": "8b2b3628ccb85df17e2cf0ac4b816bf5e7eec0810b759420e6463ccd997b1cfd",
       "size": 25475
+    },
+    "Data/Item/HDK_Sword_old.bmd": {
+      "sha256": "2b5418431178c7ddd958e5f25e61d27b22863f80d43cecb380ce1da5539be200",
+      "size": 20692
     },
     "Data/Item/HE2501d_Lilito01.ozt": {
       "sha256": "0438cdec723ad64ed59db4faaa5d2fa087b4495e09176caa73c9034629d7f643",
@@ -19013,6 +19045,10 @@
       "sha256": "3f927e8cd4436e7bf4e977c1491c63ee8d41e78670160073a417be994407ad8b",
       "size": 8240
     },
+    "Data/Item/Item762_Armor-New.ozj": {
+      "sha256": "89863c1fa6bdc2ea66bc4cdcb095da7ac19f8c41f4f1243e2b8b155b7c328300",
+      "size": 74408
+    },
     "Data/Item/Item762_Armor.ozj": {
       "sha256": "ab18d29712892bae737c96c4f75c9fb4b5832d7905c391c4439d7cd27589c288",
       "size": 89640
@@ -20354,28 +20390,28 @@
       "size": 3790
     },
     "Data/Item/Mace02.bmd": {
-      "sha256": "3023027f4696e0e082f086a870230d172a6063a7a48de506f06e5a86019cf44d",
-      "size": 46796
+      "sha256": "01207f2d53c52308bba8c9275521b53e5b5c919e006c6cb584e2b44d40ea2484",
+      "size": 11290
     },
     "Data/Item/Mace03.bmd": {
-      "sha256": "75103736ec02feede59ec4d7db2760c8fd92395741ae3d903ec64a821d977c8c",
-      "size": 83348
+      "sha256": "73167bc6964b0837e915d0419bfd9665f0d8c5cbbd16d6dd74e3ed27692cd45f",
+      "size": 14562
     },
     "Data/Item/Mace04.bmd": {
-      "sha256": "d67708ad62177151ce60e175b1d0773fc7e0591f3f57df9c2078be337360c402",
-      "size": 16670
+      "sha256": "888f17329424d650508d8b533bd5b2c09377ee335c419ca130ed16144e245b17",
+      "size": 5270
     },
     "Data/Item/Mace05.bmd": {
-      "sha256": "deb2f3476007d0b20a19890f0b15cfec7f6c8d2ce883afa6c9da46ea6bfcf47a",
-      "size": 27012
+      "sha256": "7f56ddd91639df5c9b71719be0e5653c7cd0342d7e8dbf4fa0bfd27f396dfe3f",
+      "size": 19280
     },
     "Data/Item/Mace06.bmd": {
-      "sha256": "66106e70f8171589d01055619f33efbe6c40fe7dfbb41aac351235e3eea3d3fd",
-      "size": 17138
+      "sha256": "9e70ae623a649f19e0b049e2fe9bcec05c964534160f81dd6f4ccaee63940b10",
+      "size": 17166
     },
     "Data/Item/Mace07.bmd": {
-      "sha256": "67f2be7bbc15473a53a4140c5651fd6b6f7cfd6fd7a2084ba7fbe4968d0deb58",
-      "size": 13720
+      "sha256": "962dec998c9854ffc85d182b92eabe835d5cbb3c553e733b059c3d8e09247815",
+      "size": 13796
     },
     "Data/Item/Mace08.bmd": {
       "sha256": "53785384d5a415c83799bc0ebcce2002bbac371c53950af0ac8085af6ac8d920",
@@ -21302,12 +21338,12 @@
       "size": 76556
     },
     "Data/Item/Necklace01.bmd": {
-      "sha256": "b29be7af420697c480ffb6cc898a4f3eb51671ec12532437b1feb3884b9c7c84",
-      "size": 6946
+      "sha256": "bf5810bbbbe8b6d1a80a4f664af7876b9c79416852cc87828e96f42e47df51a5",
+      "size": 7122
     },
     "Data/Item/Necklace02.bmd": {
-      "sha256": "7cfe7e444bda7a4815626078e6911d319bd06e70996eb511ff708baf0465e15d",
-      "size": 7754
+      "sha256": "cef2075603b45bb03436e5f527998e7054dd40dfea30bb1894f72bb0949dbe43",
+      "size": 7810
     },
     "Data/Item/NecklaceOfAgony.bmd": {
       "sha256": "f412645cf4e1338851b5b566f2ede1e49515734807ac4358a6e396788e058e9d",
@@ -22830,16 +22866,16 @@
       "size": 11393
     },
     "Data/Item/Quest02.bmd": {
-      "sha256": "95f867400d5666029fca4d8095ec3dbb4e913893d868149576a6331d1f6b7e80",
-      "size": 5889
+      "sha256": "e468d44dd663b8cf2c3cbd4819ad83730e1c251345ee0e39316e5b051a225e14",
+      "size": 5885
     },
     "Data/Item/Quest03.bmd": {
-      "sha256": "b047575a17a72bd2fddad29ecf7886e02542da14c85bc3ca6965fc2ba5d3b995",
-      "size": 12713
+      "sha256": "55a4a02ad530604e42d3f093eaee8c98b1b2df1bd1001237b4a92e1da46c71ec",
+      "size": 12709
     },
     "Data/Item/Quest04.bmd": {
-      "sha256": "5e6b29458ceedcc0fdc948e7fb83e30644c06f82f42cde3da84c45767d6a4113",
-      "size": 1438
+      "sha256": "00c24b1057ca4165077c7885304b33dce6d4d46c153b250a4b373af5123e8b3c",
+      "size": 1474
     },
     "Data/Item/Quest05.bmd": {
       "sha256": "6cbb41a8f5bb7109c17249fb75d12aca92677d7607770224a5e332530f822a95",
@@ -25082,12 +25118,12 @@
       "size": 262192
     },
     "Data/Item/Ring01.bmd": {
-      "sha256": "7d0e1fafa6f13e3a32439b697d133fc05f98a72f89eb740693f9d2785d095f6b",
-      "size": 4702
+      "sha256": "f2615da9ff0f835a5b9f537ccf03c5d1938e8688368fbc372088f369bc79722a",
+      "size": 4758
     },
     "Data/Item/Ring02.bmd": {
-      "sha256": "88e695c498d7631999a21195fb9cfa9b3c7ce262d95a8cd44599c09cea293309",
-      "size": 4482
+      "sha256": "171e39cdf9b071face6e9c8d071cc97e192c7497ed4453729729a46455a66cac",
+      "size": 4498
     },
     "Data/Item/RingOfLordEvent.OZJ": {
       "sha256": "89cdcb482aae48fcd521b1f9311d397b3dba343a6e6cdf7b3cee4a2eb8cef387",
@@ -25638,8 +25674,8 @@
       "size": 166078
     },
     "Data/Item/Shield01.bmd": {
-      "sha256": "c0e2374808c3f59946a4acc07d5fca2d564a8702db35e8045ef22eb071cb0cdc",
-      "size": 3942
+      "sha256": "d2d03d1c3adeaa3c5a81222853f7398ea41cc6ab38a9e2df372ec78c13fafca3",
+      "size": 1970
     },
     "Data/Item/Shield011.bmd": {
       "sha256": "59d28f76708ea40164101c71e5142124a8d490e0776d32d926c02c6b308dd522",
@@ -25698,44 +25734,44 @@
       "size": 81373
     },
     "Data/Item/Shield03.bmd": {
-      "sha256": "d44481366315b9cfc6b75bac36d23222c31f0f0e43350120c7bc3eeb4bcd5fc1",
-      "size": 8148
+      "sha256": "cd4c3f21713fb1b624b58f239c4fd0f5b7db827421db04db63b89f9196d059cf",
+      "size": 2542
     },
     "Data/Item/Shield04.bmd": {
-      "sha256": "1cfc582247db0be2b6a124decee9ca537db5e7108188b9293fc3b472d2257291",
-      "size": 19532
+      "sha256": "6ff6921776fb5e351b40b037d549bfd1fb42de96cfa58c64094ac8cae3a0875d",
+      "size": 4336
     },
     "Data/Item/Shield05.bmd": {
-      "sha256": "0a7c07ec89f3ab91901e5b57c5644391661c0a8837db949a8133416aa7667345",
-      "size": 15892
+      "sha256": "ea27b58adcf9fe5014f54f201e8e6d3b8cdb82a9014543ecad97562669229f3c",
+      "size": 2242
     },
     "Data/Item/Shield06.bmd": {
-      "sha256": "35d535b87fd6b8c5644a65f7e177249e6e3090b070fa60b87748be937c2da473",
-      "size": 10666
+      "sha256": "755789e4a6b535a4e2e4253a28980d7ea84271624ec1a75e9b667afca3807d69",
+      "size": 2436
     },
     "Data/Item/Shield07.bmd": {
-      "sha256": "551a8c2754b9c87255c9a964c9e00cc02bb8b32bb0fdae470d7c9f59e30d6bc8",
-      "size": 36618
+      "sha256": "a28adbdd6fc3e62f6cf5cd3b9f5c08370a6089dab2efd1245f11511083aa0ae7",
+      "size": 10120
     },
     "Data/Item/Shield08.bmd": {
-      "sha256": "c02334f72c504ebb3759b85b1f05bcb72f96eff8f261dd32e4c99a984585f874",
-      "size": 27300
+      "sha256": "54980c8369a0d185cd1d23dac7cbbddd31bbc8964d35d6ee2e91244b7040fa6f",
+      "size": 5438
     },
     "Data/Item/Shield09.bmd": {
-      "sha256": "16f7ecf0ad28ebeb2b76ebffa519b5122853ec8c258106949a1d5c22a29c97ff",
-      "size": 9446
+      "sha256": "b8d38f2dcbd6b29fd7e61a9eabe8d8f0e10a0380a149b7cacabad32af4e168f4",
+      "size": 2406
     },
     "Data/Item/Shield10.bmd": {
-      "sha256": "deff42d420f73d9a4d4ddb0c3b4fac03038c6372d152531c61ddc527a6dc9419",
-      "size": 21048
+      "sha256": "440099bcb595f5a8e78da9763927e0256eaf5fcbe67b30b26c69ac93bf97b85c",
+      "size": 2226
     },
     "Data/Item/Shield11.bmd": {
-      "sha256": "688db4791afc2f54f36d8a000f4a6f33512d08d1aacd604c58759d898f121024",
-      "size": 28064
+      "sha256": "28fbc7b11d34e6036e41c0ba0ee1f9282db04363923d7b85e150f536e10d970e",
+      "size": 3322
     },
     "Data/Item/Shield12.bmd": {
-      "sha256": "fbec01cd722c897b67cb9ec7cf16188eec26394118c874f025bb30ad06458583",
-      "size": 36617
+      "sha256": "4d9965f1d540a0da01403e1593eed177ce4c7dbb3ce91ed0c2062b8dece2fd78",
+      "size": 7215
     },
     "Data/Item/Shield13.bmd": {
       "sha256": "aba5c749a0bb9906e905f4b7a73fc792103284c4db900389bc37dcca31fecbbe",
@@ -25746,8 +25782,8 @@
       "size": 16231
     },
     "Data/Item/Shield15.bmd": {
-      "sha256": "43e029515ff1038388c0d4016b8b9abe54889f736ddd8d38d37c8dada4a8317c",
-      "size": 43529
+      "sha256": "da561bc468f2d518105265cc378b05ce0236b1e589c7b90cf8d998c766fbda9d",
+      "size": 15075
     },
     "Data/Item/Shield_18.bmd": {
       "sha256": "6dffd7795874a3e28a6dfb95529fc4c58444ca23bdffbc9da15dab3bea65bc92",
@@ -25938,12 +25974,12 @@
       "size": 10454
     },
     "Data/Item/Spear09.bmd": {
-      "sha256": "74151e54d2c66533f34fdd74baae4996af9d2ffeebf9f576c351309d16821d7e",
-      "size": 17082
+      "sha256": "796e2ffea99ac23a217ebb6fa4209e0250b7ccc8dc4fc3326025facc6889fc08",
+      "size": 13334
     },
     "Data/Item/Spear10.bmd": {
-      "sha256": "215db85b8544a5fc78b68ea0f2b3d8450120d8b4e744f2d3684627723a04f7c2",
-      "size": 13398
+      "sha256": "90fbf9fb0f15b0a6ffb507093474e16046395e64581b40adedda22f90e16abe8",
+      "size": 13574
     },
     "Data/Item/SpecialPetEgg.bmd": {
       "sha256": "853964d2750d5ce19a2ef8f138bc41ac9f41ce0e8c9a9660a9776122cda1e213",
@@ -25998,28 +26034,28 @@
       "size": 219176
     },
     "Data/Item/Staff01.bmd": {
-      "sha256": "69e7e2d902787af95d6c27c52dd0f157f0a41bf010089d23f6fc226cda0558f1",
-      "size": 25442
+      "sha256": "c9aa60d275b269c35557fceceb3feea436fb10f855ed5d2f41beac7149098eb0",
+      "size": 13314
     },
     "Data/Item/Staff02.bmd": {
-      "sha256": "6a88397c05edb95d452324b279368e78afbf650f1bd1af5c908080529f00dbcd",
-      "size": 22046
+      "sha256": "35ae5038ca961ea41a056742306897eee44a3f780d0c14997b156ab3838ce1e6",
+      "size": 4800
     },
     "Data/Item/Staff03.bmd": {
-      "sha256": "74cc48db0975aa83cd3b9069fed847bf038e454662b9d3e27fea604bfc5c8cfd",
-      "size": 16150
+      "sha256": "c97cf6937107082225ce111003f75c1d97eb3d9b3fc77685f2678755bf56720f",
+      "size": 6522
     },
     "Data/Item/Staff04.bmd": {
-      "sha256": "873209497f253307e0e480e05256bef9a97376c5b97ce9beeccd47f4183e0192",
-      "size": 18994
+      "sha256": "5df6f90fc99aab0a388676b0b8537ba2095b535915d1140c75ca81bfe1fa4b0c",
+      "size": 10122
     },
     "Data/Item/Staff05.bmd": {
-      "sha256": "a837bdeabcbd351faba7915ddb457cba74e2687cd567cae14c3208f85994900a",
-      "size": 44342
+      "sha256": "54189aed3a87b55c0bae3e995f1e8970a90c5fb0ea37a5597cac5de9a0eeea0c",
+      "size": 20942
     },
     "Data/Item/Staff06.bmd": {
-      "sha256": "b35f9a1c84cf71cec47e1780991a4c06feab986e18f1eb37b68cc1f57335d500",
-      "size": 53031
+      "sha256": "2d8acb856848e8b4577e5c894f2771af636c767511c9474b023c872b0a6f3607",
+      "size": 27811
     },
     "Data/Item/Staff07.bmd": {
       "sha256": "3826436accc2bc47a1af7baa16527c8f7d6e0cf82808a13341d4914718d95c6f",
@@ -26034,16 +26070,16 @@
       "size": 5741
     },
     "Data/Item/Staff10.bmd": {
-      "sha256": "13f35cbc8877415cb71e48b0c352a50172b9dbf524cdb82bb9bf8f25cc0285db",
-      "size": 49888
+      "sha256": "f32504e43100f4658084311845f5542ec0a9be7f4303eacf22bbe3dd101582c7",
+      "size": 40580
     },
     "Data/Item/Staff100.bmd": {
       "sha256": "3a2308cf69187841a60359ccaf82a385ce961f933956fe4bbeb39ab5bceec159",
       "size": 86733
     },
     "Data/Item/Staff11.bmd": {
-      "sha256": "7a17c896ba244629c6d851f4db0a7cd14ccf5081ac747a45a592a05d3acaa5f9",
-      "size": 37024
+      "sha256": "87ac4fd522fca99c5a2cf1259f42c5f2c74c9ee180581b80da49ac21ab1ce49a",
+      "size": 36340
     },
     "Data/Item/Staff12.bmd": {
       "sha256": "5da22073e810b1e1d4f9c4ac0101aa3414d898ec55bb38264bbee17c35db7c39",
@@ -26138,8 +26174,8 @@
       "size": 14560
     },
     "Data/Item/SummonBook.bmd": {
-      "sha256": "b659a93deded3e94a977662a375c5fe618e53f54e31cf46d978869ed068fc443",
-      "size": 6888
+      "sha256": "4d586b577e33536ac0aa030e71f49e58f7ea6f874f4753b74aeaeae99532218e",
+      "size": 6928
     },
     "Data/Item/Sunscale.bmd": {
       "sha256": "10ae429bd4b626d5b4e54c2b11b74df9a24786771c4e4fc5adf9b39939ebd3a5",
@@ -26154,8 +26190,8 @@
       "size": 6866
     },
     "Data/Item/Sword02.bmd": {
-      "sha256": "14be777e920dcdccc18eeb07992e9fdf350c747ac21f81ecd46efb83248eeabc",
-      "size": 8868
+      "sha256": "33bf5614656dc2cc7575a76cea317f472ddc0f05de4a9fc998c713eb1bea2a7f",
+      "size": 4650
     },
     "Data/Item/Sword03.bmd": {
       "sha256": "615744d679328e0459254be705fd6d8ba5db71dcc0667cedb42fbb3f8b87ba09",
@@ -26166,20 +26202,20 @@
       "size": 9690
     },
     "Data/Item/Sword05.bmd": {
-      "sha256": "db994df450e1399512186b5f31a12602bf37fcb04b260cbe2072a37f39084669",
-      "size": 16368
+      "sha256": "ee6ca31aa235d0c1dbbf03dbc220d8137fd9d29a3e6ad1a074d3e562143b966e",
+      "size": 6226
     },
     "Data/Item/Sword06.bmd": {
-      "sha256": "a6964a2a6896cf5fde8975e40c2c946e8e2cdb1893900ee0cabe8eb2a69adf0a",
-      "size": 17256
+      "sha256": "f78e6a1ea4f086522bd51b2ceab0b4a6f5d05ec396235543b90cd92bd1044c8c",
+      "size": 9444
     },
     "Data/Item/Sword07.bmd": {
-      "sha256": "402899814dde266e061616a8fcbf8d381085a81e045c830e87c80c887f66ba46",
-      "size": 15948
+      "sha256": "d934c6e7c601c62bd05abc785abf1cf5288061553865be0273b4ed7c7caac017",
+      "size": 6162
     },
     "Data/Item/Sword08.bmd": {
-      "sha256": "104bbc865dac85602f5a664220e92e79958a86d2e5ce990a5af0c04d50523a74",
-      "size": 27540
+      "sha256": "a8ab993a76b010cf8cb8acb8578fc8601a9033746457a6436e4941de18d18223",
+      "size": 9270
     },
     "Data/Item/Sword09.bmd": {
       "sha256": "7109a3b222b9a05cc6ca663ad4a959ff8868808f2c92beeee890e3371c506d89",
@@ -26206,20 +26242,20 @@
       "size": 33742
     },
     "Data/Item/Sword14.bmd": {
-      "sha256": "5f95d77977e343a1af12bb2602e3105e20bca5e398a5a44d882e53773cffdf59",
-      "size": 19156
+      "sha256": "3ac2b64e64810248fc796ea33d005a25c05edbe9d3fbc8f99400522a1bbc4be2",
+      "size": 16040
     },
     "Data/Item/Sword15.bmd": {
-      "sha256": "06dc9240f1a66532e8bb70525ef6a9a04642d1472b1cd531dcc3ee9eb926bc4f",
-      "size": 13870
+      "sha256": "f45d27a0643f9aaff52c97ffe2242bf4844b4b7b26837257254375b52648a2d7",
+      "size": 9010
     },
     "Data/Item/Sword16.bmd": {
       "sha256": "9f8de86517adf333619c85b53b2cb97c877252ea36f136865504daf7302750a9",
       "size": 2558
     },
     "Data/Item/Sword17.bmd": {
-      "sha256": "fcb35070fe0928154bcc13ed4b27e2e200a25fbe06b7022ae694cc55dbb03b0e",
-      "size": 25138
+      "sha256": "52cc22e7dd28ddea584082a2de41f1d4098817e66be27084dc7b87dd8a287622",
+      "size": 22670
     },
     "Data/Item/Sword18.bmd": {
       "sha256": "351070a8d2d41fa1db16dd5cd881459163d9d04f3eac66674eb8b111c0da15a9",
@@ -26230,8 +26266,8 @@
       "size": 16882
     },
     "Data/Item/Sword20.bmd": {
-      "sha256": "98bec9469186772e76a9fad0cadb7e0f94f38818e5aa514914c36b06baf245df",
-      "size": 25168
+      "sha256": "345892789fa52b5b87d07d4c3907c33d391f112937d5c302f80b2804c2b80c46",
+      "size": 27708
     },
     "Data/Item/Sword32.bmd": {
       "sha256": "a0e577755931d967db483a4994dc018de6207e4545f1c53ad8128f03403d20bb",
@@ -27382,12 +27418,12 @@
       "size": 42402
     },
     "Data/Item/Wing01.bmd": {
-      "sha256": "345d9f561eca85a2736efbfc65172ac494ecb64ff3b91b2e68e851ea8165133f",
-      "size": 4048
+      "sha256": "acd9941f628824aa7cfb1d4716c63487e4e6bd0334705757df2beb828004d15c",
+      "size": 4044
     },
     "Data/Item/Wing02.bmd": {
-      "sha256": "abd15eba2b65430f646b715458939804915ee277adf5faea2cefc6685c70678f",
-      "size": 41937
+      "sha256": "d3a6d1cb4bc1f1ed060beb5886916db89c7f534f77518b893f4631aacd320b51",
+      "size": 6507
     },
     "Data/Item/Wing02DK.bmd": {
       "sha256": "37b840238fe66c250c8abe6786f02ece476f9e873a251274eb702d421b9644b5",
@@ -27406,20 +27442,20 @@
       "size": 61338
     },
     "Data/Item/Wing03.bmd": {
-      "sha256": "bf0eccf97c8c869fc8a2d206f0bef3c39b763c1f67a8898be2e8444c2830bf1e",
-      "size": 66707
+      "sha256": "f42fec33391db92e7d5fccd66c6c8de7e6303202fa1a7d9cd99dec9bb886a822",
+      "size": 5371
     },
     "Data/Item/Wing04.bmd": {
-      "sha256": "451c9df32293617def38e3b93e5269a59c99402819b1c6a040217a0c884df859",
-      "size": 13093
+      "sha256": "1328b8d8ab39b58734ad5bf3e538b4fff8d3295b2f76a22b6aca49a332015dc6",
+      "size": 13375
     },
     "Data/Item/Wing05.bmd": {
-      "sha256": "257c6cc06560ed1d539a99ec82f6125f0287f8336dc9024ad06ab70e91025504",
-      "size": 157849
+      "sha256": "0eeb51519fad3697ee7784d81f9276726ed0051b5bdb62d1458e28cda3730004",
+      "size": 104386
     },
     "Data/Item/Wing06.bmd": {
-      "sha256": "69d7593dcf8349e00b2d575dd8c1482f6d5ff4ef60fcfea7f1f2e0bda0843fc1",
-      "size": 107741
+      "sha256": "8b9766eda50ff3786050eaa0770f341bbb258f7ba692d3d075b4d96b9d562c50",
+      "size": 63009
     },
     "Data/Item/Wing07.bmd": {
       "sha256": "834bb86b0d9146a067ccbf755b95eeb68d1f2e9c63967a6ea749d8ed175f29c0",
@@ -28162,8 +28198,8 @@
       "size": 10483
     },
     "Data/Item/agnecklace.bmd": {
-      "sha256": "6f5b3cd8e6f930ce08ef3c65213a6a215a9be5ae69fbcaf452812cf8a9b87771",
-      "size": 10244
+      "sha256": "c41c7a2d6ad798487e805192de8ebb368a9ecb9864645ceef6ad982e1cfb08a2",
+      "size": 10220
     },
     "Data/Item/alcamopet.bmd": {
       "sha256": "8e236ca536c246a996b5f3113c315b3ec04d8fe2d4835cbcb1027580e0489f68",
@@ -30158,8 +30194,8 @@
       "size": 18054
     },
     "Data/Item/condolwing.bmd": {
-      "sha256": "da728b2e3cab6c40598e5e28a0cab032befb8b1fcd23d53f5b3fddb6718421eb",
-      "size": 16322
+      "sha256": "db09780ae19357ef101b08b27b5ff5df3fae5cea7970f3423364d3d73c17365c",
+      "size": 16874
     },
     "Data/Item/condorshard.bmd": {
       "sha256": "91f55b81f0697676b765710b0923f293e924cf327dddf0344dca18bc49331590",
@@ -30618,7 +30654,7 @@
       "size": 36743
     },
     "Data/Item/deathbeamstone.bmd": {
-      "sha256": "6714b739afb5253331e571d3faa882c3fa00a4638967c6c5eb6751614e2913e5",
+      "sha256": "e3999fa048e36c6f6de259496b09827fd663aeacc37b9baac58692a79b5fb57e",
       "size": 12873
     },
     "Data/Item/deathbeamstone_R.OZJ": {
@@ -31538,8 +31574,8 @@
       "size": 9077
     },
     "Data/Item/firering.bmd": {
-      "sha256": "b41aeb84b42975dfee8c7a29883396a345386f704f4bbfd914224c53d493f0e6",
-      "size": 7208
+      "sha256": "450a7a5120f722f3c14190acfe4a7784bf35625ffae386c9effbe1272bd1a313",
+      "size": 7284
     },
     "Data/Item/flail00.ozt": {
       "sha256": "ea394645f1695bbbab1b88aaf3ce3f97eb2193513ea9d83c532ef6ed61026ab4",
@@ -32169,6 +32205,10 @@
       "sha256": "efd4071d87c0a2611cc0764f51618b9ef2fe08375eab268302f0bd226b99a1cd",
       "size": 8326
     },
+    "Data/Item/godesteel.smd": {
+      "sha256": "8587b302ac4f5d200e4e860ba088c5682859dca3dceff2c2b0e26cf2cb38d12f",
+      "size": 19739
+    },
     "Data/Item/gold.OZJ": {
       "sha256": "e33c4dd49e9e1926f79f7dd2f2c4ab2ea696839992a99a60bf81dc11463745e1",
       "size": 5246
@@ -32350,8 +32390,8 @@
       "size": 8643
     },
     "Data/Item/groundring.bmd": {
-      "sha256": "18adabf218f1609dc2b4ea6bbb569a4dadafd73af29e0c2f40df898f18ecbcda",
-      "size": 5528
+      "sha256": "82ccd5e2d856c331897ddcbf7b288767fbad49e7964753bcda8c51fc17dda167",
+      "size": 5524
     },
     "Data/Item/grow_muun_01.OZJ": {
       "sha256": "177e93d0fa78742151b9ef49b19962e14d449cd1b33ff20c1c8292993f69b089",
@@ -33302,8 +33342,8 @@
       "size": 10298
     },
     "Data/Item/icenecklace.bmd": {
-      "sha256": "d8502251699534198a0e4e71620f2fbbb46f356429c662af45de80bfbcceb39e",
-      "size": 9636
+      "sha256": "41d17388a7c38da89f05a7ddf41023823600eb44fdf09a83efc5a36811f589af",
+      "size": 9732
     },
     "Data/Item/icenight2_ex01.ozj": {
       "sha256": "a1b99ee9113951b27313b75a40eaa208db45574514782a570cd2d56cc5b51838",
@@ -33702,8 +33742,8 @@
       "size": 123544
     },
     "Data/Item/kanneck2.bmd": {
-      "sha256": "4dcbb79315fb9d17f67e0be5a4801777cba580a5c8207d616f843e96ab490156",
-      "size": 10859
+      "sha256": "94476daea5848b7499d0af296511973a6dd435fd23449cb0fd52ce1a5818282e",
+      "size": 11739
     },
     "Data/Item/karafairy.bmd": {
       "sha256": "a286eadd1b00d2786e3a203913e7f50aa1b11d5762a9049501f29ff565b92db2",
@@ -34842,8 +34882,8 @@
       "size": 8527
     },
     "Data/Item/manaring.bmd": {
-      "sha256": "a2a01e9810b6f96ce07d5d9798e00fb61ccf964d47515d07ac7a63965e40975e",
-      "size": 6560
+      "sha256": "b8acd6542e311f60d38b456bbd21464589e99180bbb6e072c8e42634f7846c6c",
+      "size": 6556
     },
     "Data/Item/mandorapet.bmd": {
       "sha256": "f819f5814c4053bd55474ab7729f89a35916c2bf03c1f0c6a2e0b26153988714",
@@ -37242,7 +37282,7 @@
       "size": 32816
     },
     "Data/Item/phoenixfeather.bmd": {
-      "sha256": "f864fdb2407d2735d10eaaba0dd8eb5fc81cf96c711693408c373863ae1d6e92",
+      "sha256": "9b2e2cb8cd82881f07fd83ea10750138fdb23f0d62c76afda66c319d03b3da95",
       "size": 3109
     },
     "Data/Item/phoenixfeather_R.OZT": {
@@ -38286,8 +38326,8 @@
       "size": 191016
     },
     "Data/Item/scrollpaper.bmd": {
-      "sha256": "53191635b09f63161a5e641e5734c3faea253656ea1dca46ea12fa9c37177a23",
-      "size": 20911
+      "sha256": "15ea03fc91fb918dbd51e545b1e892b05b687743a0bb8a8d1b4ee09b93306e85",
+      "size": 21195
     },
     "Data/Item/scrollpaper_01.OZT": {
       "sha256": "3ae8ecb0730d5889de4286918cbc6f79c60226d113113dcd300878adf775d290",
@@ -38862,8 +38902,8 @@
       "size": 5462
     },
     "Data/Item/shield16.bmd": {
-      "sha256": "0bc0e2a835f49426906215c3a5bf553257a4e418c824b614d484b61d27432215",
-      "size": 34357
+      "sha256": "3677eb0632143da15085d6b1b5302cdf006ae5e75811d2517f0140ef4324834d",
+      "size": 10045
     },
     "Data/Item/shield17.bmd": {
       "sha256": "a654eae7286469b8bcf37799e094a8afa64264404246373bbd82b010aab6b365",
@@ -39366,8 +39406,8 @@
       "size": 241784
     },
     "Data/Item/spear11.bmd": {
-      "sha256": "e523df20ead7d71f130d40470b5a38ab678f79c77434184ea8a2776f402fdd28",
-      "size": 25183
+      "sha256": "91f37fbd2d2188804bda750886fa7f32fc994faad8f7cf8667f0e977eb296078",
+      "size": 16437
     },
     "Data/Item/spectracrossbowl.bmd": {
       "sha256": "d5987d43cb71882610c2facdecc1e2f2877efe3694c576f339cb9fd8dc99a2a7",
@@ -39422,8 +39462,8 @@
       "size": 31840
     },
     "Data/Item/spiritbill.bmd": {
-      "sha256": "d0fa6e75c866acf3dab69edfc892fe96dcbb37f4a8ecfb8a5c91d6eae1a1eac4",
-      "size": 9912
+      "sha256": "63d8fde10bc3a56c50071d900c45477a2ff994f5c17c5b13899b00abd0bb9a37",
+      "size": 9970
     },
     "Data/Item/splinterpet.bmd": {
       "sha256": "1ad5a43d1fe191aa49714821591ff02e08b9fc61b3979b2b630a354f0b3492ad",
@@ -39694,8 +39734,8 @@
       "size": 7565
     },
     "Data/Item/sword21.bmd": {
-      "sha256": "ac3c3e5ac51de382c9ebed4454a53b65cf9fae6884b05a9addd96921a11435d8",
-      "size": 45726
+      "sha256": "cd024f6b59f9706b1e839449871e56692309720106eae26b9c601d49ecf9593f",
+      "size": 22718
     },
     "Data/Item/sword22.bmd": {
       "sha256": "f2d6553021ce6bf976fa5883a0d0bde8648c2c9c5b38a6d37afaa5cfbc97bdc2",
@@ -40378,8 +40418,8 @@
       "size": 10036
     },
     "Data/Item/waternecklace.bmd": {
-      "sha256": "7e018cc7fc1da8cd2b354379c8c6b21dbd336905d525c946c01fda1e97c9bdfc",
-      "size": 9884
+      "sha256": "b23a3548ab069661f054be251118cb7ed9b7e37a889feb512ea2d9aa25030582",
+      "size": 9780
     },
     "Data/Item/waterring.bmd": {
       "sha256": "7944625c60f8cc4fb93ddf0a0ec7e36f14cd0ba4902a040f2623641637b96b35",
@@ -40530,16 +40570,24 @@
       "size": 10178
     },
     "Data/Item/windnecklace.bmd": {
-      "sha256": "e839e16e1e6ff41ceb51b37883aa2af0bd155176855f0e946e2832394be43421",
-      "size": 10712
+      "sha256": "cab5ee934678f6069c6d2d1fe67dd235fc9032040ad0b34aa691e5c80c8b6122",
+      "size": 10648
     },
     "Data/Item/windring.OZJ": {
       "sha256": "d09eebfee1c993a8d8174399e5021244422f73b3c62923ef2b0818419209b7d3",
       "size": 9106
     },
     "Data/Item/windring.bmd": {
-      "sha256": "9d3ef3319363b2773decbc3fe3539d3650de576130c9717eaeefb24ebb4c14c7",
-      "size": 6952
+      "sha256": "5102d4302afef24ff77a2b3e6ae97c255ffbc42c64955b7210d59c6ae68d174d",
+      "size": 6948
+    },
+    "Data/Item/wing01.SMD": {
+      "sha256": "5ffd89003542958bdd7eddfdd8f5587df58183d5c1319f71bbc02295c0c35ce8",
+      "size": 468021
+    },
+    "Data/Item/wing01_1.SMD": {
+      "sha256": "3a3fbaca381a45ca6117920fb292c445537678938f634aa6c46620768bf4b2c0",
+      "size": 55578
     },
     "Data/Item/wing08.bmd": {
       "sha256": "c41dc11bd2ab3a981a70c1d7897ae64cfa38847e0b8f448005ee55d6fef7816b",
@@ -40878,7 +40926,7 @@
       "size": 1015812
     },
     "Data/Local/Eng/Item_eng.bmd": {
-      "sha256": "4d1f3101ce2607231d5578cc782175125bbb67ce552ceefcb3adb91b483fbc16",
+      "sha256": "d8df8bdedbf6c27590c2a0d64dd641704816aec135c39324caf4c201a21dab82",
       "size": 688132
     },
     "Data/Local/Eng/JewelOfHarmonyOption_eng.bmd": {
@@ -40906,12 +40954,12 @@
       "size": 148800
     },
     "Data/Local/Eng/Text_eng.bmd": {
-      "sha256": "2f9e5d989fbe32ce0cd1d54e53634f8645e658ddcbd77a014638bb46404d7815",
-      "size": 160295
+      "sha256": "83f13fafaafa38cb82e7ba30ad5fff67c483b5766142f6e246167d8e0d4e9b1a",
+      "size": 160434
     },
     "Data/Local/Eng/Text_eng.txt": {
-      "sha256": "9cc57a1c5ed7037304e6636dcc8961116a0b973a51e5b332af6bea6443895b26",
-      "size": 159055
+      "sha256": "7e5c050176cf5f674b4eb0ae417ce896be9d3c322154b52b975f3956e1cfe859",
+      "size": 159194
     },
     "Data/Local/Eng/movereq_eng.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -40998,7 +41046,7 @@
       "size": 1015812
     },
     "Data/Local/Por/Item_por.bmd": {
-      "sha256": "65cdc04f9def8eded9c4dc59efe9568400a587255365e86bd5d648872d9af99f",
+      "sha256": "d5bbd37caff7359437ee04326a4c43eba35d867dcdab9243ad050b3533b8ca8c",
       "size": 688132
     },
     "Data/Local/Por/JewelOfHarmonyOption_por.bmd": {
@@ -41038,12 +41086,12 @@
       "size": 15600
     },
     "Data/Local/Por/Text_por.bmd": {
-      "sha256": "c0f93c21a3fb5c242e484622f3f6cbbdb6526daed23acc02c80c7d81ec2f3325",
-      "size": 170118
+      "sha256": "470cf48980dfa233909ae956c7e9cf291dca3461336e1a3ecc94cf8bfa9bee71",
+      "size": 170268
     },
     "Data/Local/Por/Text_por.txt": {
-      "sha256": "87d8bff31d0c8a5dfaab8e441978c049e70f6e8acad0c1f647e2e822a2b1d923",
-      "size": 168863
+      "sha256": "29024e5dfcf6d76f12a090fa808c8c0f38108ec566bd133e0c16823624551341",
+      "size": 169013
     },
     "Data/Local/Por/movereq_por.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -41094,7 +41142,7 @@
       "size": 1015812
     },
     "Data/Local/Spn/Item_spn.bmd": {
-      "sha256": "2a5a7d7b09c59803e46200061b78c6b25a94abb9ad08d9be15561665dc746cb1",
+      "sha256": "7feb710718b07aac7ffabda164de907af0107d080d95ec1c5dcd02b6e7e3fdf2",
       "size": 688132
     },
     "Data/Local/Spn/JewelOfHarmonyOption_spn.bmd": {
@@ -41122,12 +41170,12 @@
       "size": 148800
     },
     "Data/Local/Spn/Text_spn.bmd": {
-      "sha256": "f9fe8b59431605108096d4cfc7f3ce057e664f9e9a76888da57199af60283191",
-      "size": 177499
+      "sha256": "ea207f2edf53bdfbfd3c49ce431222656ba1a899a5ce4e7c2abde790dd1ada30",
+      "size": 177660
     },
     "Data/Local/Spn/Text_spn.txt": {
-      "sha256": "171bc32873e1324b0c8b65c02cea5287b2dadbe47fd3d6807b45d1db69b5d9aa",
-      "size": 176247
+      "sha256": "7fd1da87d7fc10ccb6b78563ca929676e6f85848ed1821e963d57702b5be3824",
+      "size": 176408
     },
     "Data/Local/Spn/movereq_spn.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -41186,7 +41234,7 @@
       "size": 1015812
     },
     "Data/Local/Vie/Item_vie.bmd": {
-      "sha256": "3091058b50288f0664eac639e9bc73ae04dbd0b374c94871a0021eb85f06e0c3",
+      "sha256": "2733edefe66565dcfd5cf5dc73e43181db472fc438221c4877751a4d217a003f",
       "size": 688132
     },
     "Data/Local/Vie/JewelOfHarmonyOption_vie.bmd": {
@@ -41214,12 +41262,12 @@
       "size": 148800
     },
     "Data/Local/Vie/Text_vie.bmd": {
-      "sha256": "31ec2299d77ffc7ea5b78ddbbe8746eafb480827b88178e6dc3bd71e3a00024e",
-      "size": 162629
+      "sha256": "80088bec5a3b4730c63f11ace1ed4a8d1157dcdb9265f9480ad822d2d7f658d9",
+      "size": 162833
     },
     "Data/Local/Vie/Text_vie.txt": {
-      "sha256": "e10844f3d9c35cc66ab95c6d6067635e5a8ee10e3100b86dfe4ab752930d3c58",
-      "size": 161237
+      "sha256": "8614993d2ff3e24b41eec5801af4a4d9f6231584ec7eb54d9155fc879c5dafdd",
+      "size": 161441
     },
     "Data/Local/Vie/movereq_vie.bmd": {
       "sha256": "ad57dc346779049d629a98062bc877275a1c08e9e863a60fe7542966eaddc68e",
@@ -41250,7 +41298,7 @@
       "size": 2512
     },
     "Data/Local/rex.main": {
-      "sha256": "6e5c75a1790567af8c9aea0a0a65fddb47300f0d390956423b8407928bd9b4d9",
+      "sha256": "ad7e1b625fbd647da698b52aa3f64695cb2d6bc8f0c0c4b06673953ca83249d3",
       "size": 3716468
     },
     "Data/Logo/0Account.OZT": {
@@ -48754,8 +48802,8 @@
       "size": 200137
     },
     "Data/Minimaps/tabmap_markers.txt": {
-      "sha256": "d6c327d67061e5ee2b40bd0f8adb7eff1cf7a73223cb673290e471b51b416d84",
-      "size": 108104
+      "sha256": "efa0cf23b908d3c2d515a6ce7fc5f8d5d0cdfe95e9783f864e6dfdc65b075a4d",
+      "size": 108286
     },
     "Data/Monster/AssassinLeader_alpha.OZT": {
       "sha256": "4032ecd1b4c4c4aed2c2cf95b786f8d0dabd243c3439750574371b4c8d46eca9",
@@ -89154,24 +89202,24 @@
       "size": 32090
     },
     "Data/Player/ArmorElf01.bmd": {
-      "sha256": "76c1e5cf905296c1a8e00efaf5eebc817a491ce57b1c9c8d4609bf3e0524ec95",
-      "size": 40289
+      "sha256": "4ec7058878f5e8a17f87ad1f670a1f065c44f3f9f42eb6f54992f1b6e7a2f13a",
+      "size": 18479
     },
     "Data/Player/ArmorElf02.bmd": {
-      "sha256": "8791798217c67b3f3ea77b0c6d18fb87e9328666267c2fbe8ae3589b409222ba",
-      "size": 35750
+      "sha256": "fb59496f1e19d3d38e567b698e64fdf6e89ca1750f960d92908eecc6331c9ac1",
+      "size": 18047
     },
     "Data/Player/ArmorElf03.bmd": {
-      "sha256": "d3c97259206f004a9ea2bdac2da96c317f404b50849aab38b6554b564707b2dd",
-      "size": 46601
+      "sha256": "8c2747ce08ef628088eac4f68a1818238f4e6a0f697294d6454fc0cd6946f1bb",
+      "size": 25119
     },
     "Data/Player/ArmorElf04.bmd": {
-      "sha256": "89bb7a7768baff75a54b53c7477a5d44ba980eac900033632c2f5ef328e80573",
-      "size": 49921
+      "sha256": "12f713fa7b56300dd19a46745f36494e30578f9cf3481d44fee32efbd7413d3e",
+      "size": 20937
     },
     "Data/Player/ArmorElf05.bmd": {
-      "sha256": "642115663e7d397084185a9e67ed951f3ccebb7d328025e5e47a9b3ad425c939",
-      "size": 51685
+      "sha256": "db81571d430ee4aa9862a85cdf0813bf1a394247bcb464347956c7abe7bb33be",
+      "size": 25655
     },
     "Data/Player/ArmorElfC01.bmd": {
       "sha256": "4745c3a47393f74d7d564b47e3dc465201f1a10d502074bdfecbde7bd5ac3c16",
@@ -89182,44 +89230,44 @@
       "size": 35124
     },
     "Data/Player/ArmorMale01.bmd": {
-      "sha256": "6e4db18cce2f2e8431a8f12fe07c287f5cdd7da4acca41b5fec8bbbfdcbdcf07",
-      "size": 23358
+      "sha256": "4c1f0ed23b4fe0db0671154f8fb83ad64c57fa08320a519f48dad9079ecf8c9d",
+      "size": 18725
     },
     "Data/Player/ArmorMale02.bmd": {
-      "sha256": "d602dd2fd5793922ddd44b2490ba725cbf1f6e1d189ed58eb08ee142824305eb",
-      "size": 60734
+      "sha256": "2dcf617ce7fbbd67f54b671cacb371c4fef76aea42c899ed312b01c00eeefb70",
+      "size": 27615
     },
     "Data/Player/ArmorMale03.bmd": {
-      "sha256": "e4f74a75025986700de9ce9661ccc99d034c461f48fdc5bd735fe0616c4740c9",
-      "size": 28985
+      "sha256": "1412b9e338fdca3f29ea8fb09f0e90c68260abca2806bbe3fb85e64bc0b76cc2",
+      "size": 17719
     },
     "Data/Player/ArmorMale04.bmd": {
-      "sha256": "5925277d8ab7303633fc2806f277f97012fe69b8fdf0f376836e699661c4c83b",
-      "size": 32447
+      "sha256": "82309e6117d5f0dcea2b36fbf578431a6d408288452293731905f7fdcd61a3a0",
+      "size": 18913
     },
     "Data/Player/ArmorMale05.bmd": {
-      "sha256": "a70c6e75eb3895f13be0b3ad70de82f6448b4e346bcddcfd28b437cb8228e3c4",
-      "size": 35239
+      "sha256": "9fa3f86a3e001faf473441c2a5fd92fa6380793f4f52d06fbadb934707e0fd6a",
+      "size": 19873
     },
     "Data/Player/ArmorMale06.bmd": {
-      "sha256": "7fae040505a6b726fbbdec345857b795e85321d99a9e59ca399518dc9a219ac2",
-      "size": 52968
+      "sha256": "7516af9450840f65500e7745da52ec81d51b4c6ebea463917b5c769bb8e79212",
+      "size": 20621
     },
     "Data/Player/ArmorMale07.bmd": {
-      "sha256": "c1f6b4d6c732239ca686d1caacb999236d9e8b3c8a10c218f7d024f88cd37dab",
-      "size": 23172
+      "sha256": "66bc4f1ff4c4e3e33220c797eb6a01939caa31cd2de5a4224268ab0d37b3198a",
+      "size": 20093
     },
     "Data/Player/ArmorMale08.bmd": {
-      "sha256": "acabf2a6be64e83bfe17503f1bd4195e140070f358e965f8431f37b5053cd938",
-      "size": 55315
+      "sha256": "858090ea97030bd07bc179d723471fef66056bf2b92395f2c5d60963745f7fb6",
+      "size": 26135
     },
     "Data/Player/ArmorMale09.bmd": {
-      "sha256": "9d41b656070f5ce81960c7abd749bd91574f353e14c6b7e5692a053e2b28c1fd",
-      "size": 39378
+      "sha256": "1a930136e3e43aef2d249b071712344290d1bc490b927287b05e62fe251e1290",
+      "size": 19951
     },
     "Data/Player/ArmorMale10.bmd": {
-      "sha256": "af1014e18071f9e76f984db423246ac2877f2f0512cc19582046ec57421583c2",
-      "size": 44230
+      "sha256": "5a13776380590564843209432610420afdd9a72b88accf68654d894f920a59f0",
+      "size": 22413
     },
     "Data/Player/ArmorMale109_alice.bmd": {
       "sha256": "2e7cf1030648e0cd337fa9b204e38817671787ff5e097f43ec1513c66db6ae55",
@@ -89350,8 +89398,8 @@
       "size": 127126
     },
     "Data/Player/ArmorMale16.bmd": {
-      "sha256": "056cced339a2fcd9d88b73166d14e46370384f88f9f8e0253b1a3cf2a0b909f8",
-      "size": 24803
+      "sha256": "c9e26930875ba301dcbcd65dc409820bc85ed2795f6148f9f5d22e91f47f91d5",
+      "size": 25045
     },
     "Data/Player/ArmorMale161_aliceNH.bmd": {
       "sha256": "a6eb0a8c83ae28b7697780dc8a25bb1132c4074c7a35227247f4af4febf2cd7d",
@@ -89370,8 +89418,8 @@
       "size": 188676
     },
     "Data/Player/ArmorMale17.bmd": {
-      "sha256": "dfe75f4890e313f2979aa0525cc75c898084e72935c21b76378458bccd718de3",
-      "size": 63634
+      "sha256": "f07915298f23e817ead688a5c05f4c639ccf7ee4bb9b969fab39860507dc5c6f",
+      "size": 27275
     },
     "Data/Player/ArmorMale172.bmd": {
       "sha256": "2afc5918088fccd03b7002766771867769e36069ba0bc0fcea4b257a039a1a0e",
@@ -89402,8 +89450,8 @@
       "size": 185080
     },
     "Data/Player/ArmorMale18.bmd": {
-      "sha256": "ba7fb007538d42a95d78b8eb7f26301283746d4dacc8dcb8d4906942e67eb824",
-      "size": 82754
+      "sha256": "3b823d3b9cbed738e2279281b4057cdd1ca7a53e28f39b6dab81f0ba32398043",
+      "size": 40323
     },
     "Data/Player/ArmorMale181_elf.bmd": {
       "sha256": "7e8f3ad6af7963897a68ce041ea42dcc3207ff0cf6e57741ab909a918feecdc6",
@@ -89418,8 +89466,8 @@
       "size": 55832
     },
     "Data/Player/ArmorMale19.bmd": {
-      "sha256": "79218c04794b9e5dc566525028edb8adda3b8a031ec803b485a5c9b9093f4ddc",
-      "size": 35995
+      "sha256": "1f588302a73cc4cb6ee48d241f7ed472d2700fba4d7367fa5690f52b7cc1c311",
+      "size": 20801
     },
     "Data/Player/ArmorMale20.bmd": {
       "sha256": "5d5e19a616bcb0c810941c7d287a26d550bbeaf5ba3114cf8aa9dec9bcd169fe",
@@ -89430,16 +89478,16 @@
       "size": 151706
     },
     "Data/Player/ArmorMale21.bmd": {
-      "sha256": "95f64ae24b5e26e15c83936d03a9723d688b7e2d1eb9cffe51a3bbd15dfcab64",
-      "size": 38792
+      "sha256": "e9da95468983a32ef0724c26beb1da722db94b5a10a5cb56e71d8d0ead7fddcd",
+      "size": 38006
     },
     "Data/Player/ArmorMale22.bmd": {
-      "sha256": "ff0a832467f4fcb4462eea4829bab1cd146f5da556cc8a69db93f5f0c921882d",
-      "size": 62878
+      "sha256": "208549312edeaa86a1577a6397186eb9263addfc6b2f6a39dbb70bcfacb5d9ad",
+      "size": 39374
     },
     "Data/Player/ArmorMale23.bmd": {
-      "sha256": "85b948e426245119e655b3837d489a3573886cba6598a8965cdf305c45dc9877",
-      "size": 51951
+      "sha256": "2839b0312468c3f12c007482eb57b2ca38d629a7ce1be9627595ab8884ce248f",
+      "size": 27984
     },
     "Data/Player/ArmorMale232.bmd": {
       "sha256": "661b1f9b21f0150a108463d4c129a3ddf1102076198ccdbde018e7cff4e4afee",
@@ -89450,28 +89498,28 @@
       "size": 63228
     },
     "Data/Player/ArmorMale24.bmd": {
-      "sha256": "9d3300c460c3d4a21fdde308fa1c1fb4e5ed9d63fa5a273462e6d5e85c85144b",
-      "size": 44372
+      "sha256": "b5426566d6de0ab976121275d3b23efa444c1531c7178040a48fbd77f741b1bd",
+      "size": 43470
     },
     "Data/Player/ArmorMale25.bmd": {
-      "sha256": "7df4a2827385303980db73258dbbc5ec9b78b6b3652791ac0e79dcb87ba4b18e",
-      "size": 77477
+      "sha256": "47504a4d16d355b9223df2abd94574cb7b99e1afc8e3d7f998a04d612e8dc52b",
+      "size": 44490
     },
     "Data/Player/ArmorMale26.bmd": {
-      "sha256": "956ac82e21794ad51fce346c410ce6cb42a383e29f2448f8445b5cdbe1dd19d9",
-      "size": 30756
+      "sha256": "75cb0342a41f68c2f3b49957520d2d39ecc096f4886b511004dae45fbafb9e7e",
+      "size": 30658
     },
     "Data/Player/ArmorMale27.bmd": {
-      "sha256": "029f77c436ba2e2d54061f7d6e8977f1577f1a6d52e116bf950871cf32c35491",
+      "sha256": "48494b61e522a82451aa97c563865e5f5a3cb69cad1588c82035f8d3eb983e75",
       "size": 46280
     },
     "Data/Player/ArmorMale28.bmd": {
-      "sha256": "1374a2efd427f8662130115b66b33d93cd63653d640bb01bc8addb0c3ff509b9",
-      "size": 36116
+      "sha256": "2e961f866d68324b0f72c05a67f50b98fb00d3c7e1d759dbff591a7f59d090ec",
+      "size": 36496
     },
     "Data/Player/ArmorMale29.bmd": {
-      "sha256": "7ac4aa837971cb65499afe8617ea4268e68e3e4742a8165fbeaffcd17d748c93",
-      "size": 56726
+      "sha256": "3b5ca73c02955659aada85cfc6c597cd38e285866d4d206d72d03a09eeec46d6",
+      "size": 54040
     },
     "Data/Player/ArmorMale40.bmd": {
       "sha256": "8b208d7c6c64f0f214aa833cae5663578988f6ba9904aad111312dbc4887fc20",
@@ -89650,8 +89698,8 @@
       "size": 123874
     },
     "Data/Player/ArmorMaleTest20.bmd": {
-      "sha256": "608da02802181cb60a129b60dc13877571218398fa8117c0386214772e37965e",
-      "size": 58365
+      "sha256": "165510689c4ee8f810e08116697403876b8033220488fa9a41971b65682e8532",
+      "size": 38055
     },
     "Data/Player/ArmorMaleU.bmd": {
       "sha256": "b61baa4bf937cf656b22165273f53a68488cabe98f05205169ba36be9251bbaf",
@@ -90346,24 +90394,24 @@
       "size": 34486
     },
     "Data/Player/BootElf01.bmd": {
-      "sha256": "e49d7d65ffb5908c52e8a6d0c079623394b6f7a054e9b72ce40939a981f9427a",
-      "size": 24163
+      "sha256": "b1e1c5d16ec68028022a95b9106900b8b85e40d5b07a949e6d6325d4f3e1ffe8",
+      "size": 14615
     },
     "Data/Player/BootElf02.bmd": {
-      "sha256": "84cb56cf6b39b20347de131ab7a0ee3db834f00d7248f15490b2b9d5055af101",
-      "size": 41552
+      "sha256": "65c71e0df48587104a5edeab52af6d8ed4b0fb686954872a2c754cdd19edfe4a",
+      "size": 14037
     },
     "Data/Player/BootElf03.bmd": {
-      "sha256": "97baa5782671bab009cf32cfb39875d5a1ea0d42dfb29f45cc31ddcd6e50580e",
-      "size": 20699
+      "sha256": "a1bf6edc9db9e7d5f9a44eb69995400dad78148c0035c65778e4937bb32b35b9",
+      "size": 13685
     },
     "Data/Player/BootElf04.bmd": {
-      "sha256": "baa07d67e4669b5621de03d4be69e15d3a2c5d2ffb6ee7d51c913a54b5d9cc25",
-      "size": 31659
+      "sha256": "48d06157b49250c22a0c25e7d410cc81a30d2e67779a852023c7a55017acb51b",
+      "size": 16175
     },
     "Data/Player/BootElf05.bmd": {
-      "sha256": "736c8f752218e8b3ba7c0bcdd46a6f89be655dc0be80053fe9ea0a5e0a560292",
-      "size": 30927
+      "sha256": "727a1c6194320f4dd9e523fb48e3792b460a9af471fc5ee7fb50cb4c2722759e",
+      "size": 15915
     },
     "Data/Player/BootElfC01.bmd": {
       "sha256": "dd7afbd7c159112b0755273b4e0e827f7da3b5409a5496dc555c315ead174c38",
@@ -90374,44 +90422,44 @@
       "size": 14890
     },
     "Data/Player/BootMale01.bmd": {
-      "sha256": "4df7c77d42f5e8912ef5e109b63e4e1cf983544a1b662f71565421a13c630747",
-      "size": 34060
+      "sha256": "e60c1433a5cc51ec9e48fc67611c40fd9cffd3a4dc566be74457196a23e5bc56",
+      "size": 17747
     },
     "Data/Player/BootMale02.bmd": {
-      "sha256": "2a2928f6fa221ae90d534affed93ec4eef0b8f4cb74a422aa1bfb10d7c63244a",
-      "size": 25155
+      "sha256": "c61fb8ab48d3af66c4c4834f65af5e96d6364a0d589889eaa194015eefa6b96a",
+      "size": 15883
     },
     "Data/Player/BootMale03.bmd": {
-      "sha256": "4d6333e93823e2d6fb70f764efc89af2de6df4a2dec783445fc6a18b93508f0c",
-      "size": 26239
+      "sha256": "6e758d670cc3ee5dbb6f6dcf2e7675b57ced5a95684a5655fe0ab6ff62b0edb8",
+      "size": 15007
     },
     "Data/Player/BootMale04.bmd": {
-      "sha256": "0584c7cf7b46b0e0285b867c9bcdaf5cc6e36036103057c7bdd13592ae23b035",
-      "size": 35407
+      "sha256": "c4184d71695118ee8d111a14b9ded149b4f8a4758f18a1bedfa4c26ab197897c",
+      "size": 14825
     },
     "Data/Player/BootMale05.bmd": {
-      "sha256": "ee34fe75542d6587dc09a6c55b0598f53c97694fb0732c2eb96b8f6c0303d827",
-      "size": 20647
+      "sha256": "b8e6eab914ad3a9e60652a1067d8b18c348539ea9f06aedd38d3936c6f5031a6",
+      "size": 13989
     },
     "Data/Player/BootMale06.bmd": {
-      "sha256": "afd537ddb6316ea75db6924d078ee1538fd75953b1593afd5b589dfe5533db82",
-      "size": 25563
+      "sha256": "38bba8b19f420c6c92d5a30ab943d58176c1726b9c5431f9aad792bf14df1dbd",
+      "size": 14021
     },
     "Data/Player/BootMale07.bmd": {
-      "sha256": "41a16056de8bd93bffe758bc6269513872b425e64250cf292dffdbd140de8bdc",
-      "size": 40120
+      "sha256": "caea24d6cebac18cd73875074d457e49b9c6e72ec602ebc1fee25caa787eb3d0",
+      "size": 16213
     },
     "Data/Player/BootMale08.bmd": {
-      "sha256": "5724cd222a743d558566387e9cbe43b2be5f599ef0bb63a58fba0f92eb42ffe8",
-      "size": 24607
+      "sha256": "e2449d3f3ca72724befa242d65e3a076927aebdf0e6b5633980a591f250a0346",
+      "size": 13629
     },
     "Data/Player/BootMale09.bmd": {
-      "sha256": "837a64b24beb8ef6db269102171dc90584917417cc5b85f1cc51a02f12b5f58b",
-      "size": 26727
+      "sha256": "08ed8a75bd264c35dbbc87cfe1851ebd827e0257f8beb831d1e75a72c9f0b981",
+      "size": 15813
     },
     "Data/Player/BootMale10.bmd": {
-      "sha256": "a3b4ecdddea52da8c9a9e988604a812143dce8d2b62d8ff490b01c2d82cacbd1",
-      "size": 35931
+      "sha256": "3ff1ecc29ace424151fe30178460a2a248ef7c03c97b1a78829f2d8dae8d0f38",
+      "size": 19371
     },
     "Data/Player/BootMale109.bmd": {
       "sha256": "9e2052bb309cf6e7fc6586c5eab8cd9e151530d31aad4910d92571c43e2ac852",
@@ -90538,8 +90586,8 @@
       "size": 84614
     },
     "Data/Player/BootMale16.bmd": {
-      "sha256": "e4c7e683eb73070eda30478cf787b4fe303a5ceaa1e4ad519b085ed2c3e620d0",
-      "size": 18543
+      "sha256": "33ed1d0739fe0d57c323b328d077d2a37eebf0924280e7bb9b693698d8eb593f",
+      "size": 17783
     },
     "Data/Player/BootMale161_aliceNH.bmd": {
       "sha256": "000837e24d5225c0f9adca717994f4ca4da04d29815e8a79515d06d5b9ee71d8",
@@ -90558,8 +90606,8 @@
       "size": 99712
     },
     "Data/Player/BootMale17.bmd": {
-      "sha256": "5cc462a43390ca641e10c51a7f3b545d463f132aec1dd38be7da6a69d1006921",
-      "size": 30535
+      "sha256": "8502befb96b44b65b44a4ebd7901c0a3936629fc7a4032a83efed1136f727902",
+      "size": 18415
     },
     "Data/Player/BootMale172.bmd": {
       "sha256": "c7a64d890ce08ea80f73babb67f3b44813657cf9358563d8b75674ee5795beed",
@@ -90590,8 +90638,8 @@
       "size": 164136
     },
     "Data/Player/BootMale18.bmd": {
-      "sha256": "463c841b579d70111981a61ba5ddfda2200d56bce9e10e37a93b2903963546cc",
-      "size": 36715
+      "sha256": "17af3320f3da9d1229d8d275894cceb25f68311bc0df1dcf3b68ab6da3f0a5ac",
+      "size": 21141
     },
     "Data/Player/BootMale181_elf.bmd": {
       "sha256": "44af246cbe23453cdd16d113e6611dffdddb2598f6c122d97a5b8eccab7a7f3e",
@@ -90606,8 +90654,8 @@
       "size": 24768
     },
     "Data/Player/BootMale19.bmd": {
-      "sha256": "1a7bf9b2702ed725bd833ccc643697cdb50e6a5fcc16c4bec40d03067fd354a7",
-      "size": 31063
+      "sha256": "f0e5f111f93ae39b94ba47958b25d962aa2403e428dba7e0134e5a91c7d33cf1",
+      "size": 16425
     },
     "Data/Player/BootMale20.bmd": {
       "sha256": "5ac602841cc6f7a8ae21b2825b1b5b3aecaadf04619bc6bb9fea3d3f596e902d",
@@ -90618,16 +90666,16 @@
       "size": 54840
     },
     "Data/Player/BootMale21.bmd": {
-      "sha256": "4cabf0799fa86dd8914b268809b93071c0db3e1b796c0d61be984e5012691906",
-      "size": 20668
+      "sha256": "8e4f1f35a01aae99022bb4d64fcb5068e4b83f9eaf141dae01f28b75deb71183",
+      "size": 20866
     },
     "Data/Player/BootMale22.bmd": {
-      "sha256": "4a8cc6fc52ce2d9b58925f619556c80808d707f2f028c366df3f8a2d05c293c3",
-      "size": 39134
+      "sha256": "294818e99e20e30e3865ea3d3745dc58404b45ce5f43a5362dbba57f013be6e1",
+      "size": 28312
     },
     "Data/Player/BootMale23.bmd": {
-      "sha256": "571c08eea7ec946c7ab0a004cee403594ae33091614481c5f9846c79aef4415a",
-      "size": 39239
+      "sha256": "faecebd854e7e1363dd9eab6033c959d70a18371be2ed3eb3643e842841cabbb",
+      "size": 17792
     },
     "Data/Player/BootMale232.bmd": {
       "sha256": "fdb2ec5bc3d172c6d1d949876fd67aa8dd90a7e03d62929862d494d0928cf102",
@@ -90638,27 +90686,27 @@
       "size": 34940
     },
     "Data/Player/BootMale24.bmd": {
-      "sha256": "4b6f246e389cbed0c9824dada1233769a3f356c4c6712dff9988709ad1303620",
-      "size": 23088
+      "sha256": "12cbced9cc36187ead361f3fb3b60938ae1f70d2501b06769812b0e6fc8dc6d5",
+      "size": 22048
     },
     "Data/Player/BootMale25.bmd": {
-      "sha256": "d6249663124c879ae4051e63787f9d044562295023184122c50f8ff55a6a6409",
-      "size": 27595
+      "sha256": "f65cdb327a2160857316cbc7794cc1f569b233c6fb55faeb4c46dbb45fea1a76",
+      "size": 21466
     },
     "Data/Player/BootMale26.bmd": {
-      "sha256": "e33d7883867f7ce8eedf287f78f7db37d82180b94630ab863118f07fa456c0f4",
-      "size": 15392
+      "sha256": "82d05068f5a062c0e6228f7e822338c7692aa2cf30a58a2059136dc144b4e71c",
+      "size": 15672
     },
     "Data/Player/BootMale27.bmd": {
-      "sha256": "3143903c604f69350d188b4c090d9a64fb5b1b84b6cf2f678a4f6324b42c7da9",
+      "sha256": "fbf89b48ce12de5d445d84049d90c3b69340ec755155fe0b0bcbaa21d471fbca",
       "size": 27920
     },
     "Data/Player/BootMale28.bmd": {
-      "sha256": "29fb14bbaef3a83288644c11929aca95577b57813ce74ef423f518a11b894a8e",
-      "size": 23004
+      "sha256": "f3cffd3b10663f79b4f72d584d76b34395944a2d77c717a56dd8422688c3cac0",
+      "size": 23358
     },
     "Data/Player/BootMale29.bmd": {
-      "sha256": "578170c11fc404cacd1ff701d6788e41704201b08a61a359d682986b14fc464b",
+      "sha256": "b1c3c80ba9214b749a68ec9d377a066e4559f10f6e06cd759c7436ed5d6ea43f",
       "size": 24832
     },
     "Data/Player/BootMale40.bmd": {
@@ -90806,8 +90854,8 @@
       "size": 110112
     },
     "Data/Player/BootMaleTest20.bmd": {
-      "sha256": "5a41fbc2564c5181e65e7dcc383d6589c5ce27b0f685bff1ffa5ecbe04fb196e",
-      "size": 28283
+      "sha256": "17641db4742752318f2df4b444bb2037693d02566be3edf23ebc82102204210f",
+      "size": 26871
     },
     "Data/Player/BootMaleU.bmd": {
       "sha256": "e88b1be467455fd8867268817f20761bef0a4963ce072d8967a1ce04451b6985",
@@ -92286,24 +92334,24 @@
       "size": 41890
     },
     "Data/Player/GloveElf01.bmd": {
-      "sha256": "1933e88acd21cdda638d9525442c783141bc2db8cd026a209df8e193eff229ac",
-      "size": 24415
+      "sha256": "b5917d96b93e0cdc00b720f3d282d5e9cf49cac6dc09e79813b51f0933e4bfa8",
+      "size": 16469
     },
     "Data/Player/GloveElf02.bmd": {
-      "sha256": "6adbcabb9e43deb58641857ebd8e4ac9fa1e13b5f306b998f025d8d04e15b73b",
-      "size": 22260
+      "sha256": "7002195c7fc8349ddcb44d11c1cdbf580b34f3d641da83f15329d593f300442a",
+      "size": 15889
     },
     "Data/Player/GloveElf03.bmd": {
-      "sha256": "141da7f000bd5e4ba9a5ee9fa64fd2a8b3ff7aee221b57453e5b646e4032a533",
-      "size": 23791
+      "sha256": "ae6d693c624054ce4878155b241e5ce17b2c22d5e9e6b3ddbdbf9b880a4f0ddb",
+      "size": 16045
     },
     "Data/Player/GloveElf04.bmd": {
-      "sha256": "29ec3196d3a544a3e80316f2ad968bd889beeaa96cb1621aaa7c6bc0bbaa7609",
-      "size": 30311
+      "sha256": "aea9032ae93e5ce899861101114877a5e53fae5e5392012ba66ece9da34b4b6f",
+      "size": 17195
     },
     "Data/Player/GloveElf05.bmd": {
-      "sha256": "1a8dc1f46e73f17f7a314305213943fee387ef9734ffbb3e2e2253f673e2d272",
-      "size": 25191
+      "sha256": "80806418c6334aa2f9b80a2ca609f1afbe5ba7d143883a46dc33fa09b04a7001",
+      "size": 16571
     },
     "Data/Player/GloveElfC01.bmd": {
       "sha256": "60fc0ab97aab5d56152555c940886104737a10266e42984b0623566bcc4f6925",
@@ -92314,44 +92362,44 @@
       "size": 15562
     },
     "Data/Player/GloveMale01.bmd": {
-      "sha256": "ce1c8edd8e16b5cfc794914c01baffc8a896c75e236ecf51f155062773c43718",
-      "size": 27104
+      "sha256": "6deb3adad12396a65812be61415ce387e0a2fedd8da881ba652e014eda3b8347",
+      "size": 19891
     },
     "Data/Player/GloveMale02.bmd": {
-      "sha256": "c612b40f48b925996182f71046331759d7fcd71771168f0f8725317084f4b4bd",
-      "size": 28178
+      "sha256": "59ad09df1534dcb564614bc0d8b1a87173d08eac1fab2b20d638505cc9ca3923",
+      "size": 16539
     },
     "Data/Player/GloveMale03.bmd": {
-      "sha256": "3afbd67a2a742b91b3430000750a8aee712442444e79e4ba4e6b5b77a2f20676",
-      "size": 26751
+      "sha256": "ae5c1a9ca296681fd9c7b1b043065a3f5c62f618067529fa62d3f7227b297025",
+      "size": 16493
     },
     "Data/Player/GloveMale04.bmd": {
-      "sha256": "b9e45bf7ad6d18904177f1393f1bbf07ce8a42ad76084786eebe0305e6a94761",
-      "size": 35319
+      "sha256": "6ecbf603f895f31f2cd821d2abeac41d38a104aebaddbfc35da67ad45da458ab",
+      "size": 18109
     },
     "Data/Player/GloveMale05.bmd": {
-      "sha256": "e30cbbb6c0f9ce89ab31de623c538151715a4089fe5b7e8d6b587a20ffb3a355",
-      "size": 26703
+      "sha256": "9561a1ba064ecb2d5758da798950906f1a855711d118a5d39f4ae1e7231f1780",
+      "size": 16733
     },
     "Data/Player/GloveMale06.bmd": {
-      "sha256": "25c44ddb41fd4703ce1e4d8a80a87bd27a4a21ed92939bcf4c643f197b5ed2c6",
-      "size": 28810
+      "sha256": "bb4443e36281f879670ba4d070d8b9bb73a7d9754ef8b0a9c279aa494f7b38b3",
+      "size": 16053
     },
     "Data/Player/GloveMale07.bmd": {
-      "sha256": "4b82e2ba16341ea6cc8d9172a5ab4698007e4fc2fe981e8b9e4c293391d6a953",
-      "size": 30864
+      "sha256": "39b38cf0cc1930a648add9b95fe719604a2380ef80b15a79bc91a329f324bcec",
+      "size": 18277
     },
     "Data/Player/GloveMale08.bmd": {
-      "sha256": "10315bceb18396a9fdcad0730f8a8f0e51c5fde01f05c98a4bc368bc33d52d0d",
-      "size": 24767
+      "sha256": "b579e3d6200ed07da015d72d66a75f0ee2a47051913e09c3582231b3194b3ddb",
+      "size": 16045
     },
     "Data/Player/GloveMale09.bmd": {
-      "sha256": "6ef343e9bb1dd6e2ee01fedf5d5664b67cdb3e2806552db7d8bb936bb56066d1",
-      "size": 31850
+      "sha256": "dbd17d2439d2fdced85f4c1c8c5b8484302fdb6a3eade9062efb9f96c766f077",
+      "size": 16447
     },
     "Data/Player/GloveMale10.bmd": {
-      "sha256": "b4e28fa67704b20108984b9050b0cd188c2bd8d796200f50197107777f8cbfca",
-      "size": 34850
+      "sha256": "b432bf7134b2b1b311c85f1b051e841a5314155517d9aa3a4fd77d4f0c28d3ce",
+      "size": 18443
     },
     "Data/Player/GloveMale109.bmd": {
       "sha256": "0b7c03b90748b7111d910191ca0f007a29e9b3c5d5eec454810edeb0f30f291a",
@@ -92482,8 +92530,8 @@
       "size": 73248
     },
     "Data/Player/GloveMale16.bmd": {
-      "sha256": "12b9e8d8bd370bb316de39cc3b5f9c4e0228bb3845df944e3fd27540f2c2b094",
-      "size": 17719
+      "sha256": "8b9d870f2f8cfff7cc03887acf4668823211642b5a89019eff2c87e39e3e3254",
+      "size": 16835
     },
     "Data/Player/GloveMale161_aliceNH.bmd": {
       "sha256": "3d6589b8dc8119ecbee33e042c105c62ebe0a6faace0e43f2da7a91455d1713f",
@@ -92502,8 +92550,8 @@
       "size": 57279
     },
     "Data/Player/GloveMale17.bmd": {
-      "sha256": "d4715c2c9d6e14a7177819c822a416ae5b03020801881502dc7f9bee9539fdba",
-      "size": 28578
+      "sha256": "716701790faaae9cbb20ac7b04c1d4c564d0a18dfbbbfcc03cb246b3cb08cfd0",
+      "size": 17509
     },
     "Data/Player/GloveMale172.bmd": {
       "sha256": "f1b7f73dee32b6a43f5852b93e14d6ca18572d3da9fbf52647ca68c820a0de0e",
@@ -92534,8 +92582,8 @@
       "size": 82376
     },
     "Data/Player/GloveMale18.bmd": {
-      "sha256": "7c40a153998b602b892239c6792463e7a8140c10d19ca0bf112ed8e0626cc412",
-      "size": 46322
+      "sha256": "cb485fa4b1578c3a5905e7a5126cf1e2b45019abb47b5659ee51c9049959cb15",
+      "size": 27821
     },
     "Data/Player/GloveMale181_elf.bmd": {
       "sha256": "79aa1fb5e68076f7c5f136872d9fbb501723418f9ea40d17fb4406be33811891",
@@ -92550,8 +92598,8 @@
       "size": 42600
     },
     "Data/Player/GloveMale19.bmd": {
-      "sha256": "f09b73850525ad929aeb992d7df894334479202d214326a48e02e77cc8800c9b",
-      "size": 30719
+      "sha256": "baa6b91f05e881c68d96b96559100bbe3c1727dfc3944da8034f680b3d52b9b1",
+      "size": 19397
     },
     "Data/Player/GloveMale20.bmd": {
       "sha256": "1b0077717dbc13805d94f33319a2f00711226316a2aed7c81736f6239c3e94e6",
@@ -92562,43 +92610,43 @@
       "size": 61938
     },
     "Data/Player/GloveMale21.bmd": {
-      "sha256": "022bb9d1488225238bc83bb75548f2ce41257a5db8d6175ff977b346105778cf",
-      "size": 18776
+      "sha256": "4c53a89c9e1dddc95e74d02aa4f73a6b82c57cca10ce501fa745d87eb4bcd9e2",
+      "size": 18942
     },
     "Data/Player/GloveMale22.bmd": {
-      "sha256": "b5f95766196af3a07dda284a80f2ee9290752c41f1430cfe96a680f13ec850da",
-      "size": 35062
+      "sha256": "8f21db4cb79ba3645627774eed5070a3cc0486a60e8cefa8e0e8c53c989a6f4d",
+      "size": 20426
     },
     "Data/Player/GloveMale23.bmd": {
-      "sha256": "d211885806b8473b9dc40651bc996f63b1ef5fa6a1725146cd06eedaf2ab58e8",
-      "size": 36599
+      "sha256": "98349dbefda9bc2f37b402e1712f24897ae858509db1c60dbdebe3eca8017c10",
+      "size": 24968
     },
     "Data/Player/GloveMale233.bmd": {
       "sha256": "630b5b9631ee674d37ca8e004eedb1f691e694127b382b25a294816c51813d7d",
       "size": 30256
     },
     "Data/Player/GloveMale24.bmd": {
-      "sha256": "d6fac6048aba80ef2f617fc03987497f76d575ceb52644fcb7bfa29c76067711",
-      "size": 19888
+      "sha256": "db9080a72b7e9f011b63e68e9f9adb1cd81a13a5b57e25dfcbef3facf5f8f2da",
+      "size": 18808
     },
     "Data/Player/GloveMale25.bmd": {
-      "sha256": "b0613ae852c20f1cde5202ff30bad70352681a7c7e50952c32c1bbb52f65ec96",
-      "size": 29291
+      "sha256": "8e949e863c6088938d825d9f32039bf5c3c0b0bb5fda8a6a2c7b81d17efd73b0",
+      "size": 20402
     },
     "Data/Player/GloveMale26.bmd": {
-      "sha256": "cdad996e2faa5d54f56ab94473c322360cbd31a77c4190b6f59030eb47ace526",
-      "size": 17248
+      "sha256": "455fe1e68fe2d867510fbd6c0d73990abf2a6078e8f9a8b0d79888d8f0f5885f",
+      "size": 16656
     },
     "Data/Player/GloveMale27.bmd": {
-      "sha256": "5b89e07900d1aed003309e38b26421e4bb116ac69318b8d6a324b1776d187f80",
-      "size": 21056
+      "sha256": "1ca1bbe1f56181c957f7f4a3eb34335d52fccc0c6bb7d8301635235e5140782e",
+      "size": 21064
     },
     "Data/Player/GloveMale28.bmd": {
-      "sha256": "f5e3456af631c5505114caf7e84f63e93e7f3328a801ecb0007ff441b9766218",
-      "size": 17944
+      "sha256": "96afffc9c567d60867027603a419a55e70e0e03719f2f0f4cd7b032442a031c7",
+      "size": 18226
     },
     "Data/Player/GloveMale29.bmd": {
-      "sha256": "02e5801a4f9223e3397a96f6c08132592b69966800a76b50a8aad42cd495a44c",
+      "sha256": "2be7cd30a075b68c362b0f1d37093cc9b20e1ccab2b19744d2ba456ab9f1306c",
       "size": 16400
     },
     "Data/Player/GloveMale40.bmd": {
@@ -92730,8 +92778,8 @@
       "size": 82280
     },
     "Data/Player/GloveMaleTest20.bmd": {
-      "sha256": "9f2b632bea1bf89a263e3bee1741349e7d47e4ae932fec5ca085887f68742722",
-      "size": 23059
+      "sha256": "d8074cf16c7cc239faa8dbfc932a46455ad16c4e58fd806b5272c2200dda98bc",
+      "size": 20943
     },
     "Data/Player/GloveMaleU.bmd": {
       "sha256": "961df19d110cabe6896bc767045431c519f20df71a96c1f1e62bcb8318deac2f",
@@ -93314,24 +93362,24 @@
       "size": 32122
     },
     "Data/Player/HelmElf01.bmd": {
-      "sha256": "e52dc78bcd9e77365ec0924669b6ae65337eae520d04eaf1b83fe69dece4a872",
-      "size": 8779
+      "sha256": "672a9aef1e70a8365278ce1117119e19f639b1bdc9f10bd8466c7b7736346523",
+      "size": 8855
     },
     "Data/Player/HelmElf02.bmd": {
-      "sha256": "612d232d44b94c72555457549b289e2dd58a29ee299455cf9ef82ab7c91884ec",
-      "size": 13656
+      "sha256": "5244515cb4fdea0892d8074bc73588885ecf27dc3b9a7575304ddfe8b5068e45",
+      "size": 6923
     },
     "Data/Player/HelmElf03.bmd": {
-      "sha256": "0c7db87c24cb0cc90bf9a1df2e0c12fddaced34061feb14e70e9ee9867ed8e68",
-      "size": 6719
+      "sha256": "cf0c9ed9175942d290e77fdb28b0616fd2848d887b14374a9fd2aa9bc65ddfdd",
+      "size": 6715
     },
     "Data/Player/HelmElf04.bmd": {
-      "sha256": "bf6650c74e8dde81f240dd1bb336953af135a2650e7b28f4f40f7b8a8db86d31",
-      "size": 15019
+      "sha256": "edeb6800bcb7924a1074f0ab7ee429ed45fa0f82d7da156e54db0dfb79ee6a78",
+      "size": 9439
     },
     "Data/Player/HelmElf05.bmd": {
-      "sha256": "1884a44c955c9d6fad0dc4e8530a81c81c7796d3060d4c1ab8027b8c8e2e104b",
-      "size": 75509
+      "sha256": "f6b63677d7e59307cbf1747833fb0d21797cb66c14bf69dcb81e0aed3f78d406",
+      "size": 18229
     },
     "Data/Player/HelmElfC01.bmd": {
       "sha256": "06c46c7639782e1023b4a3860e326b03d9fbd0fb09bf76b90e8d1ba97dc15f22",
@@ -93342,44 +93390,44 @@
       "size": 6864
     },
     "Data/Player/HelmMale01.bmd": {
-      "sha256": "851362339047c57d0e880adc8d22dce4b372411e7c1ddf3e38cfebd2a3debe59",
-      "size": 8412
+      "sha256": "ac8416c9ac6e2b2b15f0056f1b7b0938b5fff38517461ad8b0dd9fe554826bdc",
+      "size": 9565
     },
     "Data/Player/HelmMale02.bmd": {
-      "sha256": "69d02174737d44751881d570e3340aae5aa8805625ebe2af00571c4ac0284f24",
-      "size": 53460
+      "sha256": "52df1299a5a4ac12a6c12df4c06f5c8e940b14b6a1569bc3ad5b8ff9910fdea9",
+      "size": 20333
     },
     "Data/Player/HelmMale03.bmd": {
-      "sha256": "6762c7efede9db2ddf4ced9ff88f4f087012523283edaf937f4bc79690688c68",
-      "size": 13663
+      "sha256": "f4d63e18797bbb401d2aa68dd1e926484c9e3d24502df99fb972741e952c6acf",
+      "size": 11861
     },
     "Data/Player/HelmMale04.bmd": {
-      "sha256": "2de30c377711cc5c7cdf0a478184e36ad4ec4c375b89281e3592b6fd63286dfa",
-      "size": 71885
+      "sha256": "a8eb9171b3e5cfe2bd85e6deaf083c1d55d9fe126f324787fdbbabea6a44e257",
+      "size": 13045
     },
     "Data/Player/HelmMale05.bmd": {
-      "sha256": "a535b227053a7993cb776bd10c588b3f280b52da4cb631000569866883b3387c",
-      "size": 47481
+      "sha256": "1d14dee629610aab67d775565c2c3012e9d84fbe31a09cdd124a54f96569da96",
+      "size": 13821
     },
     "Data/Player/HelmMale06.bmd": {
-      "sha256": "1141621c82d2d6062bd4f7167a23576f544370a1cd662949cf735ea5f8349006",
-      "size": 52088
+      "sha256": "9e0a49a0f54fed3e23e5d59fe5e67eccd7da218a7bc51d43a3d78bf78e157ae4",
+      "size": 13643
     },
     "Data/Player/HelmMale07.bmd": {
-      "sha256": "6c2aa57e565103120d6915af8c21f7376cbedeb97e4d879904c97e169621454f",
-      "size": 48094
+      "sha256": "17c8a25b4b3da2ae19061852c049020e0a9e3685da21fd616c5a2bc6bde75563",
+      "size": 16415
     },
     "Data/Player/HelmMale08.bmd": {
-      "sha256": "89774d8740ec1100ccca9e665cb72d7a47617358c719e02df4d52afa79d28da7",
-      "size": 70917
+      "sha256": "542b507fcb0fbc84332fb856a6c3ee586ae81d39ef3b046eeb24103b3669e6d0",
+      "size": 17321
     },
     "Data/Player/HelmMale09.bmd": {
-      "sha256": "b589b89076ed5a77c5307ba8e51caefa0f01d80776f7f9a92d3369e3e09c2e74",
-      "size": 13822
+      "sha256": "95a44bc6a1003037a304f7394aeeef9b9be24a13a9ff70f78ed9e484accda347",
+      "size": 9639
     },
     "Data/Player/HelmMale10.bmd": {
-      "sha256": "8326a2db96cdc8b33829323c33d68361585de021a1e4d45048b82733a2705374",
-      "size": 22254
+      "sha256": "7f99958a987d539b33ec9aa35efebead4da6df4354c751f84e965731f04b91d1",
+      "size": 6923
     },
     "Data/Player/HelmMale109_alice.bmd": {
       "sha256": "9186485acada194a6223c65f953d3608af60297f3ae191a86a5c796223c4afc6",
@@ -93582,8 +93630,8 @@
       "size": 69647
     },
     "Data/Player/HelmMale17.bmd": {
-      "sha256": "311f7470fef3b861ba3db3137e98378ff09e5ffa777a572c05fdef49341a28b6",
-      "size": 56516
+      "sha256": "25e47f9d4104085157cf6f77e270665049eb47b1193fd2844c61a647dfde59c2",
+      "size": 20461
     },
     "Data/Player/HelmMale172_dark.bmd": {
       "sha256": "a17ecc88b6479daf6acecddcd7c09ede1852a9c7ad78dbbaaad4fd9584f3b764",
@@ -93630,8 +93678,8 @@
       "size": 96312
     },
     "Data/Player/HelmMale18.bmd": {
-      "sha256": "37eedea431154a84d44c386cde77bee68b7f620f14ad5e2f0c1c994b26d51bee",
-      "size": 57756
+      "sha256": "c39d8525883834f07f68d3ad934c3a397b3dafbc9458bf2275e4f2a78ca120ad",
+      "size": 25605
     },
     "Data/Player/HelmMale181_elf.bmd": {
       "sha256": "9bfa79df154c06d6b589f1108c95531fde319c4112aa6ade260cff4aa55d3f6a",
@@ -93650,8 +93698,8 @@
       "size": 204710
     },
     "Data/Player/HelmMale19.bmd": {
-      "sha256": "65b36cd133d46d587cd158ffd178b6ada881628f9215b4fc7096ae5d87a5dfe9",
-      "size": 56301
+      "sha256": "01906930ba498a8b77d927c038db6648dc5d7264b7df9c0642d7fac099955e32",
+      "size": 14429
     },
     "Data/Player/HelmMale20.bmd": {
       "sha256": "e40bcb7036dc9309d9d83c2be627d756b195efb87839418fbca34f86032cc816",
@@ -93662,12 +93710,12 @@
       "size": 70758
     },
     "Data/Player/HelmMale22.bmd": {
-      "sha256": "04778bbd5d89542ce17662bb23f6ceef2427fbfd6801887347b38a3e39362a96",
-      "size": 62076
+      "sha256": "617e05c56b55216b2ebd5d0ac2529095d486bef4621279cc3b34e12446c1e9b0",
+      "size": 24512
     },
     "Data/Player/HelmMale23.bmd": {
-      "sha256": "d1e791b9ad3e8497ed572e6171e242379658b77932175a89014edd3378ea7cbb",
-      "size": 61045
+      "sha256": "a3be99c72aef636b4483e8cf7e87d62a020492ad9ab9fa485c6c1b456249b7e1",
+      "size": 14864
     },
     "Data/Player/HelmMale232.bmd": {
       "sha256": "6d459c24961c6950341c2bb639bcf8b7968792fb6b73b45ed9b3e9eb986bac5c",
@@ -93678,24 +93726,24 @@
       "size": 47842
     },
     "Data/Player/HelmMale25.bmd": {
-      "sha256": "b72c128e10384585963db882a2b8f8d7fea574b61720eabda0fea6e672bad9ef",
-      "size": 93557
+      "sha256": "dabdf3271d0b2769e13fc72c8980df951aa2b0b3cbcd21c417877c7d827f5c60",
+      "size": 47894
     },
     "Data/Player/HelmMale26.bmd": {
-      "sha256": "da43bcca252831e0427710b1f9d0ddab62eabc29a2f3fe3544e286062997e097",
-      "size": 66596
+      "sha256": "d02da10d5170db8b6c25bbb6596bf99c729ff98faee75ae81f312a0843d75b98",
+      "size": 23948
     },
     "Data/Player/HelmMale27.bmd": {
-      "sha256": "a1792683e58a76a993c947eb98bc09535752c3d2b651fd8e68eff742826f3df0",
-      "size": 73632
+      "sha256": "daa9b3e89aa0375b6ecf9b7808e3c095b34c43d2dd3e7b7eb226cb43e5510332",
+      "size": 31064
     },
     "Data/Player/HelmMale28.bmd": {
-      "sha256": "7f6d77574575042764fb4575917a18631ae27070795e048ae546268e6cf56f28",
-      "size": 66148
+      "sha256": "ed28b8cd4457e243872e245ffbd7f0cc7206f045c49155cdc8484389e8969db1",
+      "size": 23580
     },
     "Data/Player/HelmMale29.bmd": {
-      "sha256": "7f7e387c0c316d61da6ff0602e00141bee3df60f7bad6d351a5b34bbffda0717",
-      "size": 63864
+      "sha256": "3174362ef5fda1d7f0ef9bc7b093dde858a962623f36db553ef7b279a3cb90d8",
+      "size": 25956
     },
     "Data/Player/HelmMale40.bmd": {
       "sha256": "56bb1b78a2c4f95325e478c8e0b762a646b0d2ba0c0d100d85e2aeaf95d451e8",
@@ -93814,8 +93862,8 @@
       "size": 49590
     },
     "Data/Player/HelmMaleTest20.bmd": {
-      "sha256": "d6451b22130ef64bb766807411f3995a069e537263d0bb517ade43c2539c9841",
-      "size": 67845
+      "sha256": "a08c450b0705d171bae67fb589f0204cb3f816b2313229ae101345ec13f4b438",
+      "size": 32343
     },
     "Data/Player/HelmMaleU.bmd": {
       "sha256": "a27b8935eb2404b109ec4c7c84a39a1cc91e8d5afbc04f9f2e9611f4c6f73230",
@@ -96166,24 +96214,24 @@
       "size": 57732
     },
     "Data/Player/LuckyItem/64/new_Armor03.bmd": {
-      "sha256": "a9c8a1e0dbd94fb45e99993161c17533ebb643f9b3ce8792a25d47ce40cbb14c",
-      "size": 55315
+      "sha256": "1323a0d83f9f17609cc8996da61152dbc095830123abc24c28d4dccc12644b2e",
+      "size": 26139
     },
     "Data/Player/LuckyItem/64/new_Boot03.bmd": {
-      "sha256": "5d1cc1ca14a0192e7a20af28619d2ca330fb3a453c0270296879c39e080f4757",
-      "size": 24607
+      "sha256": "865bc7ed7c88c368a93b1cd92875538ca9e437c345a44329af9771ba313d7436",
+      "size": 13633
     },
     "Data/Player/LuckyItem/64/new_Glove03.bmd": {
-      "sha256": "5a661f572d9c2cdc31c094b9fc9c17311037eb9dd7587460485f7714292bdccd",
-      "size": 24767
+      "sha256": "15be0ef2140cd17e1bb7135c84850412a83a75f02bc411fdc60d6ad4632e811a",
+      "size": 16049
     },
     "Data/Player/LuckyItem/64/new_Helm03.bmd": {
-      "sha256": "0f825418abce7374889b7f30857ad32d85370414c77378d4819a0f3afbc78deb",
-      "size": 70917
+      "sha256": "e0a9957ad47e524cc14586dd9a8f480d5037ccc12181373988fe58ac28847cb9",
+      "size": 17325
     },
     "Data/Player/LuckyItem/64/new_Pant03.bmd": {
-      "sha256": "c16c53fed1db5665aafb90b026f4e3da54507d557e652b43c87a404c3f5e9fcb",
-      "size": 30631
+      "sha256": "a08fb209b552989d319d6128a8391db266782871361dada89ba2cfe9a9145ea3",
+      "size": 16375
     },
     "Data/Player/LuckyItem/64/skin_barbarian_01.OZJ": {
       "sha256": "e00985da32d82e4212145fb7f697ca64cd3fe7866fa5e2f0e6ea89fd1cc37c43",
@@ -96354,24 +96402,24 @@
       "size": 16432
     },
     "Data/Player/LuckyItem/67/new_Armor06.bmd": {
-      "sha256": "8cdcba0065535f0de01723f7558d84b83e6e0e7527ac5ba05bc61f19d67bd80d",
-      "size": 60734
+      "sha256": "087c06b1e8163bf90d679f316ce7cfda15732eb19acd17b696f6df273bc3f96e",
+      "size": 27619
     },
     "Data/Player/LuckyItem/67/new_Boot06.bmd": {
-      "sha256": "7c36814d836eb86f9bbb4f88b620b47e8fab26a679ce426b2cd1259bf188017d",
-      "size": 25155
+      "sha256": "79d3189ad5afd00c9fdf06f6e3e79b1e164112529d5cd9f61d8406a6bf386cc5",
+      "size": 15887
     },
     "Data/Player/LuckyItem/67/new_Glove06.bmd": {
-      "sha256": "09a77741f18e08519dc97f006aa7a3f97f011f326b7371b5c72a4539cf4893f3",
-      "size": 28178
+      "sha256": "5073739fd1d3b7e51174351221e6f2c9a76bfff06e47be2edab9aac3f9311ae0",
+      "size": 16543
     },
     "Data/Player/LuckyItem/67/new_Helm06.bmd": {
-      "sha256": "f14a373d7effdd1a8802d9e80431829d3b5acb5847d4afa924aa0ff21adb347f",
-      "size": 53460
+      "sha256": "330e29f7803925a3ac39a2e4d3193bb497f5875cab9aa358ed35418527146cc0",
+      "size": 20337
     },
     "Data/Player/LuckyItem/67/new_Pant06.bmd": {
-      "sha256": "fb1e5b5b15bfe2e0b9e8653fcc8c9b0bfb4ca69dc70fd2ba33d3c984c3220f8e",
-      "size": 21854
+      "sha256": "b26dcbe154328ebcab1bf4f2b0e92b0fcafb0d45940d06d794306b487588b88c",
+      "size": 14077
     },
     "Data/Player/LuckyItem/67/skin_barbarian_01.OZJ": {
       "sha256": "e00985da32d82e4212145fb7f697ca64cd3fe7866fa5e2f0e6ea89fd1cc37c43",
@@ -96418,24 +96466,24 @@
       "size": 16432
     },
     "Data/Player/LuckyItem/68/new_Armor07.bmd": {
-      "sha256": "c8238806e35fbd553c6f038f669a32dc1653fe13bb5d278b4c6e88faf8d6823c",
-      "size": 51685
+      "sha256": "94185d4164450cb0deb19acbacd4e52e2300e0c30062edac1827ef2d87698955",
+      "size": 25659
     },
     "Data/Player/LuckyItem/68/new_Boot07.bmd": {
-      "sha256": "a492225ba667149eb7ff8d0faff4c4f23ae59c4b7dbdcfea6420ef28d8f723c7",
-      "size": 30927
+      "sha256": "0f8e799827c1c3dcf207778b550eb9ed3d4fa89db9567bd314b6c24a799488bc",
+      "size": 15919
     },
     "Data/Player/LuckyItem/68/new_Glove07.bmd": {
-      "sha256": "0ca3b00eda2dd07a82b59f8370f811aeb0bb9c0ba3a56bb7db5c907696112d6a",
-      "size": 25191
+      "sha256": "9454dd07cbd31aab9cba55d505d7f1c2a566e5024ced1a62e478337521a8d8cc",
+      "size": 16575
     },
     "Data/Player/LuckyItem/68/new_Helm07.bmd": {
-      "sha256": "a85cd40c388dfe8a53c3bec49d2fab136909461f4a205420f83638dfe5e2aafc",
-      "size": 75509
+      "sha256": "158e3e06d9cd2d1432f900c9d42a2034541b950a6c3d556a3caa65c1a75a9bf8",
+      "size": 18233
     },
     "Data/Player/LuckyItem/68/new_Pant07.bmd": {
-      "sha256": "a705c3165fc9fc4fd06c68cc73ae7344eb69730103bc28c907cbcc88cb42785f",
-      "size": 31415
+      "sha256": "e9dcf4b29054ace82c8682510dcac12db0b5fc2473fbe16a80e9f0b0a912e9b7",
+      "size": 15951
     },
     "Data/Player/LuckyItem/68/skin_warrior_01.OZJ": {
       "sha256": "5ff2f191bbbb82e8d9457e586453d1fd7c7b0b011a5706195b199e025fb9b7c9",
@@ -96478,24 +96526,24 @@
       "size": 8240
     },
     "Data/Player/LuckyItem/69/new_Armor08.bmd": {
-      "sha256": "1590c82d9399411ce74c4c7921ee7f508fe8bc0d4f1881d83d8798506fe8bd68",
-      "size": 32447
+      "sha256": "46d4af7b5ea308bf268c744711a13b9db5a3e95d0f050919bea57c9fadeee2d4",
+      "size": 18917
     },
     "Data/Player/LuckyItem/69/new_Boot08.bmd": {
-      "sha256": "e81ab041cb28cd82a734167373fe6887f016be26a168f72c1a6129873b536782",
-      "size": 35407
+      "sha256": "3e87af776a840640142d2ab46b2c9861330ea1de24ab0e8f9e2659be9562dc67",
+      "size": 14829
     },
     "Data/Player/LuckyItem/69/new_Glove08.bmd": {
-      "sha256": "283c23a13746aca72b54f87b1b67751fd4f350d1ce8c00ecf68112e659be65e5",
-      "size": 35319
+      "sha256": "59b8900bbc19e3ec34957c72b55f6394484b54742c60720a06f8b45b7a198259",
+      "size": 18113
     },
     "Data/Player/LuckyItem/69/new_Helm08.bmd": {
-      "sha256": "ccd59b778d5fa81a577ece099104f624a35831373d479361b3c262ad9e8aab42",
-      "size": 71885
+      "sha256": "c08e55724de987c22c18fb9d18866750e275df22f089e2447b70972a087f893a",
+      "size": 13049
     },
     "Data/Player/LuckyItem/69/new_Pant08.bmd": {
-      "sha256": "2e6cba31eba9b9d9571fe212d548fc362ef58b7196252af71bf8c134dc92f960",
-      "size": 23839
+      "sha256": "dfd4ca3c54a9a682a432a8b03390e20d6939cf681bb81f6069455f6834d357a1",
+      "size": 14751
     },
     "Data/Player/LuckyItem/69/skin_warrior_01.OZJ": {
       "sha256": "5ff2f191bbbb82e8d9457e586453d1fd7c7b0b011a5706195b199e025fb9b7c9",
@@ -97118,24 +97166,24 @@
       "size": 37286
     },
     "Data/Player/PantElf01.bmd": {
-      "sha256": "af23e26f1c96a2a093668bd962c2a4317d7de2f0e5d838de0a458f6b20957a5b",
-      "size": 46187
+      "sha256": "6059609506789bcbcac0e67a0b1d33162bc5615c703b266026bef0ecd49c3531",
+      "size": 15969
     },
     "Data/Player/PantElf02.bmd": {
-      "sha256": "f318653a60c270019043a883e8eea72ee95e6d5ebf2a3efe6c81943b02a2ceab",
-      "size": 26714
+      "sha256": "e0dd32cc975031d4504ea310fa154bc2cb79dd6b32ab5837561d7ac12b5e45be",
+      "size": 15381
     },
     "Data/Player/PantElf03.bmd": {
-      "sha256": "5e1aee63db599ff2f274a9f01524a10245939621304da4669f13210b85dcfb76",
-      "size": 29611
+      "sha256": "5a2b6300acc378a9d9f26248d56c84177927879fca7d12c35d765cf5aae14150",
+      "size": 18489
     },
     "Data/Player/PantElf04.bmd": {
-      "sha256": "1a0189694bbe7a565133b928e6a76985c7efb9ffb87eab9802a87c3fa0e74344",
-      "size": 23023
+      "sha256": "0f05a3389e862b9c47041a8318dd433fa17e8b84a53102ed83da40d8e027115d",
+      "size": 13097
     },
     "Data/Player/PantElf05.bmd": {
-      "sha256": "149bce4e279bd7560e9f2bf6a044264018e735e6efcb2154f0f500add37fd117",
-      "size": 31415
+      "sha256": "ae3a2bfc46e4af84d3190f0f966cfc76b53eb8b92b9762d63c4423817d422bbb",
+      "size": 15947
     },
     "Data/Player/PantElfC01.bmd": {
       "sha256": "aa6a13afee031f02961ba96045c0ab27c7a43a8e9ed3f2c6ef0dd38bf2f4dfb2",
@@ -97146,44 +97194,44 @@
       "size": 30478
     },
     "Data/Player/PantMale01.bmd": {
-      "sha256": "ed39a9cd824804f8257415afb61917b1d167d608deecd740bfdc5921e13d070a",
-      "size": 17064
+      "sha256": "6432f9c7a5b8dd18cb27bc7d3dd5cd1e27e22cb3604cc17fcf41c3943f8fd4a5",
+      "size": 14209
     },
     "Data/Player/PantMale02.bmd": {
-      "sha256": "08b649a1e15b98e7df80867849738c474c14581b7f82716bcc5503652a18f278",
-      "size": 21854
+      "sha256": "cae5c18c0b57a487726c11c81c1ece80ccc5105b8be08da45715273d7cc60724",
+      "size": 14073
     },
     "Data/Player/PantMale03.bmd": {
-      "sha256": "98908bf0649d02b1ec548bd975e0bde76b30b9afdc16c0e01cde564a4f22e6ec",
-      "size": 24143
+      "sha256": "9b832295b088983b6b1acf3e7face2bb4f8ef0ea9d2984f9fac10d4acf9abe0e",
+      "size": 15989
     },
     "Data/Player/PantMale04.bmd": {
-      "sha256": "8904924b15885ca8549c396a2b5911afb31d173194ffbc7226ecd26ff0441df5",
-      "size": 23871
+      "sha256": "e67bb6e4a9512f27e090f1778bb7a0ea71ac6da684a99c8cb251d12a0770cf46",
+      "size": 14747
     },
     "Data/Player/PantMale05.bmd": {
-      "sha256": "96045725c1601d548de5da199309eafffe212703cb6fc18c1be40a33db70436e",
-      "size": 20195
+      "sha256": "3b19803335e726e892ba04c618efba6fb23943a601b865e28dc4b729dbc53f12",
+      "size": 14631
     },
     "Data/Player/PantMale06.bmd": {
-      "sha256": "3b8ad879adf132b8d1316568d2fb641f24e379036c0bf593de28a3e8e404e9c8",
-      "size": 31738
+      "sha256": "23eb4cb503e11adf4e9a85eeb4a9697d8db052c32a5202b907859be9a430d908",
+      "size": 14385
     },
     "Data/Player/PantMale07.bmd": {
-      "sha256": "ebfd243b7a82efdefd8d303da4c0a2f51a2acc95f18f48ce7752121dedea2c50",
-      "size": 19180
+      "sha256": "9c3ebabd5ed458bd47e8844e29f90b0810f42f5d12e90d150eadd8025eb88ab5",
+      "size": 13517
     },
     "Data/Player/PantMale08.bmd": {
-      "sha256": "0c37084b12715ff13defd975a93bc0196e46a84b2a40973c6287b39810c4fe53",
-      "size": 30631
+      "sha256": "e468431713e14d9c5a0a11508827a739611dcf6f378ec3d5475603a9b2fbfc24",
+      "size": 16371
     },
     "Data/Player/PantMale09.bmd": {
-      "sha256": "4c5aab98f3244a4d47984c365896dd830a7187c57def664afde644ff4f207102",
-      "size": 23150
+      "sha256": "63b126bd95ae3a6a47685059ec39dde2bdd22b4db30b47e0c1ad91b0093907bb",
+      "size": 14507
     },
     "Data/Player/PantMale10.bmd": {
-      "sha256": "849950a8bd8184450cb518d828abedb34a1e5b08a7ad282d9e0299c8d099dfc4",
-      "size": 19346
+      "sha256": "197d1b77e4d50f619d3cf478adb183203730f0188ae40d2076fa92c932496ea5",
+      "size": 11977
     },
     "Data/Player/PantMale109_alice.bmd": {
       "sha256": "d3c396a21a43340a93eca587d927351b89c2df16d0473f989d88eca7e355a71e",
@@ -97314,8 +97362,8 @@
       "size": 69498
     },
     "Data/Player/PantMale16.bmd": {
-      "sha256": "b3b054c0e15e093056fe7a41cab284fde937bc8c67c95a315442de46fe12d900",
-      "size": 11991
+      "sha256": "77f49d7819f14e748098f6033f0c1b716a9e5ccc6e97d46bc94b236953f7e5b5",
+      "size": 11977
     },
     "Data/Player/PantMale161_aliceNH.bmd": {
       "sha256": "12d2af6a2c0c72a558737345feec94c49e9065d85fa82b1576ac36af8c4a7a46",
@@ -97334,8 +97382,8 @@
       "size": 141613
     },
     "Data/Player/PantMale17.bmd": {
-      "sha256": "2100ea863d5eea146026e8f5913a4c78bfa3927643fd665cbc0b1236e98bcb24",
-      "size": 19186
+      "sha256": "e7c6c9110d75322e186b5a0f0bb858493ace9be1feda59f7c6c94433a661670d",
+      "size": 14481
     },
     "Data/Player/PantMale172.bmd": {
       "sha256": "71b1be6ca56d9afdc933b4b6196c47791c2cad6c64c1c13928e8a95878b969ca",
@@ -97366,8 +97414,8 @@
       "size": 102120
     },
     "Data/Player/PantMale18.bmd": {
-      "sha256": "55ed701101cd601b3bcf6d4cb933ed23d0b672a343aa102d41733ed3e1a0c6a1",
-      "size": 32030
+      "sha256": "a1d4699371025e8559f80d65e7e89c3dae3c209a0fc8d041f2626bf027f30f15",
+      "size": 21465
     },
     "Data/Player/PantMale181_elf.bmd": {
       "sha256": "703438c803bfb3cf427a6c979e7efbef14c3579e9a9cb41e33a7a0d3bd634b11",
@@ -97382,8 +97430,8 @@
       "size": 107198
     },
     "Data/Player/PantMale19.bmd": {
-      "sha256": "2ecaa0e58720c9bb5d6545e4fb6ef456d54fa7a8288c6f99dff2345c90ba3cde",
-      "size": 25151
+      "sha256": "6608bc6b28368ac18cf1542d75844fa49f783e14bae13aee7641cc1eeca50436",
+      "size": 18283
     },
     "Data/Player/PantMale20.bmd": {
       "sha256": "831609d19fb1e283ef93c8bf88e8626e1f58b729ebeeb7340b51e3eb2c11e759",
@@ -97394,16 +97442,16 @@
       "size": 75224
     },
     "Data/Player/PantMale21.bmd": {
-      "sha256": "1712a0570f75ef861ce2c036c4617437679475f99e9b07fc1fc1de42c3a9a8de",
-      "size": 20520
+      "sha256": "fdf2e44d5f7bf6cc4f5081f16a3c65f3a9c61040b234d236e0b186c31eab823a",
+      "size": 20820
     },
     "Data/Player/PantMale22.bmd": {
-      "sha256": "c6f8ecae4e52971877b5034aa78b4efe2092391b3d1e78893f585891da9c5086",
-      "size": 24390
+      "sha256": "96d60e5494b73fa25917036eaa53625c2c7bf018866c051bb2d22a655ef78c65",
+      "size": 15062
     },
     "Data/Player/PantMale23.bmd": {
-      "sha256": "27b3d435859c0e2c14412f7bc802484504ee45dab11a5c95a28ee4c98cbc2a7c",
-      "size": 30979
+      "sha256": "c10d452d8cceae98da132a8b1638b11f33ad00c6511c5b98c979fa6c85e22cde",
+      "size": 20327
     },
     "Data/Player/PantMale232.bmd": {
       "sha256": "40c3532cc16d30cc8a748205b1322a5a4d0b1ae9dad5e1cde6174527799b9fd3",
@@ -97414,27 +97462,27 @@
       "size": 36026
     },
     "Data/Player/PantMale24.bmd": {
-      "sha256": "314aeeb9331512cbbca24dffdad299a135e0590e5456fb13004b3d4bc7f230de",
-      "size": 21940
+      "sha256": "fbc1a76d2c76ccf5f17ff4dd1fab97ea47a0d585fd90e288ca3227241a503ccd",
+      "size": 22562
     },
     "Data/Player/PantMale25.bmd": {
-      "sha256": "0e319065cb5a29c0979a414f369019f699315c8d6abd9608201908111cd13691",
-      "size": 40269
+      "sha256": "897cc35372d2022cdc03855564ee2f5dafa9d0027c9193fb5f66ffad31b6c9bf",
+      "size": 24150
     },
     "Data/Player/PantMale26.bmd": {
-      "sha256": "14c9652b70b559f618f4b241870a5fe90f85b3f1963504d070f1d9f377485cdc",
-      "size": 11848
+      "sha256": "2dd610bb5a81da00588f1a43be08e0cc88e8d57bf18deb0be8583777c1179632",
+      "size": 11568
     },
     "Data/Player/PantMale27.bmd": {
-      "sha256": "90b1d6c6e58ff066892c78e2fcb589c2c68da5f2ade44646c3c0796c7fddcd4e",
+      "sha256": "1485374839f6e210d03de1386f264cfd6836e23087207dd18f2e5ebd652baeff",
       "size": 10240
     },
     "Data/Player/PantMale28.bmd": {
-      "sha256": "b488291447c1f9d53ea8aa28940b6d9d325b542d01533d10de543b2208af1ee9",
-      "size": 10584
+      "sha256": "b0684d26d244d3a18fad3d29076d653c2f1b074688c79c74cff195f2927ba49d",
+      "size": 10882
     },
     "Data/Player/PantMale29.bmd": {
-      "sha256": "cd79149b7cd5c73412bf52537223c6017212e3e93b9527913a54847171461d28",
+      "sha256": "861ecbd044e227aeb42f8e833fae249450aca1f3af6fb61b52496045bff6593d",
       "size": 10288
     },
     "Data/Player/PantMale40.bmd": {
@@ -97582,8 +97630,8 @@
       "size": 70954
     },
     "Data/Player/PantMaleTest20.bmd": {
-      "sha256": "ae366f138cd1e88643afa41aa01fc597154126f41d2d4fb4af96282b55016c28",
-      "size": 52729
+      "sha256": "2790786db9e6b8622e97162a40db77296dcdb992c324d8b171d4245c4b10e176",
+      "size": 43765
     },
     "Data/Player/PantMaleU.bmd": {
       "sha256": "2287db9826184ae2c73a0a665a107c7953a7935dcf192d6e21248fb3a30b8175",
@@ -101746,8 +101794,8 @@
       "size": 17877
     },
     "Data/Player/lower2_15m.OZT": {
-      "sha256": "d57c4acf7e20cdfa1a72e59d5670612d76a9f3785f98940a0964cd1c0319f4fe",
-      "size": 131120
+      "sha256": "95eb05ed3e31adc99411c2ad340369fbe8f32f423f30949f187298bf539d26bf",
+      "size": 16432
     },
     "Data/Player/lowerTest2_R.OZJ": {
       "sha256": "34123fb1c7ed66a50c96f943f446b937132cfb588fe0af2025f1847977f62186",
@@ -101878,8 +101926,8 @@
       "size": 16966
     },
     "Data/Player/lower_14m.OZT": {
-      "sha256": "48873231c31dbe5cc4df31f04a8e72bc8a85ba86169756a34da24ff9f9fa11ed",
-      "size": 262192
+      "sha256": "1ab799c055cb75aaa978ef4aab33b70b022ea4522cc7fd90f2031a3392302719",
+      "size": 16432
     },
     "Data/Player/lower_14m_OLD.ozt": {
       "sha256": "4d51a2f376b204a70cf0590527b89be37d3cf2ee421e542af024b6e0ff3d26f4",
@@ -102186,8 +102234,8 @@
       "size": 35707
     },
     "Data/Player/t_PantMale19.bmd": {
-      "sha256": "2ecaa0e58720c9bb5d6545e4fb6ef456d54fa7a8288c6f99dff2345c90ba3cde",
-      "size": 25151
+      "sha256": "6608bc6b28368ac18cf1542d75844fa49f783e14bae13aee7641cc1eeca50436",
+      "size": 18283
     },
     "Data/Player/txtFeniri01.ozt": {
       "sha256": "17da476cf72f16ad144d08f677cf56a276876c4fda61c2eda3670b038b494df2",
@@ -112610,8 +112658,8 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "c1f90f23386c89bf6bcc7d988d9f080afa18f9a15485480d92dfd077a9fb9172",
-      "size": 13635584
+      "sha256": "090c13c3e29cec2cf1be2eba0200ab2761b064043396ba5fc654d4200fb29d3b",
+      "size": 13641728
     },
     "QeffectsGL.ini": {
       "sha256": "ee3f998d0b39052eda94f237086f040d25a3eb1910d3a658322938e74d9175de",
