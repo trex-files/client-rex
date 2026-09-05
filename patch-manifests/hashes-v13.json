@@ -40982,7 +40982,7 @@
       "size": 15600
     },
     "Data/Local/Filter.bmd": {
-      "sha256": "fab490972e49b3c2054183bf513d3a845373be5d93b36fdfff5d3bb0c02b7f05",
+      "sha256": "bf7bea8723b1da630c94ec5b31003983d2f6a07978640637357bf4baccdba52b",
       "size": 20004
     },
     "Data/Local/FilterName.bmd": {
@@ -112658,7 +112658,7 @@
       "size": 2799616
     },
     "Main.exe": {
-      "sha256": "090c13c3e29cec2cf1be2eba0200ab2761b064043396ba5fc654d4200fb29d3b",
+      "sha256": "c87865d47965e56705be39794376d2819e9c859a6333875b84e3a45fd4cb922b",
       "size": 13641728
     },
     "QeffectsGL.ini": {
