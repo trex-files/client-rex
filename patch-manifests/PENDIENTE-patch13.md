@@ -95,3 +95,45 @@ el panel del 2º slot de pet y la selección de servidor (familia Official).
 1. Subir `FullPatch.zip` y `Patch13.zip` a R2.
 2. Publicar `version.txt` **AL FINAL** (si sale antes, el launcher pide un zip
    que todavía no está).
+
+---
+
+## ✅ VERIFICACIÓN DURA (05/09 03:5x) — 6 pruebas independientes
+
+Pedido: certeza total de que el parche lleva TODOS los cambios nuevos.
+
+**1. El zip no está viejo.** `find ClientFile -newer Patch13.zip` → **0 ficheros**.
+Y `git status` de `ClientFile` **limpio**: lo que va en el parche es exactamente
+lo pusheado en `s21`. (Importa: a `Main.exe` ya se le cambió el archivo debajo
+una vez hoy.)
+
+**2. Contraste contra GIT, fuente de verdad distinta al filesystem.** Ficheros
+de `ClientFile` tocados desde el commit que generó v12 (`a5deabcb`, 03/09
+13:43): **305**, menos 2 excluidos = **303**. El zip tiene **303**. Cruce en
+ambos sentidos: **0 faltan**, **0 sobran**.
+
+**3. Los 2 excluidos son los correctos**: `MainEdit.exe` (cliente de PRUEBAS
+con auto-poción — si se cuela lo reciben todos los jugadores) y `config.ini`
+(per-usuario).
+
+**4. Byte a byte, zip descomprimido vs disco** (sha256 de las 1556 entradas):
+
+    Patch13.zip    en zip 303   deberian 303   FALTAN 0  sobran 0  bytes!=disco 0  huerfanos 0
+    FullPatch.zip  en zip 1253  deberian 1253  FALTAN 0  sobran 0  bytes!=disco 0  huerfanos 1
+
+**5. El huérfano de FullPatch es un fantasma**:
+`Data/Interface/rex/Menu_Form_Teclas.ozt.bak_pre13` — residuo del incidente del
+Patch8 (29 backups filtrados). Ya **no existe en disco**, el filtro lo excluye,
+y **no está en ninguno de los dos zips**. Sigue en `hashes-v0.json` porque ese
+baseline se generó cuando el fichero estaba. Sin acción.
+
+**6. Coherencia servidor ↔ cliente**:
+- `CashShopScriptVersion3 = 7` en los 4 gameservers; el parche shippea `512.2011.007`.
+- `MoveLevelDiscountEnable = 0` en los 4; el `MoveLevelDiscount.txt` va incluido.
+- Los 4 `Item_*.bmd` **extraídos de adentro del zip** y decodificados: 8192
+  registros cada uno, 118 filas T9/T10, **0 discrepancias** con
+  `Data/Item/Item.txt` del servidor. Flameberge 350, Sonic Blade 450, Bone
+  Blade 296. Los 3 pergaminos renombrados presentes; vietnamita intacto.
+
+**Veredicto: el parche está completo y correcto.** Lo único que sigue sin poder
+probarse desde acá es el comportamiento en juego (ver sección anterior).
