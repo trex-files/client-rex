@@ -1,3 +1,5 @@
+> 🔴 SUPERSEDIDO 05/09 07:35: el Patch 13 YA ESTABA en producción (12 ficheros, crc 042cb46d, subido 04/09 04:52 UTC). Esta regeneración NO se publicó; el contenido salió como **Patch 14**, ver `PENDIENTE-patch14.md`. Los manifests v13 volvieron a los de producción (`4910c2ec`).
+
 # Patch 13 — REGENERADO 2026-09-05 07:14, FALTA PUBLICAR
 
 > ⚠️ Este archivo reemplaza la versión del 2026-09-05 03:36. Aquel Patch13
