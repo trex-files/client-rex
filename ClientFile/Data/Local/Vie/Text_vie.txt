@@ -625,7 +625,7 @@
 624 "Giảm sát thương +4%%"
 625 "Phản hồi sát thương +5%%"
 626 "Né tránh +10%%"
-627 "Tăng lượng Zen rơi ra +30%%"
+627 "Tăng lượng Zen rơi ra +15%%"
 628 "Tăng tỉ lệ sát thương hoàn hảo +10%%"
 629 "Gia tăng sức tấn công +cấp độ/20"
 630 "Gia tăng sức sát thương +%d%%"
