@@ -29,6 +29,18 @@
 ### 1.1 De dónde lee el manifest
 URL **hardcodeada en compile-time**: `WinMain.cpp:54` → `https://rexmu.online/update/version.txt`. **No hay override en runtime** (ni config.ini, ni CLI, ni env). Para apuntar a otra URL hay que recompilar el launcher.
 
+### 1.1b Servidor Secundario (espejo del VPS) — 2026-09-08
+El launcher (desde el commit `feat(launcher): failover al Servidor Secundario`) tiene un
+segundo origen compilado: `https://mu-ota.45.7.229.115.nip.io/mu-pc/version.txt`. Si el
+`version.txt` primario o un zip fallan (red, tamaño, CRC) antes de tocar el cliente, reintenta
+desde ahí; el jugador además tiene el botón **FORZAR** cuando la actualización falló. En la
+fila de estado se ve el origen: verde "Servidor Primario", naranja "Servidor Secundario".
+**No hay que publicar nada dos veces**: en el VPS, `/usr/local/bin/mu-pc-sync.py` (cron cada
+2 min, log `/var/log/mu-pc-sync.log`) lee el `version.txt` primario, copia a
+`/srv/mu-pc/patches/` cada zip que falte (verifica size/crc32) y escribe `/srv/mu-pc/version.txt`
+con las URLs reescritas. El espejo sólo usa una entrada si su crc32/size coincide con el primario.
+Para forzar la copia: `ssh -p 59698 root@45.7.229.115 /usr/local/bin/mu-pc-sync.py`.
+
 ### 1.2 Versión local instalada — el tracker
 `config.ini`, sección `[Launcher]`, clave `Version` (entero), en la carpeta de instalación.
 - Lee: `ClientConfig.cpp:34-37` (`GetPrivateProfileIntA("Launcher","Version",0,...)`; default 0).
