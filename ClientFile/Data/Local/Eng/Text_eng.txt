@@ -4520,3 +4520,8 @@
 7112	"Drops from any monster in %s"
 7113	"Drops from any monster in %s or %s"
 7114	"Mounts go in the first pet slot; companions in the second."
+7230	"No rewards to show."
+7231	"You have not spun this wheel yet."
+7232	"Spinning..."
+7233	"You won: %s"
+7234	"Spins today: %d of %d"

@@ -4520,3 +4520,8 @@
 7112	"Cai de qualquer monstro em %s"
 7113	"Cai de qualquer monstro em %s ou %s"
 7114	"A montaria vai no primeiro slot de pet; o companheiro, no segundo."
+7230	"Nao ha premios para mostrar."
+7231	"Voce ainda nao girou esta roleta."
+7232	"Girando..."
+7233	"Voce ganhou: %s"
+7234	"Giros de hoje: %d de %d"
