@@ -92,7 +92,20 @@
 //TooltipStyle : 1 - show all lines below
 //				 2 - show only the matching level
 0
-// (sin filas -- ver cabecera arriba para el formato)
+// [REX 2026-09-11] Ticket de Cambio de Clase.
+//
+// ItemIndexMin/Max en unidades ABSOLUTAS, que es lo que pide ESTA seccion:
+// 7599 = 14*512 + 431. Exc = -1 (no filtra por excelencia). TooltipStyle = 1
+// (acumulativo: muestra todas las lineas cuyo LevelItem <= nivel del item; con
+// LevelItem 0 en las tres, salen siempre, que es lo que corresponde a un item
+// que no se refina).
+//
+// Colores: titulo en dorado (3), la primera linea en blanco-amarillo (8) y las
+// dos de detalle en gris (10), para que "conserva" y "reinicia" se lean como
+// letra chica y no compitan con el titulo.
+//
+// Las 12 tripletas que sobran van en -1, como exige el formato.
+7599	7599	-1	1	"Cambio de Clase"	3	1	8	0	2	10	0	3	10	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0
 end
 //=========== Set Item
 //TooltipStyle : 1 - show all lines below

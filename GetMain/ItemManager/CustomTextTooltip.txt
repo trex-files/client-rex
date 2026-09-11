@@ -33,5 +33,19 @@
 // parche de datos. Los .txt no los lee el cliente en produccion, solo la
 // herramienta de build.
 //====================================================================
-// (sin filas -- ver cabecera arriba para el formato)
+// [REX 2026-09-11] Ticket de Cambio de Clase (14,431 = 7599).
+//
+// El item se vende en el CashShop por 5000 RexCoins y hasta ahora no explicaba
+// NADA al pasarle el mouse: el jugador pagaba sin saber que conserva y que
+// pierde. Estas tres lineas son el texto que ve en el tooltip.
+//
+// Ojo: esto es PURA DECORACION -- el que decide de verdad es el GameServer
+// (ChangeClass.cpp con Data/Custom/ChangeClass.ini). Las tres lineas describen
+// el comportamiento REAL de hoy: KeepLevel = 1, no se tocan Level, Experience,
+// Reset, MasterLevel ni Quest, y lo unico que se reinicia es el arbol de
+// maestro, cuyos puntos se devuelven. Si manana cambia el ini, hay que cambiar
+// este texto o se le miente al jugador.
+1         "Cambia la clase de tu personaje."
+2         "Conserva nivel, experiencia, resets, master level y quests."
+3         "Reinicia el arbol de maestro y te devuelve los puntos."
 end
