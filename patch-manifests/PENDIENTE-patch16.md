@@ -41,14 +41,25 @@ Portugués (`Skill_por.bmd`, con S mayúscula) no tenía ninguno de los dos jueg
 
 **Insignias VIP (6 ficheros).** Del commit 0986c197, de otra sesión.
 
-**Main.exe.** Linkeado 2026-09-07 20:31 UTC. Incluye el Grand Tree (verificado por
-símbolos dentro del binario).
+**Main.exe.** Linkeado **2026-09-08 14:34:34 UTC** (PE link timestamp, medido sobre
+el binario que está dentro del zip). Incluye el Grand Tree, verificado por la cadena
+`GrandTree_Icons` dentro del binario.
 
-## Lo que NO entra
+CORRECCIÓN sobre la primera versión de este manifiesto: decía 2026-09-07 20:31. Ese
+era el build anterior; el binario se recompiló el 08/09 a las 14:34 y es ese el que
+se empaquetó. El mensaje del commit fc31ec54/4dca1e28 arrastra la fecha vieja.
 
-Cinco fuentes del cliente cambiaron **después** de ese build y no están en este
-binario: `NewUIMyInventory.cpp/.h`, `WSclient.cpp`, `ZzzInterface.cpp`,
-`CB_CancelExc.h`. Van en el 17, o se recompila el `Main.exe` y entran acá.
+## Lo que entra en el binario
+
+Las cinco fuentes que el manifiesto anterior daba por fuera son TODAS anteriores al
+build de las 14:34 — `CB_CancelExc.h` 02:11, `NewUIMyInventory.h` 03:49,
+`NewUIMyInventory.cpp` 03:57, `WSclient.cpp` 04:22, `ZzzInterface.cpp` 13:23 — así
+que entran: el retiro de ítems de la tienda personal, la cura de party del helper
+(decodificado C1:44 de 13 bytes) y la paridad de Power Slash montado en Fenrir.
+
+Salvedad honesta: el timestamp del PE prueba CUÁNDO se linkeó, no DESDE QUÉ árbol.
+No hay forma de verificar la correspondencia fuente-binario desde este entorno
+(no hay MSVC). Si el build salió de un árbol desactualizado, esto no lo detecta.
 
 ## Deuda conocida
 
