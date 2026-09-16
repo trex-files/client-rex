@@ -125,3 +125,58 @@ recompilar: `Skill.txt` se lee como dato.
 2. Probar como usuario (§3 del `UPDATE-RUNBOOK.md`).
 3. Recién ahí publicar `version.txt` en Vercel (si va antes → ventana de 404).
 4. Copiar `Data/Skill/Skill.txt` al VPS (los 4 mundos comparten el fichero).
+
+---
+
+## Mobile — verificado por el agente Android, no hace falta tocar nada más
+
+Los 4 `Skill_*.bmd` que embarca el APK/OTA **no son copias**:
+`tools/packaging/stage-client-data.sh` los resuelve con `resolve_src`, que busca en
+`tools/packaging/overlay-local/` y cae a `client-rex/ClientFile/`. Los 4 no están en
+`overlay-local` y sí están activos en la allowlist `client-data-overlay.txt`
+(líneas 47, 237, 238, 239). O sea **el origen es el mismo árbol editado acá**: editar
+desktop ya cubre Android. (El error clásico sería editar el árbol de staging `_relsrc_*`,
+que el próximo staging pisa.)
+
+Verificado contra el árbol de la OTA viva (`_relsrc_1046c`) con el mismo control de
+2 bytes: los 4 idiomas dan Delay 10, `roundtrip_ok` True, checksum de cola intacto.
+
+### Corrección al tipo del campo
+
+`Delay` es **`int` (4 bytes)**, no un WORD — `_struct.h:359`. La primera edición se hizo
+con `pack_into('<H', ...)`, que acá dio el resultado correcto porque los dos bytes altos
+ya eran `00` y 10 entra en el byte bajo (comprobado: `bytes[44:48] == 0a 00 00 00`), pero
+es una trampa. Se cerró agregando `delay()` / `set_delay()` sobre `'<I'` a
+`tools/skillbmd_codec.py`. **Usar esos, no `pack_into` a mano.**
+
+### Mobile tiene dos throttles que desktop no tiene
+
+Bajo `#if defined(__ANDROID__) || MU_PLATFORM_IOS` (colapsan a `(true)` fuera de mobile):
+
+| Símbolo | Dónde | Valor | Gatea |
+|---------|-------|-------|-------|
+| `MU_RAGE_CAST_THROTTLE_MS` | desktop `:591` / mobile `:644` | 120 ms | **idéntico en los dos** |
+| `MU_RAGEATT_THROTTLE_MS` | mobile `wsclientinline.h:3108` | 80 ms | `0x4A` — **mobile only** |
+| `MU_DARKSIDEREQ_THROTTLE_MS` | mobile `wsclientinline.h:3109` | 80 ms | `0x4B` — **mobile only** |
+| `m_bDarksideCastToken` | mobile `MonkSystem.h:101` | token de 1 uso | **mobile only** |
+
+Por eso Dark Side se siente distinto en mobile que en PC. Los 80 ms quedan por debajo del
+piso de 167 ms del servidor, así que hoy no atan.
+
+### Pendiente en mobile
+
+La OTA **no la puede publicar el agente**: `patchstudio publish` y `push --prod` están
+bloqueados por el clasificador de permisos (lo dice `tools/release-ota-1043.sh` en su
+encabezado). Producción está en **1.0.46** (hoy 01:02:52Z); la siguiente sería 1.0.47 con
+un delta de esos 4 ficheros. El staging y las notas quedan preparados para que el dueño
+corra un solo comando.
+
+## Hallazgo lateral, NO tocado: `Distance` del 263
+
+El cliente (desktop y mobile) pide `Distance = 3` para Dark Side, y el servidor exige
+`Range = 3` (`Skill.txt` línea 108, campo 6 — confirmado contando campos, no a ojo).
+Coinciden, así que **no hay banda muerta hoy**.
+
+Ojo con la copia `Source/5.Webapp/api/mudata/4.GameServer/Data/Skill/Skill.txt`: esa fila
+dice `Range = 4` y `Delay = 0`. **Ese árbol es un espejo viejo y divergente, no la verdad.**
+No usarlo como referencia ni sincronizarlo sin pedirlo.
