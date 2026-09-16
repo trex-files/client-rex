@@ -67,10 +67,10 @@
 	48	6416	81	155	1	63	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing405"         //Dark Lord
 	49	6417	81	155	1	57	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing406"         //Summoner
 	50	6418	81	155	1	63	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing407"         //Rage Fighter
-	51	6424	2	121	1	87	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing280"         //Dark Lord Rage Fighter
-	52	6425	3	133	1	70	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing281"         //Knight Magic
-	53	6426	3	135	1	71	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing282"         //Wizard Magic Sum
-	54	6427	3	135	1	71	2	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing283"         //Elf
+	51	6424	5	145	1	80	1	80	4	85	1	83	4	108	5	109	5	110	5	111	5	1	"Wing280"         //Dark Lord Rage Fighter
+	52	6425	5	145	1	80	1	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing281"         //Knight Magic
+	53	6426	5	145	1	80	1	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing282"         //Wizard Magic Sum
+	54	6427	5	145	1	80	1	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"Wing283"         //Elf
 	55	6428	3	171	0	29	0	80	4	85	1	83	4	108	5	109	5	110	5	111	5	0	"ConquerorWing"         //All
 //2026-08-18: FILA MUERTA, desactivada. El indice 6429 ya esta declarado en la linea 38 con el
 //modelo 'angel_devil_wing'. cCustomWing usa std::map::insert, que NO sobrescribe: gana SIEMPRE la

@@ -1318,7 +1318,7 @@
 7596	-1	-1	-1	"brillianthorn_"		//Brilliant Soul Moru
 7597	0	0	0	"doubt_paper"		//Item Socket Upgrade Note
 7598	-1	-1	-1	"tail_3D"		//Seal of Shining Tail
-7599	-1	-1	-1	"boss_invitationticket"		//Boss Battle Ticket
+7599	-1	-1	-1	"hs_hammerB"		//Class Change Ticket (REX 2026-09-15: was boss_invitationticket, never rendered)
 7600	-1	-1	-1	"Apocal_stone"		//Soul of Apocalypse
 7601	-1	-1	-1	"8chamoru"		//Brilliant Anvil
 7602	-1	-1	-1	"urseal"		//Seal of Ur

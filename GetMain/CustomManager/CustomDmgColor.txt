@@ -38,6 +38,6 @@
 5				175		255		048		//Poison
 6				192		003		255		//Elemental		
 7				003		255		205		//Double
-7				255		000		102		//Combo			
+8				255		000		102		//Combo			
 
 end

@@ -105,7 +105,8 @@
 // letra chica y no compitan con el titulo.
 //
 // Las 12 tripletas que sobran van en -1, como exige el formato.
-7599	7599	-1	1	"Cambio de Clase"	3	1	8	0	2	10	0	3	10	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0
+7599	7599	-1	1	"Class Change"	3	1	8	0	2	10	0	3	10	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0
+7313	7313	-1	1	"Box of Wing 3.5"	3	4	8	0	5	10	0	6	10	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0	-1	0	0
 end
 //=========== Set Item
 //TooltipStyle : 1 - show all lines below

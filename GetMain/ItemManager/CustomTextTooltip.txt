@@ -45,7 +45,18 @@
 // Reset, MasterLevel ni Quest, y lo unico que se reinicia es el arbol de
 // maestro, cuyos puntos se devuelven. Si manana cambia el ini, hay que cambiar
 // este texto o se le miente al jugador.
-1         "Cambia la clase de tu personaje."
-2         "Conserva nivel, experiencia, resets, master level y quests."
-3         "Reinicia el arbol de maestro y te devuelve los puntos."
+//
+// [REX 2026-09-15] TRADUCIDO AL INGLES a proposito. Este fichero se hornea
+// en rex.main, que es UNO SOLO para los 4 idiomas: no existe una version por
+// idioma. Estaba en espanol y los clientes en ingles/portugues/vietnamita
+// veian el tooltip en espanol. Si algun dia se quiere por idioma, hay que
+// mover estas lineas a ItemTooltipText_<lang>.bmd y apuntar el registro
+// 14,431 de ItemTooltip_<lang>.bmd, y vaciar la fila 7599 de
+// CustomItemToolTip.txt (si no, se pintan las dos).
+1         "Changes your character's class."
+2         "Keeps level, experience, resets, master level and quests."
+3         "Resets the master skill tree and refunds its points."
+4         "Drop this box on the ground to open it."
+5         "Gives the Wing 3.5 that matches your class."
+6         "Some classes must reach 2nd class to equip it."
 end

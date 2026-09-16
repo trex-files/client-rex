@@ -20,12 +20,12 @@
 803		1		"Dark Knight"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Monster914"		1.0
 804		1		"Zhao Zilong"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Monster915"		1.2
 805		1		"Forest God"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Centaur"			1.4
-806		1		"Werewolf"				"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Lycandor00"		1.4
+806		1		"Alpha Werewolf"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Lycandor00"		1.4
 807		1		"War God"				"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Monster9281"		1.0
 808		1		"Egyptian God"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Pharaoh_01"		1.3
 809		1		"Emperor"				"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"Monster31"			1.2
 810		1		"Lord Of Darkness"		"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"monster290"		1.0
-811		1		"Demon God"				"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"monster261"		1.4
+811		1		"Demon King"				"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"monster261"		1.4
 
 900		1		"Giant Crab"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"USK_Green_Crab_Mob"			0.85
 901		1		"Giant Crab"			"Data\\Custom\\Monster\\Monster\\"	"Custom\\Monster\\Monster\\"	"USK_Green_Crab_Mob"			0.85
