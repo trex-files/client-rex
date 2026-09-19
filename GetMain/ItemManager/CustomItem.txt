@@ -327,134 +327,134 @@
 3691	255 226	115	"DarkangelWizardHelm"	//Darkangel Wizzar                  
 3692	255 226	115	"HelmMale184"			//Darkangel Elf                     
 3693	255 226	115	"HelmMale184_curse"		//Darkangel Summoner                
-3695	255 226	115	"DarkangelLordHelm"		//Darkangel Lord                    
-3696	255 226	115	"DarkangelFighterHelm"	//Darkangel fighter                 
+3695	-1	-1	-1	"BloodangelLordHelm"		//Sealed Bloodangel Helm (aligned to S21)
+3696	-1	-1	-1	"BloodangelFairyHelm"		//Sealed Bloodangel Helm (aligned to S21)
 //===========================================>                                  
 //-- DarkAngel Armor                                                            
 4202	255	226	115	"DarkangelKnightArmor"		//Darkangel kinght              
 4203	255	226	115	"DarkangelWizardArmor"		//Darkangel Wizzard             
 4204	255	226	115	"ArmorMale184"				//Darkangel Elf                 
 4205	255	226	115	"ArmorMale184"				//Darkangel Summoner            
-4206	255	226	115	"DarkangelMagicArmor"		//Darkangel magic               
-4207	255	226	115	"DarkangelWizardArmor"		//Darkangel lord                
-4208	255	226	115	"DarkangelKnightArmor"		//Darkangel fighter             
+4206	-1	-1	-1	"ArmorMale89"		//Sealed Bloodangel Armor (aligned to S21)
+4207	-1	-1	-1	"ArmorMale88"		//Sealed Bloodangel Armor (aligned to S21)
+4208	-1	-1	-1	"BloodangelFairyArmor"		//Sealed Bloodangel Armor (aligned to S21)
 //===========================================>                                  
 //--DarkAngel Pants                                                             
 4714	255	226	115	"DarkangelKnightPants"		//Darkangel kinght              
 4715	255	226	115	"DarkangelWizardPants"		//Darkangel Wizzard             
 4716	255	226	115	"PantMale184"				//Darkangel Elf                 
 4717	255	226	115	"PantMale184"				//Darkangel Summoner            
-4718	255	226	115	"DarkangelKnightPants"		//Darkangel magic               
-4719	255	226	115	"DarkangelWizardPants"		//Darkangel lord                
-4720	255	226	115	"DarkangelKnightPants"		//Darkangel fighter             
+4718	-1	-1	-1	"BloodangelKnightPants"		//Sealed Bloodangel Pants (aligned to S21)
+4719	-1	-1	-1	"BloodangelWizardPants"		//Sealed Bloodangel Pants (aligned to S21)
+4720	-1	-1	-1	"BloodangelFairyPants"		//Sealed Bloodangel Pants (aligned to S21)
 //===========================================>                                  
 //-- DarkAngel Gloves                                                           
 5226	255	226	115	"DarkangelKnightGloves"		//Darkangel kinght              
 5227	255	226	115	"DarkangelWizardGloves"		//Darkangel Wizzard                      
 5228	255	226	115	"GloveMale184"				//Darkangel Elf                          
 5229	255	226	115	"GloveMale184"				//Darkangel Summoner                     
-5230	255	226	115	"DarkangelKnightGloves"		//Darkangel Magic                        
-5231	255	226	115	"DarkangelWizardGloves"		//Darkangel Lord                         
+5230	-1	-1	-1	"BloodangelKnightGloves"		//Sealed Bloodangel Gloves (aligned to S21)
+5231	-1	-1	-1	"BloodangelWizardGloves"		//Sealed Bloodangel Gloves (aligned to S21)
 //===========================================>                                           
 //-- DarkAngel Boots                                                                     
 5738	255	226	115	"DarkangelKnightBoots"		//Darkangel kinght                       
 5739	255	226	115	"DarkangelWizardBoots"		//Darkangel Wizzard                      
 5740	255	226	115	"BootMale184"				//Darkangel Elf                          
 5741	255	226	115	"BootMale184"				//Darkangel Summoner                     
-5742	255	226	115	"DarkangelKnightBoots"		//Darkangel Magic                        
-5743	255	226	115	"DarkangelWizardBoots"		//Darkangel Lord                         
-5744	255	226	115	"DarkangelKnightBoots"		//Darkangel fighter                      
+5742	-1	-1	-1	"BloodangelKnightBoots"		//Sealed Bloodangel Boots (aligned to S21)
+5743	-1	-1	-1	"BloodangelWizardBoots"		//Sealed Bloodangel Boots (aligned to S21)
+5744	-1	-1	-1	"BloodangelFairyBoots"		//Sealed Bloodangel Boots (aligned to S21)
 
 //===========================================>                                           
 //-- HolyAngel Helm                                                             
-3722	122	147	99	"HelmMale112_knight"		//Holyangel kinght              
-3723	122	147	99	"HelmMale111_magic"		//Holyangel Wizzar                  
-3724	122	147	99	"HelmMale109_elf"		//Holyangel Elf                     
-3725	122	147	99	"HelmMale109_alice"		//Holyangel Summoner                
-3727	122	147	99	"HelmMale111_dark"		//Holyangel Lord                    
-3728	122	147	99	"HelmMale112_fight"		//Holyangel fighter                 
+3722	174	198	207	"DarkangelKnightHelm"		//T12 Darkangel Knight Helm (aligned to S21)
+3723	155	196	226	"DarkangelWizardHelm"		//T12 Darkangel Wizard Helm (aligned to S21)
+3724	221	160	221	"HelmMale184"		//T12 Darkangel Elf Helm (aligned to S21)
+3725	72	61	139	"HelmMale184_curse"		//T12 Darkangel Summoner Helm (aligned to S21)
+3727	115	169	194	"DarkangelLordHelm"		//T12 Darkangel Lord Helm (aligned to S21)
+3728	178	190	181	"DarkangelFighterHelm"		//T12 Darkangel Fighter Helm (aligned to S21)
 //===========================================>                                  
 //-- HolyAngel Armor                                                            
-4234	122	147	99	"ArmorMale112"			//Holyangel kinght                  
-4235	122	147	99	"ArmorMale111"			//Holyangel Wizzard                 
-4236	122	147	99	"ArmorMale109_elf"		//Holyangel Elf                     
-4237	122	147	99	"ArmorMale109_alice"	//Holyangel Summoner                
-4238	122	147	99	"ArmorMale112"			//Holyangel magic                   
-4239	122	147	99	"ArmorMale111"			//Holyangel lord                    
-4240	122	147	99	"ArmorMale112"			//Holyangel fighter                 
+4234	174	198	207	"DarkangelKnightArmor"		//T12 Darkangel Knight Armor (aligned to S21)
+4235	155	196	226	"DarkangelWizardArmor"		//T12 Darkangel Wizard Armor (aligned to S21)
+4236	221	160	221	"ArmorMale93"		//T12 Darkangel Elf Armor (aligned to S21)
+4237	72	61	139	"ArmorMale184"		//T12 Darkangel Summoner Armor (aligned to S21)
+4238	205	133	63	"DarkangelWizardArmor"		//T12 Darkangel Magic Armor (aligned to S21)
+4239	115	169	194	"DarkangelMagicArmor"		//T12 Darkangel Lord Armor (aligned to S21)
+4240	178	190	181	"DarkangelKnightArmor"		//T12 Darkangel Fighter Armor (aligned to S21)
 //===========================================>                                  
 //-- HolyAngel Pants                                                            
-4746	122	147	99	"PantMale112"			//Holyangel kinght                  
-4747	122	147	99	"PantMale111"			//Holyangel Wizzard                 
-4748	122	147	99	"PantMale109_elf"		//Holyangel Elf                     
-4749	122	147	99	"PantMale109_alice"		//Holyangel Summoner                
-4750	122	147	99	"PantMale112"			//Holyangel magic                   
-4751	122	147	99	"PantMale111"			//Holyangel lord                    
-4752	122	147	99	"PantMale112"			//Holyangel fighter                 
+4746	174	198	207	"DarkangelKnightPants"		//T12 Darkangel Knight Pants (aligned to S21)
+4747	155	196	226	"DarkangelWizardPants"		//T12 Darkangel Wizard Pants (aligned to S21)
+4748	221	160	221	"PantMale93"		//T12 Darkangel Elf Pants (aligned to S21)
+4749	72	61	139	"PantMale184"		//T12 Darkangel Summoner Pants (aligned to S21)
+4750	205	133	63	"DarkangelWizardPants"		//T12 Darkangel Magic Pants (aligned to S21)
+4751	115	169	194	"DarkangelKnightPants"		//T12 Darkangel Lord Pants (aligned to S21)
+4752	178	190	181	"DarkangelKnightPants"		//T12 Darkangel Fighter Pants (aligned to S21)
 //===========================================>                                  
 //-- HolyAngel Glove                                                            
-5258	122	147	99	"GloveMale112"			//Holyangel kinght                  
-5259	122	147	99	"GloveMale111"			//Holyangel Wizzard                 
-5260	122	147	99	"GloveMale109"			//Holyangel Elf                     
-5261	122	147	99	"GloveMale109"			//Holyangel Summoner                
-5262	122	147	99	"GloveMale112"			//Holyangel Magic                   
-5263	122	147	99	"GloveMale111"			//Holyangel Lord                    
+5258	174	198	207	"DarkangelKnightGloves"		//T12 Darkangel Knight Gloves (aligned to S21)
+5259	155	196	226	"DarkangelWizardGloves"		//T12 Darkangel Wizard Gloves (aligned to S21)
+5260	221	160	221	"GloveMale93"		//T12 Darkangel Elf Gloves (aligned to S21)
+5261	72	61	139	"GloveMale184"		//T12 Darkangel Summoner Gloves (aligned to S21)
+5262	205	133	63	"DarkangelWizardGloves"		//T12 Darkangel Magic Gloves (aligned to S21)
+5263	115	169	194	"DarkangelKnightGloves"		//T12 Darkangel Lord Gloves (aligned to S21)
 //===========================================>                                  
 //-- HolyAngel Boots                                                            
-5770	122	147	99	"BootMale112"			//Holyangel kinght                  
-5771	122	147	99	"BootMale111"			//Holyangel Wizzard                 
-5772	122	147	99	"BootMale109"			//Holyangel Elf                     
-5773	122	147	99	"BootMale109"			//Holyangel Summoner                
-5774	122	147	99	"BootMale112"			//Holyangel Magic                   
-5775	122	147	99	"BootMale111"			//Holyangel Lord                    
-5776	122	147	99	"BootMale112"			//Holyangel fighter                 
+5770	174	198	207	"DarkangelKnightBoots"		//T12 Darkangel Knight Boots (aligned to S21)
+5771	155	196	226	"DarkangelWizardBoots"		//T12 Darkangel Wizard Boots (aligned to S21)
+5772	221	160	221	"BootMale93"		//T12 Darkangel Elf Boots (aligned to S21)
+5773	72	61	139	"BootMale184"		//T12 Darkangel Summoner Boots (aligned to S21)
+5774	205	133	63	"DarkangelWizardBoots"		//T12 Darkangel Magic Boots (aligned to S21)
+5775	115	169	194	"DarkangelKnightBoots"		//T12 Darkangel Lord Boots (aligned to S21)
+5776	178	190	181	"DarkangelKnightBoots"		//T12 Darkangel Fighter Boots (aligned to S21)
 
 //===========================================>
 //-- Awakening Helm
-3734	239	154	70	"HelmMale116_knight"		//Awakening Soul kinght
-3735	239	154	70	"HelmMale115_magic"		//Awakening Soul Wizzard
-3736	239	154	70	"HelmMale113_elf"		//Awakening Soul Elf
-3737	239	154	70	"HelmMale113_alice"		//Awakening Soul Summoner
-3739	239	154	70	"HelmMale115_dark"		//Awakening Soul Lord
+3734	122	147	99	"HelmMale111_dark"		//T13 Holyangel Lord Helm (aligned to S21)
+3735	122	147	99	"HelmMale112_fight"		//T13 Holyangel Fighter Helm (aligned to S21)
+3736	255	146	76	"HelmMale116_knight"		//T14 Awaken Soul Knight Helm (aligned to S21)
+3737	255	146	76	"HelmMale115_magic"		//T14 Awaken Soul Wizard Helm (aligned to S21)
+3739	255	146	76	"HelmMale113_alice"		//T14 Awaken Soul Summoner Helm (aligned to S21)
 3740	239	154	70	"HelmMale116_fight"		//Awakening Soul fighter
 //===========================================>
 //-- Awakening Armor
-4246	239	154	70	"ArmorMale116"			//Awakening Soul kinght
-4247	239	154	70	"ArmorMale115"			//Awakening Soul Wizzard
-4248	239	154	70	"ArmorMale113_elf"		//Awakening Soul Elf
-4249	239	154	70	"ArmorMale113_alice"	//Awakening Soul Summoner
-4250	239	154	70	"ArmorMale116"			//Awakening Soul magic
-4251	239	154	70	"ArmorMale115"			//Awakening Soul lord
-4252	239	154	70	"ArmorMale116"			//Awakening Soul fighter
+4246	122	147	99	"ArmorMale111"		//T13 Holyangel Lord Armor (aligned to S21)
+4247	122	147	99	"ArmorMale112"		//T13 Holyangel Fighter Armor (aligned to S21)
+4248	255	146	76	"ArmorMale116"		//T14 Awaken Soul Knight Armor (aligned to S21)
+4249	255	146	76	"ArmorMale115"		//T14 Awaken Soul Wizard Armor (aligned to S21)
+4250	255	146	76	"ArmorMale113_elf"		//T14 Awakening Soul Elf Armor (aligned to S21)
+4251	255	146	76	"ArmorMale113_alice"		//T14 Awaken Soul Summon Armor (aligned to S21)
+4252	255	146	76	"ArmorMale116"		//T14 Awaken Soul Magic Armor (aligned to S21)
 
 //===========================================>
 //-- Awakening Pants
-4758	239	154	70	"PantMale116"			//Awakening Soul kinght
-4759	239	154	70	"PantMale115"			//Awakening Soul Wizzard
-4760	239	154	70	"PantMale113_elf"		//Awakening Soul Elf
-4761	239	154	70	"PantMale113_alice"		//Awakening Soul Summoner
-4762	239	154	70	"PantMale116"			//Awakening Soul magic
-4763	239	154	70	"PantMale115"			//Awakening Soul Lord
-4764	239	154	70	"PantMale116"			//Awakening Soul fighter
+4758	122	147	99	"PantMale111"		//T13 Holyangel Lord Pants (aligned to S21)
+4759	122	147	99	"PantMale112"		//T13 Holyangel Fighter Pants (aligned to S21)
+4760	255	146	76	"PantMale116"		//T14 Awaken Soul Knight Pants (aligned to S21)
+4761	255	146	76	"PantMale115"		//T14 Awaken Soul Wizard Pants (aligned to S21)
+4762	255	146	76	"PantMale113_elf"		//T14 Awakening Soul Elf Pants (aligned to S21)
+4763	255	146	76	"PantMale113_alice"		//T14 Awaken Soul Summon Pants (aligned to S21)
+4764	255	146	76	"PantMale116"		//T14 Awaken Soul Magic Pants (aligned to S21)
 
 //===========================================>
 //-- Awakening Gloves
-5270	239	154	70	"GloveMale116"			//Awakening Soul kinght
+5270	122	147	99	"GloveMale111"		//T13 Holyangel Lord Gloves (aligned to S21)
 5271	239	154	70	"GloveMale115"			//Awakening Soul Wizzard
-5272	239	154	70	"GloveMale113_elf"		//Awakening Soul Elf
-5273	239	154	70	"GloveMale113_alice"	//Awakening Soul Summoner
-5274	239	154	70	"GloveMale116"			//Awakening Soul Magic
-5275	239	154	70	"GloveMale115"			//Awakening Soul Lord
+5272	255	146	76	"GloveMale116"		//T14 Awaken Soul Knight Gloves (aligned to S21)
+5273	255	146	76	"GloveMale115"		//T14 Awaken Soul Wizard Gloves (aligned to S21)
+5274	255	146	76	"GloveMale113_elf"		//T14 Awakening Soul Elf Gloves (aligned to S21)
+5275	255	146	76	"GloveMale113_alice"		//T14 Awaken Soul Summon Gloves (aligned to S21)
 
 //===========================================>
 //-- Awakening Boots
-5782	239	154	70	"BootMale116"			//Awakening Soul kinght
-5783	239	154	70	"BootMale115"			//Awakening Soul Wizzard
-5784	239	154	70	"BootMale113_elf"		//Awakening Soul Elf
-5785	239	154	70	"BootMale113_alice"		//Awakening Soul Summoner
-5786	239	154	70	"BootMale116"			//Awakening Soul Magic
-5787	239	154	70	"BootMale115"			//Awakening Soul Lord
-5788	239	154	70	"BootMale116"			//Awakening Soul fighter
+5782	122	147	99	"BootMale111"		//T13 Holyangel Lord Boots (aligned to S21)
+5783	122	147	99	"BootMale112"		//T13 Holyangel Fighter Boots (aligned to S21)
+5784	255	146	76	"BootMale116"		//T14 Awaken Soul Knight Boots (aligned to S21)
+5785	255	146	76	"BootMale115"		//T14 Awaken Soul Wizard Boots (aligned to S21)
+5786	255	146	76	"BootMale113_elf"		//T14 Awakening Soul Elf Boots (aligned to S21)
+5787	255	146	76	"BootMale113_alice"		//T14 Awaken Soul Summon Boots (aligned to S21)
+5788	255	146	76	"BootMale116"		//T14 Awaken Soul Magic Boots (aligned to S21)
 
 
 
@@ -507,47 +507,47 @@
 
 //===========================================>
 //-- SilverHear Helm
-3773	78 		17 		166	"HelmMale131" 			//Silverheart king
-3774	78 		17 		166	"HelmMale130"			//Silverheart wizzar
-3775	78 		17 		166	"HelmMale128_elf"		//Silverheart Elf
-3776	78 		17 		166	"HelmMale128_alice"		//Silverheart Summoner
+3773	80	90	100	"HelmMale133"		//Slayer Helm (aligned to S21)
+3774	95	113	153	"HelmMale150_knight"		//T18 Brilliant Knight Helm (aligned to S21)
+3775	95	113	153	"HelmMale149_magic_"		//T18 Brilliant Wizard Helm (aligned to S21)
+3776	95	113	153	"HelmMale151_elf_"		//T18 Brilliant Elf Helm (aligned to S21)
 3778	78 		17 		166	"HelmMale130_lord"		//Silverheart Lord
-3779	78 		17 		166	"HelmMale131_fight"		//Silverheart fighter
+3779	95	113	153	"HelmMale149_dark"		//T18 Brilliant Lord Helm (aligned to S21)
 //===========================================>
 //-- SilverHear Armor
-4285	78 		17 		166	"ArmorMale131" 			//Silverheart king
-4286	78 		17 		166	"ArmorMale130"			//Silverheart wizzar
-4287	78 		17 		166	"ArmorMale128_elf"		//Silverheart Elf
-4288	78 		17 		166	"ArmorMale128_alice"		//Silverheart Summoner
-4289	78 		17 		166	"ArmorMale131" 			//SilverHeart Magic
-4290	78 		17 		166	"ArmorMale130"			//Silverheart Lord
-4291	78 		17 		166	"ArmorMale131"			//Silverheart fighter
+4285	80	90	100	"ArmorMale133"		//Slayer Armor (aligned to S21)
+4286	95	113	153	"ArmorMale150"		//T18 Brilliant Knight Armor (aligned to S21)
+4287	95	113	153	"ArmorMale149_"		//T18 Brilliant Wizard Armor (aligned to S21)
+4288	95	113	153	"ArmorMale151"		//T18 Brilliant Elf Armor (aligned to S21)
+4289	95	113	153	"ArmorMale151_alice_"		//T18 Brilliant Summoner Armor (aligned to S21)
+4290	95	113	153	"ArmorMale150"		//T18 Brilliant Magic Armor (aligned to S21)
+4291	95	113	153	"ArmorMale149_"		//T18 Brilliant Lord Armor (aligned to S21)
 //===========================================>
 //-- SilverHear Pants
-4797	78 		17 		166	"PantMale131" 			//Silverheart king
-4798	78 		17 		166	"PantMale130"			//Silverheart wizzar
-4799	78 		17 		166	"PantMale128_elf"		//Silverheart Elf (A)
-4800	78 		17 		166	"PantMale128_alice"		//Silverheart Summoner
-4801	78 		17 		166	"PantMale131" 			//SilverHeart Magic (A)
-4802	78 		17 		166	"PantMale130"			//Silverheart Lord
-4803	78 		17 		166	"PantMale131" 			//Silverheart fighter
+4797	80	90	100	"PantMale133"		//Slayer Pants (aligned to S21)
+4798	95	113	153	"PantMale150"		//T18 Brilliant Knight Pants (aligned to S21)
+4799	95	113	153	"PantMale149_"		//T18 Brilliant Wizard Pants (aligned to S21)
+4800	95	113	153	"PantMale151"		//T18 Brilliant Elf Pants (aligned to S21)
+4801	95	113	153	"PantMale151_alice_"		//T18 Brilliant Summoner Pants (aligned to S21)
+4802	95	113	153	"PantMale150"		//T18 Brilliant Magic Pants (aligned to S21)
+4803	95	113	153	"PantMale149_"		//T18 Brilliant Lord Pants (aligned to S21)
 //===========================================>
 //-- SilverHear Glove
-5309	78 		17 		166	"GloveMale131"			//Silverheart king
-5310	78 		17 		166	"GloveMale130"			//Silverheart wizzar
-5311	78 		17 		166	"GloveMale128_elf"		//Silverheart Elf
-5312	78 		17 		166	"GloveMale128_alice"		//Silverheart Summoner
-5313	78 		17 		166	"GloveMale131"			//SilverHeart Magic
-5314	78 		17 		166	"GloveMale130"			//Silverheart Lord
+5309	80	90	100	"GloveMale133"		//Slayer Gloves (aligned to S21)
+5310	95	113	153	"GloveMale150"		//T18 Brilliant Knight Gloves (aligned to S21)
+5311	95	113	153	"GloveMale149_"		//T18 Brilliant Wizard Gloves (aligned to S21)
+5312	95	113	153	"GloveMale151"		//T18 Brilliant Elf Gloves (aligned to S21)
+5313	95	113	153	"GloveMale151"		//T18 Brilliant Summoner Gloves (aligned to S21)
+5314	95	113	153	"GloveMale150"		//T18 Brilliant Magic Gloves (aligned to S21)
 //===========================================>
 //-- SilverHear Boots
-5821	78 		17 		166	"BootMale131"			//Silverheart king
-5822	78 		17 		166	"BootMale130"			//Silverheart wizzar
-5823	78 		17 		166	"BootMale128_elf"		//Silverheart Elf
-5824	78 		17 		166	"BootMale128_alice"		//Silverheart Summoner
-5825	78 		17 		166	"BootMale131"			//SilverHeart Magic
-5826	78 		17 		166	"BootMale130"			//Silverheart Lord
-5827	78 		17 		166	"BootMale131"			//Silverheart fighter
+5821	80	90	100	"BootMale133"		//Slayer Boots (aligned to S21)
+5822	95	113	153	"BootMale150"		//T18 Brilliant Knight Boots (aligned to S21)
+5823	95	113	153	"BootMale149_"		//T18 Brilliant Wizard Boots (aligned to S21)
+5824	95	113	153	"BootMale151"		//T18 Brilliant Elf Boots (aligned to S21)
+5825	95	113	153	"BootMale151"		//T18 Brilliant Summoner Boots (aligned to S21)
+5826	95	113	153	"BootMale150"		//T18 Brilliant Magic Boots (aligned to S21)
+5827	95	113	153	"BootMale149_"		//T18 Brilliant Lord Boots (aligned to S21)
 //=== Items-pack merge ===
 43		  204		40		28		"blood_anglesword"					//Bloodangel Magic Sword
 56		  255 		226 	115		"master_twohandsword2NH"			//Dark th_Magic Sword
@@ -613,138 +613,138 @@
 2653    128 	100		30		"Imperial_stick"			//Imperial Stick
 2654    128 	100		30		"Imperial_book"			  	//Imperial Book ok
 2660	255		255		255		"Staff100"					//T7 Emberfall Stick
-3780	140		128		 83 	"HelmMale135_knight" 	//Silverheart king	37		36		 48
-3781	140		128		 83 	"HelmMale136_wizard"	//Silverheart wizzar
-3782	140		128		 83 	"HelmMale138_elf"		//Silverheart Elf
-3783	140		128		 83 	"HelmMale138_alice"		//Silverheart Summoner
-3785	140		128		 83 	"HelmMale136_lord"		//Silverheart Lord
-3786	140		128		 83 	"HelmMale135_fighter"	//Silverheart fighter
-4292	140		128		 83		"ArmorMale135_knight" 	//Silverheart king
-4293	140		128		 83		"ArmorMale136_wizard"	//Silverheart wizzar
-4294	140		128		 83		"ArmorMale138_elf"		//Silverheart Elf
-4295	140		128		 83		"ArmorMale138_alice"	//Silverheart Summoner
-4296	140		128		 83		"ArmorMale135_magic" 	//SilverHeart Magic
-4297	140		128		 83		"ArmorMale136_lord"		//Silverheart Lord
-4298	140		128		 83		"ArmorMale135_fighter"	//Silverheart fighter
-4804	140		128		 83 	"PantMale135_knight" 	//Silverheart king
-4805	140		128		 83 	"PantMale136_wizard"	//Silverheart wizzar
-4806	140		128		 83 	"PantMale138_elf"		//Silverheart Elf (A)
-4807	140		128		 83 	"PantMale138_alice"		//Silverheart Summoner
-4808	140		128		 83 	"PantMale135_magic" 	//SilverHeart Magic (A)
-4809	140		128		 83 	"PantMale136_lord"		//Silverheart Lord
-4810	140		128		 83 	"PantMale135_fighter" 	//Silverheart fighter
+3780	95	113	153	"HelmMale150_fight"		//T18 Brilliant Fighter Helm (aligned to S21)
+3781	98	125	151	"HelmMale143_"		//Glimer Helm (aligned to S21)
+3782	147	154	180	"HelmMale140_"		//Light Ray Helm (aligned to S21)
+3783	248	90	17	"HelmMale142_"		//Flash Helm (aligned to S21)
+3785	124	154	204	"HelmMale141_"		//Noble Pixie Helm (aligned to S21)
+3786	119	88	51	"HelmMale145_"		//Bright Helm (aligned to S21)
+4292	95	113	153	"ArmorMale150"		//T18 Brilliant Fighter Armor (aligned to S21)
+4293	98	125	151	"ArmorMale143_"		//Glimer Armor (aligned to S21)
+4294	147	154	180	"ArmorMale140_"		//Light Ray Armor (aligned to S21)
+4295	248	90	17	"ArmorMale142_"		//Flash Armor (aligned to S21)
+4296	95	129	251	"ArmorMale144_"		//Magic Flare Armor (aligned to S21)
+4297	124	154	204	"ArmorMale141_"		//Noble Pixie Armor (aligned to S21)
+4298	119	88	51	"ArmorMale145_"		//Bright Armor (aligned to S21)
+4804	95	113	153	"PantMale150"		//T18 Brilliant Fighter Pants (aligned to S21)
+4805	98	125	151	"PantMale143_"		//Glimer Pants (aligned to S21)
+4806	147	154	180	"PantMale140_"		//Light Ray Pants (aligned to S21)
+4807	248	90	17	"PantMale142_"		//Flash Pants (aligned to S21)
+4808	95	129	251	"PantMale144_"		//Magic Flare Pants (aligned to S21)
+4809	124	154	204	"PantMale141_"		//Noble Pixie Pants (aligned to S21)
+4810	119	88	51	"PantMale145_"		//Bright Pants (aligned to S21)
 5316	140		128		 83 	"GloveMale135_knight"	//Silverheart king
-5317	140		128		 83 	"GloveMale136_wizard"	//Silverheart wizzar
-5318	140		128		 83 	"GloveMale138_elf"		//Silverheart Elf
-5319	140		128		 83 	"GloveMale138_alice"	//Silverheart Summoner
-5320	140		128		 83 	"GloveMale135_magic"	//SilverHeart Magic
-5321	140		128		 83 	"GloveMale136_lord"		//Silverheart Lord
-5828	140		128		 83 	"BootMale135_knight"	//Silverheart king
-5829	140		128		 83 	"BootMale136_wizard"	//Silverheart wizzar
-5830	140		128		 83 	"BootMale138_elf"		//Silverheart Elf
-5831	140		128		 83 	"BootMale138_alice"		//Silverheart Summoner
-5832	140		128		 83 	"BootMale135_magic"		//SilverHeart Magic
-5833	140		128		 83 	"BootMale136_lord"		//Silverheart Lord
-5834	140		128		 83 	"BootMale135_fighter"	//Silverheart fighter
-3787	95		113		 153	"HelmMale150_knight" 	//Silverheart king
-3788	95		113		 153	"HelmMale149_wizard"	//Silverheart wizzar
-3789	95		113		 153	"HelmMale151_elf"		//Silverheart Elf
-3790	95		113		 153	"HelmMale151_alice"		//Silverheart Summoner
-3792	95		113		 153	"HelmMale149_dark"		//Silverheart Lord
-3793	95		113		 153	"HelmMale150_fight"		//Silverheart fighter
-4299	95		113		 153	"ArmorMale150" 		//Silverheart king
-4300	95		113		 153	"ArmorMale149"			//Silverheart wizzar
-4301	95		113		 153	"ArmorMale151"			//Silverheart Elf
-4302	95		113		 153	"ArmorMale151"			//Silverheart Summoner
-4303	95		113		 153	"ArmorMale150" 			//SilverHeart Magic
-4304	95		113		 153	"ArmorMale149"			//Silverheart Lord
-4305	95		113		 153	"ArmorMale150"			//Silverheart fighter
-4811	95		113		 153	"PantMale150" 			//Silverheart king
-4812	95		113		 153	"PantMale149"			//Silverheart wizzar
-4813	95		113		 153	"PantMale151"			//Silverheart Elf (A)
-4814	95		113		 153	"PantMale151"			//Silverheart Summoner
-4815	95		113		 153	"PantMale150" 			//SilverHeart Magic (A)
-4816	95		113		 153	"PantMale149"			//Silverheart Lord
-4817	95		113		 153	"PantMale150" 			//Silverheart fighter
-5323	95		113		 153	"GloveMale150"			//Silverheart king
-5324	95		113		 153	"GloveMale149"			//Silverheart wizzar
-5325	95		113		 153	"GloveMale151"			//Silverheart Elf
-5326	95		113		 153	"GloveMale151"			//Silverheart Summoner
-5327	95		113		 153	"GloveMale150"			//SilverHeart Magic
-5328	95		113		 153	"GloveMale149"			//Silverheart Lord
-5835	95		113		 153	"BootMale150"			//Silverheart king
-5836	95		113		 153	"BootMale149"			//Silverheart wizzar
-5837	95		113		 153	"BootMale151"			//Silverheart Elf
-5838	95		113		 153	"BootMale151"			//Silverheart Summoner
-5839	95		113		 153	"BootMale150"			//SilverHeart Magic
-5840	95		113		 153	"BootMale149"			//Silverheart Lord
-5841	95		113		 153	"BootMale150"			//Silverheart fighter
-3794	140		62		 77 	"HelmMale158" 			//Silverheart king
-3795	140		62		 77 	"HelmMale157"			//Silverheart wizzar
-3796	140		62		 77 	"HelmMale159_elf"		//Silverheart Elf
+5317	98	125	151	"GloveMale143_"		//Glimer Gloves (aligned to S21)
+5318	147	154	180	"GloveMale140_"		//Light Ray Gloves (aligned to S21)
+5319	248	90	17	"GloveMale142_"		//Flash Gloves (aligned to S21)
+5320	95	129	251	"GloveMale144_"		//Magic Flare Gloves (aligned to S21)
+5321	124	154	204	"GloveMale141_"		//Noble Pixie Gloves (aligned to S21)
+5828	95	113	153	"BootMale150"		//T18 Brilliant Fighter Boots (aligned to S21)
+5829	98	125	151	"BootMale143_"		//Glimer Boots (aligned to S21)
+5830	147	154	180	"BootMale140_"		//Light Ray Boots (aligned to S21)
+5831	248	90	17	"BootMale142_"		//Flash Boots (aligned to S21)
+5832	95	129	251	"BootMale144_"		//Magic Flare Boots (aligned to S21)
+5833	124	154	204	"BootMale141_"		//Noble Pixie Boots (aligned to S21)
+5834	119	88	51	"BootMale145_"		//Bright Boots (aligned to S21)
+3787	188	178	136	"HelmMale148_"		//Darjeeling Helm (aligned to S21)
+3788	215	167	127	"HelmMale146_"		//Finesse Helm (aligned to S21)
+3789	185	149	137	"HelmMale147_"		//Ghast Helm (aligned to S21)
+3790	0	127	255	"HelmMale153"		//Steel Plate Helmet (aligned to S21)
+3792	56	102	153	"HelmMale155"		//Primal Helmet (aligned to S21)
+3793	122	79	0	"HelmMale156"		//Apex Helmet (aligned to S21)
+4299	188	178	136	"ArmorMale148_"		//Darjeeling Armor (aligned to S21)
+4300	215	167	127	"ArmorMale146_"		//Finesse Armor (aligned to S21)
+4301	185	149	137	"ArmorMale147_"		//Ghast Armor (aligned to S21)
+4302	0	127	255	"ArmorMale153_de"		//Steel Plate Armor (aligned to S21)
+4303	214	225	224	"ArmorMale154_de"		//Black Origin Armor (aligned to S21)
+4304	56	102	153	"ArmorMale155_de"		//Primal Armor (aligned to S21)
+4305	122	79	0	"ArmorMale156_de"		//Apex Armor (aligned to S21)
+4811	188	178	136	"PantMale148_"		//Darjeeling Pants (aligned to S21)
+4812	215	167	127	"PantMale146_"		//Finesse Pants (aligned to S21)
+4813	185	149	137	"PantMale147_"		//Ghast Pants (aligned to S21)
+4814	0	127	255	"PantMale153_de"		//Steel Plate Pants (aligned to S21)
+4815	214	225	224	"PantMale154_de"		//Black Origin Pants (aligned to S21)
+4816	56	102	153	"PantMale155_de"		//Primal Pants (aligned to S21)
+4817	122	79	0	"PantMale156_de"		//Apex Pants (aligned to S21)
+5323	188	178	136	"GloveMale148_"		//Darjeeling Gloves (aligned to S21)
+5324	215	167	127	"GloveMale146_"		//Finesse Gloves (aligned to S21)
+5325	185	149	137	"GloveMale147_"		//Ghast Gloves (aligned to S21)
+5326	0	127	255	"GloveMale153_de"		//Steel Plate Gloves (aligned to S21)
+5327	214	225	224	"GloveMale154_de"		//Black Origin Gloves (aligned to S21)
+5328	56	102	153	"GloveMale155_de"		//Primal Gloves (aligned to S21)
+5835	188	178	136	"BootMale148_"		//Darjeeling Boots (aligned to S21)
+5836	215	167	127	"BootMale146_"		//Finesse Boots (aligned to S21)
+5837	185	149	137	"BootMale147_"		//Ghast Boots (aligned to S21)
+5838	0	127	255	"BootMale153_deNH"		//Steel Plate Boots (aligned to S21)
+5839	214	225	224	"BootMale154_de"		//Black Origin Boots (aligned to S21)
+5840	56	102	153	"BootMale155_de"		//Primal Boots (aligned to S21)
+5841	122	79	0	"BootMale156_de"		//Apex Boots (aligned to S21)
+3794	140	62	77	"HelmMale158"		//T19 Apocalypse Knight Helm (aligned to S21)
+3795	140	62	77	"HelmMale157"		//T19 Apocalypse Wizard Helm (aligned to S21)
+3796	140	62	77	"HelmMale159_elf"		//T19 Apocalypse Elf Helm (aligned to S21)
 3797	140		62		 77 	"HelmMale159_alice"		//Silverheart Summoner
-3799	140		62		 77 	"HelmMale157"			//Silverheart Lord
-3800	140		62		 77 	"HelmMale158"			//Silverheart fighter
-4306	140		62		 77 	"ArmorMale158" 			//Silverheart king
-4307	140		62		 77 	"ArmorMale157"			//Silverheart wizzar
+3799	140	62	77	"HelmMale157"		//T19 Apocalypse Lord Helm (aligned to S21)
+3800	140	62	77	"HelmMale158"		//T19 Apocalypse Fighter Helm (aligned to S21)
+4306	140	62	77	"ArmorMale158"		//T19 Apocalypse Knight Armor (aligned to S21)
+4307	140	62	77	"ArmorMale157"		//T19 Apocalypse Wizard Armor (aligned to S21)
 4308	140		62		 77 	"ArmorMale159"			//Silverheart Elf
 4309	140		62		 77 	"ArmorMale159"			//Silverheart Summoner
-4310	140		62		 77 	"ArmorMale158" 			//SilverHeart Magic
-4311	140		62		 77 	"ArmorMale157"			//Silverheart Lord
-4312	140		62		 77 	"ArmorMale158"			//Silverheart fighter
-4818	140		62		 77 	"PantMale158" 			//Silverheart king
-4819	140		62		 77 	"PantMale157"			//Silverheart wizzar
+4310	140	62	77	"ArmorMale158_magum"		//T19 Apocalypse Magic Armor (aligned to S21)
+4311	140	62	77	"ArmorMale157"		//T19 Apocalypse Lord Armor (aligned to S21)
+4312	140	62	77	"ArmorMale158"		//T19 Apocalypse Fighter Armor (aligned to S21)
+4818	140	62	77	"PantMale158"		//T19 Apocalypse Knight Pants (aligned to S21)
+4819	140	62	77	"PantMale157"		//T19 Apocalypse Wizard Pants (aligned to S21)
 4820	140		62		 77 	"PantMale159"			//Silverheart Elf (A)
 4821	140		62		 77 	"PantMale159"			//Silverheart Summoner
-4822	140		62		 77 	"PantMale158" 			//SilverHeart Magic (A)
-4823	140		62		 77 	"PantMale157"			//Silverheart Lord
-4824	140		62		 77 	"PantMale158" 			//Silverheart fighter
-5330	140		62		 77 	"GloveMale158"			//Silverheart king
-5331	140		62		 77 	"GloveMale157"			//Silverheart wizzar
-5332	140		62		 77 	"GloveMale159"			//Silverheart Elf
-5333	140		62		 77 	"GloveMale159"			//Silverheart Summoner
-5334	140		62		 77 	"GloveMale158"			//SilverHeart Magic
-5335	140		62		 77 	"GloveMale157"			//Silverheart Lord
-5842	140		62		 77 	"BootMale158"			//Silverheart king
-5843	140		62		 77 	"BootMale157"			//Silverheart wizzar
+4822	140	62	77	"PantMale158"		//T19 Apocalypse Magic Pants (aligned to S21)
+4823	140	62	77	"PantMale157"		//T19 Apocalypse Lord Pants (aligned to S21)
+4824	140	62	77	"PantMale158"		//T19 Apocalypse Fighter Pants (aligned to S21)
+5330	140	62	77	"GloveMale158"		//T19 Apocalypse Knight Gloves (aligned to S21)
+5331	140	62	77	"GloveMale157"		//T19 Apocalypse Wizard Gloves (aligned to S21)
+5332	140	62	77	"GloveMale159"		//T19 Apocalypse Elf Gloves (aligned to S21)
+5333	140	62	77	"GloveMale159"		//T19 Apocalypse Summon Gloves (aligned to S21)
+5334	140	62	77	"GloveMale158"		//T19 Apocalypse Magic Gloves (aligned to S21)
+5335	140	62	77	"GloveMale157"		//T19 Apocalypse Lord Gloves (aligned to S21)
+5842	140	62	77	"BootMale158"		//T19 Apocalypse Knight Boots (aligned to S21)
+5843	140	62	77	"BootMale157"		//T19 Apocalypse Wizard Boots (aligned to S21)
 5844	140		62		 77 	"BootMale159"			//Silverheart Elf
 5845	140		62		 77 	"BootMale159"			//Silverheart Summoner
-5846	140		62		 77 	"BootMale158"			//SilverHeart Magic
-5847	140		62		 77 	"BootMale157"			//Silverheart Lord
-5848	140		62		 77 	"BootMale158"			//Silverheart fighter
-3801	50		50		 50 	"HelmMale163NH" 		//Silverheart king
-3802	50		50		 50 	"HelmMale164NH"			//Silverheart wizzar
+5846	140	62	77	"BootMale158"		//T19 Apocalypse Magic Boots (aligned to S21)
+5847	140	62	77	"BootMale157"		//T19 Apocalypse Lord Boots (aligned to S21)
+5848	140	62	77	"BootMale158"		//T19 Apocalypse Fighter Boots (aligned to S21)
+3801	50	50	50	"HelmMale164NH"		//T20 Lightning Knight Helm (aligned to S21)
+3802	50	50	50	"HelmMale163NH"		//T20 Lightning Wizard Helm (aligned to S21)
 3803	50		50		 50 	"HelmMale161_elfNH"		//Silverheart Elf
 3804	50		50		 50 	"HelmMale161_aliceNH"	//Silverheart Summoner
-3806	50		50		 50 	"HelmMale164NH"			//Silverheart Lord
-3807	50		50		 50 	"HelmMale163NH"			//Silverheart fighter
-4313	50		50		 50 	"ArmorMale163NH" 		//Silverheart king
-4314	50		50		 50 	"ArmorMale164NH"		//Silverheart wizzar
+3806	50	50	50	"HelmMale163NH"		//T20 Lightning Lord Helm (aligned to S21)
+3807	50	50	50	"HelmMale164NH"		//T20 Lightning Fighter Helm (aligned to S21)
+4313	50	50	50	"ArmorMale164NH"		//T20 Lightning Knight Armor (aligned to S21)
+4314	50	50	50	"ArmorMale163NH"		//T20 Lightning Wizard Armor (aligned to S21)
 4315	50		50		 50 	"ArmorMale161_elfNH"	//Silverheart Elf
 4316	50		50		 50 	"ArmorMale161_aliceNH"	//Silverheart Summoner
-4317	50		50		 50 	"ArmorMale163NH" 		//SilverHeart Magic
-4318	50		50		 50 	"ArmorMale164NH"		//Silverheart Lord
-4319	50		50		 50 	"ArmorMale163NH"		//Silverheart fighter
-4825	50		50		 50 	"PantMale163NH" 		//Silverheart king
-4826	50		50		 50 	"PantMale164NH"			//Silverheart wizzar
+4317	50	50	50	"ArmorMale164NH"		//T20 Lightning Magic Armor (aligned to S21)
+4318	50	50	50	"ArmorMale163NH"		//T20 Lightning Lord Armor (aligned to S21)
+4319	50	50	50	"ArmorMale164NH"		//T20 Lightning Fighter Armor (aligned to S21)
+4825	50	50	50	"PantMale164NH"		//T20 Lightning Knight Pants (aligned to S21)
+4826	50	50	50	"PantMale163NH"		//T20 Lightning Wizard Pants (aligned to S21)
 4827	50		50		 50 	"PantMale161_elfNH"		//Silverheart Elf (A)
 4828	50		50		 50 	"PantMale161_aliceNH"	//Silverheart Summoner
-4829	50		50		 50 	"PantMale163NH" 		//SilverHeart Magic (A)
-4830	50		50		 50 	"PantMale164NH"			//Silverheart Lord
-4831	50		50		 50 	"PantMale163NH" 		//Silverheart fighter
-5337	50		50		 50 	"GloveMale163NH"		//Silverheart king
-5338	50		50		 50 	"GloveMale164NH"		//Silverheart wizzar
+4829	50	50	50	"PantMale164NH"		//T20 Lightning Magic Pants (aligned to S21)
+4830	50	50	50	"PantMale163NH"		//T20 Lightning Lord Pants (aligned to S21)
+4831	50	50	50	"PantMale164NH"		//T20 Lightning Fighter Pants (aligned to S21)
+5337	50	50	50	"GloveMale164NH"		//T20 Lightning Knight Gloves (aligned to S21)
+5338	50	50	50	"GloveMale163NH"		//T20 Lightning Wizard Gloves (aligned to S21)
 5339	50		50		 50 	"GloveMale161_elfNH"	//Silverheart Elf
 5340	50		50		 50 	"GloveMale161_aliceNH"	//Silverheart Summoner
-5341	50		50		 50 	"GloveMale163NH"		//SilverHeart Magic
-5342	50		50		 50 	"GloveMale164NH"		//Silverheart Lord
-5849	50		50		 50 	"BootMale163NH"			//Silverheart king
-5850	50		50		 50 	"BootMale164NH"			//Silverheart wizzar
+5341	50	50	50	"GloveMale164NH"		//T20 Lightning Magic Gloves (aligned to S21)
+5342	50	50	50	"GloveMale163NH"		//T20 Lightning Lord Gloves (aligned to S21)
+5849	50	50	50	"BootMale164NH"		//T20 Lightning Knight Boots (aligned to S21)
+5850	50	50	50	"BootMale163NH"		//T20 Lightning Wizard Boots (aligned to S21)
 5851	50		50		 50 	"BootMale161_elfNH"		//Silverheart Elf
 5852	50		50		 50 	"BootMale161_aliceNH"	//Silverheart Summoner
-5853	50		50		 50 	"BootMale163NH"			//SilverHeart Magic
-5854	50		50		 50 	"BootMale164NH"			//Silverheart Lord
-5855	50		50		 50 	"BootMale163NH"			//Silverheart fighter
+5853	50	50	50	"BootMale164NH"		//T20 Lightning Magic Boots (aligned to S21)
+5854	50	50	50	"BootMale163NH"		//T20 Lightning Lord Boots (aligned to S21)
+5855	50	50	50	"BootMale164NH"		//T20 Lightning Fighter Boots (aligned to S21)
 3808	163   	143    	 99 	"HelmMale172_knight" 	//Silverheart king
 3809	163   	143    	 99 	"HelmMale173_w_wizard"	//Silverheart wizzar
 3810	163   	143    	 99 	"HelmMale174_elf"		//Silverheart Elf
@@ -778,33 +778,33 @@
 5860	163   	143    	 99 	"BootMale172"			//SilverHeart Magic
 5861	163   	143    	 99 	"BootMale173"			//Silverheart Lord
 5862	163   	143    	 99 	"BootMale172"			//Silverheart fighter
-3815	146		43		 255 	"HelmMale177_knight" 	   //Silverheart king
+3815	-1	-1	-1	"HelmMale231"		//Habbit Helm (aligned to S21)
 3816	255		255		 255 	"HelmMale232"	   //T6 Storm Blaze Helm
 3817	255		255		 255 	"HelmMale233"		   //T7 Emberfall Helm
 3818	146		43		 255 	"HelmMale182_summoner"	   //Silverheart Summoner
 3820	146		43		 255 	"HelmMale177_dark"		   //Silverheart Lord
 3821	146		43		 255 	"HelmMale177_fighter"	   //Silverheart fighter
-4327	146		43		 255 	"ArmorMale177" 			   //Silverheart king
+4327	-1	-1	-1	"ArmorMale231"		//Habbit Armor (aligned to S21)
 4328	255		255		 255 	"ArmorMale232"			   //T6 Storm Blaze Armor
 4329	255		255		 255 	"ArmorMale233"		   //T7 Emberfall Armor
 4330	146		43		 255 	"ArmorMale182_summoner"	   //Silverheart Summoner
 4331	146		43		 255 	"ArmorMale177" 			   //SilverHeart Magic
 4332	146		43		 255 	"ArmorMale179"			   //Silverheart Lord
 4333	146		43		 255 	"ArmorMale177"			   //Silverheart fighter
-4839	146		43		 255 	"PantMale177" 			   //Silverheart king
+4839	-1	-1	-1	"PantMale231"		//Habbit Pants (aligned to S21)
 4840	255		255		 255 	"PantMale232"			   //T6 Storm Blaze Pants
 4841	255		255		 255 	"PantMale233"		   //T7 Emberfall Pants
 4842	146		43		 255 	"PantMale182_summoner"	   //Silverheart Summoner
 4843	146		43		 255 	"PantMale177" 			   //SilverHeart Magic (A)
 4844	146		43		 255 	"PantMale179"			   //Silverheart Lord
 4845	146		43		 255 	"PantMale177" 			   //Silverheart fighter
-5351	146		43		 255 	"GloveMale177"			   //Silverheart king
+5351	-1	-1	-1	"GloveMale231"		//Habbit Gloves (aligned to S21)
 5352	146		43		 255 	"GloveMale179"			   //Silverheart wizzar
 5353	255		255		 255 	"GloveMale233"		   //T7 Emberfall Gloves
 5354	146		43		 255 	"GloveMale182_summoner"	   //Silverheart Summoner
 5355	146		43		 255 	"GloveMale177"			   //SilverHeart Magic
 5356	146		43		 255 	"GloveMale179"			   //Silverheart Lord
-5863	146		43		 255 	"BootMale177"			   //Silverheart king
+5863	-1	-1	-1	"BootMale231"		//Habbit Boots (aligned to S21)
 5864	255		255		 255 	"BootMale232"			   //T6 Storm Blaze Boots
 5865	255		255		 255 	"BootMale233"		   //T7 Emberfall Boots
 5866	146		43		 255 	"BootMale182_summoner"	   //Silverheart Summoner
