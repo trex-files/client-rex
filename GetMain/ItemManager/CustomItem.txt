@@ -460,48 +460,48 @@
 
 //===========================================>
 //-- BlueEye Helm
-3748	127	127	127	"HelmMale120_knight"		//BlueEyes king
-3749	127	127	127	"HelmMale119_magic"		//BlueEyes wizzar
-3750	127	127	127	"HelmMale117_elf"		//BlueEyes Elf
-3751	127	127	127	"HelmMale117_alice"		//BlueEyes Summoner
-3753	127	127	127	"HelmMale119_dark"		//BlueEyes Lord
-3754	127	127	127	"HelmMale120_fight"		//BlueEyes fighter
+3748	40	80	120	"HelmMale119_dark"		//T15 Blue Eye Lord Helm (was stale pre-S21 row)
+3749	40	80	120	"HelmMale120_fight"		//T15 Blue Eye Fighter Helm (was stale pre-S21 row)
+3750	89	165	255	"HelmMale105"		//T9 Tigris Helm (slot was stale Blue Eye Elf)
+3751	229	178	114	"HelmMale107"		//T10 Crimson Skull Helm (was stale pre-S21 row)
+3753	153	153	153	"HelmMale130"		//T16 Silver Heart Wizard Helm (was stale pre-S21 row)
+3754	153	153	153	"HelmMale128_elf"		//T16 Silver Heart Elf Helm (was stale pre-S21 row)
 
 //===========================================>
 //-- BlueEye Armor
-4260	127	127	127	"ArmorMale120_knight"		//BlueEyes king
-4261	127	127	127	"ArmorMale119"			//BlueEyes wizzar
-4262	127	127	127	"ArmorMale117"			//BlueEyes Elf
-4263	127	127	127	"ArmorMale117"			//BlueEyes Summoner
-4264	127	127	127	"ArmorMale120_ma"		//BlueEyes Magic
-4265	127	127	127	"ArmorMale119"			//BlueEyes Lord
-4266	127	127	127	"ArmorMale120_fight"		//BlueEyes fighter
+4260	40	80	120	"ArmorMale119"		//T15 Blue Eye Lord Armor (was stale pre-S21 row)
+4261	40	80	120	"ArmorMale120_fight"		//T15 Blue Eye Fighter Armor (was stale pre-S21 row)
+4262	89	165	255	"ArmorMale105"		//T9 Tigris Armor (slot was stale Blue Eye Elf)
+4263	229	178	114	"ArmorMale107"		//T10 Crimson Skull Armor (was stale pre-S21 row)
+4264	153	153	153	"ArmorMale131"		//T16 Silver Heart Knight Armor (was stale pre-S21 row)
+4265	153	153	153	"ArmorMale130"		//T16 Silver Heart Wizard Armor (was stale pre-S21 row)
+4266	153	153	153	"ArmorMale128_elf"		//T16 Silver Heart Elf Armor (was stale pre-S21 row)
 //===========================================>
 //-- BlueEye Pants
-4772	127	127	127	"PantMale120_knight"		//BlueEyes king
-4773	127	127	127	"PantMale119"			//BlueEyes wizzar
-4774	127	127	127	"PantMale117"			//BlueEyes Elf
-4775	127	127	127	"PantMale117"			//BlueEyes Summoner
-4776	127	127	127	"PantMale120_ma"		//BlueEyes Magic
-4777	127	127	127	"PantMale119"			//BlueEyes Lord
-4778	127	127	127	"PantMale120_fight"		//BlueEyes fighter
+4772	40	80	120	"PantMale119"		//T15 Blue Eye Lord Pants (was stale pre-S21 row)
+4773	40	80	120	"PantMale120_fight"		//T15 Blue Eye Fighter Pants (was stale pre-S21 row)
+4774	89	165	255	"PantMale105"		//T9 Tigris Pants (slot was stale Blue Eye Elf)
+4775	229	178	114	"PantMale107"		//T10 Crimson Skull Pants (was stale pre-S21 row)
+4776	153	153	153	"PantMale131"		//T16 Silver Heart Knight Pants (was stale pre-S21 row)
+4777	153	153	153	"PantMale130"		//T16 Silver Heart Wizard Pants (was stale pre-S21 row)
+4778	153	153	153	"PantMale128_elf"		//T16 Silver Heart Elf Pants (was stale pre-S21 row)
 //===========================================>
 //-- BlueEye Gloves
-5284	127	127	127	"GloveMale120_knight"		//BlueEyes king
+5284	40	80	120	"GloveMale119"		//T15 Blue Eye Lord Gloves (was stale pre-S21 row)
 5285	127	127	127	"GloveMale119"			//BlueEyes wizzar
 5286	127	127	127	"GloveMale117"			//BlueEyes Elf
 5287	127	127	127	"GloveMale117"			//BlueEyes Summoner
-5288	127	127	127	"GloveMale120_ma"		//BlueEyes Magic
-5289	127	127	127	"GloveMale119"			//BlueEyes Lord
+5288	153	153	153	"GloveMale131"		//T16 SilverHeart Knight Gloves (was stale pre-S21 row)
+5289	153	153	153	"GloveMale130"		//T16 SilverHeart Wizard Gloves (was stale pre-S21 row)
 //===========================================>
 //-- BlueEye Boots
-5796	127	127	127	"BootMale120_knight"		//BlueEyes king
-5797	127	127	127	"BootMale119"			//BlueEyes wizzar
-5798	127	127	127	"BootMale117"			//BlueEyes Elf
-5799	127	127	127	"BootMale117"			//BlueEyes Summoner
-5800	127	127	127	"BootMale120_ma"		//BlueEyes Magic
-5801	127	127	127	"BootMale119"			//BlueEyes Lord
-5802	127	127	127	"BootMale120_fight"		//BlueEyes fighter
+5796	40	80	120	"BootMale119"		//T15 Blue Eye Lord Boots (was stale pre-S21 row)
+5797	40	80	120	"BootMale120_fight"		//T15 Blue Eye Fighter Boots (was stale pre-S21 row)
+5798	89	165	255	"BootMale105"		//T9 Tigris Boots (slot was stale Blue Eye Elf)
+5799	229	178	114	"BootMale107"		//T10 Crimson Skull Boots (was stale pre-S21 row)
+5800	153	153	153	"BootMale131"		//T16 Silver Heart Knight Boots (was stale pre-S21 row)
+5801	153	153	153	"BootMale130"		//T16 Silver Heart Wizard Boots (was stale pre-S21 row)
+5802	153	153	153	"BootMale128_elf"		//T16 Silver Heart Elf Boots (was stale pre-S21 row)
 
 
 
