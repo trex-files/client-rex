@@ -34,8 +34,25 @@
 18		6510	5		139		2		61		2		80		4		85		1		83		4		106		9		108		9		107		9		111		9		1			"Wing505"
 19		6511	5		139		2		61		2		80		4		85		1		83		4		106		9		108		9		107		9		111		9		1			"Wing507"
 //=== Items-pack merge ===
-4		6428	5		145		1		85		2	    80      4       85      1       83      4       108     5       109     5       110     5       111     5		0			"ConquerorWing"
-5		6429	5		145		1		85		2	    80      4       85      1       83      4       108     5       109     5       110     5       111     5		0			"angel_devil_wing"
+// [fix P26-70 2026-09-28] Duplicate of ItemIndex 6428 (see the correct
+// row below, Index=55, "//All"): std::map::insert first-wins meant THIS
+// row (DefA=5, IncDmgA=145, IncDmgB=1, DecDmgA=85, DecDmgB=2) was the one
+// actually used, while GS (muserver-rex/4.GameServer/Data/Custom/
+// CustomWing.txt, row 55) and the identical row a few lines down both say
+// DefA=3, IncDmgA=171, IncDmgB=0, DecDmgA=29, DecDmgB=0. Same ModelName/
+// ModelType in both rows -- purely a numeric/gameplay mismatch, no visual
+// decision involved. Commented out so the correct row below wins.
+//4		6428	5		145		1		85		2	    80      4       85      1       83      4       108     5       109     5       110     5       111     5		0			"ConquerorWing"
+// [fix P26-71 2026-09-28] Kept Index/ModelName/ModelType as-is (the
+// 2026-08-18 decision below is correct -- re-verified against our GS
+// Item.txt: category 12 index 285 = "Wings of Angel and Devil", matching
+// "angel_devil_wing"). Only the numeric fields changed: DefA 5->3,
+// IncDmgA 145->160, IncDmgB 1->0, DecDmgA 85->40, DecDmgB 2->0, to match
+// GS's own CustomWing.txt row for this item (Index=56, "Wing285" --
+// muserver-rex/4.GameServer/Data/Custom/CustomWing.txt). These numbers
+// never touch ModelName/ModelType (verified: only LoadItemModel/
+// LoadItemTexture in ZzzOpenData.cpp read ModelName).
+5		6429	3		160		0		40		0	    80      4       85      1       83      4       108     5       109     5       110     5       111     5		0			"angel_devil_wing"
 
 //=== 22 Cosmetic Skin Wings ===
 20	6512	5	139	2	61	2	80	4	85	1	83	4	106	9	108	9	107	9	111	9	0		"Abbadon_wing"
