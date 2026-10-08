@@ -1,5 +1,6 @@
 //--world		MapName				TgaMapName					MusicMp3
 	83			"Acheron"			"ThanMaChien.tga"				""
+	86			"Nars"			""							""
 	87			"Demon God"			"ThanMaChien.tga"				""
 	98			"Castle Siege Mini"		"CTCMini.tga"				""
 	105			"Boss Guild"		"BossGuild.tga"			    	""
@@ -7,4 +8,8 @@
 	92			"ArenaVIP"		"LOL.tga"			    	""
 	88			"Chaos Battle"		"NewMap97.tga"			    	""
 
+	120			"Uruk Mountain"			""							""
+	125			"Dungeon Depths"		"dungeun.tga"				""
+	126			"Lost Tower Summit"		"losttower.tga"				""
+	127			"Kanturu Core"		"kantru.tga"				""
 end
