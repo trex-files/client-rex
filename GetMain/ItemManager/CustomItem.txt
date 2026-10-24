@@ -60,8 +60,8 @@
 7340     -1        -1       -1       "DarkPhoenixBz"        
 7341     -1        -1       -1       "deathsoul"            
 //---------------------------------------------------------------
-6806	 10			10		10		"hs_hammerB"
-6807	 10			10		10		"hs_hammerA"
+6806	 10			10		10		"amulet_dark"           //REX 2026-10-24 Talisman Wings of Ruin (antes martillo)
+6807	 10			10		10		"amulet_despair"        //REX 2026-10-24 Talisman Wings of Dimension (antes martillo)
 6827	 10			10		10		"petegg"
 
 7342	 10			10		10		"jwofplus10"
